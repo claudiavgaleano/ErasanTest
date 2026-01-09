@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark theme (default) - Industrial Red */
+body {
+  min-height: 100vh;
+  background: 
+    linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  transition: background 0.3s ease;
+}
+
+/* Add subtle industrial pattern */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(220, 38, 38, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(14, 165, 233, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Light theme - Clean Industrial */
+body[data-theme="light"] {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+}
+
+body[data-theme="light"]::before {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(185, 28, 28, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(2, 132, 199, 0.04) 0%, transparent 50%);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================
+   ACCESSIBILITY - Skip Link
+   ============================================ */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #dc2626;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 4px 4px;
+  z-index: 9999;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #ef4444;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   ACCESSIBILITY - Focus Visible Styles
+   ============================================ */
+*:focus-visible {
+  outline: 3px solid #dc2626 !important;
+  outline-offset: 2px !important;
+}
+
+body[data-theme="light"] *:focus-visible {
+  outline-color: #b91c1c !important;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid #dc2626 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 6px rgba(220, 38, 38, 0.2);
+}
+
+body[data-theme="light"] button:focus-visible,
+body[data-theme="light"] a:focus-visible,
+body[data-theme="light"] [role="button"]:focus-visible {
+  outline-color: #b91c1c !important;
+  box-shadow: 0 0 0 6px rgba(185, 28, 28, 0.2);
+}
+
+/* ============================================
+   ACCESSIBILITY - Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - High Contrast Mode
+   ============================================ */
+@media (prefers-contrast: high) {
+  body {
+    background: #000 !important;
+  }
+  
+  body[data-theme="light"] {
+    background: #fff !important;
+  }
+}
+
+/* ============================================
+   Custom scrollbar - Dark theme
+   ============================================ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #dc2626 0%, #b91c1c 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+}
+
+/* Custom scrollbar - Light theme */
+body[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+body[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #b91c1c 0%, #991b1b 100%);
+}
+
+body[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #dc2626 0%, #b91c1c 100%);
+}
+
+/* Smooth transitions for theme changes */
+@media (prefers-reduced-motion: no-preference) {
+  *,
+  *::before,
+  *::after {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - Screen Reader Only
+   ============================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============================================
+   Industrial Design Elements
+   ============================================ */
+.industrial-border {
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #dc2626, #0ea5e9) 1;
+}
+
+.red-glow {
+  box-shadow: 0 0 30px rgba(220, 38, 38, 0.3);
+}
+
+.steel-glow {
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.3);
+}
