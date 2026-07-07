@@ -52,7 +52,7 @@ export default function Retrofit() {
   }
 
   const handleCategoryFilter = (categorySlug) => {
-    if (categorySlug === currentCategory) {
+    if (!categorySlug || categorySlug === currentCategory) {
       setSearchParams({})
     } else {
       setSearchParams({ category: categorySlug })

@@ -6,9 +6,12 @@ import App from './App'
 import './i18n'
 import './index.css'
 
+// Match Vite's `base` config so routes work under /ErasanTest/ on GitHub Pages
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || undefined
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <ThemeProvider>
         <App />
       </ThemeProvider>
