@@ -6,7 +6,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube'
 import EmailIcon from '@mui/icons-material/Email'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import { useThemeMode } from '../context/ThemeContext'
-
+import logo from '../assets/logo.png'
 const socialLinks = [
   { icon: <LinkedInIcon aria-hidden="true" />, url: '#', label: 'LinkedIn' },
   { icon: <YouTubeIcon aria-hidden="true" />, url: '#', label: 'YouTube' },
@@ -48,7 +48,7 @@ export default function Footer() {
           {/* Logo & Description */}
           <Grid item xs={12} md={4}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, mb: 2 }}>
-              <PrecisionManufacturingIcon aria-hidden="true" sx={{ color: primaryColor, fontSize: 32 }} />
+             {/*  <PrecisionManufacturingIcon aria-hidden="true" sx={{ color: primaryColor, fontSize: 32 }} />
               <Typography
                 variant="h6"
                 sx={{
@@ -61,7 +61,8 @@ export default function Footer() {
                 }}
               >
                 {t('brand')}
-              </Typography>
+              </Typography> */}
+              <img src={logo} alt="logo" style={{ width: '100px', height: 'auto' }} />
             </Box>
             <Typography variant="body2" color="text.secondary" sx={{ maxWidth: 300 }}>
               {t('footer.description')}

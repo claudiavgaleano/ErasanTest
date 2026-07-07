@@ -29,7 +29,7 @@ import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturi
 import LanguageSwitcher from './LanguageSwitcher'
 import ThemeToggle from './ThemeToggle'
 import { useThemeMode } from '../context/ThemeContext'
-
+import logo from '../assets/logo.png'
 const PRODUCT_PATHS = ['/products', '/coil-winding', '/accesories', '/retrofit']
 
 function HideOnScroll({ children }) {
@@ -301,7 +301,7 @@ export default function Navbar() {
                   flexGrow: 1,
                 }}
               >
-                <PrecisionManufacturingIcon
+{/*                 <PrecisionManufacturingIcon
                   aria-hidden="true"
                   sx={{
                     color: primaryColor,
@@ -321,7 +321,8 @@ export default function Navbar() {
                   }}
                 >
                   {t('brand')}
-                </Typography>
+                </Typography> */}
+                <img src={logo} alt="logo" style={{ width: '120px', height: 'auto' }} />
               </Box>
 
               {/* Desktop Navigation */}
