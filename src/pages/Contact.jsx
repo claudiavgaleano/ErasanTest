@@ -1,43 +1,36 @@
-import { Box, Container, Typography, Grid, Card, CardContent, Skeleton } from '@mui/material'
+import { Box, Container, Typography, Grid, Card, CardContent } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
-import ContactForm from '../components/ContactForm'
 import { useThemeMode } from '../context/ThemeContext'
-import { useContactInfo } from '../hooks/useWordPress'
 
 export default function Contact() {
   const { t } = useTranslation()
   const { mode } = useThemeMode()
-  
-  // Fetch contact info from WordPress (optional - falls back to translations)
-  const { contactInfo: wpContactInfo, loading: wpLoading } = useContactInfo()
 
   const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
   const gradientColor = mode === 'dark' 
     ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
     : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
-  // Use WordPress data if available, otherwise fall back to translations
-  const email = wpContactInfo?.email || t('contact.email')
-  const phone = wpContactInfo?.phone || t('contact.phone')
-  const address = wpContactInfo?.address || t('contact.address')
-  const hours = wpContactInfo?.businessHours || t('contact.hours')
+  const address = t('contact.address')
+  const mapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed`
+  const mapsLinkUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
 
   const contactInfoItems = [
     {
       icon: <EmailIcon sx={{ fontSize: 28 }} />,
       label: t('contact.emailLabel'),
-      value: email,
-      href: `mailto:${email}`,
+      value: t('contact.email'),
+      href: `mailto:${t('contact.email')}`,
     },
     {
       icon: <PhoneIcon sx={{ fontSize: 28 }} />,
       label: t('contact.phoneLabel'),
-      value: phone,
-      href: `tel:${phone.replace(/\s/g, '')}`,
+      value: t('contact.phone'),
+      href: `tel:${t('contact.phone').replace(/\s/g, '')}`,
     },
     {
       icon: <LocationOnIcon sx={{ fontSize: 28 }} />,
@@ -47,7 +40,7 @@ export default function Contact() {
     {
       icon: <AccessTimeIcon sx={{ fontSize: 28 }} />,
       label: t('contact.hoursLabel'),
-      value: hours,
+      value: t('contact.hours'),
     },
   ]
 
@@ -157,92 +150,93 @@ export default function Contact() {
                 {t('contact.infoTitle')}
               </Typography>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, mt: 4 }}>
-                {wpLoading
-                  ? // Loading skeleton
-                    Array.from({ length: 4 }).map((_, index) => (
-                      <Card key={index}>
-                        <CardContent sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                          <Skeleton variant="rounded" width={56} height={56} />
-                          <Box sx={{ flex: 1 }}>
-                            <Skeleton variant="text" width="40%" />
-                            <Skeleton variant="text" width="70%" />
-                          </Box>
-                        </CardContent>
-                      </Card>
-                    ))
-                  : contactInfoItems.map((info, index) => (
-                      <Card
-                        key={index}
+                {contactInfoItems.map((info, index) => (
+                  <Card
+                    key={index}
+                    sx={{
+                      animation: `fadeInLeft 0.6s ease-out ${index * 0.1}s backwards`,
+                      '@keyframes fadeInLeft': {
+                        from: {
+                          opacity: 0,
+                          transform: 'translateX(-20px)',
+                        },
+                        to: {
+                          opacity: 1,
+                          transform: 'translateX(0)',
+                        },
+                      },
+                    }}
+                  >
+                    <CardContent sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                      <Box
                         sx={{
-                          animation: `fadeInLeft 0.6s ease-out ${index * 0.1}s backwards`,
-                          '@keyframes fadeInLeft': {
-                            from: {
-                              opacity: 0,
-                              transform: 'translateX(-20px)',
-                            },
-                            to: {
-                              opacity: 1,
-                              transform: 'translateX(0)',
-                            },
-                          },
+                          color: primaryColor,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          width: 56,
+                          height: 56,
+                          borderRadius: 1,
+                          background: mode === 'dark' 
+                            ? 'rgba(220, 38, 38, 0.1)' 
+                            : 'rgba(185, 28, 28, 0.08)',
                         }}
+                        aria-hidden="true"
                       >
-                        <CardContent sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                          <Box
+                        {info.icon}
+                      </Box>
+                      <Box>
+                        <Typography variant="body2" color="text.secondary" sx={{ mb: 0.5 }}>
+                          {info.label}
+                        </Typography>
+                        {info.href ? (
+                          <Typography
+                            component="a"
+                            href={info.href}
+                            variant="body1"
                             sx={{
-                              color: primaryColor,
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              width: 56,
-                              height: 56,
-                              borderRadius: 1,
-                              background: mode === 'dark' 
-                                ? 'rgba(220, 38, 38, 0.1)' 
-                                : 'rgba(185, 28, 28, 0.08)',
+                              color: 'text.primary',
+                              textDecoration: 'none',
+                              fontWeight: 500,
+                              transition: 'color 0.3s ease',
+                              '&:hover': {
+                                color: primaryColor,
+                              },
                             }}
-                            aria-hidden="true"
                           >
-                            {info.icon}
-                          </Box>
-                          <Box>
-                            <Typography variant="body2" color="text.secondary" sx={{ mb: 0.5 }}>
-                              {info.label}
-                            </Typography>
-                            {info.href ? (
-                              <Typography
-                                component="a"
-                                href={info.href}
-                                variant="body1"
-                                sx={{
-                                  color: 'text.primary',
-                                  textDecoration: 'none',
-                                  fontWeight: 500,
-                                  transition: 'color 0.3s ease',
-                                  '&:hover': {
-                                    color: primaryColor,
-                                  },
-                                }}
-                              >
-                                {info.value}
-                              </Typography>
-                            ) : (
-                              <Typography variant="body1" sx={{ fontWeight: 500 }}>
-                                {info.value}
-                              </Typography>
-                            )}
-                          </Box>
-                        </CardContent>
-                      </Card>
-                    ))}
+                            {info.value}
+                          </Typography>
+                        ) : (
+                          <Typography variant="body1" sx={{ fontWeight: 500 }}>
+                            {info.value}
+                          </Typography>
+                        )}
+                      </Box>
+                    </CardContent>
+                  </Card>
+                ))}
               </Box>
             </Grid>
 
-            {/* Contact Form */}
+            {/* Google Maps */}
             <Grid item xs={12} md={7}>
+              <Typography
+                variant="overline"
+                sx={{
+                  color: primaryColor,
+                  fontWeight: 700,
+                  letterSpacing: 4,
+                  mb: 2,
+                  display: 'block',
+                  fontSize: '0.85rem',
+                }}
+              >
+                {t('contact.mapTitle')}
+              </Typography>
               <Card
                 sx={{
-                  p: { xs: 3, md: 4 },
+                  mt: 4,
+                  overflow: 'hidden',
                   animation: 'fadeInRight 0.6s ease-out',
                   '@keyframes fadeInRight': {
                     from: {
@@ -256,7 +250,63 @@ export default function Contact() {
                   },
                 }}
               >
-                <ContactForm />
+                <Box
+                  sx={{
+                    position: 'relative',
+                    width: '100%',
+                    height: { xs: 320, sm: 400, md: 480 },
+                  }}
+                >
+                  <Box
+                    component="iframe"
+                    title={t('contact.mapAriaLabel')}
+                    src={mapsEmbedUrl}
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                    sx={{
+                      position: 'absolute',
+                      inset: 0,
+                      width: '100%',
+                      height: '100%',
+                      border: 0,
+                    }}
+                  />
+                </Box>
+                <CardContent
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    gap: 2,
+                    flexWrap: 'wrap',
+                    borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.15)' : 'rgba(185, 28, 28, 0.1)'}`,
+                  }}
+                >
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                    <LocationOnIcon sx={{ color: primaryColor }} aria-hidden="true" />
+                    <Typography variant="body2" color="text.secondary">
+                      {address}
+                    </Typography>
+                  </Box>
+                  <Typography
+                    component="a"
+                    href={mapsLinkUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="body2"
+                    sx={{
+                      color: primaryColor,
+                      fontWeight: 600,
+                      textDecoration: 'none',
+                      '&:hover': {
+                        textDecoration: 'underline',
+                      },
+                    }}
+                  >
+                    {t('contact.openInMaps')}
+                  </Typography>
+                </CardContent>
               </Card>
             </Grid>
           </Grid>

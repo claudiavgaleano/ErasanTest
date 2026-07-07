@@ -20,7 +20,7 @@ import PersonIcon from '@mui/icons-material/Person'
 import LocalOfferIcon from '@mui/icons-material/LocalOffer'
 import ArticleIcon from '@mui/icons-material/Article'
 import { useThemeMode } from '../context/ThemeContext'
-import { usePost, useRecentPosts, wpHelpers } from '../hooks/useWordPress'
+import { usePost, useRecentPosts, contentHelpers } from '../hooks/useContent'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/1200x600/1e293b/dc2626?text=Erasan+Blog'
 
@@ -76,10 +76,10 @@ export default function BlogPost() {
     )
   }
 
-  const author = wpHelpers.getAuthor(post)
-  const categories = wpHelpers.getCategories(post)
-  const tags = wpHelpers.getTags(post)
-  const featuredImage = wpHelpers.getFeaturedImage(post, 'full') || PLACEHOLDER_IMAGE
+  const author = contentHelpers.getAuthor(post)
+  const categories = contentHelpers.getCategories(post)
+  const tags = contentHelpers.getTags(post)
+  const featuredImage = contentHelpers.getFeaturedImage(post, 'full') || PLACEHOLDER_IMAGE
 
   return (
     <Box>
@@ -173,7 +173,7 @@ export default function BlogPost() {
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, color: 'text.secondary' }}>
                   <CalendarTodayIcon sx={{ fontSize: 16 }} />
                   <Typography variant="body2">
-                    {wpHelpers.formatDate(post.date, i18n.language === 'es' ? 'es-ES' : 'en-US')}
+                    {contentHelpers.formatDate(post.date, i18n.language === 'es' ? 'es-ES' : 'en-US')}
                   </Typography>
                 </Box>
               </Box>
@@ -296,7 +296,7 @@ export default function BlogPost() {
                         >
                           <Box
                             component="img"
-                            src={wpHelpers.getFeaturedImage(recentPost, 'thumbnail') || PLACEHOLDER_IMAGE}
+                            src={contentHelpers.getFeaturedImage(recentPost, 'thumbnail') || PLACEHOLDER_IMAGE}
                             alt=""
                             sx={{
                               width: 70,
@@ -320,7 +320,7 @@ export default function BlogPost() {
                               dangerouslySetInnerHTML={{ __html: recentPost.title.rendered }}
                             />
                             <Typography variant="caption" color="text.secondary">
-                              {wpHelpers.formatDate(recentPost.date, i18n.language === 'es' ? 'es-ES' : 'en-US')}
+                              {contentHelpers.formatDate(recentPost.date, i18n.language === 'es' ? 'es-ES' : 'en-US')}
                             </Typography>
                           </Box>
                         </Box>

@@ -144,6 +144,9 @@
     "address": "Polígono Industrial, Barcelona, España",
     "hoursLabel": "Horario Comercial",
     "hours": "Lun - Vie: 8:00 - 18:00",
+    "mapTitle": "NUESTRA UBICACIÓN",
+    "mapAriaLabel": "Mapa de Google que muestra la ubicación de Erasan en Barcelona",
+    "openInMaps": "Abrir en Google Maps",
     "form": {
       "title": "Envíenos un Mensaje",
       "name": "Nombre Completo",

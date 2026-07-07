@@ -22,7 +22,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import { useThemeMode } from '../context/ThemeContext'
-import { useProduct, wpHelpers } from '../hooks/useWordPress'
+import { useProduct, contentHelpers } from '../hooks/useContent'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -84,9 +84,9 @@ export default function ProductDetail() {
     )
   }
 
-  const acf = wpHelpers.getAcfFields(product)
-  const categories = wpHelpers.getCategories(product)
-  const featuredImage = wpHelpers.getFeaturedImage(product, 'large') || PLACEHOLDER_IMAGE
+  const acf = contentHelpers.getAcfFields(product)
+  const categories = contentHelpers.getCategories(product)
+  const featuredImage = contentHelpers.getFeaturedImage(product, 'large') || PLACEHOLDER_IMAGE
 
   // Parse specifications from ACF fields (customize based on your ACF setup)
   const specifications = acf.specifications || []

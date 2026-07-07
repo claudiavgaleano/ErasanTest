@@ -23,7 +23,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import ArticleIcon from '@mui/icons-material/Article'
 import { useThemeMode } from '../context/ThemeContext'
-import { usePosts, useCategories, wpHelpers } from '../hooks/useWordPress'
+import { usePosts, useCategories, contentHelpers } from '../hooks/useContent'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400/1e293b/dc2626?text=Erasan+Blog'
 
@@ -42,7 +42,7 @@ export default function Blog() {
     ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
     : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
-  // Fetch posts from WordPress
+  // Fetch posts from local content
   const { posts, loading, error, totalPages } = usePosts({
     page: currentPage,
     perPage: 9,
@@ -221,9 +221,9 @@ export default function Blog() {
                 ))
               : posts.length > 0
               ? posts.map((post, index) => {
-                  const author = wpHelpers.getAuthor(post)
-                  const postCategories = wpHelpers.getCategories(post)
-                  const featuredImage = wpHelpers.getFeaturedImage(post) || PLACEHOLDER_IMAGE
+                  const author = contentHelpers.getAuthor(post)
+                  const postCategories = contentHelpers.getCategories(post)
+                  const featuredImage = contentHelpers.getFeaturedImage(post) || PLACEHOLDER_IMAGE
 
                   return (
                     <Grid item xs={12} sm={6} md={4} key={post.id}>
@@ -289,7 +289,7 @@ export default function Blog() {
                             <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
                               <CalendarTodayIcon sx={{ fontSize: 14 }} />
                               <Typography variant="caption">
-                                {wpHelpers.formatDate(post.date, i18n.language === 'es' ? 'es-ES' : 'en-US')}
+                                {contentHelpers.formatDate(post.date, i18n.language === 'es' ? 'es-ES' : 'en-US')}
                               </Typography>
                             </Box>
                           </Box>
@@ -299,7 +299,7 @@ export default function Blog() {
                             color="text.secondary"
                             sx={{ mb: 2, flexGrow: 1, lineHeight: 1.7 }}
                           >
-                            {wpHelpers.getExcerpt(post.excerpt?.rendered || post.content.rendered, 120)}
+                            {contentHelpers.getExcerpt(post.excerpt?.rendered || post.content.rendered, 120)}
                           </Typography>
 
                           {/* Author & Read More */}

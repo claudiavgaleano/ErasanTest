@@ -144,6 +144,9 @@
     "address": "Industrial Park, Barcelona, Spain",
     "hoursLabel": "Business Hours",
     "hours": "Mon - Fri: 8:00 - 18:00",
+    "mapTitle": "OUR LOCATION",
+    "mapAriaLabel": "Google Maps showing Erasan company location in Barcelona",
+    "openInMaps": "Open in Google Maps",
     "form": {
       "title": "Send Us a Message",
       "name": "Full Name",

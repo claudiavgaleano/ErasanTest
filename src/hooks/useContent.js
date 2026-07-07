@@ -1,13 +1,9 @@
 import { useState, useEffect, useCallback } from 'react'
-import { postsApi, productsApi, categoriesApi, contactApi, wpHelpers } from '../services/wordpress'
+import { postsApi, productsApi, categoriesApi, contentHelpers } from '../services/content'
 
-/**
- * Hook for fetching blog posts
- * @param {Object} options - Fetch options
- */
 export function usePosts(options = {}) {
   const { page = 1, perPage = 10, search = '', category = null, enabled = true } = options
-  
+
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -16,10 +12,10 @@ export function usePosts(options = {}) {
 
   const fetchPosts = useCallback(async () => {
     if (!enabled) return
-    
+
     setLoading(true)
     setError(null)
-    
+
     try {
       const result = await postsApi.getAll({ page, perPage, search, category })
       setPosts(result.data)
@@ -40,10 +36,6 @@ export function usePosts(options = {}) {
   return { posts, loading, error, totalPages, total, refetch: fetchPosts }
 }
 
-/**
- * Hook for fetching a single post by slug
- * @param {string} slug - Post slug
- */
 export function usePost(slug) {
   const [post, setPost] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -58,7 +50,7 @@ export function usePost(slug) {
     const fetchPost = async () => {
       setLoading(true)
       setError(null)
-      
+
       try {
         const data = await postsApi.getBySlug(slug)
         setPost(data)
@@ -76,13 +68,9 @@ export function usePost(slug) {
   return { post, loading, error }
 }
 
-/**
- * Hook for fetching products
- * @param {Object} options - Fetch options
- */
 export function useProducts(options = {}) {
   const { page = 1, perPage = 12, category = null, enabled = true } = options
-  
+
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -91,10 +79,10 @@ export function useProducts(options = {}) {
 
   const fetchProducts = useCallback(async () => {
     if (!enabled) return
-    
+
     setLoading(true)
     setError(null)
-    
+
     try {
       const result = await productsApi.getAll({ page, perPage, category })
       setProducts(result.data)
@@ -115,10 +103,6 @@ export function useProducts(options = {}) {
   return { products, loading, error, totalPages, total, refetch: fetchProducts }
 }
 
-/**
- * Hook for fetching a single product by slug
- * @param {string} slug - Product slug
- */
 export function useProduct(slug) {
   const [product, setProduct] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -133,7 +117,7 @@ export function useProduct(slug) {
     const fetchProduct = async () => {
       setLoading(true)
       setError(null)
-      
+
       try {
         const data = await productsApi.getBySlug(slug)
         setProduct(data)
@@ -151,10 +135,6 @@ export function useProduct(slug) {
   return { product, loading, error }
 }
 
-/**
- * Hook for fetching categories
- * @param {string} type - 'posts' or 'products'
- */
 export function useCategories(type = 'posts') {
   const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(true)
@@ -164,11 +144,10 @@ export function useCategories(type = 'posts') {
     const fetchCategories = async () => {
       setLoading(true)
       setError(null)
-      
+
       try {
-        const result = type === 'products' 
-          ? await productsApi.getCategories()
-          : await categoriesApi.getAll()
+        const result =
+          type === 'products' ? await productsApi.getCategories() : await categoriesApi.getAll()
         setCategories(result.data)
       } catch (err) {
         setError(err.message)
@@ -184,41 +163,6 @@ export function useCategories(type = 'posts') {
   return { categories, loading, error }
 }
 
-/**
- * Hook for fetching contact information from WordPress
- * Returns contact details managed in WordPress admin
- */
-export function useContactInfo() {
-  const [contactInfo, setContactInfo] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
-
-  useEffect(() => {
-    const fetchContactInfo = async () => {
-      setLoading(true)
-      setError(null)
-      
-      try {
-        const info = await contactApi.getInfo()
-        setContactInfo(info)
-      } catch (err) {
-        setError(err.message)
-        setContactInfo(null)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchContactInfo()
-  }, [])
-
-  return { contactInfo, loading, error }
-}
-
-/**
- * Hook for recent posts (sidebar, footer, etc.)
- * @param {number} count - Number of posts to fetch
- */
 export function useRecentPosts(count = 5) {
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -241,10 +185,6 @@ export function useRecentPosts(count = 5) {
   return { posts, loading }
 }
 
-/**
- * Hook for featured products
- * @param {number} count - Number of products to fetch
- */
 export function useFeaturedProducts(count = 6) {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -267,6 +207,4 @@ export function useFeaturedProducts(count = 6) {
   return { products, loading }
 }
 
-// Export helpers for use in components
-export { wpHelpers }
-
+export { contentHelpers }

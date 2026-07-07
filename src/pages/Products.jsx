@@ -18,7 +18,7 @@ import {
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import { useThemeMode } from '../context/ThemeContext'
-import { useProducts, useCategories, wpHelpers } from '../hooks/useWordPress'
+import { useProducts, useCategories, contentHelpers } from '../hooks/useContent'
 
 // Placeholder image for products without featured image
 const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400/1e293b/dc2626?text=Erasan+Product'
@@ -36,7 +36,7 @@ export default function Products() {
     ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
     : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
-  // Fetch products from WordPress
+  // Fetch products from local content
   const { products, loading, error, totalPages } = useProducts({
     page: currentPage,
     perPage: 9,
@@ -191,7 +191,7 @@ export default function Products() {
                         <CardMedia
                           component="img"
                           height="220"
-                          image={wpHelpers.getFeaturedImage(product) || PLACEHOLDER_IMAGE}
+                          image={contentHelpers.getFeaturedImage(product) || PLACEHOLDER_IMAGE}
                           alt={product.title.rendered}
                           className="product-image"
                           sx={{ transition: 'transform 0.4s ease' }}
@@ -222,7 +222,7 @@ export default function Products() {
                           color="text.secondary"
                           sx={{ mb: 2, flexGrow: 1, lineHeight: 1.7 }}
                         >
-                          {wpHelpers.getExcerpt(product.excerpt?.rendered || product.content.rendered, 120)}
+                          {contentHelpers.getExcerpt(product.excerpt?.rendered || product.content.rendered, 120)}
                         </Typography>
                         <Button
                           component={Link}
