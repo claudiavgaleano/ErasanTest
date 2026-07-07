@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import {
   Box,
@@ -8,56 +7,44 @@ import {
   Grid,
   Card,
   CardContent,
-  CardMedia,
   Button,
-  Chip,
-  Skeleton,
-  Pagination,
-  Alert,
 } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
+import ExtensionIcon from '@mui/icons-material/Extension'
+import UpgradeIcon from '@mui/icons-material/Upgrade'
 import { useThemeMode } from '../context/ThemeContext'
-import { useProducts, useCategories, contentHelpers } from '../hooks/useContent'
-
-// Placeholder image for products without featured image
-const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400/1e293b/dc2626?text=Erasan+Product'
 
 export default function Products() {
   const { t } = useTranslation()
   const { mode } = useThemeMode()
-  const [searchParams, setSearchParams] = useSearchParams()
-  
-  const currentPage = parseInt(searchParams.get('page') || '1', 10)
-  const currentCategory = searchParams.get('category') || null
 
   const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark' 
+  const secondaryColor = mode === 'dark' ? '#ef4444' : '#dc2626'
+  const gradientColor = mode === 'dark'
     ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
     : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
-  // Fetch products from local content
-  const { products, loading, error, totalPages } = useProducts({
-    page: currentPage,
-    perPage: 9,
-    category: currentCategory,
-  })
-
-  // Fetch product categories
-  const { categories } = useCategories('products')
-
-  const handlePageChange = (event, page) => {
-    setSearchParams({ page: page.toString(), ...(currentCategory && { category: currentCategory }) })
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
-  const handleCategoryFilter = (categorySlug) => {
-    if (categorySlug === currentCategory) {
-      setSearchParams({})
-    } else {
-      setSearchParams({ category: categorySlug })
-    }
-  }
+  const categories = [
+    {
+      icon: <PrecisionManufacturingIcon sx={{ fontSize: 56 }} />,
+      title: t('nav.coilWinding'),
+      description: t('coilWinding.heroDescription'),
+      path: '/coil-winding',
+    },
+    {
+      icon: <ExtensionIcon sx={{ fontSize: 56 }} />,
+      title: t('nav.accesories'),
+      description: t('accesories.heroDescription'),
+      path: '/accesories',
+    },
+    {
+      icon: <UpgradeIcon sx={{ fontSize: 56 }} />,
+      title: t('nav.retrofit'),
+      description: t('retrofit.heroDescription'),
+      path: '/retrofit',
+    },
+  ]
 
   return (
     <Box>
@@ -115,159 +102,80 @@ export default function Products() {
         </Container>
       </Box>
 
-      {/* Category Filters */}
-      {categories.length > 0 && (
-        <Container maxWidth="lg" sx={{ mb: 4 }}>
-          <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', justifyContent: 'center' }}>
-            <Chip
-              label={t('products.allCategories')}
-              onClick={() => handleCategoryFilter(null)}
-              color={!currentCategory ? 'primary' : 'default'}
-              variant={!currentCategory ? 'filled' : 'outlined'}
-              sx={{ fontWeight: 500 }}
-            />
-            {categories.map((cat) => (
-              <Chip
-                key={cat.id}
-                label={cat.name}
-                onClick={() => handleCategoryFilter(cat.slug)}
-                color={currentCategory === cat.slug ? 'primary' : 'default'}
-                variant={currentCategory === cat.slug ? 'filled' : 'outlined'}
-                sx={{ fontWeight: 500 }}
-              />
-            ))}
-          </Box>
-        </Container>
-      )}
-
-      {/* Products Grid */}
-      <Box sx={{ py: 4 }}>
+      {/* Product Categories */}
+      <Box sx={{ py: 8 }}>
         <Container maxWidth="lg">
-          {error && (
-            <Alert severity="error" sx={{ mb: 4 }}>
-              {t('products.errorLoading')}
-            </Alert>
-          )}
-
+          <Typography variant="h2" align="center" sx={{ mb: 2, fontWeight: 600 }}>
+            {t('products.categoriesHeading')}
+          </Typography>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            align="center"
+            sx={{ mb: 6, maxWidth: 600, mx: 'auto' }}
+          >
+            {t('products.categoriesDescription')}
+          </Typography>
           <Grid container spacing={4}>
-            {loading
-              ? // Skeleton loading state
-                Array.from({ length: 6 }).map((_, index) => (
-                  <Grid item xs={12} sm={6} md={4} key={index}>
-                    <Card>
-                      <Skeleton variant="rectangular" height={220} />
-                      <CardContent>
-                        <Skeleton variant="text" height={32} />
-                        <Skeleton variant="text" />
-                        <Skeleton variant="text" width="60%" />
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                ))
-              : products.length > 0
-              ? products.map((product, index) => (
-                  <Grid item xs={12} sm={6} md={4} key={product.id}>
-                    <Card
+            {categories.map((category, index) => (
+              <Grid item xs={12} md={4} key={category.path}>
+                <Card
+                  sx={{
+                    height: '100%',
+                    p: 2,
+                    textAlign: 'center',
+                    transition: 'all 0.4s ease',
+                    animation: `fadeInUp 0.6s ease-out ${index * 0.1}s backwards`,
+                    '@keyframes fadeInUp': {
+                      from: { opacity: 0, transform: 'translateY(30px)' },
+                      to: { opacity: 1, transform: 'translateY(0)' },
+                    },
+                    '&:hover': {
+                      transform: 'translateY(-10px)',
+                      borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
+                      '& .category-icon': {
+                        color: secondaryColor,
+                        transform: 'scale(1.1)',
+                      },
+                    },
+                  }}
+                >
+                  <CardContent sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                    <Box
+                      className="category-icon"
+                      aria-hidden="true"
                       sx={{
-                        height: '100%',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        transition: 'all 0.3s ease',
-                        animation: `fadeInUp 0.6s ease-out ${index * 0.1}s backwards`,
-                        '@keyframes fadeInUp': {
-                          from: { opacity: 0, transform: 'translateY(30px)' },
-                          to: { opacity: 1, transform: 'translateY(0)' },
-                        },
-                        '&:hover': {
-                          transform: 'translateY(-8px)',
-                          borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
-                          '& .product-image': {
-                            transform: 'scale(1.05)',
-                          },
-                        },
+                        color: primaryColor,
+                        mb: 2,
+                        transition: 'all 0.5s ease',
                       }}
                     >
-                      <Box sx={{ overflow: 'hidden', position: 'relative' }}>
-                        <CardMedia
-                          component="img"
-                          height="220"
-                          image={contentHelpers.getFeaturedImage(product) || PLACEHOLDER_IMAGE}
-                          alt={product.title.rendered}
-                          className="product-image"
-                          sx={{ transition: 'transform 0.4s ease' }}
-                        />
-                        {product.acf?.featured && (
-                          <Chip
-                            label={t('products.featured')}
-                            color="primary"
-                            size="small"
-                            sx={{
-                              position: 'absolute',
-                              top: 12,
-                              right: 12,
-                              fontWeight: 600,
-                            }}
-                          />
-                        )}
-                      </Box>
-                      <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                        <Typography
-                          variant="h5"
-                          component="h3"
-                          sx={{ mb: 2, fontWeight: 600 }}
-                          dangerouslySetInnerHTML={{ __html: product.title.rendered }}
-                        />
-                        <Typography
-                          variant="body2"
-                          color="text.secondary"
-                          sx={{ mb: 2, flexGrow: 1, lineHeight: 1.7 }}
-                        >
-                          {contentHelpers.getExcerpt(product.excerpt?.rendered || product.content.rendered, 120)}
-                        </Typography>
-                        <Button
-                          component={Link}
-                          to={`/products/${product.slug}`}
-                          variant="outlined"
-                          endIcon={<ArrowForwardIcon />}
-                          fullWidth
-                        >
-                          {t('products.viewDetails')}
-                        </Button>
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                ))
-              : !loading && (
-                  <Grid item xs={12}>
-                    <Box sx={{ textAlign: 'center', py: 8 }}>
-                      <PrecisionManufacturingIcon
-                        sx={{ fontSize: 80, color: 'text.secondary', opacity: 0.3, mb: 2 }}
-                      />
-                      <Typography variant="h5" color="text.secondary">
-                        {t('products.noProducts')}
-                      </Typography>
+                      {category.icon}
                     </Box>
-                  </Grid>
-                )}
+                    <Typography variant="h4" sx={{ mb: 2, fontWeight: 600 }}>
+                      {category.title}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ mb: 3, lineHeight: 1.7, flexGrow: 1 }}
+                    >
+                      {category.description}
+                    </Typography>
+                    <Button
+                      component={Link}
+                      to={category.path}
+                      variant="outlined"
+                      endIcon={<ArrowForwardIcon />}
+                      fullWidth
+                    >
+                      {t('products.exploreCategory')}
+                    </Button>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
           </Grid>
-
-          {/* Pagination */}
-          {totalPages > 1 && (
-            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 6 }}>
-              <Pagination
-                count={totalPages}
-                page={currentPage}
-                onChange={handlePageChange}
-                color="primary"
-                size="large"
-                sx={{
-                  '& .MuiPaginationItem-root': {
-                    fontWeight: 500,
-                  },
-                }}
-              />
-            </Box>
-          )}
         </Container>
       </Box>
 
@@ -300,4 +208,3 @@ export default function Products() {
     </Box>
   )
 }
-

@@ -23,27 +23,27 @@ export default function About() {
 
   const team = [
     {
-      name: 'Carlos Martínez',
+      name: 'José María Mora',
       role: t('about.ceo'),
-      initials: 'CM',
+      initials: 'JM',
       color: primaryColor,
     },
     {
-      name: 'Hans Weber',
+      name: 'José María Mora',
       role: t('about.leadDev'),
-      initials: 'HW',
+      initials: 'JM',
       color: steelBlue,
     },
     {
-      name: 'María García',
+      name: 'José María Mora',
       role: t('about.designDirector'),
-      initials: 'MG',
+      initials: 'JM',
       color: mode === 'dark' ? '#ef4444' : '#dc2626',
     },
     {
-      name: 'Antonio López',
+      name: 'José María Mora',
       role: t('about.projectManager'),
-      initials: 'AL',
+      initials: 'JM',
       color: mode === 'dark' ? '#38bdf8' : '#0ea5e9',
     },
   ]

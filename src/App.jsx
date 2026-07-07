@@ -9,6 +9,9 @@ import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
+import CoilWindingMachine from './pages/CoilWindingMachine'
+import Accesories from './pages/Accesories'
+import Retrofit from './pages/Retrofit'
 import Contact from './pages/Contact'
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:slug" element={<ProductDetail />} />
+          <Route path="/coil-winding" element={<CoilWindingMachine />} />
+          <Route path="/accesories" element={<Accesories />} />
+          <Route path="/retrofit" element={<Retrofit />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
