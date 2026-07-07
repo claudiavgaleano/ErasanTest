@@ -13,6 +13,7 @@ import CoilWindingMachine from './pages/CoilWindingMachine'
 import Accesories from './pages/Accesories'
 import Retrofit from './pages/Retrofit'
 import Contact from './pages/Contact'
+import Legal from './pages/Legal'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/legal" element={<Legal />} />
         </Routes>
       </Box>
       <Footer />

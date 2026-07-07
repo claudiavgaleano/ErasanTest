@@ -138,7 +138,23 @@ export default function Footer() {
         >
           <Typography variant="body2" color="text.secondary">
             {t('footer.copyright', { year: new Date().getFullYear() })}
+
           </Typography>
+          <MuiLink
+              component={Link}
+              variant="caption"
+              to="/legal"
+              sx={{
+                ml: 2,
+                color: 'text.secondary',
+                textDecoration: 'none',
+                textTransform: 'capitalize',
+                transition: 'color 0.3s ease',
+                '&:hover': { color: primaryColor },
+              }}
+            >
+              {t('legal.title').toLowerCase()}
+            </MuiLink>
         </Box>
       </Container>
     </Box>

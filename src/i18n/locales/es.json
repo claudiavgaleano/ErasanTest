@@ -276,5 +276,36 @@
       "title": "Ingeniería Personalizada",
       "description": "Soluciones de bobinado a medida diseñadas para cumplir con sus requisitos de producción únicos. Desde el concepto hasta la instalación, entregamos excelencia."
     }
+  },
+  "legal": {
+    "title": "AVISO LEGAL Y POLÍTICA DE PRIVACIDAD",
+    "title2": "INFORMACIÓN IDENTIFICATIVA (AVISO LEGAL)",
+    "description": "En cumplimiento de lo dispuesto en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI), se facilitan los siguientes datos identificativos de la empresa propietaria de este sitio web:",
+    "description1": "Denominación o razón social: ERASAN, S.L.",
+    "description2": "NIF: B86123456",
+    "description3": "Dirección: Polígono Industrial, Barcelona, España",
+    "description4": "Datos de Inscripción: Inscrita en el Registro Mercantil de [Provincia], Tomo [Número], Folio [Número], Hoja [Número].",
+    "description5": "Correo electrónico: info@erasan.com",
+    "description6": "Teléfono: +34 123 456 789",
+    "title3": "INFORMACIÓN QUE RECABAMOS",
+    "description7": "De conformidad con el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD), se informa detalladamente al usuario sobre el tratamiento de sus datos al navegar por este sitio web:",
+    "description8": "Responsable del Tratamiento:",
+    "description9": "La empresa identificada en el apartado 1 de este documento.",
+    "description10": "Recogida Directa de Datos:",
+    "description11": "Este sitio web es de carácter puramente institucional e informativo. No dispone de formularios de contacto, formularios de registro, boletines de noticias (newsletters) ni de ningún otro mecanismo que recopile, almacene o procese datos de carácter personal de los usuarios de forma directa.",
+    "description12": "Derechos del Usuario:",
+    "description13": "Al no existir un registro ni almacenamiento de datos personales en nuestros servidores, no se realizan tratamientos sobre los que el usuario deba ejercer los derechos de acceso, rectificación, supresión u oposición ante esta empresa.",
+    "title4": "INTEGRACIÓN DE SERVICIOS DE TERCEROS (GOOGLE MAPS)",
+    "description14": "Para facilitar la localización física de nuestras instalaciones, este sitio web utiliza la API interactiva de mapas de Google Maps, provista por el tercero Google Ireland Limited (con sede en Gordon House, Barrow Street, Dublín 4, Irlanda).",
+    "description15": "Tratamiento de Datos por Terceros:",
+    "description16": "Al cargar la página web que contiene el mapa interactivo, su navegador establece una conexión directa con los servidores de Google. Esto implica que Google recibe de forma automática información técnica de su navegación, incluyendo de manera obligatoria su dirección IP, la página de procedencia y los datos de configuración de su navegador.",
+    "description17": "Finalidad:",
+    "description18": "La base legítima para este procesamiento es nuestro interés legítimo en ofrecer un servicio interactivo y visual para la localización de la empresa.",
+    "description19": "Cookies de Terceros:",
+    "description20": "El uso de la API de Google Maps puede conllevar la descarga de cookies técnicas por parte de Google para el correcto funcionamiento del mapa y la seguridad del servicio. Esta empresa no tiene control ni acceso a los datos procesados por Google.",
+    "description21": "Más información:",
+    "description22": "Para conocer detalladamente cómo procesa Google estos datos y cómo configurar su privacidad, puede consultar la",
+    "link": "Política de Privacidad de Google",
+    "link2": "https://policies.google.com/privacy"
   }
 }

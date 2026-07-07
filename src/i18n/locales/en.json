@@ -276,5 +276,36 @@
       "title": "Custom Engineering",
       "description": "Tailored winding solutions designed to meet your unique production requirements. From concept to installation, we deliver excellence."
     }
+  },
+  "legal": {
+    "title": "LEGAL NOTICE AND PRIVACY POLICY",
+    "title2": "IDENTIFYING INFORMATION (LEGAL NOTICE)",
+    "description": "In compliance with Article 10 of Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSI), the following identifying details of the company that owns this website are provided:",
+    "description1": "Company name: ERASAN, S.L.",
+    "description2": "Tax ID (NIF): B86123456",
+    "description3": "Address: Industrial Park, Barcelona, Spain",
+    "description4": "Registration details: Registered in the Commercial Registry of [Province], Volume [Number], Folio [Number], Sheet [Number].",
+    "description5": "Email: info@erasan.com",
+    "description6": "Phone: +34 123 456 789",
+    "title3": "INFORMATION WE COLLECT",
+    "description7": "In accordance with the General Data Protection Regulation (GDPR) and Organic Law 3/2018 (LOPDGDD), users are informed in detail about the processing of their data when browsing this website:",
+    "description8": "Data Controller:",
+    "description9": "The company identified in section 1 of this document.",
+    "description10": "Direct Data Collection:",
+    "description11": "This website is purely institutional and informational. It does not include contact forms, registration forms, newsletters, or any other mechanism that directly collects, stores, or processes users' personal data.",
+    "description12": "User Rights:",
+    "description13": "As there is no registration or storage of personal data on our servers, no processing is carried out for which the user must exercise rights of access, rectification, erasure, or objection with this company.",
+    "title4": "THIRD-PARTY SERVICE INTEGRATION (GOOGLE MAPS)",
+    "description14": "To facilitate the physical location of our facilities, this website uses the interactive Google Maps API, provided by the third party Google Ireland Limited (located at Gordon House, Barrow Street, Dublin 4, Ireland).",
+    "description15": "Data Processing by Third Parties:",
+    "description16": "When loading the page containing the interactive map, your browser establishes a direct connection with Google's servers. This means that Google automatically receives technical information about your browsing, including your IP address, the referring page, and your browser configuration data.",
+    "description17": "Purpose:",
+    "description18": "The legitimate basis for this processing is our legitimate interest in providing an interactive and visual service for locating the company.",
+    "description19": "Third-Party Cookies:",
+    "description20": "The use of the Google Maps API may involve the download of technical cookies by Google for the proper functioning of the map and the security of the service. This company has no control over or access to the data processed by Google.",
+    "description21": "More information:",
+    "description22": "To learn in detail how Google processes this data and how to configure your privacy, you can consult the",
+    "link": "Google Privacy Policy",
+    "link2": "https://policies.google.com/privacy"
   }
 }
