@@ -61,22 +61,14 @@ export const accessoriesCategories = [
   },
   {
     "id": 7,
-    "slug": "mandriles-expandibles-circulares",
-    "i18nKey": "mandrilesCirculares",
-    "sourceSlug": "mandril-expandible-circular",
-    "displayNameEs": "Mandriles expandibles circulares",
-    "displayNameEn": "Round expandable mandrels"
+    "slug": "mandriles-expandibles",
+    "i18nKey": "mandrilesExpandibles",
+    "sourceSlug": "mandriles-expandibles",
+    "displayNameEs": "Mandriles expandibles",
+    "displayNameEn": "Expandable mandrels"
   },
   {
     "id": 8,
-    "slug": "mandriles-expandibles-rectangulares",
-    "i18nKey": "mandrilesRectangulares",
-    "sourceSlug": "mandril-expandible-rectangular",
-    "displayNameEs": "Mandriles expandibles rectangulares",
-    "displayNameEn": "Rectangular expandable mandrels"
-  },
-  {
-    "id": 9,
     "slug": "dispensadores-de-papel",
     "i18nKey": "dispensadoresPapel",
     "sourceSlug": "dispensadores",

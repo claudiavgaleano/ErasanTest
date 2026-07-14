@@ -285,7 +285,7 @@ export const products = [
     "slug": "dispensador-de-papel-dp1-p",
     "section": "accessories",
     "categorySlug": "dispensadores-de-papel",
-    "categoryId": 9,
+    "categoryId": 8,
     "i18nKey": "dispensador-de-papel-dp1-p",
     "acf": {
       "features": [
@@ -300,7 +300,7 @@ export const products = [
     "slug": "dispensador-de-papel-tpe",
     "section": "accessories",
     "categorySlug": "dispensadores-de-papel",
-    "categoryId": 9,
+    "categoryId": 8,
     "i18nKey": "dispensador-de-papel-tpe",
     "acf": {
       "features": [
@@ -374,8 +374,8 @@ export const products = [
     "id": 22,
     "slug": "mandril-expandible-rectangular",
     "section": "accessories",
-    "categorySlug": "mandriles-expandibles-rectangulares",
-    "categoryId": 8,
+    "categorySlug": "mandriles-expandibles",
+    "categoryId": 7,
     "i18nKey": "mandril-expandible-rectangular",
     "acf": {
       "features": [
@@ -387,7 +387,7 @@ export const products = [
     "id": 23,
     "slug": "mandril-expandible-circular",
     "section": "accessories",
-    "categorySlug": "mandriles-expandibles-circulares",
+    "categorySlug": "mandriles-expandibles",
     "categoryId": 7,
     "i18nKey": "mandril-expandible-circular",
     "acf": {

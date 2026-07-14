@@ -342,12 +342,8 @@
           "name": "Guiadores",
           "description": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución"
         },
-        "mandrilesCirculares": {
-          "name": "Mandriles expandibles circulares",
-          "description": "Características ERASAN Mandril expandible"
-        },
-        "mandrilesRectangulares": {
-          "name": "Mandriles expandibles rectangulares",
+        "mandrilesExpandibles": {
+          "name": "Mandriles expandibles",
           "description": "Características ERASAN Mandril expandible"
         },
         "dispensadoresPapel": {
@@ -363,17 +359,19 @@
     "items": {
       "bobinadora-strip-foil": {
         "title": "Bobinadora Strip Foil",
-        "excerpt": "Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.",
-        "content": "Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.\n\nEl eje devanador es un eje expandible con sistema hidráulico. Movimiento lateral en el devanador de folio gracias al con una fotocélula para controlar posibles desviaciones.",
+        "excerpt": "Máquina bobinadora Strip Foil Máquina de dos papeles y un folio para la fabricación de bobinas para grandes trasformadores de resina/secos para distibución y potencia. Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.",
+        "content": "Máquina de dos papeles y un folio para la fabricación de bobinas para grandes trasformadores de resina/secos para distibución y potencia. \n\n Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.\n\n El eje devanador es un eje expandible con sistema hidráulico. Movimiento lateral en el devanador de folio gracias al con una fotocélula para controlar posibles desviaciones.",
         "features": [
           "Varias configuraciones posibles para bobinas de hasta 2.300 mm con una zona de bobinado de 1.800 mm",
-          "Permite el bobinado de una amplia gama de tamaños y número de transformadores y strips según se requiera.",
-          "Electromecánica de alta eficiencia",
-          "Garantizando un ahorro de energía y reducción de mantenimiento",
-          "Dispone de conexión Ethernet",
-          "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
-          "Sistema de control de última generación CNC",
-          "Con pantalla táctil de 7\" color"
+            "Permite el bobinado de una amplia gama de tamaños y número de transformadores y strips según se requiera.",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
         ],
         "section": "coilWinding"
       },

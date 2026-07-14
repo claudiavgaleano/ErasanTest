@@ -72,7 +72,7 @@ export function usePost(slug) {
 
 export function useProducts(options = {}) {
   const { page = 1, perPage = 12, section = null, category = null, enabled = true } = options
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -105,14 +105,14 @@ export function useProducts(options = {}) {
 
   const localizedProducts = useMemo(
     () => products.map((product) => localizeProduct(product, t)),
-    [products, t]
+    [products, t, i18n.language]
   )
 
   return { products: localizedProducts, loading, error, totalPages, total, refetch: fetchProducts }
 }
 
 export function useProduct(slug) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [product, setProduct] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -143,14 +143,14 @@ export function useProduct(slug) {
 
   const localizedProduct = useMemo(
     () => (product ? localizeProduct(product, t) : null),
-    [product, t]
+    [product, t, i18n.language]
   )
 
   return { product: localizedProduct, loading, error }
 }
 
 export function useCategories(section = 'coilWinding') {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -176,7 +176,7 @@ export function useCategories(section = 'coilWinding') {
 
   const localizedCategories = useMemo(
     () => categories.map((category) => localizeCategory(category, section, t)),
-    [categories, section, t]
+    [categories, section, t, i18n.language]
   )
 
   return { categories: localizedCategories, loading, error }

@@ -33,14 +33,27 @@ export function localizeProduct(product, t) {
         t(`${itemKey}.features.${index}`, { defaultValue: feature })
       )
 
+  const translatedSpecifications = t(`${itemKey}.specifications`, { returnObjects: true })
+  const localizedSpecifications = Array.isArray(translatedSpecifications)
+    ? translatedSpecifications.map((spec, index) => ({
+        label: spec?.label || t(`${itemKey}.specifications.${index}.label`),
+        value: spec?.value || t(`${itemKey}.specifications.${index}.value`),
+      }))
+    : (product.acf?.specifications || []).map((spec, index) => ({
+        label: t(`${itemKey}.specifications.${index}.label`, { defaultValue: spec.label }),
+        value: t(`${itemKey}.specifications.${index}.value`, { defaultValue: spec.value }),
+      }))
+
   const rawTitle = t(`${itemKey}.title`, { defaultValue: product.title?.rendered || key })
+  const rawExcerpt = t(`${itemKey}.excerpt`, { defaultValue: product.excerpt?.rendered || '' })
+  const rawContent = t(`${itemKey}.content`, { defaultValue: product.content?.rendered || '' })
 
   return {
     ...product,
     title: { rendered: toTitleCase(rawTitle) },
-    excerpt: { rendered: t(`${itemKey}.excerpt`, { defaultValue: product.excerpt?.rendered || '' }) },
+    excerpt: { rendered: rawExcerpt },
     content: {
-      rendered: t(`${itemKey}.content`, { defaultValue: product.content?.rendered || '' })
+      rendered: rawContent
         .split('\n\n')
         .filter(Boolean)
         .map((paragraph) => `<p>${paragraph}</p>`)
@@ -49,6 +62,7 @@ export function localizeProduct(product, t) {
     acf: {
       ...product.acf,
       features: localizedFeatures,
+      specifications: localizedSpecifications,
     },
   }
 }
