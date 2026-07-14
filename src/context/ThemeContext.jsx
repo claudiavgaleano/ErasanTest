@@ -12,37 +12,14 @@ const ThemeContext = createContext({
 export const useThemeMode = () => useContext(ThemeContext)
 
 export function ThemeProvider({ children }) {
-  // Initialize with system preference or stored preference
   const [mode, setMode] = useState(() => {
-    // Check localStorage first
     const stored = localStorage.getItem('themeMode')
     if (stored === 'light' || stored === 'dark') {
       return stored
     }
-    // Fall back to system preference
-    if (typeof window !== 'undefined' && window.matchMedia) {
-      return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
-    }
     return 'dark'
   })
 
-  // Listen for system preference changes
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: light)')
-    
-    const handleChange = (e) => {
-      // Only auto-switch if no manual preference is stored
-      const stored = localStorage.getItem('themeMode')
-      if (!stored) {
-        setMode(e.matches ? 'light' : 'dark')
-      }
-    }
-
-    mediaQuery.addEventListener('change', handleChange)
-    return () => mediaQuery.removeEventListener('change', handleChange)
-  }, [])
-
-  // Update body class and localStorage when mode changes
   useEffect(() => {
     document.body.setAttribute('data-theme', mode)
     localStorage.setItem('themeMode', mode)

@@ -92,7 +92,7 @@ export const products = [
     "slug": "cabezal-bobinador-erasan-e1500-b",
     "section": "coilWinding",
     "categorySlug": "cabezal-bobinador",
-    "categoryId": 1,
+    "categoryId": 2,
     "i18nKey": "cabezal-bobinador-erasan-e1500-b",
     "acf": {
       "features": []
@@ -103,7 +103,7 @@ export const products = [
     "slug": "cabezal-bobinador-erasan-e1200-b",
     "section": "coilWinding",
     "categorySlug": "cabezal-bobinador",
-    "categoryId": 1,
+    "categoryId": 2,
     "i18nKey": "cabezal-bobinador-erasan-e1200-b",
     "acf": {
       "features": []
@@ -157,7 +157,16 @@ export const products = [
     "categoryId": 2,
     "i18nKey": "cabezal-bobinador-erasan-e1200",
     "acf": {
-      "features": []
+      "features": [
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
     }
   },
   {
@@ -464,7 +473,7 @@ export const products = [
     }
   },
   {
-    "id": 30,
+    "id": 29,
     "slug": "tensionador-de-hilo-th3-is",
     "section": "accessories",
     "categorySlug": "tensionadores",
@@ -481,7 +490,7 @@ export const products = [
     }
   },
   {
-    "id": 31,
+    "id": 30,
     "slug": "tensionador-de-hilo-th3",
     "section": "accessories",
     "categorySlug": "tensionadores",
@@ -498,7 +507,7 @@ export const products = [
     }
   },
   {
-    "id": 32,
+    "id": 31,
     "slug": "tensionador-de-hilo-th3-standalone",
     "section": "accessories",
     "categorySlug": "tensionadores",
@@ -515,7 +524,7 @@ export const products = [
     }
   },
   {
-    "id": 33,
+    "id": 32,
     "slug": "retrofit",
     "section": "retrofit",
     "categorySlug": null,

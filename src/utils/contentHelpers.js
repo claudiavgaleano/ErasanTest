@@ -12,6 +12,15 @@ export function getSectionBackLink(section) {
   return SECTION_BACK_LINKS[section] || { labelKey: 'nav.services', path: '/products' }
 }
 
+export function toTitleCase(text) {
+  if (!text || typeof text !== 'string') return text
+  return text
+    .toLowerCase()
+    .split(' ')
+    .map((word) => (word ? word.charAt(0).toUpperCase() + word.slice(1) : word))
+    .join(' ')
+}
+
 export function localizeProduct(product, t) {
   if (!product) return null
 
@@ -24,9 +33,11 @@ export function localizeProduct(product, t) {
         t(`${itemKey}.features.${index}`, { defaultValue: feature })
       )
 
+  const rawTitle = t(`${itemKey}.title`, { defaultValue: product.title?.rendered || key })
+
   return {
     ...product,
-    title: { rendered: t(`${itemKey}.title`, { defaultValue: product.title?.rendered || key }) },
+    title: { rendered: toTitleCase(rawTitle) },
     excerpt: { rendered: t(`${itemKey}.excerpt`, { defaultValue: product.excerpt?.rendered || '' }) },
     content: {
       rendered: t(`${itemKey}.content`, { defaultValue: product.content?.rendered || '' })

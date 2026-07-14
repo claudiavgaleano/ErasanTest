@@ -391,6 +391,68 @@
         ],
         "section": "coilWinding"
       },
+      "cabezal-bobinador-erasan-e1200-c-sgb": {
+        "title": "WINDING HEAD ERASAN E1200C SGB",
+        "excerpt": "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "content": "Cuerpo fabricado en acero mecano soldado de gran rigidez\n\nBancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión",
+        "features": [
+          "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+          "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+          "Electromecánica de alta eficiencia",
+          "Garantizando un ahorro de energía y reducción de mantenimiento",
+          "Dispone de conexión Ethernet",
+          "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+          "Sistema de control de última generación CNC",
+          "Con pantalla táctil de 7\" color"
+        ],
+        "section": "coilWinding"
+      },
+      "cabezal-bobinador-erasan-e1200-c": {
+        "title": "WINDING HEAD ERASAN E1200C",
+        "excerpt": "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "content": "Cuerpo fabricado en acero mecano soldado de gran rigidez\n\nBandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión",
+        "features": [
+          "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+          "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+          "Electromecánica de alta eficiencia",
+          "Garantizando un ahorro de energía y reducción de mantenimiento",
+          "Dispone de conexión Ethernet",
+          "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+          "Sistema de control de última generación CNC",
+          "Con pantalla táctil de 7\" color"
+        ],
+        "section": "coilWinding"
+      },
+      "cabezal-bobinador-erasan-e1500-b": {
+        "title": "WINDING HEAD ERASAN E1500B",
+        "excerpt": "WINDING HEAD ERASAN E1500B",
+        "content": "",
+        "features": [],
+        "section": "coilWinding"
+      },
+      "cabezal-bobinador-erasan-e1200-b": {
+        "title": "WINDING HEAD ERASAN E1200B",
+        "excerpt": "WINDING HEAD ERASAN E1200B",
+        "content": "",
+        "features": [],
+        "section": "coilWinding"
+      },
+      "cabezal-bobinador-erasan-e1200": {
+        "title": "WINDING HEAD ERASAN E1200",
+        "excerpt": "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "content": "Cuerpo fabricado en acero mecano soldado de gran rigidez\n\nBandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión",
+        "features": [
+          "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+          "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+          "Electromecánica de alta eficiencia",
+          "Garantizando un ahorro de energía y reducción de mantenimiento",
+          "Dispone de conexión Ethernet",
+          "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+          "Sistema de control de última generación CNC",
+          "Con pantalla táctil de 7\" color"
+        ],
+        "section": "coilWinding"
+      },
       "bobinadora-erasan-e1200-c-sgb": {
         "title": "BOBINADORA ERASAN E1200C SGB",
         "excerpt": "Cuerpo fabricado en acero mecano soldado de gran rigidez",
