@@ -16,14 +16,17 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  Tooltip,
 } from '@mui/material'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
+import DownloadIcon from '@mui/icons-material/Download'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import { useThemeMode } from '../context/ThemeContext'
 import { useProduct, contentHelpers } from '../hooks/useContent'
 import { getSectionBackLink } from '../utils/contentHelpers'
+import { getProductSpecPdfUrl } from '../data/productSpecPdfs'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -31,11 +34,9 @@ export default function ProductDetail() {
   const { slug } = useParams()
   const { t } = useTranslation()
   const { mode } = useThemeMode()
-  
   const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const primaryAlpha = (opacity) =>
+    mode === 'dark' ? `rgba(220, 38, 38, ${opacity})` : `rgba(185, 28, 28, ${opacity})`
 
   const { product, loading, error } = useProduct(slug)
 
@@ -90,14 +91,14 @@ export default function ProductDetail() {
   const sectionBackLink = getSectionBackLink(product.section)
   const featuredImage = contentHelpers.getFeaturedImage(product, 'large') || PLACEHOLDER_IMAGE
 
-  // Parse specifications from ACF fields (customize based on your ACF setup)
   const specifications = acf.specifications || []
   const features = acf.features || []
+  const specPdfUrl = getProductSpecPdfUrl(product.slug)
 
   return (
     <Box>
       {/* Breadcrumbs */}
-      <Box sx={{ py: 3, borderBottom: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.08)'}` }}>
+      <Box sx={{ py: 3, borderBottom: `1px solid ${primaryAlpha(0.1)}` }}>
         <Container maxWidth="lg">
           <Breadcrumbs aria-label="breadcrumb">
             <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
@@ -205,6 +206,26 @@ export default function ProductDetail() {
                 >
                   {t('products.askQuestion')}
                 </Button>
+                <Tooltip
+                  title={specPdfUrl ? '' : t('products.downloadSpecsComingSoon')}
+                  disableHoverListener={Boolean(specPdfUrl)}
+                >
+                  <span>
+                    <Button
+                      variant="outlined"
+                      size="large"
+                      component={specPdfUrl ? 'a' : 'button'}
+                      href={specPdfUrl || undefined}
+                      download={specPdfUrl ? true : undefined}
+                      target={specPdfUrl ? '_blank' : undefined}
+                      rel={specPdfUrl ? 'noopener noreferrer' : undefined}
+                      disabled={!specPdfUrl}
+                      startIcon={<DownloadIcon />}
+                    >
+                      {t('products.downloadSpecs')}
+                    </Button>
+                  </span>
+                </Tooltip>
               </Box>
 
               {/* Key Features */}
@@ -245,7 +266,7 @@ export default function ProductDetail() {
                           sx={{
                             p: 2,
                             borderRadius: 1,
-                            background: mode === 'dark' ? 'rgba(220, 38, 38, 0.05)' : 'rgba(185, 28, 28, 0.03)',
+                            background: primaryAlpha(0.05),
                           }}
                         >
                           <Typography variant="body2" color="text.secondary">
@@ -282,4 +303,3 @@ export default function ProductDetail() {
     </Box>
   )
 }
-
