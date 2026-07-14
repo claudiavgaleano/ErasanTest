@@ -1,15 +1,31 @@
-import { createContext, useContext, useState, useEffect, useMemo } from 'react'
+import { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react'
 import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
-import { darkTheme, lightTheme } from '../theme'
+import { createAppTheme } from '../theme/createAppTheme'
+import {
+  DEFAULT_PALETTE,
+  PALETTE_IDS,
+  palettes,
+  getThemeTokens,
+  applyThemeCssVars,
+} from '../theme/palettes'
 
 const ThemeContext = createContext({
   mode: 'dark',
+  palette: DEFAULT_PALETTE,
+  paletteOptions: PALETTE_IDS,
+  tokens: getThemeTokens('dark', DEFAULT_PALETTE),
   toggleTheme: () => {},
   setMode: () => {},
+  setPalette: () => {},
 })
 
 export const useThemeMode = () => useContext(ThemeContext)
+
+export function useThemeTokens() {
+  const { tokens } = useContext(ThemeContext)
+  return tokens
+}
 
 export function ThemeProvider({ children }) {
   const [mode, setMode] = useState(() => {
@@ -20,24 +36,39 @@ export function ThemeProvider({ children }) {
     return 'dark'
   })
 
+  const [palette, setPalette] = useState(() => {
+    const stored = localStorage.getItem('themePalette')
+    if (stored && PALETTE_IDS.includes(stored)) {
+      return stored
+    }
+    return DEFAULT_PALETTE
+  })
+
   useEffect(() => {
-    document.body.setAttribute('data-theme', mode)
     localStorage.setItem('themeMode', mode)
-  }, [mode])
+    localStorage.setItem('themePalette', palette)
+    applyThemeCssVars(mode, palette)
+  }, [mode, palette])
 
-  const toggleTheme = () => {
+  const toggleTheme = useCallback(() => {
     setMode((prev) => (prev === 'dark' ? 'light' : 'dark'))
-  }
+  }, [])
 
-  const theme = useMemo(() => (mode === 'dark' ? darkTheme : lightTheme), [mode])
+  const theme = useMemo(() => createAppTheme(mode, palette), [mode, palette])
+  const tokens = useMemo(() => getThemeTokens(mode, palette), [mode, palette])
 
   const contextValue = useMemo(
     () => ({
       mode,
+      palette,
+      paletteOptions: PALETTE_IDS,
+      palettes,
+      tokens,
       toggleTheme,
       setMode,
+      setPalette,
     }),
-    [mode]
+    [mode, palette, tokens, toggleTheme]
   )
 
   return (
@@ -51,4 +82,3 @@ export function ThemeProvider({ children }) {
 }
 
 export default ThemeContext
-

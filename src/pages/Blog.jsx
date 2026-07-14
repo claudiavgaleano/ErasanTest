@@ -22,25 +22,20 @@ import SearchIcon from '@mui/icons-material/Search'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import ArticleIcon from '@mui/icons-material/Article'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeTokens } from '../context/ThemeContext'
 import { usePosts, useCategories, contentHelpers } from '../hooks/useContent'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400/1e293b/dc2626?text=Erasan+Blog'
 
 export default function Blog() {
   const { t, i18n } = useTranslation()
-  const { mode } = useThemeMode()
+  const { primaryColor, gradientColor, primaryAlpha, glowPrimary } = useThemeTokens()
   const [searchParams, setSearchParams] = useSearchParams()
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '')
   
   const currentPage = parseInt(searchParams.get('page') || '1', 10)
   const currentCategory = searchParams.get('category') || null
   const activeSearch = searchParams.get('search') || ''
-
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
   // Fetch posts from local content
   const { posts, loading, error, totalPages } = usePosts({
@@ -93,7 +88,7 @@ export default function Blog() {
             right: '-10%',
             width: 500,
             height: 500,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, ${glowPrimary} 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -240,7 +235,7 @@ export default function Blog() {
                           },
                           '&:hover': {
                             transform: 'translateY(-8px)',
-                            borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
+                            borderColor: primaryAlpha(0.35),
                             '& .blog-image': {
                               transform: 'scale(1.05)',
                             },
@@ -269,7 +264,7 @@ export default function Blog() {
                                   sx={{
                                     fontSize: '0.7rem',
                                     height: 22,
-                                    backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.15)' : 'rgba(185, 28, 28, 0.1)',
+                                    backgroundColor: primaryAlpha(0.12),
                                     color: primaryColor,
                                   }}
                                 />

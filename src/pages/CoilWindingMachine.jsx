@@ -17,7 +17,7 @@ import {
 } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeTokens } from '../context/ThemeContext'
 import { useProducts, useCategories, contentHelpers } from '../hooks/useContent'
 
 // Placeholder image for products without featured image
@@ -25,16 +25,11 @@ const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400/1e293b/dc2626?text=Erasa
 
 export default function CoilWindingMachine() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
+  const { primaryColor, gradientColor, primaryAlpha, glowPrimary, glowSecondary } = useThemeTokens()
   const [searchParams, setSearchParams] = useSearchParams()
   
   const currentPage = parseInt(searchParams.get('page') || '1', 10)
   const currentCategory = searchParams.get('category') || null
-
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
   // Fetch products from local content
   const { products, loading, error, totalPages } = useProducts({
@@ -74,7 +69,7 @@ export default function CoilWindingMachine() {
             right: '-10%',
             width: 500,
             height: 500,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, ${glowPrimary} 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -180,7 +175,7 @@ export default function CoilWindingMachine() {
                         },
                         '&:hover': {
                           transform: 'translateY(-8px)',
-                          borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
+                          borderColor: primaryAlpha(0.35),
                           '& .product-image': {
                             transform: 'scale(1.05)',
                           },
@@ -275,8 +270,8 @@ export default function CoilWindingMachine() {
       <Box
         sx={{
           py: 10,
-          background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.1)' : 'rgba(2, 132, 199, 0.05)'} 100%)`,
-          borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+          background: `linear-gradient(135deg, ${glowPrimary} 0%, ${glowSecondary} 100%)`,
+          borderTop: `1px solid ${primaryAlpha(0.18)}`,
         }}
       >
         <Container maxWidth="md" sx={{ textAlign: 'center' }}>

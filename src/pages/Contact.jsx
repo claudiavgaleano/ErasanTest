@@ -4,16 +4,11 @@ import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeTokens } from '../context/ThemeContext'
 
 export default function Contact() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
-
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const { primaryColor, gradientColor, primaryAlpha, secondaryAlpha, glowPrimary } = useThemeTokens()
 
   const address = t('contact.address')
   const mapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed`
@@ -54,7 +49,7 @@ export default function Contact() {
             left: '-10%',
             width: 500,
             height: 500,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, ${glowPrimary} 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -65,7 +60,7 @@ export default function Contact() {
             right: '-5%',
             width: 400,
             height: 400,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.1)' : 'rgba(2, 132, 199, 0.06)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, ${secondaryAlpha(0.08)} 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -172,9 +167,7 @@ export default function Contact() {
                           width: 56,
                           height: 56,
                           borderRadius: 1,
-                          background: mode === 'dark' 
-                            ? 'rgba(220, 38, 38, 0.1)' 
-                            : 'rgba(185, 28, 28, 0.08)',
+                          background: primaryAlpha(0.09),
                         }}
                         aria-hidden="true"
                       >
@@ -275,7 +268,7 @@ export default function Contact() {
                     justifyContent: 'space-between',
                     gap: 2,
                     flexWrap: 'wrap',
-                    borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.15)' : 'rgba(185, 28, 28, 0.1)'}`,
+                    borderTop: `1px solid ${primaryAlpha(0.12)}`,
                   }}
                 >
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>

@@ -3,17 +3,20 @@ import { useTranslation } from 'react-i18next'
 import GroupsIcon from '@mui/icons-material/Groups'
 import FactoryIcon from '@mui/icons-material/Factory'
 import ThumbUpIcon from '@mui/icons-material/ThumbUp'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeTokens } from '../context/ThemeContext'
 
 export default function About() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
-
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const steelBlue = mode === 'dark' ? '#0ea5e9' : '#0284c7'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const {
+    primaryColor,
+    primaryLight,
+    secondaryColor,
+    secondaryLight,
+    gradientColor,
+    primaryAlpha,
+    secondaryAlpha,
+    glowPrimary,
+  } = useThemeTokens()
 
   const stats = [
     { icon: <GroupsIcon />, value: '50+', label: t('about.teamMembers') },
@@ -32,19 +35,19 @@ export default function About() {
       name: 'José María Mora',
       role: t('about.leadDev'),
       initials: 'JM',
-      color: steelBlue,
+      color: secondaryColor,
     },
     {
       name: 'José María Mora',
       role: t('about.designDirector'),
       initials: 'JM',
-      color: mode === 'dark' ? '#ef4444' : '#dc2626',
+      color: primaryLight,
     },
     {
       name: 'José María Mora',
       role: t('about.projectManager'),
       initials: 'JM',
-      color: mode === 'dark' ? '#38bdf8' : '#0ea5e9',
+      color: secondaryLight,
     },
   ]
 
@@ -64,7 +67,7 @@ export default function About() {
             transform: 'translate(-50%, -50%)',
             width: 600,
             height: 600,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, ${glowPrimary} 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -176,9 +179,9 @@ export default function About() {
       <Box
         sx={{
           py: 10,
-          background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.05)' : 'rgba(185, 28, 28, 0.03)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.08)' : 'rgba(2, 132, 199, 0.04)'} 100%)`,
-          borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)'}`,
-          borderBottom: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)'}`,
+          background: `linear-gradient(135deg, ${primaryAlpha(0.04)} 0%, ${secondaryAlpha(0.06)} 100%)`,
+          borderTop: `1px solid ${primaryAlpha(0.1)}`,
+          borderBottom: `1px solid ${primaryAlpha(0.1)}`,
         }}
       >
         <Container maxWidth="lg">
@@ -212,8 +215,8 @@ export default function About() {
                 sx={{
                   height: 400,
                   borderRadius: 2,
-                  background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.12)' : 'rgba(185, 28, 28, 0.08)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.15)' : 'rgba(2, 132, 199, 0.1)'} 100%)`,
-                  border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+                  background: `linear-gradient(135deg, ${primaryAlpha(0.1)} 0%, ${secondaryAlpha(0.12)} 100%)`,
+                  border: `1px solid ${primaryAlpha(0.18)}`,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -226,7 +229,7 @@ export default function About() {
                     right: -50,
                     width: 200,
                     height: 200,
-                    background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.12)'} 0%, transparent 70%)`,
+                    background: `radial-gradient(circle, ${primaryAlpha(0.16)} 0%, transparent 70%)`,
                     borderRadius: '50%',
                   },
                 }}
@@ -284,7 +287,7 @@ export default function About() {
                     animation: `fadeInUp 0.6s ease-out ${index * 0.1}s backwards`,
                     '&:hover': {
                       transform: 'translateY(-10px)',
-                      borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
+                      borderColor: primaryAlpha(0.35),
                       '& .team-avatar': {
                         transform: 'scale(1.1)',
                         boxShadow: `0 0 30px ${member.color}50`,

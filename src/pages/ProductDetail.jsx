@@ -21,7 +21,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeTokens } from '../context/ThemeContext'
 import { useProduct, contentHelpers } from '../hooks/useContent'
 import { getSectionBackLink } from '../utils/contentHelpers'
 
@@ -30,12 +30,7 @@ const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasa
 export default function ProductDetail() {
   const { slug } = useParams()
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
-  
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const { primaryColor, primaryAlpha } = useThemeTokens()
 
   const { product, loading, error } = useProduct(slug)
 
@@ -97,7 +92,7 @@ export default function ProductDetail() {
   return (
     <Box>
       {/* Breadcrumbs */}
-      <Box sx={{ py: 3, borderBottom: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.08)'}` }}>
+      <Box sx={{ py: 3, borderBottom: `1px solid ${primaryAlpha(0.09)}` }}>
         <Container maxWidth="lg">
           <Breadcrumbs aria-label="breadcrumb">
             <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
@@ -245,7 +240,7 @@ export default function ProductDetail() {
                           sx={{
                             p: 2,
                             borderRadius: 1,
-                            background: mode === 'dark' ? 'rgba(220, 38, 38, 0.05)' : 'rgba(185, 28, 28, 0.03)',
+                            background: primaryAlpha(0.04),
                           }}
                         >
                           <Typography variant="body2" color="text.secondary">

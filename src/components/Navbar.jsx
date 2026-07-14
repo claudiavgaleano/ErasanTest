@@ -28,7 +28,8 @@ import ExpandMore from '@mui/icons-material/ExpandMore'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import LanguageSwitcher from './LanguageSwitcher'
 import ThemeToggle from './ThemeToggle'
-import { useThemeMode } from '../context/ThemeContext'
+import ColorPaletteSwitcher from './ColorPaletteSwitcher'
+import { useThemeMode, useThemeTokens } from '../context/ThemeContext'
 import logo from '../assets/logo.png'
 const PRODUCT_PATHS = ['/products', '/coil-winding', '/accesories', '/retrofit', '/products/retrofit']
 
@@ -44,6 +45,7 @@ function HideOnScroll({ children }) {
 export default function Navbar() {
   const { t } = useTranslation()
   const { mode } = useThemeMode()
+  const { primaryColor, gradientColor, navTextColor, primaryAlpha } = useThemeTokens()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [productsMenuAnchor, setProductsMenuAnchor] = useState(null)
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false)
@@ -83,13 +85,8 @@ export default function Navbar() {
     return location.pathname === path
   }
 
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark'
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
-
   const navButtonSx = (active) => ({
-    color: active ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+    color: active ? primaryColor : navTextColor,
     fontWeight: active ? 600 : 500,
     position: 'relative',
     px: 2,
@@ -126,6 +123,7 @@ export default function Navbar() {
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', px: 2, mb: 4 }}>
         <Box sx={{ display: 'flex', gap: 1 }}>
+          <ColorPaletteSwitcher />
           <ThemeToggle />
           <LanguageSwitcher />
         </Box>
@@ -147,7 +145,7 @@ export default function Navbar() {
               py: 2,
               px: 4,
               '&:hover': {
-                backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                backgroundColor: primaryAlpha(0.1),
               },
             }}
           >
@@ -157,7 +155,7 @@ export default function Navbar() {
                 '& .MuiListItemText-primary': {
                   fontSize: '1.2rem',
                   fontWeight: isActive('/') ? 600 : 400,
-                  color: isActive('/') ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+                  color: isActive('/') ? primaryColor : navTextColor,
                 },
               }}
             />
@@ -173,7 +171,7 @@ export default function Navbar() {
               py: 2,
               px: 4,
               '&:hover': {
-                backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                backgroundColor: primaryAlpha(0.1),
               },
             }}
           >
@@ -183,7 +181,7 @@ export default function Navbar() {
                 '& .MuiListItemText-primary': {
                   fontSize: '1.2rem',
                   fontWeight: isActive('/about') ? 600 : 400,
-                  color: isActive('/about') ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+                  color: isActive('/about') ? primaryColor : navTextColor,
                 },
               }}
             />
@@ -198,7 +196,7 @@ export default function Navbar() {
               py: 2,
               px: 4,
               '&:hover': {
-                backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                backgroundColor: primaryAlpha(0.1),
               },
             }}
           >
@@ -208,7 +206,7 @@ export default function Navbar() {
                 '& .MuiListItemText-primary': {
                   fontSize: '1.2rem',
                   fontWeight: isProductsActive() ? 600 : 400,
-                  color: isProductsActive() ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+                  color: isProductsActive() ? primaryColor : navTextColor,
                 },
               }}
             />
@@ -267,7 +265,7 @@ export default function Navbar() {
                 py: 2,
                 px: 4,
                 '&:hover': {
-                  backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                  backgroundColor: primaryAlpha(0.1),
                 },
               }}
             >
@@ -277,7 +275,7 @@ export default function Navbar() {
                   '& .MuiListItemText-primary': {
                     fontSize: '1.2rem',
                     fontWeight: isActive(item.path) ? 600 : 400,
-                    color: isActive(item.path) ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+                    color: isActive(item.path) ? primaryColor : navTextColor,
                   },
                 }}
               />
@@ -401,6 +399,7 @@ export default function Navbar() {
                   </Button>
                 ))}
                 <Box sx={{ ml: 2, display: 'flex', gap: 1 }}>
+                  <ColorPaletteSwitcher />
                   <ThemeToggle />
                   <LanguageSwitcher />
                 </Box>

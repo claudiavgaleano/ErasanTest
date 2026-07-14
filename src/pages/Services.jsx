@@ -8,17 +8,11 @@ import LayersIcon from '@mui/icons-material/Layers'
 import SmartToyIcon from '@mui/icons-material/SmartToy'
 import SpeedIcon from '@mui/icons-material/Speed'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeTokens } from '../context/ThemeContext'
 
 export default function Services() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
-
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const secondaryColor = mode === 'dark' ? '#ef4444' : '#dc2626'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const { primaryColor, primaryLight, gradientColor, primaryAlpha, glowPrimary, glowSecondary } = useThemeTokens()
 
   const services = [
     {
@@ -74,7 +68,7 @@ export default function Services() {
             right: '-10%',
             width: 500,
             height: 500,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, ${glowPrimary} 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -158,9 +152,9 @@ export default function Services() {
                     },
                     '&:hover': {
                       transform: 'translateY(-10px)',
-                      borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
+                      borderColor: primaryAlpha(0.35),
                       '& .service-icon': {
-                        color: secondaryColor,
+                        color: primaryLight,
                         transform: 'scale(1.1)',
                       },
                     },
@@ -190,7 +184,7 @@ export default function Services() {
                     </Typography>
                     <Box
                       sx={{
-                        borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+                        borderTop: `1px solid ${primaryAlpha(0.18)}`,
                         pt: 2,
                       }}
                     >
@@ -229,9 +223,9 @@ export default function Services() {
       <Box
         sx={{
           py: 10,
-          background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.1)' : 'rgba(2, 132, 199, 0.05)'} 100%)`,
-          borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
-          borderBottom: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+          background: `linear-gradient(135deg, ${glowPrimary} 0%, ${glowSecondary} 100%)`,
+          borderTop: `1px solid ${primaryAlpha(0.18)}`,
+          borderBottom: `1px solid ${primaryAlpha(0.18)}`,
         }}
       >
         <Container maxWidth="md" sx={{ textAlign: 'center' }}>

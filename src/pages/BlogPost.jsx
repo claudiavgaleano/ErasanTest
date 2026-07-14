@@ -19,7 +19,7 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import PersonIcon from '@mui/icons-material/Person'
 import LocalOfferIcon from '@mui/icons-material/LocalOffer'
 import ArticleIcon from '@mui/icons-material/Article'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeMode, useThemeTokens } from '../context/ThemeContext'
 import { usePost, useRecentPosts, contentHelpers } from '../hooks/useContent'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/1200x600/1e293b/dc2626?text=Erasan+Blog'
@@ -28,11 +28,7 @@ export default function BlogPost() {
   const { slug } = useParams()
   const { t, i18n } = useTranslation()
   const { mode } = useThemeMode()
-  
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const { primaryColor, primaryAlpha } = useThemeTokens()
 
   const { post, loading, error } = usePost(slug)
   const { posts: recentPosts } = useRecentPosts(3)
@@ -84,7 +80,7 @@ export default function BlogPost() {
   return (
     <Box>
       {/* Breadcrumbs */}
-      <Box sx={{ py: 3, borderBottom: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.08)'}` }}>
+      <Box sx={{ py: 3, borderBottom: `1px solid ${primaryAlpha(0.09)}` }}>
         <Container maxWidth="lg">
           <Breadcrumbs aria-label="breadcrumb">
             <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
@@ -138,10 +134,10 @@ export default function BlogPost() {
                       to={`/blog?category=${cat.id}`}
                       clickable
                       sx={{
-                        backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.15)' : 'rgba(185, 28, 28, 0.1)',
+                        backgroundColor: primaryAlpha(0.12),
                         color: primaryColor,
                         '&:hover': {
-                          backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.25)' : 'rgba(185, 28, 28, 0.2)',
+                          backgroundColor: primaryAlpha(0.22),
                         },
                       }}
                     />
@@ -206,7 +202,7 @@ export default function BlogPost() {
                     py: 1,
                     my: 3,
                     fontStyle: 'italic',
-                    backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.05)' : 'rgba(185, 28, 28, 0.03)',
+                    backgroundColor: primaryAlpha(0.04),
                     borderRadius: '0 4px 4px 0',
                   },
                   '& a': {
@@ -290,7 +286,7 @@ export default function BlogPost() {
                             borderRadius: 1,
                             transition: 'background-color 0.2s',
                             '&:hover': {
-                              backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.05)',
+                              backgroundColor: primaryAlpha(0.08),
                             },
                           }}
                         >

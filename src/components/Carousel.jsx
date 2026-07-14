@@ -7,50 +7,46 @@ import TransformIcon from '@mui/icons-material/Transform'
 import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices'
 import MemoryIcon from '@mui/icons-material/Memory'
 import BuildIcon from '@mui/icons-material/Build'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeMode, useThemeTokens } from '../context/ThemeContext'
 
 export default function Carousel() {
   const { t } = useTranslation()
   const { mode } = useThemeMode()
+  const {
+    primaryColor,
+    primaryLight,
+    primaryAlpha,
+    secondaryAlpha,
+    glowPrimary,
+    glowSecondary,
+  } = useThemeTokens()
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
-
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const secondaryColor = mode === 'dark' ? '#ef4444' : '#dc2626'
-  const steelBlue = mode === 'dark' ? '#0ea5e9' : '#0284c7'
 
   const slides = [
     {
       icon: <TransformIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
       title: t('carousel.slide1.title'),
       description: t('carousel.slide1.description'),
-      gradient: mode === 'dark' 
-        ? 'linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(14, 165, 233, 0.1) 100%)'
-        : 'linear-gradient(135deg, rgba(185, 28, 28, 0.1) 0%, rgba(2, 132, 199, 0.08) 100%)',
+      gradient: `linear-gradient(135deg, ${primaryAlpha(0.15)} 0%, ${secondaryAlpha(0.1)} 100%)`,
     },
     {
       icon: <ElectricalServicesIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
       title: t('carousel.slide2.title'),
       description: t('carousel.slide2.description'),
-      gradient: mode === 'dark'
-        ? 'linear-gradient(135deg, rgba(14, 165, 233, 0.12) 0%, rgba(220, 38, 38, 0.1) 100%)'
-        : 'linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(185, 28, 28, 0.08) 100%)',
+      gradient: `linear-gradient(135deg, ${secondaryAlpha(0.12)} 0%, ${primaryAlpha(0.1)} 100%)`,
     },
     {
       icon: <MemoryIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
       title: t('carousel.slide3.title'),
       description: t('carousel.slide3.description'),
-      gradient: mode === 'dark'
-        ? 'linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, rgba(14, 165, 233, 0.1) 100%)'
-        : 'linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(2, 132, 199, 0.08) 100%)',
+      gradient: `linear-gradient(135deg, ${primaryAlpha(0.12)} 0%, ${secondaryAlpha(0.1)} 100%)`,
     },
     {
       icon: <BuildIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
       title: t('carousel.slide4.title'),
       description: t('carousel.slide4.description'),
-      gradient: mode === 'dark'
-        ? 'linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(239, 68, 68, 0.12) 100%)'
-        : 'linear-gradient(135deg, rgba(185, 28, 28, 0.08) 0%, rgba(220, 38, 38, 0.1) 100%)',
+      gradient: `linear-gradient(135deg, ${primaryAlpha(0.1)} 0%, ${primaryAlpha(0.12)} 100%)`,
     },
   ]
 
@@ -166,7 +162,7 @@ export default function Carousel() {
                   p: { xs: 4, md: 6 },
                   background: slide.gradient,
                   backdropFilter: 'blur(20px)',
-                  border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+                  border: `1px solid ${primaryAlpha(0.18)}`,
                   borderRadius: 2,
                   display: 'flex',
                   flexDirection: 'column',
@@ -182,7 +178,7 @@ export default function Carousel() {
                     right: -100,
                     width: 300,
                     height: 300,
-                    background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+                    background: `radial-gradient(circle, ${glowPrimary} 0%, transparent 70%)`,
                     borderRadius: '50%',
                   },
                   '&::after': {
@@ -192,7 +188,7 @@ export default function Carousel() {
                     left: -80,
                     width: 250,
                     height: 250,
-                    background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.1)' : 'rgba(2, 132, 199, 0.06)'} 0%, transparent 70%)`,
+                    background: `radial-gradient(circle, ${glowSecondary} 0%, transparent 70%)`,
                     borderRadius: '50%',
                   },
                 }}
@@ -258,7 +254,7 @@ export default function Carousel() {
               transform: 'translateY(-50%)',
               bgcolor: mode === 'dark' ? 'rgba(30, 41, 59, 0.9)' : 'rgba(255, 255, 255, 0.9)',
               backdropFilter: 'blur(10px)',
-              border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.2)'}`,
+              border: `1px solid ${primaryAlpha(0.25)}`,
               color: primaryColor,
               zIndex: 2,
               transition: 'all 0.3s ease',
@@ -285,7 +281,7 @@ export default function Carousel() {
               transform: 'translateY(-50%)',
               bgcolor: mode === 'dark' ? 'rgba(30, 41, 59, 0.9)' : 'rgba(255, 255, 255, 0.9)',
               backdropFilter: 'blur(10px)',
-              border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.2)'}`,
+              border: `1px solid ${primaryAlpha(0.25)}`,
               color: primaryColor,
               zIndex: 2,
               transition: 'all 0.3s ease',
@@ -334,14 +330,14 @@ export default function Carousel() {
                 height: 12,
                 borderRadius: 1,
                 background: currentSlide === index
-                  ? `linear-gradient(90deg, ${primaryColor} 0%, ${secondaryColor} 100%)`
+                  ? `linear-gradient(90deg, ${primaryColor} 0%, ${primaryLight} 100%)`
                   : mode === 'dark' ? 'rgba(241, 245, 249, 0.2)' : 'rgba(15, 23, 42, 0.2)',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
                 '&:hover': {
                   background: currentSlide === index
-                    ? `linear-gradient(90deg, ${primaryColor} 0%, ${secondaryColor} 100%)`
-                    : mode === 'dark' ? 'rgba(220, 38, 38, 0.5)' : 'rgba(185, 28, 28, 0.4)',
+                    ? `linear-gradient(90deg, ${primaryColor} 0%, ${primaryLight} 100%)`
+                    : primaryAlpha(0.45),
                 },
                 '&:focus-visible': {
                   outline: `3px solid ${primaryColor}`,

@@ -250,7 +250,15 @@
   },
   "theme": {
     "switchToLight": "Switch to light mode",
-    "switchToDark": "Switch to dark mode"
+    "switchToDark": "Switch to dark mode",
+    "choosePalette": "Choose color theme",
+    "palettes": {
+      "industrial": "Industrial Red",
+      "ocean": "Ocean Blue",
+      "forest": "Forest Green",
+      "amber": "Amber Gold",
+      "violet": "Violet Tech"
+    }
   },
   "carousel": {
     "title": "OUR EXPERTISE",

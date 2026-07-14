@@ -1,12 +1,10 @@
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeTokens } from '../context/ThemeContext'
 import { useTranslation } from 'react-i18next'
 import { Box, Container, Typography } from '@mui/material'
 
 export default function Legal() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
-
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
+  const { primaryColor } = useThemeTokens()
 
   const companyDetails = [
     'description1',

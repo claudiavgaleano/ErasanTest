@@ -250,7 +250,15 @@
   },
   "theme": {
     "switchToLight": "Cambiar a modo claro",
-    "switchToDark": "Cambiar a modo oscuro"
+    "switchToDark": "Cambiar a modo oscuro",
+    "choosePalette": "Elegir tema de color",
+    "palettes": {
+      "industrial": "Rojo Industrial",
+      "ocean": "Azul Océano",
+      "forest": "Verde Bosque",
+      "amber": "Ámbar Dorado",
+      "violet": "Violeta Tech"
+    }
   },
   "carousel": {
     "title": "NUESTRA EXPERIENCIA",

@@ -2,13 +2,12 @@ import { IconButton, Tooltip } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import LightModeIcon from '@mui/icons-material/LightMode'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeMode, useThemeTokens } from '../context/ThemeContext'
 
 export default function ThemeToggle() {
   const { t } = useTranslation()
   const { mode, toggleTheme } = useThemeMode()
-
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
+  const { primaryColor, primaryAlpha } = useThemeTokens()
 
   return (
     <Tooltip title={mode === 'dark' ? t('theme.switchToLight') : t('theme.switchToDark')}>
@@ -19,12 +18,12 @@ export default function ThemeToggle() {
         sx={{
           color: primaryColor,
           border: '1px solid',
-          borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.3)',
+          borderColor: primaryAlpha(0.3),
           borderRadius: 1,
           transition: 'all 0.3s ease',
           '&:hover': {
             borderColor: primaryColor,
-            backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+            backgroundColor: primaryAlpha(0.1),
             transform: 'rotate(180deg)',
           },
         }}

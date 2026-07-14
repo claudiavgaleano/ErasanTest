@@ -10,7 +10,7 @@ import {
 } from '@mui/material'
 import LanguageIcon from '@mui/icons-material/Language'
 import CheckIcon from '@mui/icons-material/Check'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeMode, useThemeTokens } from '../context/ThemeContext'
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -20,6 +20,7 @@ const languages = [
 export default function LanguageSwitcher() {
   const { t, i18n } = useTranslation()
   const { mode } = useThemeMode()
+  const { primaryColor, primaryAlpha } = useThemeTokens()
   const [anchorEl, setAnchorEl] = useState(null)
   const open = Boolean(anchorEl)
 
@@ -37,7 +38,6 @@ export default function LanguageSwitcher() {
   }
 
   const currentLang = languages.find((lang) => lang.code === i18n.language) || languages[0]
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
 
   return (
     <Box>
@@ -51,14 +51,14 @@ export default function LanguageSwitcher() {
         sx={{
           color: primaryColor,
           border: '1px solid',
-          borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.3)',
+          borderColor: primaryAlpha(0.3),
           borderRadius: 1,
           px: 1.5,
           gap: 0.5,
           transition: 'all 0.3s ease',
           '&:hover': {
             borderColor: primaryColor,
-            backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+            backgroundColor: primaryAlpha(0.1),
           },
         }}
       >
@@ -80,7 +80,7 @@ export default function LanguageSwitcher() {
             backgroundColor: mode === 'dark' ? 'rgba(30, 41, 59, 0.98)' : 'rgba(255, 255, 255, 0.98)',
             backdropFilter: 'blur(20px)',
             border: '1px solid',
-            borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.2)',
+            borderColor: primaryAlpha(0.2),
             mt: 1,
           },
         }}
@@ -94,10 +94,10 @@ export default function LanguageSwitcher() {
               py: 1.5,
               px: 2,
               '&.Mui-selected': {
-                backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.15)' : 'rgba(185, 28, 28, 0.15)',
+                backgroundColor: primaryAlpha(0.15),
               },
               '&:hover': {
-                backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                backgroundColor: primaryAlpha(0.1),
               },
             }}
           >

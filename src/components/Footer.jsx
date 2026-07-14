@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import EmailIcon from '@mui/icons-material/Email'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeMode, useThemeTokens } from '../context/ThemeContext'
 import logo from '../assets/logo.png'
 const socialLinks = [
   { icon: <LinkedInIcon aria-hidden="true" />, url: '#', label: 'LinkedIn' },
@@ -16,11 +16,7 @@ const socialLinks = [
 export default function Footer() {
   const { t } = useTranslation()
   const { mode } = useThemeMode()
-
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const { primaryColor, gradientColor, primaryAlpha } = useThemeTokens()
 
   const footerLinks = [
     { label: t('nav.home'), path: '/' },
@@ -40,7 +36,7 @@ export default function Footer() {
         background: mode === 'dark'
           ? 'linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.95) 100%)'
           : 'linear-gradient(180deg, transparent 0%, rgba(226, 232, 240, 0.95) 100%)',
-        borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+        borderTop: `1px solid ${primaryAlpha(0.18)}`,
       }}
     >
       <Container maxWidth={false}>
@@ -110,12 +106,12 @@ export default function Footer() {
                   aria-label={social.label}
                   sx={{
                     color: 'text.secondary',
-                    border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.3)'}`,
+                    border: `1px solid ${primaryAlpha(0.3)}`,
                     transition: 'all 0.3s ease',
                     '&:hover': {
                       color: primaryColor,
                       borderColor: primaryColor,
-                      backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                      backgroundColor: primaryAlpha(0.1),
                       transform: 'translateY(-3px)',
                     },
                   }}

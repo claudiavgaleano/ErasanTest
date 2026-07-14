@@ -15,7 +15,7 @@ import EmailIcon from '@mui/icons-material/Email'
 import SubjectIcon from '@mui/icons-material/Subject'
 import MessageIcon from '@mui/icons-material/Message'
 import SendIcon from '@mui/icons-material/Send'
-import { useThemeMode } from '../context/ThemeContext'
+import { useThemeMode, useThemeTokens } from '../context/ThemeContext'
 import { submitContactForm } from '../services/contactApi'
 
 const initialFormState = {
@@ -28,12 +28,13 @@ const initialFormState = {
 export default function ContactForm() {
   const { t } = useTranslation()
   const { mode } = useThemeMode()
+  const { primaryAlpha } = useThemeTokens()
   const [formData, setFormData] = useState(initialFormState)
   const [errors, setErrors] = useState({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [snackbar, setSnackbar] = useState({ open: false, message: '', severity: 'success' })
 
-  const iconColor = mode === 'dark' ? 'rgba(220, 38, 38, 0.7)' : 'rgba(185, 28, 28, 0.7)'
+  const iconColor = primaryAlpha(0.7)
 
   const validateForm = () => {
     const newErrors = {}
