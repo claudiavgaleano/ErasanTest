@@ -33,11 +33,6 @@ export default function Contact() {
       href: `tel:${t('contact.phone').replace(/\s/g, '')}`,
     },
     {
-      icon: <LocationOnIcon sx={{ fontSize: 28 }} />,
-      label: t('contact.addressLabel'),
-      value: address,
-    },
-    {
       icon: <AccessTimeIcon sx={{ fontSize: 28 }} />,
       label: t('contact.hoursLabel'),
       value: t('contact.hours'),

@@ -30,7 +30,7 @@ import LanguageSwitcher from './LanguageSwitcher'
 import ThemeToggle from './ThemeToggle'
 import { useThemeMode } from '../context/ThemeContext'
 import logo from '../assets/logo.png'
-const PRODUCT_PATHS = ['/products', '/coil-winding', '/accesories', '/retrofit']
+const PRODUCT_PATHS = ['/products', '/coil-winding', '/accesories', '/retrofit', '/products/retrofit']
 
 function HideOnScroll({ children }) {
   const trigger = useScrollTrigger()
@@ -52,7 +52,7 @@ export default function Navbar() {
   const productSubItems = [
     { label: t('nav.coilWinding'), path: '/coil-winding' },
     { label: t('nav.accesories'), path: '/accesories' },
-    { label: t('nav.retrofit'), path: '/retrofit' },
+    { label: t('nav.retrofit'), path: '/products/retrofit' },
   ]
 
   const navItems = [
@@ -76,7 +76,12 @@ export default function Navbar() {
     )
   }
 
-  const isProductSubActive = (path) => location.pathname === path
+  const isProductSubActive = (path) => {
+    if (path === '/products/retrofit') {
+      return location.pathname === '/products/retrofit' || location.pathname === '/retrofit'
+    }
+    return location.pathname === path
+  }
 
   const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
   const gradientColor = mode === 'dark'

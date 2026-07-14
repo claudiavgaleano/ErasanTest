@@ -40,11 +40,11 @@ export default function CoilWindingMachine() {
   const { products, loading, error, totalPages } = useProducts({
     page: currentPage,
     perPage: 9,
+    section: 'coilWinding',
     category: currentCategory,
   })
 
-  // Fetch product categories
-  const { categories } = useCategories('products')
+  const { categories } = useCategories('coilWinding')
 
   const handlePageChange = (event, page) => {
     setSearchParams({ page: page.toString(), ...(currentCategory && { category: currentCategory }) })

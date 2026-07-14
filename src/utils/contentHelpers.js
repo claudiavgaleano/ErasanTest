@@ -1,10 +1,65 @@
+import { categoriesBySection } from '../data/categories'
+
+const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
+
+const SECTION_BACK_LINKS = {
+  coilWinding: { labelKey: 'nav.coilWinding', path: '/coil-winding' },
+  accessories: { labelKey: 'nav.accesories', path: '/accesories' },
+  retrofit: { labelKey: 'nav.retrofit', path: '/products/retrofit' },
+}
+
+export function getSectionBackLink(section) {
+  return SECTION_BACK_LINKS[section] || { labelKey: 'nav.services', path: '/products' }
+}
+
+export function localizeProduct(product, t) {
+  if (!product) return null
+
+  const key = product.i18nKey || product.slug
+  const itemKey = `productCatalog.items.${key}`
+  const translatedFeatures = t(`${itemKey}.features`, { returnObjects: true })
+  const localizedFeatures = Array.isArray(translatedFeatures)
+    ? translatedFeatures
+    : (product.acf?.features || []).map((feature, index) =>
+        t(`${itemKey}.features.${index}`, { defaultValue: feature })
+      )
+
+  return {
+    ...product,
+    title: { rendered: t(`${itemKey}.title`, { defaultValue: product.title?.rendered || key }) },
+    excerpt: { rendered: t(`${itemKey}.excerpt`, { defaultValue: product.excerpt?.rendered || '' }) },
+    content: {
+      rendered: t(`${itemKey}.content`, { defaultValue: product.content?.rendered || '' })
+        .split('\n\n')
+        .filter(Boolean)
+        .map((paragraph) => `<p>${paragraph}</p>`)
+        .join(''),
+    },
+    acf: {
+      ...product.acf,
+      features: localizedFeatures,
+    },
+  }
+}
+
+export function localizeCategory(category, section, t) {
+  if (!category) return null
+
+  const key = `productCatalog.${section}.categories.${category.i18nKey}`
+  return {
+    ...category,
+    name: t(`${key}.name`, { defaultValue: category.name || category.slug }),
+    description: t(`${key}.description`, { defaultValue: category.description || '' }),
+  }
+}
+
 export const contentHelpers = {
   getFeaturedImage(post, size = 'large') {
     if (!post?._embedded?.['wp:featuredmedia']?.[0]) {
-      return null
+      return PLACEHOLDER_IMAGE
     }
     const media = post._embedded['wp:featuredmedia'][0]
-    return media.media_details?.sizes?.[size]?.source_url || media.source_url
+    return media.media_details?.sizes?.[size]?.source_url || media.source_url || PLACEHOLDER_IMAGE
   },
 
   getAuthor(post) {
@@ -19,15 +74,18 @@ export const contentHelpers = {
     }
   },
 
-  getCategories(post) {
-    if (!post?._embedded?.['wp:term']?.[0]) {
+  getCategories(post, t, section) {
+    if (!post?.categorySlug || !t || !section) {
       return []
     }
-    return post._embedded['wp:term'][0].map((cat) => ({
-      id: cat.id,
-      name: cat.name,
-      slug: cat.slug,
-    }))
+
+    const category = (categoriesBySection[section] || []).find((cat) => cat.slug === post.categorySlug)
+    if (!category) {
+      return [{ id: post.categoryId, name: post.categorySlug, slug: post.categorySlug }]
+    }
+
+    const localized = localizeCategory(category, section, t)
+    return [{ id: category.id, name: localized.name, slug: category.slug }]
   },
 
   getTags(post) {

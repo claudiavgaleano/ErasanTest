@@ -41,8 +41,8 @@ export default function Products() {
     {
       icon: <UpgradeIcon sx={{ fontSize: 56 }} />,
       title: t('nav.retrofit'),
-      description: t('retrofit.heroDescription'),
-      path: '/retrofit',
+      description: t('productCatalog.retrofit.description'),
+      path: '/products/retrofit',
     },
   ]
 

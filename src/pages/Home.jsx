@@ -149,7 +149,7 @@ export default function Home() {
                   >
                     {t('home.getStarted')}
                   </Button>
-                  <Button variant="outlined" size="large" component={Link} to="/services">
+                  <Button variant="outlined" size="large" component={Link} to="/products">
                     {t('home.ourServices')}
                   </Button>
                 </Box>

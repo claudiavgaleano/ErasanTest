@@ -1,197 +1,528 @@
-const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
+// Auto-generated from erasan-content.json. Run: node scripts/build-product-catalog.mjs
 
-function createProduct({
-  id,
-  slug,
-  title,
-  excerpt,
-  content,
-  categoryId,
-  categorySlug,
-  categoryName,
-  featured = false,
-  features = [],
-  specifications = [],
-}) {
-  return {
-    id,
-    slug,
-    title: { rendered: title },
-    excerpt: { rendered: excerpt },
-    content: { rendered: content },
-    date: '2024-06-01T10:00:00',
-    acf: {
-      featured,
-      features,
-      specifications,
-    },
-    _embedded: {
-      'wp:featuredmedia': [
-        {
-          source_url: PLACEHOLDER_IMAGE,
-          media_details: {
-            sizes: {
-              thumbnail: { source_url: PLACEHOLDER_IMAGE },
-              medium: { source_url: PLACEHOLDER_IMAGE },
-              large: { source_url: PLACEHOLDER_IMAGE },
-            },
-          },
-        },
-      ],
-      'wp:term': [
-        [{ id: categoryId, name: categoryName, slug: categorySlug }],
-        [],
-      ],
-    },
-  }
+export const PRODUCT_SECTIONS = {
+  coilWinding: 'coilWinding',
+  accessories: 'accessories',
+  retrofit: 'retrofit',
 }
 
 export const products = [
-  createProduct({
-    id: 1,
-    slug: 'toroidal-winders',
-    title: 'Toroidal Winders',
-    excerpt:
-      'High-precision toroidal winding machines for inductors, current transformers, and power supplies.',
-    content: `
-      <p>Our toroidal winding machines deliver exceptional precision for inductors, current transformers, and power supply applications. Programmable tension control ensures consistent wire placement across every production run.</p>
-      <p>Designed for wire diameters from 0.05mm to 6mm, these machines support speeds up to 3000 RPM with multi-spindle configurations for high-volume manufacturing.</p>
-    `,
-    categoryId: 1,
-    categorySlug: 'toroidal',
-    categoryName: 'Toroidal',
-    featured: true,
-    features: [
-      'Programmable tension control',
-      'Wire diameter 0.05–6mm',
-      'Up to 3000 RPM speed',
-    ],
-    specifications: [
-      { label: 'Wire Diameter', value: '0.05 – 6 mm' },
-      { label: 'Max Speed', value: '3000 RPM' },
-      { label: 'Control System', value: 'Touch screen HMI' },
-    ],
-  }),
-  createProduct({
-    id: 2,
-    slug: 'linear-winders',
-    title: 'Linear Winders',
-    excerpt:
-      'Versatile linear winding systems for motor coils, solenoids, and relay components.',
-    content: `
-      <p>Linear winding systems provide the flexibility needed for motor coils, solenoids, and relay components. Servo motor drives and automatic wire guides deliver repeatable, high-quality results.</p>
-      <p>Ideal for both prototype development and full-scale production, with recipe management for quick changeovers between product types.</p>
-    `,
-    categoryId: 2,
-    categorySlug: 'linear',
-    categoryName: 'Linear',
-    features: [
-      'Servo motor drives',
-      'Automatic wire guides',
-      'Recipe management',
-    ],
-    specifications: [
-      { label: 'Drive System', value: 'Servo motors' },
-      { label: 'Wire Guide', value: 'Automatic' },
-      { label: 'Configuration', value: 'Multi-spindle available' },
-    ],
-  }),
-  createProduct({
-    id: 3,
-    slug: 'transformer-winders',
-    title: 'Transformer Winders',
-    excerpt:
-      'Specialized equipment for power transformers, distribution transformers, and custom windings.',
-    content: `
-      <p>Transformer winding equipment is engineered for power and distribution transformers as well as specialty custom windings. Advanced layer counting and tensioning systems ensure every coil meets exacting electrical standards.</p>
-      <p>Custom tooling is available for unique bobbin geometries and insulation requirements.</p>
-    `,
-    categoryId: 3,
-    categorySlug: 'transformer',
-    categoryName: 'Transformer',
-    featured: true,
-    features: [
-      'Layer counting system',
-      'Custom tooling available',
-      'Precision tension control',
-    ],
-    specifications: [
-      { label: 'Application', value: 'Power & distribution transformers' },
-      { label: 'Layer Control', value: 'Automatic counting' },
-      { label: 'Tooling', value: 'Custom options available' },
-    ],
-  }),
-  createProduct({
-    id: 4,
-    slug: 'cnc-layer-winders',
-    title: 'CNC Layer Winders',
-    excerpt:
-      'Computer-controlled layer winding machines for precision multi-layer coils and bobbin winding.',
-    content: `
-      <p>CNC layer winders offer full axis control for precision multi-layer coils and bobbin winding. Real-time monitoring and PLC automation keep production consistent and traceable.</p>
-      <p>Perfect for applications requiring tight tolerances on layer alignment and wire tension throughout the winding process.</p>
-    `,
-    categoryId: 4,
-    categorySlug: 'cnc',
-    categoryName: 'CNC',
-    features: [
-      'CNC axis control',
-      'Real-time monitoring',
-      'PLC automation',
-    ],
-    specifications: [
-      { label: 'Control', value: 'Full CNC axis' },
-      { label: 'Monitoring', value: 'Real-time' },
-      { label: 'Automation', value: 'PLC integrated' },
-    ],
-  }),
-  createProduct({
-    id: 5,
-    slug: 'automatic-systems',
-    title: 'Automatic Systems',
-    excerpt:
-      'Fully automated winding lines with robotic handling and quality inspection systems.',
-    content: `
-      <p>Fully automated winding lines integrate robotic arm handling with vision inspection for end-to-end production. Reduce manual intervention while maintaining consistent quality across high-volume runs.</p>
-      <p>Designed for manufacturers scaling up production without compromising on precision or traceability.</p>
-    `,
-    categoryId: 5,
-    categorySlug: 'automation',
-    categoryName: 'Automation',
-    featured: true,
-    features: [
-      'Robotic arm integration',
-      'Vision inspection',
-      'Fully automated lines',
-    ],
-    specifications: [
-      { label: 'Handling', value: 'Robotic arm' },
-      { label: 'Inspection', value: 'Vision system' },
-      { label: 'Integration', value: 'Full production line' },
-    ],
-  }),
-  createProduct({
-    id: 6,
-    slug: 'testing-equipment',
-    title: 'Testing Equipment',
-    excerpt:
-      'Comprehensive testing systems for electrical characteristics, insulation, and quality verification.',
-    content: `
-      <p>Our testing equipment covers DC resistance testing, hipot testing, and turn ratio analysis to verify every coil before it leaves your production floor.</p>
-      <p>Integrate seamlessly with winding lines for automated pass/fail reporting and full quality traceability.</p>
-    `,
-    categoryId: 6,
-    categorySlug: 'testing',
-    categoryName: 'Testing',
-    features: [
-      'DC resistance testing',
-      'Hipot testing',
-      'Turn ratio analysis',
-    ],
-    specifications: [
-      { label: 'DC Resistance', value: 'Included' },
-      { label: 'Hipot Testing', value: 'Included' },
-      { label: 'Turn Ratio', value: 'Automated analysis' },
-    ],
-  }),
+  {
+    "id": 1,
+    "slug": "bobinadora-strip-foil",
+    "section": "coilWinding",
+    "categorySlug": "maquina-folio",
+    "categoryId": 3,
+    "i18nKey": "bobinadora-strip-foil",
+    "acf": {
+      "features": [
+        "Varias configuraciones posibles para bobinas de hasta 2.300 mm con una zona de bobinado de 1.800 mm",
+        "Permite el bobinado de una amplia gama de tamaños y número de transformadores y strips según se requiera.",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "slug": "bobinadora-folio",
+    "section": "coilWinding",
+    "categorySlug": "maquina-folio",
+    "categoryId": 3,
+    "i18nKey": "bobinadora-folio",
+    "acf": {
+      "features": [
+        "Varias configuraciones posibles de hasta 1.500 mm de anchura",
+        "Permite bobinado de primarias fácilmente y con tiempos de ciclo de producción muy cortos.",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "slug": "cabezal-bobinador-erasan-e1200-c-sgb",
+    "section": "coilWinding",
+    "categorySlug": "cabezal-bobinador",
+    "categoryId": 2,
+    "i18nKey": "cabezal-bobinador-erasan-e1200-c-sgb",
+    "acf": {
+      "features": [
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "slug": "cabezal-bobinador-erasan-e1200-c",
+    "section": "coilWinding",
+    "categorySlug": "cabezal-bobinador",
+    "categoryId": 2,
+    "i18nKey": "cabezal-bobinador-erasan-e1200-c",
+    "acf": {
+      "features": [
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "slug": "cabezal-bobinador-erasan-e1500-b",
+    "section": "coilWinding",
+    "categorySlug": "cabezal-bobinador",
+    "categoryId": 1,
+    "i18nKey": "cabezal-bobinador-erasan-e1500-b",
+    "acf": {
+      "features": []
+    }
+  },
+  {
+    "id": 6,
+    "slug": "cabezal-bobinador-erasan-e1200-b",
+    "section": "coilWinding",
+    "categorySlug": "cabezal-bobinador",
+    "categoryId": 1,
+    "i18nKey": "cabezal-bobinador-erasan-e1200-b",
+    "acf": {
+      "features": []
+    }
+  },
+  {
+    "id": 7,
+    "slug": "bobinadora-erasan-e1200-sgb",
+    "section": "coilWinding",
+    "categorySlug": "banco-lineal",
+    "categoryId": 1,
+    "i18nKey": "bobinadora-erasan-e1200-sgb",
+    "acf": {
+      "features": [
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "slug": "bobinadora-erasan-e1200-servotech",
+    "section": "coilWinding",
+    "categorySlug": "banco-lineal",
+    "categoryId": 1,
+    "i18nKey": "bobinadora-erasan-e1200-servotech",
+    "acf": {
+      "features": [
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "slug": "cabezal-bobinador-erasan-e1200",
+    "section": "coilWinding",
+    "categorySlug": "cabezal-bobinador",
+    "categoryId": 2,
+    "i18nKey": "cabezal-bobinador-erasan-e1200",
+    "acf": {
+      "features": []
+    }
+  },
+  {
+    "id": 10,
+    "slug": "bobinadora-erasan-e900-sgb",
+    "section": "coilWinding",
+    "categorySlug": "banco-lineal",
+    "categoryId": 1,
+    "i18nKey": "bobinadora-erasan-e900-sgb",
+    "acf": {
+      "features": [
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "slug": "bobinadora-erasan-e900-servotech",
+    "section": "coilWinding",
+    "categorySlug": "banco-lineal",
+    "categoryId": 1,
+    "i18nKey": "bobinadora-erasan-e900-servotech",
+    "acf": {
+      "features": [
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "slug": "bobinadora-erasan-e900",
+    "section": "coilWinding",
+    "categorySlug": "banco-lineal",
+    "categoryId": 1,
+    "i18nKey": "bobinadora-erasan-e900",
+    "acf": {
+      "features": [
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "slug": "bobinadora-erasan-e600",
+    "section": "coilWinding",
+    "categorySlug": "banco-lineal",
+    "categoryId": 1,
+    "i18nKey": "bobinadora-erasan-e600",
+    "acf": {
+      "features": [
+        "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
+        "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "slug": "bobinadora-erasan-e300",
+    "section": "coilWinding",
+    "categorySlug": "banco-lineal",
+    "categoryId": 1,
+    "i18nKey": "bobinadora-erasan-e300",
+    "acf": {
+      "features": [
+        "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
+        "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "slug": "bobinadora-erasan-e300w",
+    "section": "coilWinding",
+    "categorySlug": "banco-lineal",
+    "categoryId": 1,
+    "i18nKey": "bobinadora-erasan-e300w",
+    "acf": {
+      "features": []
+    }
+  },
+  {
+    "id": 16,
+    "slug": "dispensador-de-papel-dp1-p",
+    "section": "accessories",
+    "categorySlug": "dispensadores-de-papel",
+    "categoryId": 9,
+    "i18nKey": "dispensador-de-papel-dp1-p",
+    "acf": {
+      "features": [
+        "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "Compatible con gran variedad de formatos de aislantes"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "slug": "dispensador-de-papel-tpe",
+    "section": "accessories",
+    "categorySlug": "dispensadores-de-papel",
+    "categoryId": 9,
+    "i18nKey": "dispensador-de-papel-tpe",
+    "acf": {
+      "features": [
+        "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "Compatible con gran variedad de formatos de aislantes"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "slug": "devanador-dp1r-ap1r",
+    "section": "accessories",
+    "categorySlug": "devanadores",
+    "categoryId": 5,
+    "i18nKey": "devanador-dp1r-ap1r",
+    "acf": {
+      "features": [
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "slug": "devanador-dp4",
+    "section": "accessories",
+    "categorySlug": "devanadores",
+    "categoryId": 5,
+    "i18nKey": "devanador-dp4",
+    "acf": {
+      "features": [
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "slug": "devanador-dp2",
+    "section": "accessories",
+    "categorySlug": "devanadores",
+    "categoryId": 5,
+    "i18nKey": "devanador-dp2",
+    "acf": {
+      "features": [
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "slug": "devanador-dp1",
+    "section": "accessories",
+    "categorySlug": "devanadores",
+    "categoryId": 5,
+    "i18nKey": "devanador-dp1",
+    "acf": {
+      "features": [
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "slug": "mandril-expandible-rectangular",
+    "section": "accessories",
+    "categorySlug": "mandriles-expandibles-rectangulares",
+    "categoryId": 8,
+    "i18nKey": "mandril-expandible-rectangular",
+    "acf": {
+      "features": [
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "slug": "mandril-expandible-circular",
+    "section": "accessories",
+    "categorySlug": "mandriles-expandibles-circulares",
+    "categoryId": 7,
+    "i18nKey": "mandril-expandible-circular",
+    "acf": {
+      "features": [
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "slug": "guiador-de-pletina-gp2",
+    "section": "accessories",
+    "categorySlug": "guiadores",
+    "categoryId": 6,
+    "i18nKey": "guiador-de-pletina-gp2",
+    "acf": {
+      "features": [
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "slug": "guiador-de-pletina-gp1",
+    "section": "accessories",
+    "categorySlug": "guiadores",
+    "categoryId": 6,
+    "i18nKey": "guiador-de-pletina-gp1",
+    "acf": {
+      "features": [
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "slug": "guiador-de-hilo-gh3",
+    "section": "accessories",
+    "categorySlug": "guiadores",
+    "categoryId": 6,
+    "i18nKey": "guiador-de-hilo-gh3",
+    "acf": {
+      "features": [
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "slug": "guiador-de-hilo-gh2",
+    "section": "accessories",
+    "categorySlug": "guiadores",
+    "categoryId": 6,
+    "i18nKey": "guiador-de-hilo-gh2",
+    "acf": {
+      "features": [
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "slug": "guiador-de-hilo-gh1",
+    "section": "accessories",
+    "categorySlug": "guiadores",
+    "categoryId": 6,
+    "i18nKey": "guiador-de-hilo-gh1",
+    "acf": {
+      "features": [
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "slug": "tensionador-de-hilo-th3-d",
+    "section": "accessories",
+    "categorySlug": "tensionadores",
+    "categoryId": 4,
+    "i18nKey": "tensionador-de-hilo-th3-d",
+    "acf": {
+      "features": []
+    }
+  },
+  {
+    "id": 30,
+    "slug": "tensionador-de-hilo-th3-is",
+    "section": "accessories",
+    "categorySlug": "tensionadores",
+    "categoryId": 4,
+    "i18nKey": "tensionador-de-hilo-th3-is",
+    "acf": {
+      "features": [
+        "Detector de hilo",
+        "Detector que para la máquina en caso de rotura de hilo.",
+        "Encoder",
+        "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "slug": "tensionador-de-hilo-th3",
+    "section": "accessories",
+    "categorySlug": "tensionadores",
+    "categoryId": 4,
+    "i18nKey": "tensionador-de-hilo-th3",
+    "acf": {
+      "features": [
+        "Detector de hilo",
+        "Detector que para la máquina en caso de rotura de hilo.",
+        "Encoder",
+        "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "slug": "tensionador-de-hilo-th3-standalone",
+    "section": "accessories",
+    "categorySlug": "tensionadores",
+    "categoryId": 4,
+    "i18nKey": "tensionador-de-hilo-th3-standalone",
+    "acf": {
+      "features": [
+        "Detector de hilo",
+        "Detector que para la máquina en caso de rotura de hilo.",
+        "Encoder",
+        "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "slug": "retrofit",
+    "section": "retrofit",
+    "categorySlug": null,
+    "categoryId": null,
+    "i18nKey": "retrofit",
+    "acf": {
+      "features": []
+    }
+  }
 ]

@@ -1,5 +1,7 @@
-import { useState, useEffect, useCallback } from 'react'
-import { postsApi, productsApi, categoriesApi, contentHelpers } from '../services/content'
+import { useState, useEffect, useCallback, useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
+import { postsApi, productsApi, categoriesApi } from '../services/content'
+import { contentHelpers, localizeProduct, localizeCategory } from '../utils/contentHelpers'
 
 export function usePosts(options = {}) {
   const { page = 1, perPage = 10, search = '', category = null, enabled = true } = options
@@ -69,7 +71,8 @@ export function usePost(slug) {
 }
 
 export function useProducts(options = {}) {
-  const { page = 1, perPage = 12, category = null, enabled = true } = options
+  const { page = 1, perPage = 12, section = null, category = null, enabled = true } = options
+  const { t } = useTranslation()
 
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -84,7 +87,7 @@ export function useProducts(options = {}) {
     setError(null)
 
     try {
-      const result = await productsApi.getAll({ page, perPage, category })
+      const result = await productsApi.getAll({ page, perPage, section, category })
       setProducts(result.data)
       setTotalPages(result.totalPages)
       setTotal(result.total)
@@ -94,16 +97,22 @@ export function useProducts(options = {}) {
     } finally {
       setLoading(false)
     }
-  }, [page, perPage, category, enabled])
+  }, [page, perPage, section, category, enabled])
 
   useEffect(() => {
     fetchProducts()
   }, [fetchProducts])
 
-  return { products, loading, error, totalPages, total, refetch: fetchProducts }
+  const localizedProducts = useMemo(
+    () => products.map((product) => localizeProduct(product, t)),
+    [products, t]
+  )
+
+  return { products: localizedProducts, loading, error, totalPages, total, refetch: fetchProducts }
 }
 
 export function useProduct(slug) {
+  const { t } = useTranslation()
   const [product, setProduct] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -132,10 +141,16 @@ export function useProduct(slug) {
     fetchProduct()
   }, [slug])
 
-  return { product, loading, error }
+  const localizedProduct = useMemo(
+    () => (product ? localizeProduct(product, t) : null),
+    [product, t]
+  )
+
+  return { product: localizedProduct, loading, error }
 }
 
-export function useCategories(type = 'posts') {
+export function useCategories(section = 'coilWinding') {
+  const { t } = useTranslation()
   const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -146,8 +161,7 @@ export function useCategories(type = 'posts') {
       setError(null)
 
       try {
-        const result =
-          type === 'products' ? await productsApi.getCategories() : await categoriesApi.getAll()
+        const result = await productsApi.getCategories(section)
         setCategories(result.data)
       } catch (err) {
         setError(err.message)
@@ -158,9 +172,14 @@ export function useCategories(type = 'posts') {
     }
 
     fetchCategories()
-  }, [type])
+  }, [section])
 
-  return { categories, loading, error }
+  const localizedCategories = useMemo(
+    () => categories.map((category) => localizeCategory(category, section, t)),
+    [categories, section, t]
+  )
+
+  return { categories: localizedCategories, loading, error }
 }
 
 export function useRecentPosts(count = 5) {
@@ -207,4 +226,4 @@ export function useFeaturedProducts(count = 6) {
   return { products, loading }
 }
 
-export { contentHelpers }
+export { contentHelpers, localizeProduct, localizeCategory }

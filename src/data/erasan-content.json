@@ -1,0 +1,2359 @@
+{
+  "meta": {
+    "source": "https://erasan.es",
+    "extractedAt": "2026-07-13T20:29:00.403Z",
+    "primaryLanguage": "es",
+    "pageCount": 51,
+    "postCount": 2
+  },
+  "contact": {
+    "phone": "+34 961 98 63 73",
+    "email": "info@erasan.es",
+    "address": "Ronda Auguste y Louis Lumiere 45, 46980 - Paterna, Valencia (España)"
+  },
+  "navigation": [
+    {
+      "label": "Máquinas bobinadoras",
+      "path": "/maquinas-bobinadoras",
+      "children": [
+        {
+          "label": "Banco lineal",
+          "path": "/banco-lineal"
+        },
+        {
+          "label": "Cabezal bobinador",
+          "path": "/cabezal-bobinador"
+        },
+        {
+          "label": "Folio",
+          "path": "/folio"
+        },
+        {
+          "label": "Especiales",
+          "path": "/especiales"
+        }
+      ]
+    },
+    {
+      "label": "Accesorios",
+      "path": "/accesorios",
+      "children": [
+        {
+          "label": "Tensionadores",
+          "path": "/tensionadores"
+        },
+        {
+          "label": "Guiadores",
+          "path": "/guiadores"
+        },
+        {
+          "label": "Devanadores",
+          "path": "/devanadores"
+        },
+        {
+          "label": "Mandriles expandibles",
+          "path": "/mandriles-expandibles"
+        },
+        {
+          "label": "Dispensadores",
+          "path": "/dispensadores"
+        }
+      ]
+    },
+    {
+      "label": "Retrofit",
+      "path": "/retrofit",
+      "children": [
+        {
+          "label": "BOBIFIL",
+          "path": "/bobifil"
+        },
+        {
+          "label": "KITS RETROFIT",
+          "path": "/kits-retrofit"
+        },
+        {
+          "label": "REPARACIONES",
+          "path": "/reparaciones"
+        }
+      ]
+    },
+    {
+      "label": "Bobinadoras usadas",
+      "path": "/exitos"
+    },
+    {
+      "label": "Contacto",
+      "path": "/contacto"
+    },
+    {
+      "label": "Blog",
+      "path": "/blog"
+    }
+  ],
+  "pages": {
+    "home": {
+      "id": 10,
+      "slug": "home",
+      "url": "https://erasan.es/",
+      "title": "home",
+      "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Conoces nuestras bobinadoras? Ir a máquinas bobinadoras ERASAN – COIL WINDING MACHINES Fabricantes especialistas de máquinas bobinadoras, accesorios y soluciones a medida para la industria del bobinado. 18 años de experiencia y la confianza de más de 500 fabricantes de todo el mundo nos avalan como partner ... Leer más",
+      "headings": [
+        "Más de 500 fabricantes ya confían en ERASAN",
+        "¿Conoces nuestras bobinadoras?",
+        "ERASAN - COIL WINDING MACHINES",
+        "High torque",
+        "Fabricantes especialistas de máquinas bobinadoras, accesorios y soluciones a medida para la industria del bobinado. 18 años de experiencia y la confianza de más de 500 fabricantes de todo el mundo nos avalan como partner tecnológico para dar valor añadido a su empresa. En ERASAN contamos con soluciones para todo tipo de trabajos con folio, pletina o hilo, para todo tipo de bobinados: edge winding, núcleo amorfo, flyer..."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "home",
+      "type": "page",
+      "modified": "2020-05-11T06:35:46"
+    },
+    "english": {
+      "id": 106,
+      "slug": "home-english",
+      "url": "https://erasan.es/en/home-english/",
+      "title": "home – English",
+      "excerpt": "",
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "english",
+      "type": "page",
+      "modified": "2020-05-09T03:47:33"
+    },
+    "usedMachines": {
+      "id": 102,
+      "slug": "exitos",
+      "url": "https://erasan.es/exitos/",
+      "title": "Bobinadoras usadas",
+      "excerpt": "Máquinas bobinadoras usadas disponibles Más de 500 fabricantes ya confían en ERASAN ERASAN TECHNOLOGY BOBINADORAS De banco lineal Cabezal bobinador Máquinas folio Proyectos especiales Accesorios Tensionadores Guiadores Devanadores Mandriles expandibles Dispensadores retrofit Bobifil Kits de retrofit Reparaciones Bobinadoras usadas CONTACTA +34 961 98 63 73 info@erasan.es Ronda Auguste y Louis Lumiere 45, 46980 – PaternaValencia ... Leer más",
+      "headings": [
+        "Más de 500 fabricantes ya confían en ERASAN",
+        "Máquina bobinadora de segunda mano: Bobifil ER33",
+        "Máquina bobinadora de segunda mano: ERASAN E600"
+      ],
+      "paragraphs": [
+        "Disponemos de tres máquinas bobinadoras de segunda mano modelo BOBIFIL ER33 para ser renovadas por completo para comenzar a trabajar para su siguiente propietario. ¿Quieres",
+        "Disponemos de una máquina bobinadora de segunda mano modelo ERASAN E600 completamente equipada con tres conjuntos de tensionadores TH3 completamente revisada y lista para comenzar"
+      ],
+      "listItems": [],
+      "section": "usedMachines",
+      "type": "page",
+      "modified": "2020-05-11T08:26:27"
+    },
+    "coilWindingMachines": {
+      "overview": {
+        "id": 96,
+        "slug": "maquinas-bobinadoras",
+        "url": "https://erasan.es/maquinas-bobinadoras/",
+        "title": "Máquinas bobinadoras",
+        "excerpt": "Máquinas bobinadoras Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Bobinadora de banco lineal Cabezal bobinador Máquina folio ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. ... Leer más",
+        "headings": [
+          "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+          "¿No encuentras lo que buscas?",
+          "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+        ],
+        "paragraphs": [],
+        "listItems": [],
+        "section": "coilWindingMachines",
+        "type": "overview",
+        "modified": "2020-05-10T10:52:49"
+      },
+      "categories": [
+        {
+          "id": 127,
+          "slug": "especiales",
+          "url": "https://erasan.es/especiales/",
+          "title": "Especiales",
+          "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Quieres ser el siguiente? Haz clic aquí E600 LONG Máquina Flyer Encintadora ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. ERASAN TECHNOLOGY BOBINADORAS De banco lineal Cabezal bobinador Máquinas ... Leer más",
+          "headings": [
+            "Más de 500 fabricantes ya confían en ERASAN",
+            "¿Quieres ser el siguiente?",
+            "¿No encuentras lo que buscas?",
+            "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "category",
+          "modified": "2020-05-10T10:05:25"
+        },
+        {
+          "id": 125,
+          "slug": "folio",
+          "url": "https://erasan.es/folio/",
+          "title": "Folio",
+          "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Quieres ser el siguiente? Haz clic aquí Bobinadora Folio Bobinadora Strip Foil ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. E600 LONG Máquina Flyer Encintadora ERASAN TECHNOLOGY BOBINADORAS De ... Leer más",
+          "headings": [
+            "Más de 500 fabricantes ya confían en ERASAN",
+            "¿Quieres ser el siguiente?",
+            "¿No encuentras lo que buscas?",
+            "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "category",
+          "modified": "2020-05-10T15:14:30"
+        },
+        {
+          "id": 123,
+          "slug": "cabezal-bobinador",
+          "url": "https://erasan.es/cabezal-bobinador/",
+          "title": "Cabezal bobinador",
+          "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Quieres ser el siguiente? Haz clic aquí Cabezal bobinador E1200C Cabezal bobinador E1200C SGB Cabezal bobinador E1200B Cabezal bobinador E1500B ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. E600 ... Leer más",
+          "headings": [
+            "Más de 500 fabricantes ya confían en ERASAN",
+            "¿Quieres ser el siguiente?",
+            "¿No encuentras lo que buscas?",
+            "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "category",
+          "modified": "2020-05-10T11:33:22"
+        },
+        {
+          "id": 121,
+          "slug": "banco-lineal",
+          "url": "https://erasan.es/banco-lineal/",
+          "title": "Banco lineal",
+          "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Quieres ser el siguiente? Haz clic aquí Bobinadora E300W Bobinadora E300 Bobinadora E600 Bobinadora E900 Bobinadora E900 SERVOTECH Bobinadora E900 SGB Bobinadora E1200 Bobinadora E1200 SERVOTECH Bobinadora E1200 SGB ERASAN TECHNOLOGY BOBINADORAS De banco lineal Cabezal bobinador Máquinas folio Proyectos especiales Accesorios Tensionadores Guiadores Devanadores Mandriles expandibles ... Leer más",
+          "headings": [
+            "Más de 500 fabricantes ya confían en ERASAN",
+            "¿Quieres ser el siguiente?"
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "category",
+          "modified": "2020-05-11T07:45:47"
+        }
+      ],
+      "products": [
+        {
+          "id": 482,
+          "slug": "bobinadora-strip-foil",
+          "url": "https://erasan.es/bobinadora-strip-foil/",
+          "title": "Bobinadora Strip Foil",
+          "excerpt": "Máquina bobinadora Strip Foil Máquina de dos papeles y un folio para la fabricación de bobinas para grandes trasformadores de resina/secos para distibución y potencia. Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible. El eje devanador es un eje expandible con sistema ... Leer más",
+          "headings": [
+            "Máquina bobinadora Strip Foil",
+            "Máquina de dos papeles y un folio para la fabricación de bobinas para grandes trasformadores de resina/secos para distibución y potencia.",
+            "Características",
+            "Características ERASAN STRIP FOIL",
+            "Varias configuraciones posibles para bobinas de hasta 2.300 mm con una zona de bobinado de 1.800 mm",
+            "Permite el bobinado de una amplia gama de tamaños y número de transformadores y strips según se requiera.",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.",
+            "El eje devanador es un eje expandible con sistema hidráulico. Movimiento lateral en el devanador de folio gracias al con una fotocélula para controlar posibles desviaciones."
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T15:21:45"
+        },
+        {
+          "id": 469,
+          "slug": "bobinadora-folio",
+          "url": "https://erasan.es/bobinadora-folio/",
+          "title": "Bobinadora Folio",
+          "excerpt": "Máquina bobinadora Folio Para la fabricación de bobinas para grandes transformadores de resina/secos de distribución y potencia Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible. Estructura mecánica: construcción de cuerpo mecánico en acero electrosoldado, tratado térmicamente para su estabilización, mecanizado y partes ... Leer más",
+          "headings": [
+            "Máquina bobinadora Folio",
+            "Para la fabricación de bobinas para grandes transformadores de resina/secos de distribución y potencia",
+            "Características",
+            "Características ERASAN E-FOIL",
+            "Varias configuraciones posibles de hasta 1.500 mm de anchura",
+            "Permite bobinado de primarias fácilmente y con tiempos de ciclo de producción muy cortos.",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.",
+            "Estructura mecánica: construcción de cuerpo mecánico en acero electrosoldado, tratado térmicamente para su estabilización, mecanizado y partes fresadas. Alta rigidez torsional, pintura al horno."
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T15:12:08"
+        },
+        {
+          "id": 260,
+          "slug": "bobinadora-erasan-e1200-c-sgb",
+          "url": "https://erasan.es/cabezal-bobinador/bobinadora-erasan-e1200-c-sgb/",
+          "title": "BOBINADORA ERASAN E1200C SGB",
+          "excerpt": "Máquina bobinadora E1200 SGB con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+          "headings": [
+            "Máquina bobinadora E1200 SGB con contrapunto de cierre rápido",
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "Características",
+            "Características ERASAN E1200 SGB",
+            "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+            "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+            "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T11:41:38"
+        },
+        {
+          "id": 258,
+          "slug": "bobinadora-erasan-e1200-c",
+          "url": "https://erasan.es/cabezal-bobinador/bobinadora-erasan-e1200-c/",
+          "title": "BOBINADORA ERASAN E1200C",
+          "excerpt": "Cabezal bobinador E1200C Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión Características Descubre las especificaciones de la ... Leer más",
+          "headings": [
+            "Cabezal bobinador E1200C",
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "Características",
+            "Características ERASAN E1200C",
+            "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+            "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+            "Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T11:40:29"
+        },
+        {
+          "id": 256,
+          "slug": "bobinadora-erasan-e1500-b",
+          "url": "https://erasan.es/cabezal-bobinador/bobinadora-erasan-e1500-b/",
+          "title": "BOBINADORA ERASAN E1500B",
+          "excerpt": "",
+          "headings": [],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T11:33:15"
+        },
+        {
+          "id": 254,
+          "slug": "bobinadora-erasan-e1200-b",
+          "url": "https://erasan.es/cabezal-bobinador/bobinadora-erasan-e1200-b/",
+          "title": "BOBINADORA ERASAN E1200B",
+          "excerpt": "",
+          "headings": [],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T11:30:55"
+        },
+        {
+          "id": 197,
+          "slug": "bobinadora-erasan-e1200-sgb",
+          "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e1200-sgb/",
+          "title": "BOBINADORA ERASAN E1200 SGB",
+          "excerpt": "Máquina bobinadora E1200 SGB con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+          "headings": [
+            "Máquina bobinadora E1200 SGB con contrapunto de cierre rápido",
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "Características",
+            "Características ERASAN E1200 SGB",
+            "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+            "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores",
+            "SUScríbete"
+          ],
+          "paragraphs": [
+            "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+            "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión",
+            "De banco lineal Cabezal Bobinador",
+            "Máquinas a medida",
+            "Máquinas actualizadas",
+            "Ocasión - segunda mano"
+          ],
+          "listItems": [
+            "De banco lineal Cabezal Bobinador",
+            "Máquinas a medida",
+            "Máquinas actualizadas",
+            "Ocasión - segunda mano"
+          ],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-09T10:20:56"
+        },
+        {
+          "id": 195,
+          "slug": "bobinadora-erasan-e1200-servotech",
+          "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e1200-servotech/",
+          "title": "BOBINADORA ERASAN E1200 SERVOTECH",
+          "excerpt": "Máquina bobinadora E1200 SERVOTECH con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+          "headings": [
+            "Máquina bobinadora E1200 SERVOTECH con contrapunto de cierre rápido",
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "Características",
+            "Características ERASAN E1200 SERVOTECH",
+            "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+            "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+            "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T11:19:54"
+        },
+        {
+          "id": 191,
+          "slug": "bobinadora-erasan-e900-sgb",
+          "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e900-sgb/",
+          "title": "BOBINADORA ERASAN E900 SGB",
+          "excerpt": "Máquina bobinadora E900 SGB con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+          "headings": [
+            "Máquina bobinadora E900 SGB con contrapunto de cierre rápido",
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "Características",
+            "Características ERASAN E900 SGB",
+            "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+            "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+            "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T11:18:30"
+        },
+        {
+          "id": 189,
+          "slug": "bobinadora-erasan-e900-servotech",
+          "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e900-servotech/",
+          "title": "BOBINADORA ERASAN E900 SERVOTECH",
+          "excerpt": "Máquina bobinadora E900 SERVOTECH con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+          "headings": [
+            "Máquina bobinadora E900 SERVOTECH con contrapunto de cierre rápido",
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "Características",
+            "Características ERASAN E900 SERVOTECH",
+            "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+            "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+            "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T11:17:43"
+        },
+        {
+          "id": 187,
+          "slug": "bobinadora-erasan-e900",
+          "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e900/",
+          "title": "BOBINADORA ERASAN E900",
+          "excerpt": "Máquina bobinadora E900 con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión Características ... Leer más",
+          "headings": [
+            "Máquina bobinadora E900 con contrapunto de cierre rápido",
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "Características",
+            "Características ERASAN E900",
+            "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+            "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+            "Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T11:17:09"
+        },
+        {
+          "id": 185,
+          "slug": "bobinadora-erasan-e600",
+          "url": "https://erasan.es/bobinadora-erasan-e600/",
+          "title": "BOBINADORA ERASAN E600",
+          "excerpt": "Máquina bobinadora E600 con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de mediana potencia Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas ... Leer más",
+          "headings": [
+            "Máquina bobinadora E600 con contrapunto de cierre rápido",
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de mediana potencia",
+            "Características",
+            "Características ERASAN E600",
+            "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
+            "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada",
+            "Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas y contrapunto de cierre rápido"
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-10T11:15:20"
+        },
+        {
+          "id": 183,
+          "slug": "bobinadora-erasan-e300",
+          "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e300/",
+          "title": "BOBINADORA ERASAN E300",
+          "excerpt": "Máquina bobinadora E300 con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas ... Leer más",
+          "headings": [
+            "Máquina bobinadora E300 con contrapunto de cierre rápido",
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia",
+            "Características",
+            "Características ERASAN E300",
+            "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
+            "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
+            "Electromecánica de alta eficiencia",
+            "Garantizando un ahorro de energía y reducción de mantenimiento",
+            "Dispone de conexión Ethernet",
+            "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+            "Sistema de control de última generación CNC",
+            "Con pantalla táctil de 7\" color",
+            "Programa visual y sencillo para el operador",
+            "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          ],
+          "paragraphs": [
+            "Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada",
+            "Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas y contrapunto de cierre rápido"
+          ],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-11T09:08:42"
+        },
+        {
+          "id": 181,
+          "slug": "bobinadora-erasan-e300w",
+          "url": "https://erasan.es/bobinadora-erasan-e300w/",
+          "title": "BOBINADORA ERASAN E300W",
+          "excerpt": "",
+          "headings": [],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "coilWindingMachines",
+          "type": "product",
+          "modified": "2020-05-09T07:10:17"
+        }
+      ]
+    },
+    "accessories": {
+      "overview": {
+        "id": 98,
+        "slug": "accesorios",
+        "url": "https://erasan.es/accesorios/",
+        "title": "Accesorios",
+        "excerpt": "Accesorios Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Tensionadores Devanadores Guiadores Mandriles expandibles circulares Mandriles expandibles rectangulares Dispensadores de papel ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus ... Leer más",
+        "headings": [
+          "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+          "¿No encuentras lo que buscas?",
+          "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+        ],
+        "paragraphs": [],
+        "listItems": [],
+        "section": "accessories",
+        "type": "overview",
+        "modified": "2020-05-11T09:12:13"
+      },
+      "categories": [
+        {
+          "id": 137,
+          "slug": "dispensadores",
+          "url": "https://erasan.es/dispensadores/",
+          "title": "Dispensadores",
+          "excerpt": "Dispensadores Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Dispensador de papel TPE Dispensador de papel DP1-P ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. E600 ... Leer más",
+          "headings": [
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "¿No encuentras lo que buscas?",
+            "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "category",
+          "modified": "2020-05-11T09:14:23"
+        },
+        {
+          "id": 135,
+          "slug": "mandriles-expandibles",
+          "url": "https://erasan.es/mandriles-expandibles/",
+          "title": "Mandriles expandibles",
+          "excerpt": "Mandriles expandibles Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Mandril expandible circular Mandril expandible rectangular ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. E600 LONG ... Leer más",
+          "headings": [
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "¿No encuentras lo que buscas?",
+            "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "category",
+          "modified": "2020-05-11T09:14:12"
+        },
+        {
+          "id": 133,
+          "slug": "devanadores",
+          "url": "https://erasan.es/devanadores/",
+          "title": "Devanadores",
+          "excerpt": "Devanadores Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Devanador DP1 Devanador DP2 Devanador DP4 Devanador DP1R AP1R ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. ... Leer más",
+          "headings": [
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "¿No encuentras lo que buscas?",
+            "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "category",
+          "modified": "2020-05-11T09:13:58"
+        },
+        {
+          "id": 131,
+          "slug": "guiadores",
+          "url": "https://erasan.es/guiadores/",
+          "title": "Guiadores",
+          "excerpt": "Guiadores Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Guiador de hilo GH1 Guiador de hilo GH2 Guiador de hilo GH3 Guiador de pletina GP1 Guiador de pletina GP2 ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta ... Leer más",
+          "headings": [
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "¿No encuentras lo que buscas?",
+            "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "category",
+          "modified": "2020-05-11T09:13:44"
+        },
+        {
+          "id": 129,
+          "slug": "tensionadores",
+          "url": "https://erasan.es/tensionadores/",
+          "title": "Tensionadores",
+          "excerpt": "Tensionadores Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Tensionador de hilo TH3 StandAlone Tensionador de hilo TH3 Tensionador de hilo TH3 – IS Tensionador de hilo TH3-D ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con ... Leer más",
+          "headings": [
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "¿No encuentras lo que buscas?",
+            "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "category",
+          "modified": "2020-05-11T09:12:48"
+        }
+      ],
+      "products": [
+        {
+          "id": 600,
+          "slug": "dispensador-de-papel-dp1-p",
+          "url": "https://erasan.es/dispensador-de-papel-dp1-p/",
+          "title": "Dispensador de papel DP1-P",
+          "excerpt": "DP1 P – Dispensador de papel Permite varias medidas de forma simultánea Características Descubre las especificaciones del dispensador de papel DP1 P Características ERASAN TPE Tensionador de papel dotado de freno electromagnético y eje expandible. Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente. Regulación del ... Leer más",
+          "headings": [
+            "DP1 P - Dispensador de papel",
+            "Permite varias medidas de forma simultánea",
+            "Características",
+            "Características ERASAN TPE",
+            "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+            "Compatible con gran variedad de formatos de aislantes"
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T08:21:55"
+        },
+        {
+          "id": 588,
+          "slug": "dispensador-de-papel-tpe",
+          "url": "https://erasan.es/dispensador-de-papel-tpe/",
+          "title": "Dispensador de papel TPE",
+          "excerpt": "TPE – Dispensador de papel Bobina máxima de papel de 400 mm y 310 mm de longitud Características Descubre las especificaciones del dispensador de papel TPE Características ERASAN TPE Tensionador de papel dotado de freno electromagnético y eje expandible. Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades ... Leer más",
+          "headings": [
+            "TPE - Dispensador de papel",
+            "Bobina máxima de papel de 400 mm y 310 mm de longitud",
+            "Características",
+            "Características ERASAN TPE",
+            "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+            "Compatible con gran variedad de formatos de aislantes"
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T08:23:20"
+        },
+        {
+          "id": 565,
+          "slug": "devanador-dp1r-ap1r",
+          "url": "https://erasan.es/devanador-dp1r-ap1r/",
+          "title": "Devanador DP1R AP1R",
+          "excerpt": "DP1R AP1R – Devanador Doble freno para mejor tensión constante Características Descubre las especificaciones del devanador DP1R AP1R Características ERASAN DP1R AP1R La principal diferencia de DP1R es el doble freno provisto que mejora la tensión, que junto al AP1R ayuda a mantener la tensión constante. En el caso en que el hilo del carrete ... Leer más",
+          "headings": [
+            "DP1R AP1R - Devanador",
+            "Doble freno para mejor tensión constante",
+            "Características",
+            "Características ERASAN DP1R AP1R",
+            "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+            "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T07:04:26"
+        },
+        {
+          "id": 563,
+          "slug": "devanador-dp4",
+          "url": "https://erasan.es/devanador-dp4/",
+          "title": "Devanador DP4",
+          "excerpt": "DP4 – Devanador Permite el montaje de 4 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm. Características Descubre las especificaciones del devanador DP4 Características ERASAN DP4 Proporciona una tensión constante al hilo durante el bobinado El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y ... Leer más",
+          "headings": [
+            "DP4 - Devanador",
+            "Permite el montaje de 4 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm.",
+            "Características",
+            "Características ERASAN DP4",
+            "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+            "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T07:37:12"
+        },
+        {
+          "id": 561,
+          "slug": "devanador-dp2",
+          "url": "https://erasan.es/devanador-dp2/",
+          "title": "Devanador DP2",
+          "excerpt": "DP2 – Devanador Permite el montaje de 2 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm. Características Descubre las especificaciones del devanador DP2 Características ERASAN DP2 Proporciona una tensión constante al hilo durante el bobinado El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y ... Leer más",
+          "headings": [
+            "DP2 - Devanador",
+            "Permite el montaje de 2 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm.",
+            "Características",
+            "Características ERASAN DP2",
+            "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+            "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T07:10:37"
+        },
+        {
+          "id": 558,
+          "slug": "devanador-dp1",
+          "url": "https://erasan.es/devanador-dp1/",
+          "title": "Devanador DP1",
+          "excerpt": "DP1 – Devanador Permite el montaje de carrete con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm. Características Descubre las especificaciones del devanador DP1 Características ERASAN DP1 Proporciona una tensión constante al hilo durante el bobinado El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la ... Leer más",
+          "headings": [
+            "DP1 - Devanador",
+            "Permite el montaje de carrete con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm.",
+            "Características",
+            "Características ERASAN DP1",
+            "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+            "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T06:54:10"
+        },
+        {
+          "id": 552,
+          "slug": "mandril-expandible-rectangular",
+          "url": "https://erasan.es/mandril-expandible-rectangular/",
+          "title": "Mandril expandible rectangular",
+          "excerpt": "Mandril expandible rectangular Completamente a medida Características Descubre las especificaciones del mandril expandible rectangular Características ERASAN Mandril expandible El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo. Cada mandril tiene un orificio con ... Leer más",
+          "headings": [
+            "Mandril expandible rectangular",
+            "Completamente a medida",
+            "Características",
+            "Características ERASAN Mandril expandible",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T04:12:46"
+        },
+        {
+          "id": 545,
+          "slug": "mandril-expandible-circular",
+          "url": "https://erasan.es/mandril-expandible-circular/",
+          "title": "Mandril expandible circular",
+          "excerpt": "Mandril expandible circular Completamente a medida Características Descubre las especificaciones del mandril expandible circular Características ERASAN Mandril expandible El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo. Cada mandril tiene un orificio con ... Leer más",
+          "headings": [
+            "Mandril expandible circular",
+            "Completamente a medida",
+            "Características",
+            "Características ERASAN Mandril expandible",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T04:09:58"
+        },
+        {
+          "id": 539,
+          "slug": "guiador-de-pletina-gp2",
+          "url": "https://erasan.es/guiador-de-pletina-gp2/",
+          "title": "Guiador de pletina GP2",
+          "excerpt": "GP2 – Guiador de pletina Dispone de un guiador devanador de cinta Características Descubre las especificaciones del guiador de pletina GP2 Características ERASAN GP2 Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada. Este tipo de guiador es de máxima robustez ya que se suele emplear para el uso de ... Leer más",
+          "headings": [
+            "GP2 - Guiador de pletina",
+            "Dispone de un guiador devanador de cinta",
+            "Características",
+            "Características ERASAN GP2",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T04:02:14"
+        },
+        {
+          "id": 534,
+          "slug": "guiador-de-pletina-gp1",
+          "url": "https://erasan.es/guiador-de-pletina-gp1/",
+          "title": "Guiador de pletina GP1",
+          "excerpt": "GP1 – Guiador de pletina Tensiones de hasta 2kg por mm de sección Características Descubre las especificaciones del guiador de pletina GP1 Características ERASAN GP1 Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada. Este tipo de guiador es de máxima robustez ya que las tensiones empleadas en estos conductores ... Leer más",
+          "headings": [
+            "GP1 - Guiador de pletina",
+            "Tensiones de hasta 2kg por mm de sección",
+            "Características",
+            "Características ERASAN GP1",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T03:57:08"
+        },
+        {
+          "id": 527,
+          "slug": "guiador-de-hilo-gh3",
+          "url": "https://erasan.es/guiador-de-hilo-gh3/",
+          "title": "Guiador de hilo GH3",
+          "excerpt": "GH3 – Guiador de hilo Guiador de hilo con un diámetro de hasta 8.00mm Características Descubre las especificaciones del guiador de hilo GH3 Características ERASAN GH3 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 8mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+          "headings": [
+            "GH3 - Guiador de hilo",
+            "Guiador de hilo con un diámetro de hasta 8.00mm",
+            "Características",
+            "Características ERASAN GH3",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T03:50:24"
+        },
+        {
+          "id": 520,
+          "slug": "guiador-de-hilo-gh2",
+          "url": "https://erasan.es/guiador-de-hilo-gh2/",
+          "title": "Guiador de hilo GH2",
+          "excerpt": "GH2 – Guiador de hilo Guiador de hilo con un diámetro de hasta 3.00mm Características Descubre las especificaciones del guiador de hilo GH2 Características ERASAN GH2 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 3mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+          "headings": [
+            "GH2 - Guiador de hilo",
+            "Guiador de hilo con un diámetro de hasta 3.00mm",
+            "Características",
+            "Características ERASAN GH2",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T03:45:44"
+        },
+        {
+          "id": 515,
+          "slug": "guiador-de-hilo-gh1",
+          "url": "https://erasan.es/guiador-de-hilo-gh1/",
+          "title": "Guiador de hilo GH1",
+          "excerpt": "GH1 – Guiador de hilo Guiador de hilo con un diámetro de hasta 1.00mm Características Descubre las especificaciones del guiador de hilo GH1 Características ERASAN GH1 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 1mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+          "headings": [
+            "GH1 - Guiador de hilo",
+            "Guiador de hilo con un diámetro de hasta 1.00mm",
+            "Características",
+            "Características ERASAN GH1",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T03:46:16"
+        },
+        {
+          "id": 513,
+          "slug": "tensionador-de-hilo-th3-d",
+          "url": "https://erasan.es/tensionador-de-hilo-th3-d/",
+          "title": "Tensionador de hilo TH3 D",
+          "excerpt": "",
+          "headings": [],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T03:34:37"
+        },
+        {
+          "id": 505,
+          "slug": "tensionador-de-hilo-th3-is",
+          "url": "https://erasan.es/tensionador-de-hilo-th3-is/",
+          "title": "Tensionador de hilo TH3 IS",
+          "excerpt": "TH3 IS – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 Características ERASAN TH3 IS La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El hilo ... Leer más",
+          "headings": [
+            "TH3 IS - Tensionador de hilo",
+            "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+            "Características",
+            "Características ERASAN TH3 IS",
+            "Detector de hilo",
+            "Detector que para la máquina en caso de rotura de hilo.",
+            "Encoder",
+            "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T03:32:45"
+        },
+        {
+          "id": 498,
+          "slug": "tensionador-de-hilo-th3",
+          "url": "https://erasan.es/tensionador-de-hilo-th3/",
+          "title": "Tensionador de hilo TH3",
+          "excerpt": "TH3 – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 Características ERASAN TH3 La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El hilo entra en ... Leer más",
+          "headings": [
+            "TH3 - Tensionador de hilo",
+            "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+            "Características",
+            "Características ERASAN TH3",
+            "Detector de hilo",
+            "Detector que para la máquina en caso de rotura de hilo.",
+            "Encoder",
+            "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-11T03:33:20"
+        },
+        {
+          "id": 489,
+          "slug": "tensionador-de-hilo-th3-standalone",
+          "url": "https://erasan.es/tensionador-de-hilo-th3-standalone/",
+          "title": "Tensionador de hilo TH3 StandAlone",
+          "excerpt": "TH3 StandAlone – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 StandAlone Características ERASAN TH3 StandAlone La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El ... Leer más",
+          "headings": [
+            "TH3 StandAlone - Tensionador de hilo",
+            "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+            "Características",
+            "Características ERASAN TH3 StandAlone",
+            "Detector de hilo",
+            "Detector que para la máquina en caso de rotura de hilo.",
+            "Encoder",
+            "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+            "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "accessories",
+          "type": "product",
+          "modified": "2020-05-10T16:20:52"
+        }
+      ]
+    },
+    "retrofit": {
+      "overview": {
+        "id": 100,
+        "slug": "retrofit",
+        "url": "https://erasan.es/retrofit/",
+        "title": "Retrofit",
+        "excerpt": "Retrofit de cualquier bobinadora No importa el fabricante ni el estado de la máquina, estudiaremos todas las posibilidades Características Descubre las características de los retrofits de maquinaria Características RETROFIT BOBIFIL .Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par .Permite fabricar bobinas de longitud máxima de 800mm .Permite la fabricación de ... Leer más",
+        "headings": [
+          "No importa el fabricante ni el estado de la máquina, estudiaremos todas las posibilidades",
+          "Características",
+          "Características RETROFIT BOBIFIL"
+        ],
+        "paragraphs": [],
+        "listItems": [],
+        "section": "retrofit",
+        "type": "overview",
+        "modified": "2020-05-11T09:23:24"
+      },
+      "categories": [
+        {
+          "id": 143,
+          "slug": "reparaciones",
+          "url": "https://erasan.es/reparaciones/",
+          "title": "REPARACIONES",
+          "excerpt": "",
+          "headings": [],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "retrofit",
+          "type": "category",
+          "modified": "2020-05-10T03:21:28"
+        },
+        {
+          "id": 141,
+          "slug": "kits-retrofit",
+          "url": "https://erasan.es/kits-retrofit/",
+          "title": "KITS RETROFIT",
+          "excerpt": "TPE – Dispensador de papel Bobina máxima de papel de 400 mm y 310 mm de longitud Características Descubre el alcance de nuestro KIT RETROFIT Características ERASAN KIT RETROFIT Ofrecemos un armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado. Permite devolver su máquina de vuelta al trabajo, equipada con ... Leer más",
+          "headings": [
+            "TPE - Dispensador de papel",
+            "Bobina máxima de papel de 400 mm y 310 mm de longitud",
+            "Características",
+            "Características ERASAN KIT RETROFIT"
+          ],
+          "paragraphs": [],
+          "listItems": [],
+          "section": "retrofit",
+          "type": "category",
+          "modified": "2020-05-11T08:44:20"
+        },
+        {
+          "id": 139,
+          "slug": "bobifil",
+          "url": "https://erasan.es/bobifil/",
+          "title": "BOBIFIL",
+          "excerpt": "Máquinas bobinadoras Bobifil – de vuelta a la vida Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Antes Después Características Descubre las características de los retrofits de BOBIFIL Características RETROFIT BOBIFIL .Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par ... Leer más",
+          "headings": [
+            "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+            "Características",
+            "Características RETROFIT BOBIFIL"
+          ],
+          "paragraphs": [
+            "Antes",
+            "Después"
+          ],
+          "listItems": [],
+          "section": "retrofit",
+          "type": "category",
+          "modified": "2020-05-11T09:07:09"
+        }
+      ],
+      "products": []
+    },
+    "blog": {
+      "overview": {
+        "id": 285,
+        "slug": "blog",
+        "url": "https://erasan.es/blog/",
+        "title": "Blog",
+        "excerpt": "Más de 500 fabricantes ya confían en ERASAN Averigua el motivo Recientes Más populares ERASAN TECHNOLOGY BOBINADORAS De banco lineal Cabezal bobinador Máquinas folio Proyectos especiales Accesorios Tensionadores Guiadores Devanadores Mandriles expandibles Dispensadores retrofit Bobifil Kits de retrofit Reparaciones Bobinadoras usadas CONTACTA +34 961 98 63 73 info@erasan.es Ronda Auguste y Louis Lumiere 45, 46980 ... Leer más",
+        "headings": [
+          "Más de 500 fabricantes ya confían en ERASAN",
+          "Averigua el motivo",
+          "Más populares",
+          "Máquina bobinadora de segunda mano: Bobifil ER33",
+          "Máquina bobinadora de segunda mano: ERASAN E600"
+        ],
+        "paragraphs": [
+          "Disponemos de tres máquinas bobinadoras de segunda mano modelo BOBIFIL ER33 para ser renovadas por completo para comenzar a trabajar para su siguiente propietario. ¿Quieres",
+          "Disponemos de una máquina bobinadora de segunda mano modelo ERASAN E600 completamente equipada con tres conjuntos de tensionadores TH3 completamente revisada y lista para comenzar"
+        ],
+        "listItems": [],
+        "section": "blog",
+        "type": "overview",
+        "modified": "2020-05-10T10:46:42"
+      }
+    },
+    "other": [
+      {
+        "id": 193,
+        "slug": "erasan-bobinadora-e1200",
+        "url": "https://erasan.es/maquinas-bobinadoras/erasan-bobinadora-e1200/",
+        "title": "ERASAN BOBINADORA E1200",
+        "excerpt": "Máquina bobinadora E1200 con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión Características ... Leer más",
+        "headings": [
+          "Máquina bobinadora E1200 con contrapunto de cierre rápido",
+          "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+          "Características",
+          "Características ERASAN E1200",
+          "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+          "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+          "Electromecánica de alta eficiencia",
+          "Garantizando un ahorro de energía y reducción de mantenimiento",
+          "Dispone de conexión Ethernet",
+          "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+          "Sistema de control de última generación CNC",
+          "Con pantalla táctil de 7\" color",
+          "Programa visual y sencillo para el operador",
+          "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+        ],
+        "paragraphs": [
+          "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+          "Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+        ],
+        "listItems": [],
+        "section": "other",
+        "type": "page",
+        "modified": "2020-05-10T11:19:07"
+      }
+    ]
+  },
+  "blogPosts": [
+    {
+      "id": 375,
+      "slug": "maquina-bobinadora-de-segunda-mano-bobifil-er33",
+      "url": "https://erasan.es/maquina-bobinadora-de-segunda-mano-bobifil-er33/",
+      "title": "Máquina bobinadora de segunda mano: Bobifil ER33",
+      "excerpt": "Disponemos de tres máquinas bobinadoras de segunda mano modelo BOBIFIL ER33 para ser renovadas por completo para comenzar a trabajar para su siguiente propietario. ¿Quieres comprar alguna de estas máquinas bobinadoras de segunda mano?. Mándanos un correo y te informamos de las condiciones: info@erasan.es Share this post Share on facebook Share on google Share on ... Leer más",
+      "date": "2020-05-10T09:25:49",
+      "headings": [
+        "Máquina bobinadora de segunda mano: Bobifil ER33",
+        "ERASAN",
+        "Share this post"
+      ],
+      "paragraphs": [
+        "Disponemos de tres máquinas bobinadoras de segunda mano modelo BOBIFIL ER33 para ser renovadas por completo para comenzar a trabajar para su siguiente propietario.",
+        "¿Quieres comprar alguna de estas máquinas bobinadoras de segunda mano?. Mándanos un correo y te informamos de las condiciones: info@erasan.es",
+        "Disponemos de tres máquinas bobinadoras de segunda mano modelo BOBIFIL ER33 para ser renovadas por completo para comenzar a trabajar para su siguiente propietario. ¿Quieres comprar alguna de estas máquinas bobinadoras de segunda mano?. Mándanos un correo y te informamos de las condiciones: info@erasan.es",
+        "mayo 10, 2020",
+        ", 9:25 am",
+        ", Bobinadora usada"
+      ],
+      "listItems": [
+        "mayo 10, 2020",
+        ", 9:25 am",
+        ", Bobinadora usada"
+      ]
+    },
+    {
+      "id": 356,
+      "slug": "maquina-bobinadora-de-segunda-mano-erasan-e600",
+      "url": "https://erasan.es/maquina-bobinadora-de-segunda-mano-erasan-e600/",
+      "title": "Máquina bobinadora de segunda mano: ERASAN E600",
+      "excerpt": "Disponemos de una máquina bobinadora de segunda mano modelo ERASAN E600 completamente equipada con tres conjuntos de tensionadores TH3 completamente revisada y lista para comenzar a trabajar para su siguiente propietario. ¿Quieres comprar esta máquina bobinadora de segunda mano?. Mándanos un correo y te informamos de las condiciones: info@erasan.es Compartir este artículo Share on linkedin ... Leer más",
+      "date": "2020-05-10T09:05:45",
+      "headings": [
+        "Máquina bobinadora de segunda mano: ERASAN E600",
+        "ERASAN",
+        "Compartir este artículo"
+      ],
+      "paragraphs": [
+        "Disponemos de una máquina bobinadora de segunda mano modelo ERASAN E600 completamente equipada con tres conjuntos de tensionadores TH3 completamente revisada y lista para comenzar a trabajar para su siguiente propietario.",
+        "¿Quieres comprar esta máquina bobinadora de segunda mano?. Mándanos un correo y te informamos de las condiciones: info@erasan.es",
+        "Disponemos de una máquina bobinadora de segunda mano modelo ERASAN E600 completamente equipada con tres conjuntos de tensionadores TH3 completamente revisada y lista para comenzar a trabajar para su siguiente propietario. ¿Quieres comprar esta máquina bobinadora de segunda mano?. Mándanos un correo y te informamos de las condiciones: info@erasan.es",
+        "mayo 10, 2020",
+        ", 9:05 am",
+        ", Bobinadora usada"
+      ],
+      "listItems": [
+        "mayo 10, 2020",
+        ", 9:05 am",
+        ", Bobinadora usada"
+      ]
+    }
+  ],
+  "allPages": [
+    {
+      "id": 600,
+      "slug": "dispensador-de-papel-dp1-p",
+      "url": "https://erasan.es/dispensador-de-papel-dp1-p/",
+      "title": "Dispensador de papel DP1-P",
+      "excerpt": "DP1 P – Dispensador de papel Permite varias medidas de forma simultánea Características Descubre las especificaciones del dispensador de papel DP1 P Características ERASAN TPE Tensionador de papel dotado de freno electromagnético y eje expandible. Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente. Regulación del ... Leer más",
+      "headings": [
+        "DP1 P - Dispensador de papel",
+        "Permite varias medidas de forma simultánea",
+        "Características",
+        "Características ERASAN TPE",
+        "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "Compatible con gran variedad de formatos de aislantes"
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T08:21:55"
+    },
+    {
+      "id": 588,
+      "slug": "dispensador-de-papel-tpe",
+      "url": "https://erasan.es/dispensador-de-papel-tpe/",
+      "title": "Dispensador de papel TPE",
+      "excerpt": "TPE – Dispensador de papel Bobina máxima de papel de 400 mm y 310 mm de longitud Características Descubre las especificaciones del dispensador de papel TPE Características ERASAN TPE Tensionador de papel dotado de freno electromagnético y eje expandible. Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades ... Leer más",
+      "headings": [
+        "TPE - Dispensador de papel",
+        "Bobina máxima de papel de 400 mm y 310 mm de longitud",
+        "Características",
+        "Características ERASAN TPE",
+        "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "Compatible con gran variedad de formatos de aislantes"
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T08:23:20"
+    },
+    {
+      "id": 565,
+      "slug": "devanador-dp1r-ap1r",
+      "url": "https://erasan.es/devanador-dp1r-ap1r/",
+      "title": "Devanador DP1R AP1R",
+      "excerpt": "DP1R AP1R – Devanador Doble freno para mejor tensión constante Características Descubre las especificaciones del devanador DP1R AP1R Características ERASAN DP1R AP1R La principal diferencia de DP1R es el doble freno provisto que mejora la tensión, que junto al AP1R ayuda a mantener la tensión constante. En el caso en que el hilo del carrete ... Leer más",
+      "headings": [
+        "DP1R AP1R - Devanador",
+        "Doble freno para mejor tensión constante",
+        "Características",
+        "Características ERASAN DP1R AP1R",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T07:04:26"
+    },
+    {
+      "id": 563,
+      "slug": "devanador-dp4",
+      "url": "https://erasan.es/devanador-dp4/",
+      "title": "Devanador DP4",
+      "excerpt": "DP4 – Devanador Permite el montaje de 4 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm. Características Descubre las especificaciones del devanador DP4 Características ERASAN DP4 Proporciona una tensión constante al hilo durante el bobinado El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y ... Leer más",
+      "headings": [
+        "DP4 - Devanador",
+        "Permite el montaje de 4 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm.",
+        "Características",
+        "Características ERASAN DP4",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T07:37:12"
+    },
+    {
+      "id": 561,
+      "slug": "devanador-dp2",
+      "url": "https://erasan.es/devanador-dp2/",
+      "title": "Devanador DP2",
+      "excerpt": "DP2 – Devanador Permite el montaje de 2 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm. Características Descubre las especificaciones del devanador DP2 Características ERASAN DP2 Proporciona una tensión constante al hilo durante el bobinado El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y ... Leer más",
+      "headings": [
+        "DP2 - Devanador",
+        "Permite el montaje de 2 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm.",
+        "Características",
+        "Características ERASAN DP2",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T07:10:37"
+    },
+    {
+      "id": 558,
+      "slug": "devanador-dp1",
+      "url": "https://erasan.es/devanador-dp1/",
+      "title": "Devanador DP1",
+      "excerpt": "DP1 – Devanador Permite el montaje de carrete con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm. Características Descubre las especificaciones del devanador DP1 Características ERASAN DP1 Proporciona una tensión constante al hilo durante el bobinado El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la ... Leer más",
+      "headings": [
+        "DP1 - Devanador",
+        "Permite el montaje de carrete con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm.",
+        "Características",
+        "Características ERASAN DP1",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+        "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T06:54:10"
+    },
+    {
+      "id": 552,
+      "slug": "mandril-expandible-rectangular",
+      "url": "https://erasan.es/mandril-expandible-rectangular/",
+      "title": "Mandril expandible rectangular",
+      "excerpt": "Mandril expandible rectangular Completamente a medida Características Descubre las especificaciones del mandril expandible rectangular Características ERASAN Mandril expandible El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo. Cada mandril tiene un orificio con ... Leer más",
+      "headings": [
+        "Mandril expandible rectangular",
+        "Completamente a medida",
+        "Características",
+        "Características ERASAN Mandril expandible",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T04:12:46"
+    },
+    {
+      "id": 545,
+      "slug": "mandril-expandible-circular",
+      "url": "https://erasan.es/mandril-expandible-circular/",
+      "title": "Mandril expandible circular",
+      "excerpt": "Mandril expandible circular Completamente a medida Características Descubre las especificaciones del mandril expandible circular Características ERASAN Mandril expandible El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo. Cada mandril tiene un orificio con ... Leer más",
+      "headings": [
+        "Mandril expandible circular",
+        "Completamente a medida",
+        "Características",
+        "Características ERASAN Mandril expandible",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T04:09:58"
+    },
+    {
+      "id": 539,
+      "slug": "guiador-de-pletina-gp2",
+      "url": "https://erasan.es/guiador-de-pletina-gp2/",
+      "title": "Guiador de pletina GP2",
+      "excerpt": "GP2 – Guiador de pletina Dispone de un guiador devanador de cinta Características Descubre las especificaciones del guiador de pletina GP2 Características ERASAN GP2 Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada. Este tipo de guiador es de máxima robustez ya que se suele emplear para el uso de ... Leer más",
+      "headings": [
+        "GP2 - Guiador de pletina",
+        "Dispone de un guiador devanador de cinta",
+        "Características",
+        "Características ERASAN GP2",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T04:02:14"
+    },
+    {
+      "id": 534,
+      "slug": "guiador-de-pletina-gp1",
+      "url": "https://erasan.es/guiador-de-pletina-gp1/",
+      "title": "Guiador de pletina GP1",
+      "excerpt": "GP1 – Guiador de pletina Tensiones de hasta 2kg por mm de sección Características Descubre las especificaciones del guiador de pletina GP1 Características ERASAN GP1 Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada. Este tipo de guiador es de máxima robustez ya que las tensiones empleadas en estos conductores ... Leer más",
+      "headings": [
+        "GP1 - Guiador de pletina",
+        "Tensiones de hasta 2kg por mm de sección",
+        "Características",
+        "Características ERASAN GP1",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T03:57:08"
+    },
+    {
+      "id": 527,
+      "slug": "guiador-de-hilo-gh3",
+      "url": "https://erasan.es/guiador-de-hilo-gh3/",
+      "title": "Guiador de hilo GH3",
+      "excerpt": "GH3 – Guiador de hilo Guiador de hilo con un diámetro de hasta 8.00mm Características Descubre las especificaciones del guiador de hilo GH3 Características ERASAN GH3 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 8mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+      "headings": [
+        "GH3 - Guiador de hilo",
+        "Guiador de hilo con un diámetro de hasta 8.00mm",
+        "Características",
+        "Características ERASAN GH3",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T03:50:24"
+    },
+    {
+      "id": 520,
+      "slug": "guiador-de-hilo-gh2",
+      "url": "https://erasan.es/guiador-de-hilo-gh2/",
+      "title": "Guiador de hilo GH2",
+      "excerpt": "GH2 – Guiador de hilo Guiador de hilo con un diámetro de hasta 3.00mm Características Descubre las especificaciones del guiador de hilo GH2 Características ERASAN GH2 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 3mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+      "headings": [
+        "GH2 - Guiador de hilo",
+        "Guiador de hilo con un diámetro de hasta 3.00mm",
+        "Características",
+        "Características ERASAN GH2",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T03:45:44"
+    },
+    {
+      "id": 515,
+      "slug": "guiador-de-hilo-gh1",
+      "url": "https://erasan.es/guiador-de-hilo-gh1/",
+      "title": "Guiador de hilo GH1",
+      "excerpt": "GH1 – Guiador de hilo Guiador de hilo con un diámetro de hasta 1.00mm Características Descubre las especificaciones del guiador de hilo GH1 Características ERASAN GH1 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 1mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+      "headings": [
+        "GH1 - Guiador de hilo",
+        "Guiador de hilo con un diámetro de hasta 1.00mm",
+        "Características",
+        "Características ERASAN GH1",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T03:46:16"
+    },
+    {
+      "id": 513,
+      "slug": "tensionador-de-hilo-th3-d",
+      "url": "https://erasan.es/tensionador-de-hilo-th3-d/",
+      "title": "Tensionador de hilo TH3 D",
+      "excerpt": "",
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T03:34:37"
+    },
+    {
+      "id": 505,
+      "slug": "tensionador-de-hilo-th3-is",
+      "url": "https://erasan.es/tensionador-de-hilo-th3-is/",
+      "title": "Tensionador de hilo TH3 IS",
+      "excerpt": "TH3 IS – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 Características ERASAN TH3 IS La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El hilo ... Leer más",
+      "headings": [
+        "TH3 IS - Tensionador de hilo",
+        "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "Características",
+        "Características ERASAN TH3 IS",
+        "Detector de hilo",
+        "Detector que para la máquina en caso de rotura de hilo.",
+        "Encoder",
+        "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T03:32:45"
+    },
+    {
+      "id": 498,
+      "slug": "tensionador-de-hilo-th3",
+      "url": "https://erasan.es/tensionador-de-hilo-th3/",
+      "title": "Tensionador de hilo TH3",
+      "excerpt": "TH3 – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 Características ERASAN TH3 La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El hilo entra en ... Leer más",
+      "headings": [
+        "TH3 - Tensionador de hilo",
+        "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "Características",
+        "Características ERASAN TH3",
+        "Detector de hilo",
+        "Detector que para la máquina en caso de rotura de hilo.",
+        "Encoder",
+        "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-11T03:33:20"
+    },
+    {
+      "id": 489,
+      "slug": "tensionador-de-hilo-th3-standalone",
+      "url": "https://erasan.es/tensionador-de-hilo-th3-standalone/",
+      "title": "Tensionador de hilo TH3 StandAlone",
+      "excerpt": "TH3 StandAlone – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 StandAlone Características ERASAN TH3 StandAlone La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El ... Leer más",
+      "headings": [
+        "TH3 StandAlone - Tensionador de hilo",
+        "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "Características",
+        "Características ERASAN TH3 StandAlone",
+        "Detector de hilo",
+        "Detector que para la máquina en caso de rotura de hilo.",
+        "Encoder",
+        "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "product",
+      "modified": "2020-05-10T16:20:52"
+    },
+    {
+      "id": 482,
+      "slug": "bobinadora-strip-foil",
+      "url": "https://erasan.es/bobinadora-strip-foil/",
+      "title": "Bobinadora Strip Foil",
+      "excerpt": "Máquina bobinadora Strip Foil Máquina de dos papeles y un folio para la fabricación de bobinas para grandes trasformadores de resina/secos para distibución y potencia. Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible. El eje devanador es un eje expandible con sistema ... Leer más",
+      "headings": [
+        "Máquina bobinadora Strip Foil",
+        "Máquina de dos papeles y un folio para la fabricación de bobinas para grandes trasformadores de resina/secos para distibución y potencia.",
+        "Características",
+        "Características ERASAN STRIP FOIL",
+        "Varias configuraciones posibles para bobinas de hasta 2.300 mm con una zona de bobinado de 1.800 mm",
+        "Permite el bobinado de una amplia gama de tamaños y número de transformadores y strips según se requiera.",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.",
+        "El eje devanador es un eje expandible con sistema hidráulico. Movimiento lateral en el devanador de folio gracias al con una fotocélula para controlar posibles desviaciones."
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T15:21:45"
+    },
+    {
+      "id": 469,
+      "slug": "bobinadora-folio",
+      "url": "https://erasan.es/bobinadora-folio/",
+      "title": "Bobinadora Folio",
+      "excerpt": "Máquina bobinadora Folio Para la fabricación de bobinas para grandes transformadores de resina/secos de distribución y potencia Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible. Estructura mecánica: construcción de cuerpo mecánico en acero electrosoldado, tratado térmicamente para su estabilización, mecanizado y partes ... Leer más",
+      "headings": [
+        "Máquina bobinadora Folio",
+        "Para la fabricación de bobinas para grandes transformadores de resina/secos de distribución y potencia",
+        "Características",
+        "Características ERASAN E-FOIL",
+        "Varias configuraciones posibles de hasta 1.500 mm de anchura",
+        "Permite bobinado de primarias fácilmente y con tiempos de ciclo de producción muy cortos.",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.",
+        "Estructura mecánica: construcción de cuerpo mecánico en acero electrosoldado, tratado térmicamente para su estabilización, mecanizado y partes fresadas. Alta rigidez torsional, pintura al horno."
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T15:12:08"
+    },
+    {
+      "id": 285,
+      "slug": "blog",
+      "url": "https://erasan.es/blog/",
+      "title": "Blog",
+      "excerpt": "Más de 500 fabricantes ya confían en ERASAN Averigua el motivo Recientes Más populares ERASAN TECHNOLOGY BOBINADORAS De banco lineal Cabezal bobinador Máquinas folio Proyectos especiales Accesorios Tensionadores Guiadores Devanadores Mandriles expandibles Dispensadores retrofit Bobifil Kits de retrofit Reparaciones Bobinadoras usadas CONTACTA +34 961 98 63 73 info@erasan.es Ronda Auguste y Louis Lumiere 45, 46980 ... Leer más",
+      "headings": [
+        "Más de 500 fabricantes ya confían en ERASAN",
+        "Averigua el motivo",
+        "Más populares",
+        "Máquina bobinadora de segunda mano: Bobifil ER33",
+        "Máquina bobinadora de segunda mano: ERASAN E600"
+      ],
+      "paragraphs": [
+        "Disponemos de tres máquinas bobinadoras de segunda mano modelo BOBIFIL ER33 para ser renovadas por completo para comenzar a trabajar para su siguiente propietario. ¿Quieres",
+        "Disponemos de una máquina bobinadora de segunda mano modelo ERASAN E600 completamente equipada con tres conjuntos de tensionadores TH3 completamente revisada y lista para comenzar"
+      ],
+      "listItems": [],
+      "section": "blog",
+      "type": "overview",
+      "modified": "2020-05-10T10:46:42"
+    },
+    {
+      "id": 260,
+      "slug": "bobinadora-erasan-e1200-c-sgb",
+      "url": "https://erasan.es/cabezal-bobinador/bobinadora-erasan-e1200-c-sgb/",
+      "title": "BOBINADORA ERASAN E1200C SGB",
+      "excerpt": "Máquina bobinadora E1200 SGB con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+      "headings": [
+        "Máquina bobinadora E1200 SGB con contrapunto de cierre rápido",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "Características",
+        "Características ERASAN E1200 SGB",
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T11:41:38"
+    },
+    {
+      "id": 258,
+      "slug": "bobinadora-erasan-e1200-c",
+      "url": "https://erasan.es/cabezal-bobinador/bobinadora-erasan-e1200-c/",
+      "title": "BOBINADORA ERASAN E1200C",
+      "excerpt": "Cabezal bobinador E1200C Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión Características Descubre las especificaciones de la ... Leer más",
+      "headings": [
+        "Cabezal bobinador E1200C",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "Características",
+        "Características ERASAN E1200C",
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T11:40:29"
+    },
+    {
+      "id": 256,
+      "slug": "bobinadora-erasan-e1500-b",
+      "url": "https://erasan.es/cabezal-bobinador/bobinadora-erasan-e1500-b/",
+      "title": "BOBINADORA ERASAN E1500B",
+      "excerpt": "",
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T11:33:15"
+    },
+    {
+      "id": 254,
+      "slug": "bobinadora-erasan-e1200-b",
+      "url": "https://erasan.es/cabezal-bobinador/bobinadora-erasan-e1200-b/",
+      "title": "BOBINADORA ERASAN E1200B",
+      "excerpt": "",
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T11:30:55"
+    },
+    {
+      "id": 197,
+      "slug": "bobinadora-erasan-e1200-sgb",
+      "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e1200-sgb/",
+      "title": "BOBINADORA ERASAN E1200 SGB",
+      "excerpt": "Máquina bobinadora E1200 SGB con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+      "headings": [
+        "Máquina bobinadora E1200 SGB con contrapunto de cierre rápido",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "Características",
+        "Características ERASAN E1200 SGB",
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores",
+        "SUScríbete"
+      ],
+      "paragraphs": [
+        "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión",
+        "De banco lineal Cabezal Bobinador",
+        "Máquinas a medida",
+        "Máquinas actualizadas",
+        "Ocasión - segunda mano"
+      ],
+      "listItems": [
+        "De banco lineal Cabezal Bobinador",
+        "Máquinas a medida",
+        "Máquinas actualizadas",
+        "Ocasión - segunda mano"
+      ],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-09T10:20:56"
+    },
+    {
+      "id": 195,
+      "slug": "bobinadora-erasan-e1200-servotech",
+      "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e1200-servotech/",
+      "title": "BOBINADORA ERASAN E1200 SERVOTECH",
+      "excerpt": "Máquina bobinadora E1200 SERVOTECH con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+      "headings": [
+        "Máquina bobinadora E1200 SERVOTECH con contrapunto de cierre rápido",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "Características",
+        "Características ERASAN E1200 SERVOTECH",
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T11:19:54"
+    },
+    {
+      "id": 193,
+      "slug": "erasan-bobinadora-e1200",
+      "url": "https://erasan.es/maquinas-bobinadoras/erasan-bobinadora-e1200/",
+      "title": "ERASAN BOBINADORA E1200",
+      "excerpt": "Máquina bobinadora E1200 con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión Características ... Leer más",
+      "headings": [
+        "Máquina bobinadora E1200 con contrapunto de cierre rápido",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "Características",
+        "Características ERASAN E1200",
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+      ],
+      "listItems": [],
+      "section": "other",
+      "type": "page",
+      "modified": "2020-05-10T11:19:07"
+    },
+    {
+      "id": 191,
+      "slug": "bobinadora-erasan-e900-sgb",
+      "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e900-sgb/",
+      "title": "BOBINADORA ERASAN E900 SGB",
+      "excerpt": "Máquina bobinadora E900 SGB con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+      "headings": [
+        "Máquina bobinadora E900 SGB con contrapunto de cierre rápido",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "Características",
+        "Características ERASAN E900 SGB",
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T11:18:30"
+    },
+    {
+      "id": 189,
+      "slug": "bobinadora-erasan-e900-servotech",
+      "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e900-servotech/",
+      "title": "BOBINADORA ERASAN E900 SERVOTECH",
+      "excerpt": "Máquina bobinadora E900 SERVOTECH con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión ... Leer más",
+      "headings": [
+        "Máquina bobinadora E900 SERVOTECH con contrapunto de cierre rápido",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "Características",
+        "Características ERASAN E900 SERVOTECH",
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T11:17:43"
+    },
+    {
+      "id": 187,
+      "slug": "bobinadora-erasan-e900",
+      "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e900/",
+      "title": "BOBINADORA ERASAN E900",
+      "excerpt": "Máquina bobinadora E900 con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Cuerpo fabricado en acero mecano soldado de gran rigidez Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión Características ... Leer más",
+      "headings": [
+        "Máquina bobinadora E900 con contrapunto de cierre rápido",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "Características",
+        "Características ERASAN E900",
+        "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+        "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T11:17:09"
+    },
+    {
+      "id": 185,
+      "slug": "bobinadora-erasan-e600",
+      "url": "https://erasan.es/bobinadora-erasan-e600/",
+      "title": "BOBINADORA ERASAN E600",
+      "excerpt": "Máquina bobinadora E600 con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de mediana potencia Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas ... Leer más",
+      "headings": [
+        "Máquina bobinadora E600 con contrapunto de cierre rápido",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de mediana potencia",
+        "Características",
+        "Características ERASAN E600",
+        "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
+        "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada",
+        "Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas y contrapunto de cierre rápido"
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-10T11:15:20"
+    },
+    {
+      "id": 183,
+      "slug": "bobinadora-erasan-e300",
+      "url": "https://erasan.es/maquinas-bobinadoras/bobinadora-erasan-e300/",
+      "title": "BOBINADORA ERASAN E300",
+      "excerpt": "Máquina bobinadora E300 con contrapunto de cierre rápido Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas ... Leer más",
+      "headings": [
+        "Máquina bobinadora E300 con contrapunto de cierre rápido",
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia",
+        "Características",
+        "Características ERASAN E300",
+        "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
+        "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
+        "Electromecánica de alta eficiencia",
+        "Garantizando un ahorro de energía y reducción de mantenimiento",
+        "Dispone de conexión Ethernet",
+        "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+        "Sistema de control de última generación CNC",
+        "Con pantalla táctil de 7\" color",
+        "Programa visual y sencillo para el operador",
+        "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+      ],
+      "paragraphs": [
+        "Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada",
+        "Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas y contrapunto de cierre rápido"
+      ],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-11T09:08:42"
+    },
+    {
+      "id": 181,
+      "slug": "bobinadora-erasan-e300w",
+      "url": "https://erasan.es/bobinadora-erasan-e300w/",
+      "title": "BOBINADORA ERASAN E300W",
+      "excerpt": "",
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "product",
+      "modified": "2020-05-09T07:10:17"
+    },
+    {
+      "id": 143,
+      "slug": "reparaciones",
+      "url": "https://erasan.es/reparaciones/",
+      "title": "REPARACIONES",
+      "excerpt": "",
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "retrofit",
+      "type": "category",
+      "modified": "2020-05-10T03:21:28"
+    },
+    {
+      "id": 141,
+      "slug": "kits-retrofit",
+      "url": "https://erasan.es/kits-retrofit/",
+      "title": "KITS RETROFIT",
+      "excerpt": "TPE – Dispensador de papel Bobina máxima de papel de 400 mm y 310 mm de longitud Características Descubre el alcance de nuestro KIT RETROFIT Características ERASAN KIT RETROFIT Ofrecemos un armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado. Permite devolver su máquina de vuelta al trabajo, equipada con ... Leer más",
+      "headings": [
+        "TPE - Dispensador de papel",
+        "Bobina máxima de papel de 400 mm y 310 mm de longitud",
+        "Características",
+        "Características ERASAN KIT RETROFIT"
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "retrofit",
+      "type": "category",
+      "modified": "2020-05-11T08:44:20"
+    },
+    {
+      "id": 139,
+      "slug": "bobifil",
+      "url": "https://erasan.es/bobifil/",
+      "title": "BOBIFIL",
+      "excerpt": "Máquinas bobinadoras Bobifil – de vuelta a la vida Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Antes Después Características Descubre las características de los retrofits de BOBIFIL Características RETROFIT BOBIFIL .Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par ... Leer más",
+      "headings": [
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "Características",
+        "Características RETROFIT BOBIFIL"
+      ],
+      "paragraphs": [
+        "Antes",
+        "Después"
+      ],
+      "listItems": [],
+      "section": "retrofit",
+      "type": "category",
+      "modified": "2020-05-11T09:07:09"
+    },
+    {
+      "id": 137,
+      "slug": "dispensadores",
+      "url": "https://erasan.es/dispensadores/",
+      "title": "Dispensadores",
+      "excerpt": "Dispensadores Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Dispensador de papel TPE Dispensador de papel DP1-P ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. E600 ... Leer más",
+      "headings": [
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "category",
+      "modified": "2020-05-11T09:14:23"
+    },
+    {
+      "id": 135,
+      "slug": "mandriles-expandibles",
+      "url": "https://erasan.es/mandriles-expandibles/",
+      "title": "Mandriles expandibles",
+      "excerpt": "Mandriles expandibles Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Mandril expandible circular Mandril expandible rectangular ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. E600 LONG ... Leer más",
+      "headings": [
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "category",
+      "modified": "2020-05-11T09:14:12"
+    },
+    {
+      "id": 133,
+      "slug": "devanadores",
+      "url": "https://erasan.es/devanadores/",
+      "title": "Devanadores",
+      "excerpt": "Devanadores Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Devanador DP1 Devanador DP2 Devanador DP4 Devanador DP1R AP1R ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. ... Leer más",
+      "headings": [
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "category",
+      "modified": "2020-05-11T09:13:58"
+    },
+    {
+      "id": 131,
+      "slug": "guiadores",
+      "url": "https://erasan.es/guiadores/",
+      "title": "Guiadores",
+      "excerpt": "Guiadores Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Guiador de hilo GH1 Guiador de hilo GH2 Guiador de hilo GH3 Guiador de pletina GP1 Guiador de pletina GP2 ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta ... Leer más",
+      "headings": [
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "category",
+      "modified": "2020-05-11T09:13:44"
+    },
+    {
+      "id": 129,
+      "slug": "tensionadores",
+      "url": "https://erasan.es/tensionadores/",
+      "title": "Tensionadores",
+      "excerpt": "Tensionadores Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Tensionador de hilo TH3 StandAlone Tensionador de hilo TH3 Tensionador de hilo TH3 – IS Tensionador de hilo TH3-D ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con ... Leer más",
+      "headings": [
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "category",
+      "modified": "2020-05-11T09:12:48"
+    },
+    {
+      "id": 127,
+      "slug": "especiales",
+      "url": "https://erasan.es/especiales/",
+      "title": "Especiales",
+      "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Quieres ser el siguiente? Haz clic aquí E600 LONG Máquina Flyer Encintadora ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. ERASAN TECHNOLOGY BOBINADORAS De banco lineal Cabezal bobinador Máquinas ... Leer más",
+      "headings": [
+        "Más de 500 fabricantes ya confían en ERASAN",
+        "¿Quieres ser el siguiente?",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "category",
+      "modified": "2020-05-10T10:05:25"
+    },
+    {
+      "id": 125,
+      "slug": "folio",
+      "url": "https://erasan.es/folio/",
+      "title": "Folio",
+      "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Quieres ser el siguiente? Haz clic aquí Bobinadora Folio Bobinadora Strip Foil ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. E600 LONG Máquina Flyer Encintadora ERASAN TECHNOLOGY BOBINADORAS De ... Leer más",
+      "headings": [
+        "Más de 500 fabricantes ya confían en ERASAN",
+        "¿Quieres ser el siguiente?",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "category",
+      "modified": "2020-05-10T15:14:30"
+    },
+    {
+      "id": 123,
+      "slug": "cabezal-bobinador",
+      "url": "https://erasan.es/cabezal-bobinador/",
+      "title": "Cabezal bobinador",
+      "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Quieres ser el siguiente? Haz clic aquí Cabezal bobinador E1200C Cabezal bobinador E1200C SGB Cabezal bobinador E1200B Cabezal bobinador E1500B ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. E600 ... Leer más",
+      "headings": [
+        "Más de 500 fabricantes ya confían en ERASAN",
+        "¿Quieres ser el siguiente?",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "category",
+      "modified": "2020-05-10T11:33:22"
+    },
+    {
+      "id": 121,
+      "slug": "banco-lineal",
+      "url": "https://erasan.es/banco-lineal/",
+      "title": "Banco lineal",
+      "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Quieres ser el siguiente? Haz clic aquí Bobinadora E300W Bobinadora E300 Bobinadora E600 Bobinadora E900 Bobinadora E900 SERVOTECH Bobinadora E900 SGB Bobinadora E1200 Bobinadora E1200 SERVOTECH Bobinadora E1200 SGB ERASAN TECHNOLOGY BOBINADORAS De banco lineal Cabezal bobinador Máquinas folio Proyectos especiales Accesorios Tensionadores Guiadores Devanadores Mandriles expandibles ... Leer más",
+      "headings": [
+        "Más de 500 fabricantes ya confían en ERASAN",
+        "¿Quieres ser el siguiente?"
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "category",
+      "modified": "2020-05-11T07:45:47"
+    },
+    {
+      "id": 106,
+      "slug": "home-english",
+      "url": "https://erasan.es/en/home-english/",
+      "title": "home – English",
+      "excerpt": "",
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "english",
+      "type": "page",
+      "modified": "2020-05-09T03:47:33"
+    },
+    {
+      "id": 102,
+      "slug": "exitos",
+      "url": "https://erasan.es/exitos/",
+      "title": "Bobinadoras usadas",
+      "excerpt": "Máquinas bobinadoras usadas disponibles Más de 500 fabricantes ya confían en ERASAN ERASAN TECHNOLOGY BOBINADORAS De banco lineal Cabezal bobinador Máquinas folio Proyectos especiales Accesorios Tensionadores Guiadores Devanadores Mandriles expandibles Dispensadores retrofit Bobifil Kits de retrofit Reparaciones Bobinadoras usadas CONTACTA +34 961 98 63 73 info@erasan.es Ronda Auguste y Louis Lumiere 45, 46980 – PaternaValencia ... Leer más",
+      "headings": [
+        "Más de 500 fabricantes ya confían en ERASAN",
+        "Máquina bobinadora de segunda mano: Bobifil ER33",
+        "Máquina bobinadora de segunda mano: ERASAN E600"
+      ],
+      "paragraphs": [
+        "Disponemos de tres máquinas bobinadoras de segunda mano modelo BOBIFIL ER33 para ser renovadas por completo para comenzar a trabajar para su siguiente propietario. ¿Quieres",
+        "Disponemos de una máquina bobinadora de segunda mano modelo ERASAN E600 completamente equipada con tres conjuntos de tensionadores TH3 completamente revisada y lista para comenzar"
+      ],
+      "listItems": [],
+      "section": "usedMachines",
+      "type": "page",
+      "modified": "2020-05-11T08:26:27"
+    },
+    {
+      "id": 100,
+      "slug": "retrofit",
+      "url": "https://erasan.es/retrofit/",
+      "title": "Retrofit",
+      "excerpt": "Retrofit de cualquier bobinadora No importa el fabricante ni el estado de la máquina, estudiaremos todas las posibilidades Características Descubre las características de los retrofits de maquinaria Características RETROFIT BOBIFIL .Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par .Permite fabricar bobinas de longitud máxima de 800mm .Permite la fabricación de ... Leer más",
+      "headings": [
+        "No importa el fabricante ni el estado de la máquina, estudiaremos todas las posibilidades",
+        "Características",
+        "Características RETROFIT BOBIFIL"
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "retrofit",
+      "type": "overview",
+      "modified": "2020-05-11T09:23:24"
+    },
+    {
+      "id": 98,
+      "slug": "accesorios",
+      "url": "https://erasan.es/accesorios/",
+      "title": "Accesorios",
+      "excerpt": "Accesorios Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Tensionadores Devanadores Guiadores Mandriles expandibles circulares Mandriles expandibles rectangulares Dispensadores de papel ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus ... Leer más",
+      "headings": [
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "accessories",
+      "type": "overview",
+      "modified": "2020-05-11T09:12:13"
+    },
+    {
+      "id": 96,
+      "slug": "maquinas-bobinadoras",
+      "url": "https://erasan.es/maquinas-bobinadoras/",
+      "title": "Máquinas bobinadoras",
+      "excerpt": "Máquinas bobinadoras Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución Bobinadora de banco lineal Cabezal bobinador Máquina folio ¿No encuentras lo que buscas? Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones. ... Leer más",
+      "headings": [
+        "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
+        "¿No encuentras lo que buscas?",
+        "Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "coilWindingMachines",
+      "type": "overview",
+      "modified": "2020-05-10T10:52:49"
+    },
+    {
+      "id": 10,
+      "slug": "home",
+      "url": "https://erasan.es/",
+      "title": "home",
+      "excerpt": "Más de 500 fabricantes ya confían en ERASAN ¿Conoces nuestras bobinadoras? Ir a máquinas bobinadoras ERASAN – COIL WINDING MACHINES Fabricantes especialistas de máquinas bobinadoras, accesorios y soluciones a medida para la industria del bobinado. 18 años de experiencia y la confianza de más de 500 fabricantes de todo el mundo nos avalan como partner ... Leer más",
+      "headings": [
+        "Más de 500 fabricantes ya confían en ERASAN",
+        "¿Conoces nuestras bobinadoras?",
+        "ERASAN - COIL WINDING MACHINES",
+        "High torque",
+        "Fabricantes especialistas de máquinas bobinadoras, accesorios y soluciones a medida para la industria del bobinado. 18 años de experiencia y la confianza de más de 500 fabricantes de todo el mundo nos avalan como partner tecnológico para dar valor añadido a su empresa. En ERASAN contamos con soluciones para todo tipo de trabajos con folio, pletina o hilo, para todo tipo de bobinados: edge winding, núcleo amorfo, flyer..."
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "section": "home",
+      "type": "page",
+      "modified": "2020-05-11T06:35:46"
+    }
+  ]
+}

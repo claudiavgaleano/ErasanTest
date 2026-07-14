@@ -23,6 +23,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import { useThemeMode } from '../context/ThemeContext'
 import { useProduct, contentHelpers } from '../hooks/useContent'
+import { getSectionBackLink } from '../utils/contentHelpers'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -85,7 +86,8 @@ export default function ProductDetail() {
   }
 
   const acf = contentHelpers.getAcfFields(product)
-  const categories = contentHelpers.getCategories(product)
+  const categories = contentHelpers.getCategories(product, t, product.section)
+  const sectionBackLink = getSectionBackLink(product.section)
   const featuredImage = contentHelpers.getFeaturedImage(product, 'large') || PLACEHOLDER_IMAGE
 
   // Parse specifications from ACF fields (customize based on your ACF setup)
@@ -103,6 +105,9 @@ export default function ProductDetail() {
             </Link>
             <Link to="/products" style={{ color: 'inherit', textDecoration: 'none' }}>
               {t('nav.services')}
+            </Link>
+            <Link to={sectionBackLink.path} style={{ color: 'inherit', textDecoration: 'none' }}>
+              {t(sectionBackLink.labelKey)}
             </Link>
             <Typography color="text.primary" dangerouslySetInnerHTML={{ __html: product.title.rendered }} />
           </Breadcrumbs>
@@ -263,11 +268,13 @@ export default function ProductDetail() {
             <Divider sx={{ mb: 4 }} />
             <Button
               component={Link}
-              to="/products"
+              to={sectionBackLink.path}
               startIcon={<ArrowBackIcon />}
               sx={{ color: 'text.secondary' }}
             >
-              {t('products.backToProducts')}
+              {product.section === 'retrofit'
+                ? t('products.backToProducts')
+                : t('products.backToSection', { section: t(sectionBackLink.labelKey) })}
             </Button>
           </Box>
         </Container>
