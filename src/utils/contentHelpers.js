@@ -1,4 +1,5 @@
 import { categoriesBySection } from '../data/categories'
+import { getProductGalleryImage } from '../data/productGalleryImages'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -19,6 +20,69 @@ export function toTitleCase(text) {
     .split(' ')
     .map((word) => (word ? word.charAt(0).toUpperCase() + word.slice(1) : word))
     .join(' ')
+}
+
+function isPlainObject(value) {
+  return value !== null && typeof value === 'object' && !Array.isArray(value)
+}
+
+function localizeRichLayout(product, t, itemKey) {
+  const heroIntroRaw = t(`${itemKey}.heroIntro`, { returnObjects: true, defaultValue: [] })
+  const galleryRaw = t(`${itemKey}.gallery`, { returnObjects: true, defaultValue: [] })
+  const characteristicsRaw = t(`${itemKey}.characteristics`, { returnObjects: true, defaultValue: null })
+  const brandFeaturesRaw = t(`${itemKey}.brandFeatures`, { returnObjects: true, defaultValue: null })
+  const highlightRaw = t(`${itemKey}.highlight`, { returnObjects: true, defaultValue: null })
+  const benefitCardsRaw = t(`${itemKey}.benefitCards`, { returnObjects: true, defaultValue: [] })
+
+  const heroIntro = Array.isArray(heroIntroRaw) ? heroIntroRaw.filter(Boolean) : []
+  const benefitCards =
+    Array.isArray(benefitCardsRaw) && benefitCardsRaw.some((card) => card?.title) ? benefitCardsRaw : []
+
+  const baseGallery = product.acf?.gallery || []
+  const gallery =
+    Array.isArray(galleryRaw) && galleryRaw.length > 0
+      ? galleryRaw.map((item, index) => {
+          const caption = typeof item === 'string' ? item : item?.caption || ''
+          const base = baseGallery[index] || {}
+          const resolvedSrc =
+            getProductGalleryImage(product.slug, index) || base.src || base.url || PLACEHOLDER_IMAGE
+          return {
+            src: resolvedSrc,
+            alt: base.alt || caption || product.title?.rendered || product.slug,
+            caption,
+          }
+        })
+      : []
+
+  const characteristics =
+    isPlainObject(characteristicsRaw) && characteristicsRaw.body
+      ? {
+          title: characteristicsRaw.title || t('products.characteristics'),
+          body: characteristicsRaw.body,
+        }
+      : null
+
+  const brandFeatures =
+    isPlainObject(brandFeaturesRaw) && Array.isArray(brandFeaturesRaw.items)
+      ? {
+          title: brandFeaturesRaw.title || '',
+          items: brandFeaturesRaw.items.filter(Boolean),
+        }
+      : null
+
+  const highlight =
+    isPlainObject(highlightRaw) && highlightRaw.title
+      ? {
+          title: highlightRaw.title,
+          subtitle: highlightRaw.subtitle || '',
+          imageIndex: Number.isInteger(highlightRaw.imageIndex) ? highlightRaw.imageIndex : 1,
+        }
+      : null
+
+  const layout =
+    product.acf?.layout === 'rich' || benefitCards.length > 0 || Boolean(characteristics) ? 'rich' : 'classic'
+
+  return { layout, heroIntro, gallery, characteristics, brandFeatures, highlight, benefitCards }
 }
 
 export function localizeProduct(product, t) {
@@ -45,8 +109,11 @@ export function localizeProduct(product, t) {
       }))
 
   const rawTitle = t(`${itemKey}.title`, { defaultValue: product.title?.rendered || key })
-  const rawExcerpt = t(`${itemKey}.excerpt`, { defaultValue: product.excerpt?.rendered || '' })
+  const rawExcerpt = t(`${itemKey}.heroSubtitle`, {
+    defaultValue: t(`${itemKey}.excerpt`, { defaultValue: product.excerpt?.rendered || '' }),
+  })
   const rawContent = t(`${itemKey}.content`, { defaultValue: product.content?.rendered || '' })
+  const richLayout = localizeRichLayout(product, t, itemKey)
 
   return {
     ...product,
@@ -63,6 +130,7 @@ export function localizeProduct(product, t) {
       ...product.acf,
       features: localizedFeatures,
       specifications: localizedSpecifications,
+      ...richLayout,
     },
   }
 }

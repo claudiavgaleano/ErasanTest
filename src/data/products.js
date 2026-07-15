@@ -24,6 +24,11 @@ export const products = [
         "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
         "Sistema de control de última generación CNC",
         "Con pantalla táctil de 7\" color"
+      ],
+      "gallery": [
+        {
+          "alt": "Bobinadora ERASAN STRIP FOIL"
+        }
       ]
     }
   },
@@ -151,11 +156,11 @@ export const products = [
   },
   {
     "id": 9,
-    "slug": "cabezal-bobinador-erasan-e1200",
+    "slug": "bobinadora-erasan-e1200",
     "section": "coilWinding",
-    "categorySlug": "cabezal-bobinador",
+    "categorySlug": "banco-lineal",
     "categoryId": 2,
-    "i18nKey": "cabezal-bobinador-erasan-e1200",
+    "i18nKey": "bobinadora-erasan-e1200",
     "acf": {
       "features": [
         "Posibilidad de conseguir 1.000 Nm en baja velocidad",
@@ -292,7 +297,8 @@ export const products = [
         "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
         "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
         "Compatible con gran variedad de formatos de aislantes"
-      ]
+      ],
+      "layout": "rich"
     }
   },
   {

@@ -117,6 +117,7 @@
     "requestQuote": "Request Quote",
     "askQuestion": "Ask a Question",
     "keyFeatures": "Key Features",
+    "characteristics": "Characteristics",
     "specifications": "Technical Specifications",
     "downloadSpecs": "Download Technical Specifications",
     "downloadSpecsComingSoon": "Technical specifications PDF will be available soon",
@@ -359,18 +360,56 @@
     "items": {
       "bobinadora-strip-foil": {
         "title": "Strip Foil Winding Machine",
-        "excerpt": "Winding unit comprising a welded steel head, pneumatic press roller, and expandable mandrel.",
-        "content": "Winding unit comprising a welded steel head, pneumatic press roller, and expandable mandrel.\n\nThe dereeling mandrel is a hydraulic expandable shaft. Lateral foil dereeler movement is controlled by a photocell to correct possible deviations.",
-        "features": [
-          "Multiple configurations available for coils up to 2,300 mm with a 1,800 mm winding zone",
-          "Supports winding a wide range of transformer and strip sizes and quantities as required.",
-          "High-efficiency electromechanical drive",
-          "Ensuring energy savings and reduced maintenance",
-          "Equipped with Ethernet connectivity",
-          "Enables remote technical support from anywhere in the world",
-          "Latest-generation CNC control system",
-          "With 7\" color touchscreen"
+        "heroSubtitle": "Two-paper, one-foil machine for manufacturing coils for large resin-cast/dry-type distribution and power transformers.",
+        "excerpt": "Two-paper, one-foil machine for manufacturing coils for large resin-cast/dry-type distribution and power transformers.",
+        "heroIntro": [
+          "Winding unit comprising a welded machined-steel head, pneumatic press roller, and expandable mandrel.",
+          "The dereeling mandrel is a hydraulic expandable shaft. Lateral foil dereeler movement is controlled by a photocell to correct possible deviations."
         ],
+        "gallery": [
+          { "caption": "ERASAN STRIP FOIL WINDING MACHINE" },
+          { "caption": "ERASAN STRIP FOIL WINDING MACHINE — LATERAL VIEW" }
+        ],
+        "characteristics": {
+          "title": "Characteristics",
+          "body": "The paper dereeler offers easy loading and unloading thanks to its pneumatic shafts. It maintains the constant tension required during winding, while a photocell monitors paper position at all times, shifting laterally when needed.\n\nIt includes electronic control for fast paper adjustment."
+        },
+        "brandFeatures": {
+          "title": "ERASAN STRIP FOIL Features",
+          "items": [
+            "Surplus paper collection unit via a motorized roller installed next to the foil dereeler system.",
+            "Foil cutting system by nibbler or shear.",
+            "Welding unit with optional welding table.",
+            "Burr eliminator to prevent damage to copper or aluminum strip ends: two sets of two rollers applying pressure on the band edges, one above the other.",
+            "Option: TIG welding table.",
+            "Option: Guillotine foil cutting."
+          ]
+        },
+        "highlight": {
+          "title": "Multiple configurations available for coils up to 2,300 mm with a 1,800 mm winding zone",
+          "subtitle": "Supports winding a wide range of transformer and strip sizes and quantities as required.",
+          "imageIndex": 1
+        },
+        "benefitCards": [
+          {
+            "title": "High-efficiency electromechanical drive",
+            "description": "Ensuring energy savings and reduced maintenance"
+          },
+          {
+            "title": "Equipped with Ethernet connectivity",
+            "description": "Enables remote technical support from anywhere in the world"
+          },
+          {
+            "title": "Latest-generation CNC control system",
+            "description": "With 7\" color touchscreen"
+          },
+          {
+            "title": "Visual, user-friendly operator program",
+            "description": "Enables fast, error-free creation of any coil type and winding action required in the process"
+          }
+        ],
+        "content": "",
+        "features": [],
         "section": "coilWinding",
         "specifications": []
       },
@@ -441,23 +480,7 @@
         "section": "coilWinding",
         "specifications": []
       },
-      "cabezal-bobinador-erasan-e1200": {
-        "title": "WINDING HEAD ERASAN E1200",
-        "excerpt": "Body manufactured from welded steel with high rigidity",
-        "content": "Body manufactured from welded steel with high rigidity\n\nMachined bed, tailstock, and ball-screw wire guide system with precision guide slides",
-        "features": [
-          "Capable of delivering 1,000 Nm at low speed",
-          "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
-          "High-efficiency electromechanical drive",
-          "Ensuring energy savings and reduced maintenance",
-          "Equipped with Ethernet connectivity",
-          "Enables remote technical support from anywhere in the world",
-          "Latest-generation CNC control system",
-          "With 7\" color touchscreen"
-        ],
-        "section": "coilWinding",
-        "specifications": []
-      },
+
       "bobinadora-erasan-e1200-c-sgb": {
         "title": "BOBINADORA ERASAN E1200C SGB",
         "excerpt": "Cuerpo fabricado en acero mecano soldado de gran rigidez",
