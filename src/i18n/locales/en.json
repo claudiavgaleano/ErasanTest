@@ -118,6 +118,7 @@
     "askQuestion": "Ask a Question",
     "keyFeatures": "Key Features",
     "characteristics": "Characteristics",
+    "productAccessories": "Accessories",
     "specifications": "Technical Specifications",
     "downloadSpecs": "Download Technical Specifications",
     "downloadSpecsComingSoon": "Technical specifications PDF will be available soon",
@@ -367,8 +368,12 @@
           "The dereeling mandrel is a hydraulic expandable shaft. Lateral foil dereeler movement is controlled by a photocell to correct possible deviations."
         ],
         "gallery": [
-          { "caption": "ERASAN STRIP FOIL WINDING MACHINE" },
-          { "caption": "ERASAN STRIP FOIL WINDING MACHINE — LATERAL VIEW" }
+          {
+            "caption": "ERASAN STRIP FOIL WINDING MACHINE"
+          },
+          {
+            "caption": "ERASAN STRIP FOIL WINDING MACHINE — LATERAL VIEW"
+          }
         ],
         "characteristics": {
           "title": "Characteristics",
@@ -411,7 +416,38 @@
         "content": "",
         "features": [],
         "section": "coilWinding",
-        "specifications": []
+        "specifications": [
+          {
+            "label": "Maximum winding zone",
+            "value": "1,800 mm",
+            "icon": "dimension"
+          },
+          {
+            "label": "Maximum coil diameter",
+            "value": "2,300 mm",
+            "icon": "diameter"
+          },
+          {
+            "label": "Maximum foil width",
+            "value": "400 mm",
+            "icon": "width"
+          },
+          {
+            "label": "Foil thickness",
+            "value": "0.5 – 3.0 mm",
+            "icon": "dimension"
+          },
+          {
+            "label": "Winding speed",
+            "value": "Up to 120 rpm",
+            "icon": "speed"
+          },
+          {
+            "label": "Control",
+            "value": "CNC with 7\" color touchscreen",
+            "icon": "settings"
+          }
+        ]
       },
       "bobinadora-folio": {
         "title": "Folio Winding Machine",
@@ -480,7 +516,6 @@
         "section": "coilWinding",
         "specifications": []
       },
-
       "bobinadora-erasan-e1200-c-sgb": {
         "title": "BOBINADORA ERASAN E1200C SGB",
         "excerpt": "Cuerpo fabricado en acero mecano soldado de gran rigidez",
@@ -798,7 +833,42 @@
       },
       "tensionador-de-hilo-th3-d": {
         "title": "TH3 D Wire Tensioner",
-        "excerpt": "Tensionador de hilo TH3 D",
+        "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "TH3 D Wire Tensioner"
+          },
+          {
+            "caption": "TH3 D Wire Tensioner — side view"
+          }
+        ],
+        "characteristics": {
+          "title": "Features",
+          "body": "Discover the specifications of the TH3 D wire tensioner."
+        },
+        "brandFeatures": {
+          "title": "ERASAN TH3 D features",
+          "body": "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.\n\nWire enters the tensioner through a ceramic eyelet and an inlet pulley.\n\nThis inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.\n\nIn this version, the tensioner is mounted directly on the winding machine.\n\nBrake adjustment is performed via potentiometer or display screen.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accessories",
+          "items": [
+            {
+              "title": "Wire break detector",
+              "description": "Detector that stops the machine in the event of wire breakage.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "System that counts the revolutions of the main pulley. Allows wire consumption to be tracked.",
+              "imageKey": "encoder"
+            }
+          ]
+        },
+        "tagline": "The key to winding lies in applying the correct tension and wire guidance",
         "content": "",
         "features": [],
         "section": "accessories",
@@ -806,43 +876,130 @@
       },
       "tensionador-de-hilo-th3-is": {
         "title": "TH3 IS Wire Tensioner",
-        "excerpt": "TH3 IS – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 Características ERASAN TH3 IS La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El hilo ... Leer más",
-        "content": "",
-        "features": [
-          "Detector de hilo",
-          "Detector que para la máquina en caso de rotura de hilo.",
-          "Encoder",
-          "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
-          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "TH3 IS Wire Tensioner"
+          },
+          {
+            "caption": "TH3 IS Wire Tensioner — side view"
+          }
         ],
+        "characteristics": {
+          "title": "Features",
+          "body": "Discover the specifications of the TH3 IS wire tensioner."
+        },
+        "brandFeatures": {
+          "title": "ERASAN TH3 IS features",
+          "body": "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.\n\nWire enters the tensioner through a ceramic eyelet and an inlet pulley.\n\nThis inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.\n\nBrake adjustment is performed via potentiometer or display screen.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accessories",
+          "items": [
+            {
+              "title": "Wire break detector",
+              "description": "Detector that stops the machine in the event of wire breakage.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "System that counts the revolutions of the main pulley. Allows wire consumption to be tracked.",
+              "imageKey": "encoder"
+            }
+          ]
+        },
+        "tagline": "The key to winding lies in applying the correct tension and wire guidance",
+        "content": "",
+        "features": [],
         "section": "accessories",
         "specifications": []
       },
       "tensionador-de-hilo-th3": {
         "title": "TH3 Wire Tensioner",
-        "excerpt": "TH3 – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 Características ERASAN TH3 La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El hilo entra en ... Leer más",
-        "content": "",
-        "features": [
-          "Detector de hilo",
-          "Detector que para la máquina en caso de rotura de hilo.",
-          "Encoder",
-          "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
-          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "TH3 Wire Tensioner"
+          },
+          {
+            "caption": "TH3 Wire Tensioner — side view"
+          }
         ],
+        "characteristics": {
+          "title": "Features",
+          "body": "Discover the specifications of the TH3 wire tensioner."
+        },
+        "brandFeatures": {
+          "title": "ERASAN TH3 features",
+          "body": "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.\n\nWire enters the tensioner through a ceramic eyelet and an inlet pulley.\n\nThis inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.\n\nBrake adjustment is performed via potentiometer or display screen.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accessories",
+          "items": [
+            {
+              "title": "Wire break detector",
+              "description": "Detector that stops the machine in the event of wire breakage.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "System that counts the revolutions of the main pulley. Allows wire consumption to be tracked.",
+              "imageKey": "encoder"
+            }
+          ]
+        },
+        "tagline": "The key to winding lies in applying the correct tension and wire guidance",
+        "content": "",
+        "features": [],
         "section": "accessories",
         "specifications": []
       },
       "tensionador-de-hilo-th3-standalone": {
         "title": "TH3 StandAlone Wire Tensioner",
-        "excerpt": "TH3 StandAlone – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 StandAlone Características ERASAN TH3 StandAlone La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El ... Leer más",
-        "content": "",
-        "features": [
-          "Detector de hilo",
-          "Detector que para la máquina en caso de rotura de hilo.",
-          "Encoder",
-          "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
-          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "TH3 StandAlone Wire Tensioner"
+          },
+          {
+            "caption": "TH3 StandAlone Wire Tensioner — side view"
+          }
         ],
+        "characteristics": {
+          "title": "Features",
+          "body": "Discover the specifications of the TH3 StandAlone wire tensioner."
+        },
+        "brandFeatures": {
+          "title": "ERASAN TH3 StandAlone features",
+          "body": "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.\n\nWire enters the tensioner through a ceramic eyelet and an inlet pulley.\n\nThis inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.\n\nIn this version, the tensioner is mounted on a standalone bench.\n\nBrake adjustment is performed via potentiometer or display screen.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accessories",
+          "items": [
+            {
+              "title": "Wire break detector",
+              "description": "Detector that stops the machine in the event of wire breakage.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "System that counts the revolutions of the main pulley. Allows wire consumption to be tracked.",
+              "imageKey": "encoder"
+            }
+          ]
+        },
+        "tagline": "The key to winding lies in applying the correct tension and wire guidance",
+        "content": "",
+        "features": [],
         "section": "accessories",
         "specifications": []
       },

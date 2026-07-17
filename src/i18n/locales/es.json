@@ -118,6 +118,7 @@
     "askQuestion": "Hacer una Pregunta",
     "keyFeatures": "Características Principales",
     "characteristics": "Características",
+    "productAccessories": "Accesorios",
     "specifications": "Especificaciones Técnicas",
     "downloadSpecs": "Descargar Especificaciones Técnicas",
     "downloadSpecsComingSoon": "El PDF de especificaciones técnicas estará disponible próximamente",
@@ -414,7 +415,39 @@
             "Opción: Mesa soldadura TIG.",
             "Opción: Corte Folio por guillotina."
           ]
-        }
+        },
+        "specifications": [
+          {
+            "label": "Zona de bobinado máxima",
+            "value": "1.800 mm",
+            "icon": "dimension"
+          },
+          {
+            "label": "Diámetro máximo de bobina",
+            "value": "2.300 mm",
+            "icon": "diameter"
+          },
+          {
+            "label": "Ancho máximo de folio",
+            "value": "400 mm",
+            "icon": "width"
+          },
+          {
+            "label": "Espesor de folio",
+            "value": "0,5 – 3,0 mm",
+            "icon": "dimension"
+          },
+          {
+            "label": "Velocidad de bobinado",
+            "value": "Hasta 120 rpm",
+            "icon": "speed"
+          },
+          {
+            "label": "Control",
+            "value": "CNC con pantalla táctil 7\"",
+            "icon": "settings"
+          }
+        ]
       },
       "bobinadora-folio": {
         "title": "Bobinadora Folio",
@@ -645,10 +678,10 @@
           "title": "Características ERASAN E1200 SGB",
           "items": [
             "Dos versiones de cinemática: hasta 750 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 1.100mm",            
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",            
-            "Cuenta con servomotores en cabezal y guiador",            
-            "Cuatro rangos de velocidad con cambio por palancas",            
+            "Permite fabricar bobinas de longitud máxima de 1.100mm",
+            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
+            "Cuenta con servomotores en cabezal y guiador",
+            "Cuatro rangos de velocidad con cambio por palancas",
             "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
           ]
         }
@@ -1020,7 +1053,6 @@
         "content": "",
         "features": [],
         "section": "coilWinding",
-
         "brandFeatures": {
           "title": "Características ERASAN E300W",
           "items": []
@@ -1028,7 +1060,7 @@
       },
       "dispensador-de-papel-dp1-p": {
         "title": "Dispensador de papel DP1-P",
-        "excerpt": "DP1 P – Dispensador de papel Permite varias medidas de forma simultánea Características Descubre las especificaciones del dispensador de papel DP1 P Características ERASAN TPE Tensionador de papel dotado de freno electromagnético y eje expandible. Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente. Regulación del ... Leer más",
+        "excerpt": "Permite varias medidas de forma simultánea",
         "content": "",
         "features": [
           "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
@@ -1048,7 +1080,7 @@
       },
       "dispensador-de-papel-tpe": {
         "title": "Dispensador de papel TPE",
-        "excerpt": "TPE – Dispensador de papel Bobina máxima de papel de 400 mm y 310 mm de longitud Características Descubre las especificaciones del dispensador de papel TPE Características ERASAN TPE Tensionador de papel dotado de freno electromagnético y eje expandible. Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades ... Leer más",
+        "excerpt": "Bobina máxima de papel de 400 mm y 310 mm de longitud",
         "content": "",
         "features": [
           "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
@@ -1068,7 +1100,7 @@
       },
       "devanador-dp1r-ap1r": {
         "title": "Devanador DP1R AP1R",
-        "excerpt": "DP1R AP1R – Devanador Doble freno para mejor tensión constante Características Descubre las especificaciones del devanador DP1R AP1R Características ERASAN DP1R AP1R La principal diferencia de DP1R es el doble freno provisto que mejora la tensión, que junto al AP1R ayuda a mantener la tensión constante. En el caso en que el hilo del carrete ... Leer más",
+        "excerpt": "Doble freno para mejor tensión constante",
         "content": "",
         "features": [
           "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
@@ -1309,109 +1341,171 @@
       },
       "tensionador-de-hilo-th3-d": {
         "title": "Tensionador de hilo TH3 D",
-        "excerpt": "Tensionador de hilo TH3 D",
-        "content": "",
-        "features": [],
-        "section": "accessories",
+        "heroSubtitle": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "excerpt": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "Tensionador de hilo TH3 D"
+          },
+          {
+            "caption": "Tensionador de hilo TH3 D — lateral"
+          }
+        ],
         "characteristics": {
           "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
+          "body": "Descubre las especificaciones del tensionador de hilo TH3 D."
         },
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN TH3 D",
+          "body": "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.\n\nEl hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.\n\nEste diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.\n\nEn esta versión el tensionador se monta directamente sobre la bobinadora.\n\nLa regulación del freno se realiza por potenciómetro o por pantalla.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accesorios",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            {
+              "title": "Detector de hilo",
+              "description": "Detector que para la máquina en caso de rotura de hilo.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+              "imageKey": "encoder"
+            }
           ]
-        }
+        },
+        "tagline": "La clave del bobinado se encuentra en aplicar la correcta tensión y guiado",
+        "content": "",
+        "features": [],
+        "section": "accessories"
       },
       "tensionador-de-hilo-th3-is": {
         "title": "Tensionador de hilo TH3 IS",
-        "excerpt": "TH3 IS – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 Características ERASAN TH3 IS La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El hilo ... Leer más",
-        "content": "",
-        "features": [
-          "Detector de hilo",
-          "Detector que para la máquina en caso de rotura de hilo.",
-          "Encoder",
-          "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
-          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        "heroSubtitle": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "excerpt": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "Tensionador de hilo TH3 IS"
+          },
+          {
+            "caption": "Tensionador de hilo TH3 IS — lateral"
+          }
         ],
-        "section": "accessories",
         "characteristics": {
           "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
+          "body": "Descubre las especificaciones del tensionador de hilo TH3 IS."
         },
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN TH3 IS",
+          "body": "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.\n\nEl hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.\n\nEste diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.\n\nLa regulación del freno se realiza por potenciómetro o por pantalla.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accesorios",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            {
+              "title": "Detector de hilo",
+              "description": "Detector que para la máquina en caso de rotura de hilo.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+              "imageKey": "encoder"
+            }
           ]
-        }
+        },
+        "tagline": "La clave del bobinado se encuentra en aplicar la correcta tensión y guiado",
+        "content": "",
+        "features": [],
+        "section": "accessories"
       },
       "tensionador-de-hilo-th3": {
         "title": "Tensionador de hilo TH3",
-        "excerpt": "TH3 – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 Características ERASAN TH3 La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El hilo entra en ... Leer más",
-        "content": "",
-        "features": [
-          "Detector de hilo",
-          "Detector que para la máquina en caso de rotura de hilo.",
-          "Encoder",
-          "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
-          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        "heroSubtitle": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "excerpt": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "Tensionador de hilo TH3"
+          },
+          {
+            "caption": "Tensionador de hilo TH3 — lateral"
+          }
         ],
-        "section": "accessories",
         "characteristics": {
           "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
+          "body": "Descubre las especificaciones del tensionador de hilo TH3."
         },
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN TH3",
+          "body": "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.\n\nEl hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.\n\nEste diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.\n\nLa regulación del freno se realiza por potenciómetro o por pantalla.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accesorios",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            {
+              "title": "Detector de hilo",
+              "description": "Detector que para la máquina en caso de rotura de hilo.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+              "imageKey": "encoder"
+            }
           ]
-        }
+        },
+        "tagline": "La clave del bobinado se encuentra en aplicar la correcta tensión y guiado",
+        "content": "",
+        "features": [],
+        "section": "accessories"
       },
       "tensionador-de-hilo-th3-standalone": {
         "title": "Tensionador de hilo TH3 StandAlone",
-        "excerpt": "TH3 StandAlone – Tensionador de hilo Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm. Características Descubre las especificaciones del tensionador de hilo TH3 StandAlone Características ERASAN TH3 StandAlone La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado. El ... Leer más",
-        "content": "",
-        "features": [
-          "Detector de hilo",
-          "Detector que para la máquina en caso de rotura de hilo.",
-          "Encoder",
-          "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
-          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        "heroSubtitle": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "excerpt": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "Tensionador de hilo TH3 StandAlone"
+          },
+          {
+            "caption": "Tensionador de hilo TH3 StandAlone — lateral"
+          }
         ],
-        "section": "accessories",
         "characteristics": {
           "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
+          "body": "Descubre las especificaciones del tensionador de hilo TH3 StandAlone."
         },
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN TH3 StandAlone",
+          "body": "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.\n\nEl hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.\n\nEste diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.\n\nEn esta versión el tensionador se monta sobre una bancada.\n\nLa regulación del freno se realiza por potenciómetro o por pantalla.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accesorios",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            {
+              "title": "Detector de hilo",
+              "description": "Detector que para la máquina en caso de rotura de hilo.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
+              "imageKey": "encoder"
+            }
           ]
-        }
+        },
+        "tagline": "La clave del bobinado se encuentra en aplicar la correcta tensión y guiado",
+        "content": "",
+        "features": [],
+        "section": "accessories"
       },
       "retrofit": {
         "title": "Retrofit",

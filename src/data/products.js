@@ -475,6 +475,7 @@ export const products = [
     "categoryId": 4,
     "i18nKey": "tensionador-de-hilo-th3-d",
     "acf": {
+      "layout": "accessory",
       "features": []
     }
   },
@@ -486,13 +487,8 @@ export const products = [
     "categoryId": 4,
     "i18nKey": "tensionador-de-hilo-th3-is",
     "acf": {
-      "features": [
-        "Detector de hilo",
-        "Detector que para la máquina en caso de rotura de hilo.",
-        "Encoder",
-        "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
-        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
-      ]
+      "layout": "accessory",
+      "features": []
     }
   },
   {
@@ -503,13 +499,8 @@ export const products = [
     "categoryId": 4,
     "i18nKey": "tensionador-de-hilo-th3",
     "acf": {
-      "features": [
-        "Detector de hilo",
-        "Detector que para la máquina en caso de rotura de hilo.",
-        "Encoder",
-        "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
-        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
-      ]
+      "layout": "accessory",
+      "features": []
     }
   },
   {
@@ -520,13 +511,8 @@ export const products = [
     "categoryId": 4,
     "i18nKey": "tensionador-de-hilo-th3-standalone",
     "acf": {
-      "features": [
-        "Detector de hilo",
-        "Detector que para la máquina en caso de rotura de hilo.",
-        "Encoder",
-        "Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.",
-        "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
-      ]
+      "layout": "accessory",
+      "features": []
     }
   },
   {

@@ -30,6 +30,32 @@ const PHRASES = [
   ['Retrofit de cualquier bobinadora. No importa el fabricante ni el estado de la máquina, estudiaremos todas las posibilidades.', 'Retrofit for any winding machine. Regardless of the manufacturer or machine condition, we will study all possibilities.'],
   ['Somos especialistas en la fabricación de maquinaria a media. Contacta con nosotros y desarrollaremos el proyecto según sus requerimientos y especificaciones.', 'We specialize in custom machinery manufacturing. Contact us and we will develop the project according to your requirements and specifications.'],
   ['Características ERASAN Mandril expandible', 'ERASAN expandable mandrel features'],
+  ['Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.', 'Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.'],
+  ['La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.', 'Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.'],
+  ['El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.', 'Wire enters the tensioner through a ceramic eyelet and an inlet pulley.'],
+  ['Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.', 'This inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.'],
+  ['La regulación del freno se realiza por potenciómetro o por pantalla.', 'Brake adjustment is performed via potentiometer or display screen.'],
+  ['En esta versión el tensionador se monta sobre una bancada.', 'In this version, the tensioner is mounted on a standalone bench.'],
+  ['En esta versión el tensionador se monta directamente sobre la bobinadora.', 'In this version, the tensioner is mounted directly on the winding machine.'],
+  ['Descubre las especificaciones del tensionador de hilo TH3 StandAlone.', 'Discover the specifications of the TH3 StandAlone wire tensioner.'],
+  ['Descubre las especificaciones del tensionador de hilo TH3 IS.', 'Discover the specifications of the TH3 IS wire tensioner.'],
+  ['Descubre las especificaciones del tensionador de hilo TH3 D.', 'Discover the specifications of the TH3 D wire tensioner.'],
+  ['Descubre las especificaciones del tensionador de hilo TH3.', 'Discover the specifications of the TH3 wire tensioner.'],
+  ['Características ERASAN TH3 StandAlone', 'ERASAN TH3 StandAlone features'],
+  ['Características ERASAN TH3 IS', 'ERASAN TH3 IS features'],
+  ['Características ERASAN TH3 D', 'ERASAN TH3 D features'],
+  ['Características ERASAN TH3', 'ERASAN TH3 features'],
+  ['Detector de hilo', 'Wire break detector'],
+  ['Detector que para la máquina en caso de rotura de hilo.', 'Detector that stops the machine in the event of wire breakage.'],
+  ['Sistema que contabiliza las vueltas de la polea principal. Permite conocer el consumo de hilo.', 'System that counts the revolutions of the main pulley. Allows wire consumption to be tracked.'],
+  ['La clave del bobinado se encuentra en aplicar la correcta tensión y guiado', 'The key to winding lies in applying the correct tension and wire guidance'],
+  ['Accesorios', 'Accessories'],
+  ['Características', 'Features'],
+  [' — lateral', ' — side view'],
+  ['Tensionador de hilo TH3 D', 'TH3 D Wire Tensioner'],
+  ['Tensionador de hilo TH3 IS', 'TH3 IS Wire Tensioner'],
+  ['Tensionador de hilo TH3 StandAlone', 'TH3 StandAlone Wire Tensioner'],
+  ['Tensionador de hilo TH3', 'TH3 Wire Tensioner'],
 ]
 
 const TITLE_RULES = [
@@ -81,10 +107,53 @@ export function translateSpecifications(specifications = []) {
   }))
 }
 
-export function translateProductItem(item, { titleOverride = null } = {}) {
+export function translateRichAccessoryEntry(item) {
   if (!item) return item
 
   return {
+    ...item,
+    title: translateTitle(item.title),
+    heroSubtitle: translateText(item.heroSubtitle),
+    excerpt: translateText(item.excerpt),
+    heroIntro: (item.heroIntro || []).map((paragraph) => translateText(paragraph)),
+    gallery: (item.gallery || []).map((entry) => {
+      const caption = typeof entry === 'string' ? entry : entry?.caption || ''
+      return { caption: translateText(caption) }
+    }),
+    characteristics: item.characteristics
+      ? {
+          title: translateText(item.characteristics.title),
+          body: translateText(item.characteristics.body),
+        }
+      : null,
+    brandFeatures: item.brandFeatures
+      ? {
+          title: translateText(item.brandFeatures.title),
+          body: translateText(item.brandFeatures.body),
+          items: (item.brandFeatures.items || []).map((feature) => translateText(feature)),
+        }
+      : null,
+    productAccessories: item.productAccessories
+      ? {
+          title: translateText(item.productAccessories.title),
+          items: (item.productAccessories.items || []).map((accessory) => ({
+            title: translateText(accessory.title),
+            description: translateText(accessory.description),
+            imageKey: accessory.imageKey || '',
+          })),
+        }
+      : null,
+    tagline: translateText(item.tagline),
+    content: translateText(item.content),
+    features: translateFeatures(item.features || []),
+    specifications: translateSpecifications(item.specifications || []),
+  }
+}
+
+export function translateProductItem(item, { titleOverride = null } = {}) {
+  if (!item) return item
+
+  const base = {
     ...item,
     title: titleOverride || translateTitle(item.title),
     excerpt: translateText(item.excerpt),
@@ -92,6 +161,12 @@ export function translateProductItem(item, { titleOverride = null } = {}) {
     features: translateFeatures(item.features || []),
     specifications: translateSpecifications(item.specifications || []),
   }
+
+  if (item.productAccessories || item.heroSubtitle || item.brandFeatures?.body) {
+    return translateRichAccessoryEntry({ ...base, ...item, title: base.title })
+  }
+
+  return base
 }
 
 export function translateCategoryDescription(description) {

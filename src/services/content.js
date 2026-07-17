@@ -1,6 +1,7 @@
 import { blogPosts } from '../data/blogPosts'
 import { products } from '../data/products'
 import { blogCategories, categoriesBySection } from '../data/categories'
+import { getProductGalleryImage } from '../data/productGalleryImages'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -54,6 +55,8 @@ function filterProducts({ section = null, category = null } = {}) {
 }
 
 function toLegacyProduct(product) {
+  const featuredImage = getProductGalleryImage(product.slug, 0) || PLACEHOLDER_IMAGE
+
   return {
     ...product,
     title: { rendered: product.i18nKey },
@@ -62,12 +65,12 @@ function toLegacyProduct(product) {
     _embedded: {
       'wp:featuredmedia': [
         {
-          source_url: PLACEHOLDER_IMAGE,
+          source_url: featuredImage,
           media_details: {
             sizes: {
-              thumbnail: { source_url: PLACEHOLDER_IMAGE },
-              medium: { source_url: PLACEHOLDER_IMAGE },
-              large: { source_url: PLACEHOLDER_IMAGE },
+              thumbnail: { source_url: featuredImage },
+              medium: { source_url: featuredImage },
+              large: { source_url: featuredImage },
             },
           },
         },

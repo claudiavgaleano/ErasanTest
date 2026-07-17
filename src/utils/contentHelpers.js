@@ -1,5 +1,6 @@
 import { categoriesBySection } from '../data/categories'
 import { getProductGalleryImage } from '../data/productGalleryImages'
+import { getProductAccessoryImage } from '../data/productAccessoryImages'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -33,6 +34,8 @@ function localizeRichLayout(product, t, itemKey) {
   const brandFeaturesRaw = t(`${itemKey}.brandFeatures`, { returnObjects: true, defaultValue: null })
   const highlightRaw = t(`${itemKey}.highlight`, { returnObjects: true, defaultValue: null })
   const benefitCardsRaw = t(`${itemKey}.benefitCards`, { returnObjects: true, defaultValue: [] })
+  const productAccessoriesRaw = t(`${itemKey}.productAccessories`, { returnObjects: true, defaultValue: null })
+  const tagline = t(`${itemKey}.tagline`, { defaultValue: '' })
 
   const heroIntro = Array.isArray(heroIntroRaw) ? heroIntroRaw.filter(Boolean) : []
   const benefitCards =
@@ -45,7 +48,11 @@ function localizeRichLayout(product, t, itemKey) {
           const caption = typeof item === 'string' ? item : item?.caption || ''
           const base = baseGallery[index] || {}
           const resolvedSrc =
-            getProductGalleryImage(product.slug, index) || base.src || base.url || PLACEHOLDER_IMAGE
+            getProductGalleryImage(product.slug, index) ||
+            (index > 0 ? getProductGalleryImage(product.slug, 0) : null) ||
+            base.src ||
+            base.url ||
+            PLACEHOLDER_IMAGE
           return {
             src: resolvedSrc,
             alt: base.alt || caption || product.title?.rendered || product.slug,
@@ -63,10 +70,28 @@ function localizeRichLayout(product, t, itemKey) {
       : null
 
   const brandFeatures =
-    isPlainObject(brandFeaturesRaw) && Array.isArray(brandFeaturesRaw.items)
+    isPlainObject(brandFeaturesRaw) &&
+    (brandFeaturesRaw.body || (Array.isArray(brandFeaturesRaw.items) && brandFeaturesRaw.items.length))
       ? {
           title: brandFeaturesRaw.title || '',
-          items: brandFeaturesRaw.items.filter(Boolean),
+          body: brandFeaturesRaw.body || '',
+          items: (brandFeaturesRaw.items || []).filter(Boolean),
+        }
+      : null
+
+  const productAccessories =
+    isPlainObject(productAccessoriesRaw) && Array.isArray(productAccessoriesRaw.items)
+      ? {
+          title: productAccessoriesRaw.title || t('products.productAccessories'),
+          items: productAccessoriesRaw.items
+            .filter((item) => item?.title)
+            .map((item) => ({
+              title: item.title,
+              description: item.description || '',
+              imageKey: item.imageKey || '',
+              src: getProductAccessoryImage(item.imageKey) || null,
+              alt: item.title,
+            })),
         }
       : null
 
@@ -79,10 +104,28 @@ function localizeRichLayout(product, t, itemKey) {
         }
       : null
 
-  const layout =
-    product.acf?.layout === 'rich' || benefitCards.length > 0 || Boolean(characteristics) ? 'rich' : 'classic'
+  let layout = 'classic'
+  if (product.acf?.layout === 'accessory' || productAccessories?.items?.length) {
+    layout = 'accessory'
+  } else if (
+    product.acf?.layout === 'rich' ||
+    benefitCards.length > 0 ||
+    Boolean(characteristics)
+  ) {
+    layout = 'rich'
+  }
 
-  return { layout, heroIntro, gallery, characteristics, brandFeatures, highlight, benefitCards }
+  return {
+    layout,
+    heroIntro,
+    gallery,
+    characteristics,
+    brandFeatures,
+    highlight,
+    benefitCards,
+    productAccessories,
+    tagline,
+  }
 }
 
 export function localizeProduct(product, t) {
@@ -102,10 +145,12 @@ export function localizeProduct(product, t) {
     ? translatedSpecifications.map((spec, index) => ({
         label: spec?.label || t(`${itemKey}.specifications.${index}.label`),
         value: spec?.value || t(`${itemKey}.specifications.${index}.value`),
+        icon: spec?.icon || t(`${itemKey}.specifications.${index}.icon`, { defaultValue: '' }),
       }))
     : (product.acf?.specifications || []).map((spec, index) => ({
         label: t(`${itemKey}.specifications.${index}.label`, { defaultValue: spec.label }),
         value: t(`${itemKey}.specifications.${index}.value`, { defaultValue: spec.value }),
+        icon: t(`${itemKey}.specifications.${index}.icon`, { defaultValue: spec.icon || '' }),
       }))
 
   const rawTitle = t(`${itemKey}.title`, { defaultValue: product.title?.rendered || key })
@@ -148,11 +193,19 @@ export function localizeCategory(category, section, t) {
 
 export const contentHelpers = {
   getFeaturedImage(post, size = 'large') {
+    const slug = post?.slug
+    const localImage = slug ? getProductGalleryImage(slug, 0) : null
+    if (localImage) return localImage
+
     if (!post?._embedded?.['wp:featuredmedia']?.[0]) {
       return PLACEHOLDER_IMAGE
     }
     const media = post._embedded['wp:featuredmedia'][0]
-    return media.media_details?.sizes?.[size]?.source_url || media.source_url || PLACEHOLDER_IMAGE
+    const embeddedUrl = media.media_details?.sizes?.[size]?.source_url || media.source_url
+    if (!embeddedUrl || embeddedUrl.includes('placehold.co')) {
+      return PLACEHOLDER_IMAGE
+    }
+    return embeddedUrl
   },
 
   getAuthor(post) {

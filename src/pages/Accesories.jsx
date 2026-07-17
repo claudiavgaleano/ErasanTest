@@ -20,9 +20,6 @@ import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturi
 import { useThemeMode } from '../context/ThemeContext'
 import { useProducts, useCategories, contentHelpers } from '../hooks/useContent'
 
-// Placeholder image for products without featured image
-const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400/1e293b/dc2626?text=Erasan+Product'
-
 export default function Accesories() {
   const { t } = useTranslation()
   const { mode } = useThemeMode()
@@ -191,7 +188,7 @@ export default function Accesories() {
                         <CardMedia
                           component="img"
                           height="220"
-                          image={contentHelpers.getFeaturedImage(product) || PLACEHOLDER_IMAGE}
+                          image={contentHelpers.getFeaturedImage(product)}
                           alt={product.title.rendered}
                           className="product-image"
                           sx={{ transition: 'transform 0.4s ease' }}

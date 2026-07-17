@@ -28,6 +28,8 @@ import { useProduct, contentHelpers } from '../hooks/useContent'
 import { getSectionBackLink } from '../utils/contentHelpers'
 import { getProductSpecPdfUrl } from '../data/productSpecPdfs'
 import ProductGallery from '../components/productDetail/ProductGallery'
+import BenefitCardsSection from '../components/productDetail/BenefitCardsSection'
+import SpecificationsSection from '../components/productDetail/SpecificationsSection'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -54,6 +56,95 @@ function SpecDownloadButton({ specPdfUrl, t, size = 'large', sx }) {
         </Button>
       </span>
     </Tooltip>
+  )
+}
+
+function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor }) {
+  return (
+    <Container
+      maxWidth="lg"
+      sx={{
+        display: 'flex',
+        flexDirection: { xs: 'column', lg: 'row' },
+        gap: { xs: 4, lg: 6 },
+        alignItems: { lg: 'flex-start' },
+      }}
+    >
+      {gallery.length > 0 && (
+        <Box sx={{ mb: { xs: 2, lg: 0 }, width: { xs: '100%', lg: '48%' }, flexShrink: 0 }}>
+          <ProductGallery images={gallery} />
+        </Box>
+      )}
+      <Box sx={{ mb: 6, width: { xs: '100%', lg: '52%' }, flex: 1 }}>
+        {categories.length > 0 && (
+          <Box sx={{ mb: 2, display: 'flex', gap: 1, flexWrap: 'wrap' }}>
+            {categories.map((cat) => (
+              <Chip
+                key={cat.id}
+                label={cat.name}
+                size="small"
+                variant="outlined"
+                sx={{ borderColor: primaryColor, color: primaryColor }}
+              />
+            ))}
+          </Box>
+        )}
+
+        <Typography
+          variant="h2"
+          component="h1"
+          sx={{ mb: 2, fontWeight: 700 }}
+          dangerouslySetInnerHTML={{ __html: product.title.rendered }}
+        />
+
+        {product.excerpt?.rendered && (
+          <Typography variant="h5" component="p" color="text.secondary" sx={{ mb: 3, fontWeight: 500, lineHeight: 1.5 }}>
+            {product.excerpt.rendered}
+          </Typography>
+        )}
+
+        {heroIntro.map((paragraph, index) => (
+          <Typography key={index} variant="body1" color="text.secondary" sx={{ mb: 2, lineHeight: 1.8 }}>
+            {paragraph}
+          </Typography>
+        ))}
+      </Box>
+    </Container>
+  )
+}
+
+function BrandFeaturesSection({ brandFeatures, specPdfUrl, primaryColor, t }) {
+  if (!brandFeatures) return null
+
+  return (
+    <Card sx={{ mb: 8 }}>
+      <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+        <Typography variant="h4" sx={{ mb: 3, fontWeight: 600 }}>
+          {brandFeatures.title}
+        </Typography>
+        {brandFeatures.body ? (
+          brandFeatures.body.split('\n\n').map((paragraph, index) => (
+            <Typography key={index} variant="body1" color="text.secondary" sx={{ mb: 2, lineHeight: 1.8 }}>
+              {paragraph}
+            </Typography>
+          ))
+        ) : (
+          <List dense>
+            {brandFeatures.items.map((item, index) => (
+              <ListItem key={index} disablePadding sx={{ py: 0.75, alignItems: 'flex-start' }}>
+                <ListItemIcon sx={{ minWidth: 36, mt: 0.25 }}>
+                  <CheckCircleIcon sx={{ color: primaryColor, fontSize: 20 }} />
+                </ListItemIcon>
+                <ListItemText primary={item} primaryTypographyProps={{ lineHeight: 1.7 }} />
+              </ListItem>
+            ))}
+          </List>
+        )}
+        <Box sx={{ mt: 4 }}>
+          <SpecDownloadButton specPdfUrl={specPdfUrl} t={t} />
+        </Box>
+      </CardContent>
+    </Card>
   )
 }
 
@@ -162,39 +253,39 @@ function ClassicProductLayout({
         </Grid>
       </Grid>
 
-      {specifications.length > 0 && (
-        <Box sx={{ mt: 8 }}>
-          <Typography variant="h3" sx={{ mb: 4, fontWeight: 600 }}>
-            {t('products.specifications')}
-          </Typography>
-          <Card>
-            <CardContent>
-              <Grid container spacing={2}>
-                {specifications.map((spec, index) => (
-                  <Grid item xs={12} sm={6} md={4} key={index}>
-                    <Box sx={{ p: 2, borderRadius: 1, background: primaryAlpha(0.05) }}>
-                      <Typography variant="body2" color="text.secondary">
-                        {spec.label}
-                      </Typography>
-                      <Typography variant="body1" sx={{ fontWeight: 600 }}>
-                        {spec.value}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                ))}
-              </Grid>
-            </CardContent>
-          </Card>
-        </Box>
-      )}
+      <SpecificationsSection
+        specifications={specifications}
+        title={t('products.specifications')}
+        primaryColor={primaryColor}
+        primaryAlpha={primaryAlpha}
+        sx={{ mt: 8 }}
+      />
     </>
   )
+}
+
+function resolveHighlightImage(gallery, highlight, featuredImage, productTitle) {
+  const preferredIndex = Number.isInteger(highlight?.imageIndex) ? highlight.imageIndex : 0
+  const candidates = [
+    gallery[preferredIndex],
+    gallery[0],
+    gallery[gallery.length - 1],
+  ].filter(Boolean)
+
+  for (const item of candidates) {
+    if (item.src && !item.src.includes('placehold.co')) {
+      return item
+    }
+  }
+
+  return { src: featuredImage, alt: productTitle }
 }
 
 function RichProductLayout({
   product,
   acf,
   categories,
+  featuredImage,
   specifications,
   specPdfUrl,
   primaryColor,
@@ -210,60 +301,17 @@ function RichProductLayout({
     benefitCards = [],
   } = acf
 
-  const highlightImage =
-    gallery[highlight?.imageIndex] || gallery[gallery.length - 1] || { src: PLACEHOLDER_IMAGE, alt: product.title.rendered }
+  const highlightImage = resolveHighlightImage(gallery, highlight, featuredImage, product.title.rendered)
 
   return (
     <>
-    <Container
-      maxWidth="lg"
-      sx={{
-        display: 'flex',
-        flexDirection: { xs: 'column', lg: 'row' },
-        gap: { xs: 4, lg: 6 },
-        alignItems: { lg: 'flex-start' },
-      }}
-    >
-      {gallery.length > 0 && (
-        <Box sx={{ mb: { xs: 2, lg: 0 }, width: { xs: '100%', lg: '48%' }, flexShrink: 0 }}>
-          <ProductGallery images={gallery} />
-        </Box>
-      )}
-      <Box sx={{ mb: 6, width: { xs: '100%', lg: '52%' }, flex: 1 }}>
-        {categories.length > 0 && (
-          <Box sx={{ mb: 2, display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-            {categories.map((cat) => (
-              <Chip
-                key={cat.id}
-                label={cat.name}
-                size="small"
-                variant="outlined"
-                sx={{ borderColor: primaryColor, color: primaryColor }}
-              />
-            ))}
-          </Box>
-        )}
-
-        <Typography
-          variant="h2"
-          component="h1"
-          sx={{ mb: 2, fontWeight: 700 }}
-          dangerouslySetInnerHTML={{ __html: product.title.rendered }}
-        />
-
-        {product.excerpt?.rendered && (
-          <Typography variant="h5" component="p" color="text.secondary" sx={{ mb: 3, fontWeight: 500, lineHeight: 1.5 }}>
-            {product.excerpt.rendered}
-          </Typography>
-        )}
-
-        {heroIntro.map((paragraph, index) => (
-          <Typography key={index} variant="body1" color="text.secondary" sx={{ mb: 2, lineHeight: 1.8 }}>
-            {paragraph}
-          </Typography>
-        ))}
-      </Box>
-    </Container>
+      <ProductHeroRow
+        product={product}
+        gallery={gallery}
+        categories={categories}
+        heroIntro={heroIntro}
+        primaryColor={primaryColor}
+      />
 
       {characteristics && (
         <Card sx={{ mb: 6 }}>
@@ -280,28 +328,12 @@ function RichProductLayout({
         </Card>
       )}
 
-      {brandFeatures && (
-        <Card sx={{ mb: 8 }}>
-          <CardContent sx={{ p: { xs: 3, md: 4 } }}>
-            <Typography variant="h4" sx={{ mb: 3, fontWeight: 600 }}>
-              {brandFeatures.title}
-            </Typography>
-            <List dense>
-              {brandFeatures.items.map((item, index) => (
-                <ListItem key={index} disablePadding sx={{ py: 0.75, alignItems: 'flex-start' }}>
-                  <ListItemIcon sx={{ minWidth: 36, mt: 0.25 }}>
-                    <CheckCircleIcon sx={{ color: primaryColor, fontSize: 20 }} />
-                  </ListItemIcon>
-                  <ListItemText primary={item} primaryTypographyProps={{ lineHeight: 1.7 }} />
-                </ListItem>
-              ))}
-            </List>
-            <Box sx={{ mt: 4 }}>
-              <SpecDownloadButton specPdfUrl={specPdfUrl} t={t} />
-            </Box>
-          </CardContent>
-        </Card>
-      )}
+      <BrandFeaturesSection
+        brandFeatures={brandFeatures}
+        specPdfUrl={specPdfUrl}
+        primaryColor={primaryColor}
+        t={t}
+      />
 
       {highlight && (
         <Box
@@ -337,25 +369,140 @@ function RichProductLayout({
         </Box>
       )}
 
-      {benefitCards.length > 0 && (
+      <BenefitCardsSection
+        benefitCards={benefitCards}
+        primaryColor={primaryColor}
+        primaryAlpha={primaryAlpha}
+        sx={{ mb: 8 }}
+      />
+
+      <SpecificationsSection
+        specifications={specifications}
+        title={t('products.specifications')}
+        primaryColor={primaryColor}
+        primaryAlpha={primaryAlpha}
+        sx={{ mb: 8 }}
+      />
+
+      <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+        <Button variant="contained" size="large" component={Link} to="/contact" endIcon={<ArrowForwardIcon />}>
+          {t('products.requestQuote')}
+        </Button>
+        <Button variant="outlined" size="large" component={Link} to="/contact">
+          {t('products.askQuestion')}
+        </Button>
+      </Box>
+    </>
+  )
+}
+
+function AccessoryProductLayout({
+  product,
+  acf,
+  categories,
+  specifications,
+  specPdfUrl,
+  primaryColor,
+  primaryAlpha,
+  t,
+}) {
+  const {
+    heroIntro = [],
+    gallery = [],
+    characteristics,
+    brandFeatures,
+    productAccessories,
+    tagline,
+  } = acf
+
+  const secondaryImage = gallery[1] || null
+
+  return (
+    <>
+      <ProductHeroRow
+        product={product}
+        gallery={gallery}
+        categories={categories}
+        heroIntro={heroIntro}
+        primaryColor={primaryColor}
+      />
+
+      {characteristics && (
+        <Card sx={{ mb: 6 }}>
+          <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+            <Typography variant="h4" sx={{ mb: 3, fontWeight: 600 }}>
+              {characteristics.title}
+            </Typography>
+            {characteristics.body.split('\n\n').map((paragraph, index) => (
+              <Typography key={index} variant="body1" color="text.secondary" sx={{ mb: 2, lineHeight: 1.8 }}>
+                {paragraph}
+              </Typography>
+            ))}
+          </CardContent>
+        </Card>
+      )}
+
+      <BrandFeaturesSection
+        brandFeatures={brandFeatures}
+        specPdfUrl={specPdfUrl}
+        primaryColor={primaryColor}
+        t={t}
+      />
+
+      {secondaryImage && (
+        <Box sx={{ mb: 8, display: 'flex', justifyContent: 'center' }}>
+          <Box
+            component="img"
+            src={secondaryImage.src}
+            alt={secondaryImage.alt}
+            sx={{
+              width: '100%',
+              maxWidth: 720,
+              height: 'auto',
+              borderRadius: 2,
+              display: 'block',
+            }}
+          />
+        </Box>
+      )}
+
+      {productAccessories?.items?.length > 0 && (
         <Box sx={{ mb: 8 }}>
+          <Typography variant="h3" sx={{ mb: 4, fontWeight: 700 }}>
+            {productAccessories.title}
+          </Typography>
           <Grid container spacing={3}>
-            {benefitCards.map((card, index) => (
+            {productAccessories.items.map((item, index) => (
               <Grid item xs={12} sm={6} key={index}>
                 <Card
                   sx={{
                     height: '100%',
-                    borderTop: `3px solid ${primaryColor}`,
-                    transition: 'transform 0.2s ease',
-                    '&:hover': { transform: 'translateY(-4px)' },
+                    overflow: 'hidden',
+                    borderLeft: `4px solid ${primaryColor}`,
+                    background: primaryAlpha(0.03),
                   }}
                 >
+                  {item.src && (
+                    <Box
+                      component="img"
+                      src={item.src}
+                      alt={item.alt || item.title}
+                      sx={{
+                        width: '100%',
+                        height: 220,
+                        objectFit: 'contain',
+                        display: 'block',
+                        bgcolor: 'background.paper',
+                        p: 2,
+                      }}
+                    />
+                  )}
                   <CardContent sx={{ p: 3 }}>
-                    <Typography variant="h6" sx={{ mb: 1.5, fontWeight: 700, color: primaryColor }}>
-                      {card.title}
+                    <Typography variant="h5" sx={{ mb: 1.5, fontWeight: 700 }}>
+                      {item.title}
                     </Typography>
                     <Typography variant="body1" color="text.secondary" sx={{ lineHeight: 1.7 }}>
-                      {card.description}
+                      {item.description}
                     </Typography>
                   </CardContent>
                 </Card>
@@ -365,31 +512,34 @@ function RichProductLayout({
         </Box>
       )}
 
-      {specifications.length > 0 && (
-        <Box sx={{ mb: 8 }}>
-          <Typography variant="h3" sx={{ mb: 4, fontWeight: 600 }}>
-            {t('products.specifications')}
+      {tagline && (
+        <Box
+          sx={{
+            mb: 8,
+            py: 4,
+            px: { xs: 2, md: 4 },
+            textAlign: 'center',
+            borderTop: `1px solid ${primaryAlpha(0.15)}`,
+            borderBottom: `1px solid ${primaryAlpha(0.15)}`,
+          }}
+        >
+          <Typography
+            variant="h5"
+            component="p"
+            sx={{ fontStyle: 'italic', fontWeight: 500, lineHeight: 1.6, color: 'text.primary' }}
+          >
+            &ldquo;{tagline}&rdquo;
           </Typography>
-          <Card>
-            <CardContent>
-              <Grid container spacing={2}>
-                {specifications.map((spec, index) => (
-                  <Grid item xs={12} sm={6} md={4} key={index}>
-                    <Box sx={{ p: 2, borderRadius: 1, background: primaryAlpha(0.05) }}>
-                      <Typography variant="body2" color="text.secondary">
-                        {spec.label}
-                      </Typography>
-                      <Typography variant="body1" sx={{ fontWeight: 600 }}>
-                        {spec.value}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                ))}
-              </Grid>
-            </CardContent>
-          </Card>
         </Box>
       )}
+
+      <SpecificationsSection
+        specifications={specifications}
+        title={t('products.specifications')}
+        primaryColor={primaryColor}
+        primaryAlpha={primaryAlpha}
+        sx={{ mb: 8 }}
+      />
 
       <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
         <Button variant="contained" size="large" component={Link} to="/contact" endIcon={<ArrowForwardIcon />}>
@@ -454,7 +604,7 @@ export default function ProductDetail() {
   const specifications = acf.specifications || []
   const features = acf.features || []
   const specPdfUrl = getProductSpecPdfUrl(product.slug)
-  const isRichLayout = acf.layout === 'rich'
+  const layout = acf.layout || 'classic'
 
   return (
     <Box>
@@ -477,11 +627,23 @@ export default function ProductDetail() {
 
       <Box sx={{ py: 8 }}>
         <Container maxWidth="lg">
-          {isRichLayout ? (
+          {layout === 'accessory' ? (
+            <AccessoryProductLayout
+              product={product}
+              acf={acf}
+              categories={categories}
+              specifications={specifications}
+              specPdfUrl={specPdfUrl}
+              primaryColor={primaryColor}
+              primaryAlpha={primaryAlpha}
+              t={t}
+            />
+          ) : layout === 'rich' ? (
             <RichProductLayout
               product={product}
               acf={acf}
               categories={categories}
+              featuredImage={featuredImage}
               specifications={specifications}
               specPdfUrl={specPdfUrl}
               primaryColor={primaryColor}
