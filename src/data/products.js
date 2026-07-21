@@ -476,7 +476,7 @@ export const products = [
     "categoryId": 4,
     "i18nKey": "tensionador-de-hilo-th3-d",
     "acf": {
-      "layout": "accessory",
+      "layout": "rich",
       "features": []
     }
   },
@@ -488,7 +488,7 @@ export const products = [
     "categoryId": 4,
     "i18nKey": "tensionador-de-hilo-th3-is",
     "acf": {
-      "layout": "accessory",
+      "layout": "rich",
       "features": []
     }
   },
@@ -500,7 +500,7 @@ export const products = [
     "categoryId": 4,
     "i18nKey": "tensionador-de-hilo-th3",
     "acf": {
-      "layout": "accessory",
+      "layout": "rich",
       "features": []
     }
   },
@@ -512,7 +512,7 @@ export const products = [
     "categoryId": 4,
     "i18nKey": "tensionador-de-hilo-th3-standalone",
     "acf": {
-      "layout": "accessory",
+      "layout": "rich",
       "features": []
     }
   },

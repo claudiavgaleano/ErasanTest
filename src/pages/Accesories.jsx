@@ -8,7 +8,6 @@ import {
   Grid,
   Card,
   CardContent,
-  CardMedia,
   Button,
   Chip,
   Skeleton,
@@ -18,7 +17,8 @@ import {
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import { useThemeMode } from '../context/ThemeContext'
-import { useProducts, useCategories, contentHelpers } from '../hooks/useContent'
+import { useProducts, useCategories } from '../hooks/useContent'
+import ProductListCard from '../components/ProductListCard'
 
 export default function Accesories() {
   const { t } = useTranslation()
@@ -164,74 +164,13 @@ export default function Accesories() {
               : products.length > 0
               ? products.map((product, index) => (
                   <Grid item xs={12} sm={6} md={4} key={product.id}>
-                    <Card
-                      sx={{
-                        height: '100%',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        transition: 'all 0.3s ease',
-                        animation: `fadeInUp 0.6s ease-out ${index * 0.1}s backwards`,
-                        '@keyframes fadeInUp': {
-                          from: { opacity: 0, transform: 'translateY(30px)' },
-                          to: { opacity: 1, transform: 'translateY(0)' },
-                        },
-                        '&:hover': {
-                          transform: 'translateY(-8px)',
-                          borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
-                          '& .product-image': {
-                            transform: 'scale(1.05)',
-                          },
-                        },
-                      }}
-                    >
-                      <Box sx={{ overflow: 'hidden', position: 'relative' }}>
-                        <CardMedia
-                          component="img"
-                          height="220"
-                          image={contentHelpers.getFeaturedImage(product)}
-                          alt={product.title.rendered}
-                          className="product-image"
-                          sx={{ transition: 'transform 0.4s ease' }}
-                        />
-                        {product.acf?.featured && (
-                          <Chip
-                            label={t('accesories.featured')}
-                            color="primary"
-                            size="small"
-                            sx={{
-                              position: 'absolute',
-                              top: 12,
-                              right: 12,
-                              fontWeight: 600,
-                            }}
-                          />
-                        )}
-                      </Box>
-                      <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                        <Typography
-                          variant="h5"
-                          component="h3"
-                          sx={{ mb: 2, fontWeight: 600 }}
-                          dangerouslySetInnerHTML={{ __html: product.title.rendered }}
-                        />
-                        <Typography
-                          variant="body2"
-                          color="text.secondary"
-                          sx={{ mb: 2, flexGrow: 1, lineHeight: 1.7 }}
-                        >
-                          {contentHelpers.getExcerpt(product.excerpt?.rendered || product.content.rendered, 120)}
-                        </Typography>
-                        <Button
-                          component={Link}
-                          to={`/products/${product.slug}`}
-                          variant="outlined"
-                          endIcon={<ArrowForwardIcon />}
-                          fullWidth
-                        >
-                          {t('accesories.viewDetails')}
-                        </Button>
-                      </CardContent>
-                    </Card>
+                    <ProductListCard
+                      product={product}
+                      index={index}
+                      mode={mode}
+                      viewDetailsLabel={t('accesories.viewDetails')}
+                      featuredLabel={t('accesories.featured')}
+                    />
                   </Grid>
                 ))
               : !loading && (

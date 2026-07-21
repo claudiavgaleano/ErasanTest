@@ -4,6 +4,7 @@ import GroupsIcon from '@mui/icons-material/Groups'
 import FactoryIcon from '@mui/icons-material/Factory'
 import ThumbUpIcon from '@mui/icons-material/ThumbUp'
 import { useThemeMode } from '../context/ThemeContext'
+import aboutMissionImage from '../assets/About/about-mission.jpg'
 
 export default function About() {
   const { t } = useTranslation()
@@ -113,13 +114,25 @@ export default function About() {
                 {t('about.heroTitle2')}
               </Box>
             </Typography>
-            <Typography
-              variant="body1"
-              color="text.secondary"
-              sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}
-            >
-              {t('about.heroDescription')}
-            </Typography>
+            <Box sx={{ maxWidth: 720 }}>
+              {t('about.heroDescription')
+                .split('\n\n')
+                .filter(Boolean)
+                .map((paragraph, index) => (
+                  <Typography
+                    key={index}
+                    variant="body1"
+                    color="text.secondary"
+                    sx={{
+                      fontSize: '1.1rem',
+                      lineHeight: 1.8,
+                      mb: index < 2 ? 2 : 0,
+                    }}
+                  >
+                    {paragraph}
+                  </Typography>
+                ))}
+            </Box>
           </Box>
         </Container>
       </Box>
@@ -212,37 +225,21 @@ export default function About() {
                 sx={{
                   height: 400,
                   borderRadius: 2,
-                  background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.12)' : 'rgba(185, 28, 28, 0.08)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.15)' : 'rgba(2, 132, 199, 0.1)'} 100%)`,
                   border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  position: 'relative',
                   overflow: 'hidden',
-                  '&::before': {
-                    content: '""',
-                    position: 'absolute',
-                    top: -50,
-                    right: -50,
-                    width: 200,
-                    height: 200,
-                    background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.12)'} 0%, transparent 70%)`,
-                    borderRadius: '50%',
-                  },
                 }}
               >
-                <Typography
-                  variant="h1"
+                <Box
+                  component="img"
+                  src={aboutMissionImage}
+                  alt={t('about.missionHeading')}
                   sx={{
-                    fontSize: '8rem',
-                    opacity: 0.15,
-                    fontFamily: '"Rajdhani", sans-serif',
-                    fontWeight: 700,
-                    color: primaryColor,
+                    width: '100%',
+                    height: '100%',
+                    display: 'block',
+                    objectFit: 'cover',
                   }}
-                >
-                  30+
-                </Typography>
+                />
               </Box>
             </Grid>
           </Grid>

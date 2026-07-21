@@ -28,6 +28,21 @@ function isPlainObject(value) {
   return value !== null && typeof value === 'object' && !Array.isArray(value)
 }
 
+function buildGalleryFromRegistry(product, captions = []) {
+  const items = []
+  for (let index = 0; index < 10; index++) {
+    const src = getProductGalleryImage(product.slug, index)
+    if (!src) break
+    const caption = captions[index] || ''
+    items.push({
+      src,
+      alt: caption || product.title?.rendered || product.slug,
+      caption,
+    })
+  }
+  return items
+}
+
 function localizeRichLayout(product, t, itemKey) {
   const heroIntroRaw = t(`${itemKey}.heroIntro`, { returnObjects: true, defaultValue: [] })
   const galleryRaw = t(`${itemKey}.gallery`, { returnObjects: true, defaultValue: [] })
@@ -37,16 +52,20 @@ function localizeRichLayout(product, t, itemKey) {
   const benefitCardsRaw = t(`${itemKey}.benefitCards`, { returnObjects: true, defaultValue: [] })
   const productAccessoriesRaw = t(`${itemKey}.productAccessories`, { returnObjects: true, defaultValue: null })
   const tagline = t(`${itemKey}.tagline`, { defaultValue: '' })
+  const heroSubtitle = t(`${itemKey}.heroSubtitle`, { defaultValue: '' })
 
   const heroIntro = Array.isArray(heroIntroRaw) ? heroIntroRaw.filter(Boolean) : []
   const benefitCards =
     Array.isArray(benefitCardsRaw) && benefitCardsRaw.some((card) => card?.title) ? benefitCardsRaw : []
 
   const baseGallery = product.acf?.gallery || []
+  const galleryCaptions = Array.isArray(galleryRaw)
+    ? galleryRaw.map((item) => (typeof item === 'string' ? item : item?.caption || ''))
+    : []
+
   const gallery =
-    Array.isArray(galleryRaw) && galleryRaw.length > 0
-      ? galleryRaw.map((item, index) => {
-          const caption = typeof item === 'string' ? item : item?.caption || ''
+    galleryCaptions.length > 0
+      ? galleryCaptions.map((caption, index) => {
           const base = baseGallery[index] || {}
           const resolvedSrc =
             getProductGalleryImage(product.slug, index) ||
@@ -60,7 +79,7 @@ function localizeRichLayout(product, t, itemKey) {
             caption,
           }
         })
-      : []
+      : buildGalleryFromRegistry(product)
 
   const characteristics =
     isPlainObject(characteristicsRaw) && characteristicsRaw.body
@@ -106,10 +125,13 @@ function localizeRichLayout(product, t, itemKey) {
       : null
 
   let layout = 'classic'
-  if (product.acf?.layout === 'accessory' || productAccessories?.items?.length) {
+  const explicitLayout = product.acf?.layout
+
+  if (explicitLayout === 'accessory') {
     layout = 'accessory'
   } else if (
-    product.acf?.layout === 'rich' ||
+    explicitLayout === 'rich' ||
+    product.section === 'accessories' ||
     benefitCards.length > 0 ||
     Boolean(characteristics)
   ) {
@@ -119,6 +141,7 @@ function localizeRichLayout(product, t, itemKey) {
   return {
     layout,
     heroIntro,
+    heroSubtitle,
     gallery,
     characteristics,
     brandFeatures,

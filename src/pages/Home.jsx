@@ -1,13 +1,13 @@
 import { Box, Container, Typography, Button, Grid, Card, CardContent } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import EngineeringIcon from '@mui/icons-material/Engineering'
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest'
 import SupportAgentIcon from '@mui/icons-material/SupportAgent'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { useThemeMode } from '../context/ThemeContext'
 import Carousel from '../components/Carousel'
+import tileErasanLogo from '../assets/Home/TileErasan.jpg'
 
 export default function Home() {
   const { t } = useTranslation()
@@ -102,7 +102,14 @@ export default function Home() {
                     fontSize: '0.85rem',
                   }}
                 >
-                  <PrecisionManufacturingIcon sx={{ fontSize: 20 }} aria-hidden="true" /> {t('home.welcome')}
+                  <Box
+                    component="img"
+                    src={tileErasanLogo}
+                    alt=""
+                    aria-hidden="true"
+                    sx={{ width: 22, height: 22, objectFit: 'contain', display: 'block' }}
+                  />{' '}
+                  {t('home.welcome')}
                 </Typography>
                 <Typography
                   variant="h1"
@@ -200,11 +207,15 @@ export default function Home() {
                     },
                   }}
                 >
-                  <PrecisionManufacturingIcon
-                    aria-hidden="true"
+                  <Box
+                    component="img"
+                    src={tileErasanLogo}
+                    alt="Erasan"
                     sx={{
-                      fontSize: 150,
-                      color: primaryColor,
+                      width: '72%',
+                      maxWidth: 280,
+                      height: 'auto',
+                      objectFit: 'contain',
                       filter: `drop-shadow(0 0 40px ${mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)'})`,
                     }}
                   />

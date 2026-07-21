@@ -59,7 +59,13 @@ function SpecDownloadButton({ specPdfUrl, t, size = 'large', sx }) {
   )
 }
 
-function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor }) {
+function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor, subtitle, showExcerpt = true }) {
+  const displaySubtitle =
+    subtitle !== undefined && subtitle !== null
+      ? subtitle
+      : showExcerpt
+        ? product.excerpt?.rendered
+        : ''
   return (
     <Container
       maxWidth="lg"
@@ -97,9 +103,9 @@ function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor 
           dangerouslySetInnerHTML={{ __html: product.title.rendered }}
         />
 
-        {product.excerpt?.rendered && (
+        {displaySubtitle && (
           <Typography variant="h5" component="p" color="text.secondary" sx={{ mb: 3, fontWeight: 500, lineHeight: 1.5 }}>
-            {product.excerpt.rendered}
+            {displaySubtitle}
           </Typography>
         )}
 
@@ -294,11 +300,14 @@ function RichProductLayout({
 }) {
   const {
     heroIntro = [],
+    heroSubtitle = '',
     gallery = [],
     characteristics,
     brandFeatures,
     highlight,
     benefitCards = [],
+    productAccessories,
+    tagline,
   } = acf
 
   const highlightImage = resolveHighlightImage(gallery, highlight, featuredImage, product.title.rendered)
@@ -311,6 +320,8 @@ function RichProductLayout({
         categories={categories}
         heroIntro={heroIntro}
         primaryColor={primaryColor}
+        subtitle={heroSubtitle}
+        showExcerpt={false}
       />
 
       {characteristics && (
@@ -376,6 +387,73 @@ function RichProductLayout({
         sx={{ mb: 8 }}
       />
 
+      {productAccessories?.items?.length > 0 && (
+        <Box sx={{ mb: 8 }}>
+          <Typography variant="h3" sx={{ mb: 4, fontWeight: 700 }}>
+            {productAccessories.title}
+          </Typography>
+          <Grid container spacing={3}>
+            {productAccessories.items.map((item, index) => (
+              <Grid item xs={12} sm={6} key={index}>
+                <Card
+                  sx={{
+                    height: '100%',
+                    overflow: 'hidden',
+                    borderLeft: `4px solid ${primaryColor}`,
+                    background: primaryAlpha(0.03),
+                  }}
+                >
+                  {item.src && (
+                    <Box
+                      component="img"
+                      src={item.src}
+                      alt={item.alt || item.title}
+                      sx={{
+                        width: '100%',
+                        height: 220,
+                        objectFit: 'contain',
+                        display: 'block',
+                        bgcolor: 'background.paper',
+                        p: 2,
+                      }}
+                    />
+                  )}
+                  <CardContent sx={{ p: 3 }}>
+                    <Typography variant="h5" sx={{ mb: 1.5, fontWeight: 700 }}>
+                      {item.title}
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary" sx={{ lineHeight: 1.7 }}>
+                      {item.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      )}
+
+      {tagline && (
+        <Box
+          sx={{
+            mb: 8,
+            py: 4,
+            px: { xs: 2, md: 4 },
+            textAlign: 'center',
+            borderTop: `1px solid ${primaryAlpha(0.15)}`,
+            borderBottom: `1px solid ${primaryAlpha(0.15)}`,
+          }}
+        >
+          <Typography
+            variant="h5"
+            component="p"
+            sx={{ fontStyle: 'italic', fontWeight: 500, lineHeight: 1.6, color: 'text.primary' }}
+          >
+            &ldquo;{tagline}&rdquo;
+          </Typography>
+        </Box>
+      )}
+
       <SpecificationsSection
         specifications={specifications}
         title={t('products.specifications')}
@@ -408,6 +486,7 @@ function AccessoryProductLayout({
 }) {
   const {
     heroIntro = [],
+    heroSubtitle = '',
     gallery = [],
     characteristics,
     brandFeatures,
@@ -425,6 +504,8 @@ function AccessoryProductLayout({
         categories={categories}
         heroIntro={heroIntro}
         primaryColor={primaryColor}
+        subtitle={heroSubtitle}
+        showExcerpt={false}
       />
 
       {characteristics && (
