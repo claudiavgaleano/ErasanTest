@@ -1,0 +1,1016 @@
+{
+  "brand": "ERASAN",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Products",
+    "coilWinding": "Coil Winding",
+    "accesories": "Accesories",
+    "retrofit": "Retrofit",
+    "blog": "Blog",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation menu",
+    "allProducts": "All Products",
+    "productsMenu": "Products submenu"
+  },
+  "home": {
+    "welcome": "PRECISION ENGINEERING",
+    "heroTitle1": "Coil",
+    "heroTitle2": "Winding",
+    "heroTitle3": "Machines",
+    "heroDescription": "Industry-leading precision winding solutions for transformers, motors, and electrical components. Engineered for performance, built for reliability.",
+    "getStarted": "Request Quote",
+    "ourServices": "Our Products",
+    "whyChooseUs": "Why Choose Erasan",
+    "whyChooseUsDesc": "With decades of expertise in precision engineering, we deliver winding solutions that exceed industry standards.",
+    "modernDesign": "Precision Engineering",
+    "modernDesignDesc": "Precision-engineered machines built with the highest quality precision components for unmatched accuracy and durability.",
+    "cleanCode": "Advanced Technology",
+    "cleanCodeDesc": "State-of-the-art CNC control systems and automation for consistent, high-quality coil production.",
+    "support": "Technical Support",
+    "supportDesc": "Comprehensive after-sales support, training, and maintenance services to keep your production running smoothly.",
+    "ctaTitle": "Ready to Upgrade Your Production?",
+    "ctaDescription": "Contact us today to discuss your winding requirements and discover the perfect machine for your needs.",
+    "contactUs": "Contact Us"
+  },
+  "about": {
+    "title": "ABOUT ERASAN",
+    "heroTitle1": "Engineering",
+    "heroTitle2": "Excellence",
+    "heroDescription": "For over 30 years, Erasan has been at the forefront of coil winding technology. Our commitment to precision engineering and customer satisfaction has made us a trusted partner for manufacturers worldwide.",
+    "teamMembers": "Engineers & Technicians",
+    "projectsCompleted": "Machines Installed",
+    "clientSatisfaction": "Customer Satisfaction",
+    "missionTitle": "OUR MISSION",
+    "missionHeading": "Powering Industry Through Innovation",
+    "missionDescription1": "Our mission is to provide manufacturers with the most reliable, efficient, and precise coil winding solutions available. Every machine we build represents our commitment to quality and innovation.",
+    "missionDescription2": "From small prototype runs to high-volume production, we engineer solutions that optimize your manufacturing process and deliver consistent results.",
+    "teamTitle": "OUR TEAM",
+    "teamHeading": "Expert Engineers",
+    "teamDescription": "Our team combines decades of experience in electrical engineering, mechanical design, and manufacturing automation.",
+    "ceo": "Managing Director",
+    "leadDev": "Chief Engineer",
+    "designDirector": "Production Manager",
+    "projectManager": "Sales Director"
+  },
+  "services": {
+    "title": "OUR PRODUCTS",
+    "heroTitle1": "Precision",
+    "heroTitle2": "Winding Machines",
+    "heroDescription": "Explore our comprehensive range of coil winding machines, designed for transformers, motors, solenoids, and specialized applications.",
+    "webDev": "Toroidal Winders",
+    "webDevDesc": "High-precision toroidal winding machines for inductors, current transformers, and power supplies.",
+    "mobileApps": "Linear Winders",
+    "mobileAppsDesc": "Versatile linear winding systems for motor coils, solenoids, and relay components.",
+    "uiux": "Transformer Winders",
+    "uiuxDesc": "Specialized equipment for power transformers, distribution transformers, and custom windings.",
+    "backend": "CNC Layer Winders",
+    "backendDesc": "Computer-controlled layer winding machines for precision multi-layer coils and bobbin winding.",
+    "security": "Automatic Systems",
+    "securityDesc": "Fully automated winding lines with robotic handling and quality inspection systems.",
+    "performance": "Testing Equipment",
+    "performanceDesc": "Comprehensive testing systems for electrical characteristics, insulation, and quality verification.",
+    "features": {
+      "reactVue": "Programmable tension control",
+      "pwa": "Wire diameter 0.05-6mm",
+      "ecommerce": "Up to 3000 RPM speed",
+      "reactNative": "Multi-spindle configurations",
+      "iosAndroid": "Servo motor drives",
+      "aso": "Touch screen HMI",
+      "userResearch": "Layer counting system",
+      "prototyping": "Automatic wire guides",
+      "designSystems": "Custom tooling available",
+      "nodePython": "CNC axis control",
+      "cloudServices": "Real-time monitoring",
+      "dbDesign": "Recipe management",
+      "securityAudits": "PLC automation",
+      "penTesting": "Robotic arm integration",
+      "compliance": "Vision inspection",
+      "loadTime": "DC resistance testing",
+      "seo": "Hipot testing",
+      "coreVitals": "Turn ratio analysis"
+    },
+    "ctaTitle": "Need a Custom Solution?",
+    "ctaDescription": "We design and manufacture custom winding machines tailored to your specific production requirements.",
+    "getInTouch": "Request Consultation"
+  },
+  "products": {
+    "title": "OUR PRODUCTS",
+    "heroTitle1": "Coil Winding",
+    "heroTitle2": "Machines",
+    "heroDescription": "Discover our complete range of precision winding equipment, from manual machines to fully automated production lines.",
+    "categoriesHeading": "Our Product Categories",
+    "categoriesDescription": "Choose a category to explore our coil winding machines, accessories, and retrofit solutions.",
+    "exploreCategory": "Explore",
+    "allCategories": "All Products",
+    "featured": "Featured",
+    "viewDetails": "View Details",
+    "noProducts": "No products found",
+    "errorLoading": "Error loading products. Please try again later.",
+    "notFound": "Product Not Found",
+    "notFoundDesc": "The product you're looking for doesn't exist or has been removed.",
+    "backToProducts": "Back to Products",
+    "backToSection": "Back to {{section}}",
+    "requestQuote": "Request Quote",
+    "askQuestion": "Ask a Question",
+    "keyFeatures": "Key Features",
+    "characteristics": "Characteristics",
+    "productAccessories": "Accessories",
+    "specifications": "Technical Specifications",
+    "downloadSpecs": "Download Technical Specifications",
+    "downloadSpecsComingSoon": "Technical specifications PDF will be available soon",
+    "ctaTitle": "Need Expert Advice?",
+    "ctaDescription": "Our engineering team can help you choose the right machine for your production requirements."
+  },
+  "coilWinding": {
+    "title": "COIL WINDING MACHINES",
+    "heroTitle1": "Machines",
+    "heroTitle2": "Precision",
+    "heroDescription": "Discover our complete range of precision winding equipment, from manual machines to fully automated production lines.",
+    "allCategories": "All Products",
+    "featured": "Featured",
+    "viewDetails": "View Details",
+    "noProducts": "No products found",
+    "errorLoading": "Error loading products. Please try again later.",
+    "notFound": "Product Not Found",
+    "notFoundDesc": "The product you're looking for doesn't exist or has been removed.",
+    "backToProducts": "Back to Products",
+    "requestQuote": "Request Quote",
+    "askQuestion": "Ask a Question",
+    "keyFeatures": "Key Features",
+    "specifications": "Technical Specifications",
+    "ctaTitle": "Need Expert Advice?",
+    "ctaDescription": "Our engineering team can help you choose the right machine for your production requirements."
+  },
+  "accesories": {
+    "title": "ACCESORIES",
+    "heroTitle1": "Accesories",
+    "heroTitle2": "for our",
+    "heroDescription": "Discover our complete range of precision winding equipment, from manual machines to fully automated production lines.",
+    "allCategories": "All Products",
+    "featured": "Featured",
+    "viewDetails": "View Details",
+    "noProducts": "No products found",
+    "errorLoading": "Error loading products. Please try again later.",
+    "notFound": "Product Not Found",
+    "notFoundDesc": "The product you're looking for doesn't exist or has been removed.",
+    "backToProducts": "Back to Products",
+    "requestQuote": "Request Quote",
+    "askQuestion": "Ask a Question",
+    "keyFeatures": "Key Features",
+    "specifications": "Technical Specifications",
+    "ctaTitle": "Need Expert Advice?",
+    "ctaDescription": "Our engineering team can help you choose the right machine for your production requirements."
+  },
+  "retrofit": {
+    "title": "RETROFIT MACHINES",
+    "heroTitle1": "Retrofit",
+    "heroTitle2": "Machines",
+    "heroDescription": "Discover our complete range of precision winding equipment, from manual machines to fully automated production lines.",
+    "allCategories": "All Products",
+    "featured": "Featured",
+    "viewDetails": "View Details",
+    "noProducts": "No products found",
+    "errorLoading": "Error loading products. Please try again later.",
+    "notFound": "Product Not Found",
+    "notFoundDesc": "The product you're looking for doesn't exist or has been removed.",
+    "backToProducts": "Back to Products",
+    "requestQuote": "Request Quote",
+    "askQuestion": "Ask a Question",
+    "keyFeatures": "Key Features",
+    "specifications": "Technical Specifications",
+    "ctaTitle": "Need Expert Advice?",
+    "ctaDescription": "Our engineering team can help you choose the right machine for your production requirements."
+  },
+  "blog": {
+    "title": "BLOG",
+    "heroTitle1": "Industry",
+    "heroTitle2": "Insights",
+    "heroDescription": "Stay updated with the latest news, technical articles, and industry trends in coil winding technology.",
+    "searchPlaceholder": "Search articles...",
+    "allCategories": "All Categories",
+    "readMore": "Read More",
+    "noPosts": "No articles found",
+    "errorLoading": "Error loading articles. Please try again later.",
+    "searchResults": "Search results for: \"{{query}}\"",
+    "clearSearch": "Clear search",
+    "author": "Author",
+    "postNotFound": "Article Not Found",
+    "postNotFoundDesc": "The article you're looking for doesn't exist or has been removed.",
+    "backToBlog": "Back to Blog",
+    "recentPosts": "Recent Articles"
+  },
+  "contact": {
+    "title": "CONTACT US",
+    "heroTitle1": "Get in",
+    "heroTitle2": "Touch",
+    "heroDescription": "Have questions about our winding machines or need a custom solution? Our engineering team is ready to help.",
+    "infoTitle": "CONTACT INFORMATION",
+    "emailLabel": "Email",
+    "email": "info@erasan.com",
+    "phoneLabel": "Phone",
+    "phone": "+34 744 74 52 07",
+    "addressLabel": "Address",
+    "address": "Industrial Park, Barcelona, Spain",
+    "hoursLabel": "Business Hours",
+    "hours": "Mon - Fri: 8:00 - 18:00",
+    "mapTitle": "OUR LOCATION",
+    "mapAriaLabel": "Google Maps showing Erasan company location in Barcelona",
+    "openInMaps": "Open in Google Maps",
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We'll respond within 24 hours.",
+      "error": "Failed to send message. Please try again later.",
+      "errors": {
+        "nameRequired": "Name is required",
+        "nameMin": "Name must be at least 2 characters",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "subjectRequired": "Subject is required",
+        "messageRequired": "Message is required",
+        "messageMin": "Message must be at least 10 characters"
+      }
+    }
+  },
+  "footer": {
+    "description": "Industry-leading coil winding machines and precision engineering solutions for manufacturers worldwide.",
+    "copyright": "© {{year}} Erasan. All rights reserved.",
+    "quickLinks": "Quick navigation links",
+    "socialLinks": "Social media links"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "changeLanguage": "Change language"
+  },
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "carousel": {
+    "title": "OUR EXPERTISE",
+    "heading": "Winding Solutions",
+    "previousSlide": "Go to previous slide",
+    "nextSlide": "Go to next slide",
+    "slideIndicators": "Slide indicators",
+    "goToSlide": "Go to slide",
+    "slide": "Slide",
+    "of": "of",
+    "slide1": {
+      "title": "Transformer Winding",
+      "description": "Precision winding solutions for power transformers, distribution transformers, and specialty applications. Achieve consistent quality with our advanced tensioning systems."
+    },
+    "slide2": {
+      "title": "Motor Coil Production",
+      "description": "High-speed winding equipment for electric motor stators, rotors, and armatures. Optimized for both AC and DC motor manufacturing."
+    },
+    "slide3": {
+      "title": "Inductor Manufacturing",
+      "description": "Specialized machines for toroidal inductors, chokes, and filter components. Perfect wire placement for maximum electrical performance."
+    },
+    "slide4": {
+      "title": "Custom Engineering",
+      "description": "Tailored winding solutions designed to meet your unique production requirements. From concept to installation, we deliver excellence."
+    }
+  },
+  "legal": {
+    "title": "LEGAL NOTICE AND PRIVACY POLICY",
+    "title2": "IDENTIFYING INFORMATION (LEGAL NOTICE)",
+    "description": "In compliance with Article 10 of Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSI), the following identifying details of the company that owns this website are provided:",
+    "description1": "Company name: ERASAN, S.L.",
+    "description2": "Tax ID (NIF): B86123456",
+    "description3": "Address: Industrial Park, Barcelona, Spain",
+    "description4": "Registration details: Registered in the Commercial Registry of [Province], Volume [Number], Folio [Number], Sheet [Number].",
+    "description5": "Email: info@erasan.com",
+    "description6": "Phone: +34 123 456 789",
+    "title3": "INFORMATION WE COLLECT",
+    "description7": "In accordance with the General Data Protection Regulation (GDPR) and Organic Law 3/2018 (LOPDGDD), users are informed in detail about the processing of their data when browsing this website:",
+    "description8": "Data Controller:",
+    "description9": "The company identified in section 1 of this document.",
+    "description10": "Direct Data Collection:",
+    "description11": "This website is purely institutional and informational. It does not include contact forms, registration forms, newsletters, or any other mechanism that directly collects, stores, or processes users' personal data.",
+    "description12": "User Rights:",
+    "description13": "As there is no registration or storage of personal data on our servers, no processing is carried out for which the user must exercise rights of access, rectification, erasure, or objection with this company.",
+    "title4": "THIRD-PARTY SERVICE INTEGRATION (GOOGLE MAPS)",
+    "description14": "To facilitate the physical location of our facilities, this website uses the interactive Google Maps API, provided by the third party Google Ireland Limited (located at Gordon House, Barrow Street, Dublin 4, Ireland).",
+    "description15": "Data Processing by Third Parties:",
+    "description16": "When loading the page containing the interactive map, your browser establishes a direct connection with Google's servers. This means that Google automatically receives technical information about your browsing, including your IP address, the referring page, and your browser configuration data.",
+    "description17": "Purpose:",
+    "description18": "The legitimate basis for this processing is our legitimate interest in providing an interactive and visual service for locating the company.",
+    "description19": "Third-Party Cookies:",
+    "description20": "The use of the Google Maps API may involve the download of technical cookies by Google for the proper functioning of the map and the security of the service. This company has no control over or access to the data processed by Google.",
+    "description21": "More information:",
+    "description22": "To learn in detail how Google processes this data and how to configure your privacy, you can consult the",
+    "link": "Google Privacy Policy",
+    "link2": "https://policies.google.com/privacy"
+  },
+  "productCatalog": {
+    "coilWinding": {
+      "categories": {
+        "bancoLineal": {
+          "name": "Linear bench winders",
+          "description": ""
+        },
+        "cabezalBobinador": {
+          "name": "Winding head",
+          "description": "We specialize in custom machinery manufacturing. Contact us and we will develop the project according to your requirements and specifications."
+        },
+        "maquinaFolio": {
+          "name": "Foil machine",
+          "description": "We specialize in custom machinery manufacturing. Contact us and we will develop the project according to your requirements and specifications."
+        }
+      }
+    },
+    "accessories": {
+      "categories": {
+        "tensionadores": {
+          "name": "Wire tensioners",
+          "description": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers"
+        },
+        "devanadores": {
+          "name": "Dereelers",
+          "description": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers"
+        },
+        "guiadores": {
+          "name": "Wire guides",
+          "description": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers"
+        },
+        "mandrilesExpandibles": {
+          "name": "Expandable mandrels",
+          "description": "ERASAN expandable mandrel features"
+        },
+        "dispensadoresPapel": {
+          "name": "Paper dispensers",
+          "description": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers"
+        }
+      }
+    },
+    "retrofit": {
+      "title": "Retrofit",
+      "description": "Retrofit de cualquier bobinadora. Regardless of the manufacturer or machine condition, we will study all possibilities."
+    },
+    "items": {
+      "bobinadora-strip-foil": {
+        "title": "Strip Foil Winding Machine",
+        "heroSubtitle": "Two-paper, one-foil machine for manufacturing coils for large resin-cast/dry-type distribution and power transformers.",
+        "excerpt": "Two-paper, one-foil machine for manufacturing coils for large resin-cast/dry-type distribution and power transformers.",
+        "heroIntro": [
+          "Winding unit comprising a welded machined-steel head, pneumatic press roller, and expandable mandrel.",
+          "The dereeling mandrel is a hydraulic expandable shaft. Lateral foil dereeler movement is controlled by a photocell to correct possible deviations."
+        ],
+        "gallery": [
+          {
+            "caption": "ERASAN STRIP FOIL WINDING MACHINE"
+          },
+          {
+            "caption": "ERASAN STRIP FOIL WINDING MACHINE — LATERAL VIEW"
+          }
+        ],
+        "characteristics": {
+          "title": "Characteristics",
+          "body": "The paper dereeler offers easy loading and unloading thanks to its pneumatic shafts. It maintains the constant tension required during winding, while a photocell monitors paper position at all times, shifting laterally when needed.\n\nIt includes electronic control for fast paper adjustment."
+        },
+        "brandFeatures": {
+          "title": "ERASAN STRIP FOIL Features",
+          "items": [
+            "Surplus paper collection unit via a motorized roller installed next to the foil dereeler system.",
+            "Foil cutting system by nibbler or shear.",
+            "Welding unit with optional welding table.",
+            "Burr eliminator to prevent damage to copper or aluminum strip ends: two sets of two rollers applying pressure on the band edges, one above the other.",
+            "Option: TIG welding table.",
+            "Option: Guillotine foil cutting."
+          ]
+        },
+        "highlight": {
+          "title": "Multiple configurations available for coils up to 2,300 mm with a 1,800 mm winding zone",
+          "subtitle": "Supports winding a wide range of transformer and strip sizes and quantities as required.",
+          "imageIndex": 1
+        },
+        "benefitCards": [
+          {
+            "title": "High-efficiency electromechanical drive",
+            "description": "Ensuring energy savings and reduced maintenance"
+          },
+          {
+            "title": "Equipped with Ethernet connectivity",
+            "description": "Enables remote technical support from anywhere in the world"
+          },
+          {
+            "title": "Latest-generation CNC control system",
+            "description": "With 7\" color touchscreen"
+          },
+          {
+            "title": "Visual, user-friendly operator program",
+            "description": "Enables fast, error-free creation of any coil type and winding action required in the process"
+          }
+        ],
+        "content": "",
+        "features": [],
+        "section": "coilWinding",
+        "specifications": [
+          {
+            "label": "Maximum winding zone",
+            "value": "1,800 mm",
+            "icon": "dimension"
+          },
+          {
+            "label": "Maximum coil diameter",
+            "value": "2,300 mm",
+            "icon": "diameter"
+          },
+          {
+            "label": "Maximum foil width",
+            "value": "400 mm",
+            "icon": "width"
+          },
+          {
+            "label": "Foil thickness",
+            "value": "0.5 – 3.0 mm",
+            "icon": "dimension"
+          },
+          {
+            "label": "Winding speed",
+            "value": "Up to 120 rpm",
+            "icon": "speed"
+          },
+          {
+            "label": "Control",
+            "value": "CNC with 7\" color touchscreen",
+            "icon": "settings"
+          }
+        ]
+      },
+      "bobinadora-folio": {
+        "title": "Folio Winding Machine",
+        "excerpt": "Winding unit comprising a welded steel head, pneumatic press roller, and expandable mandrel.",
+        "content": "Winding unit comprising a welded steel head, pneumatic press roller, and expandable mandrel.\n\nMechanical structure: electrowelded steel body, heat-treated for stabilization, machined and milled components. High torsional rigidity with oven-baked paint finish.",
+        "features": [
+          "Multiple configurations available up to 1,500 mm width",
+          "Enables easy primary winding with very short production cycle times.",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "cabezal-bobinador-erasan-e1200-c-sgb": {
+        "title": "WINDING HEAD ERASAN E1200C SGB",
+        "excerpt": "Body manufactured from welded steel with high rigidity",
+        "content": "Body manufactured from welded steel with high rigidity\n\nMachined bed, tailstock, and ball-screw wire guide system with precision guide slides",
+        "features": [
+          "Capable of delivering 1,000 Nm at low speed",
+          "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "cabezal-bobinador-erasan-e1200-c": {
+        "title": "WINDING HEAD ERASAN E1200C",
+        "excerpt": "Body manufactured from welded steel with high rigidity",
+        "content": "Body manufactured from welded steel with high rigidity\n\nMachined bed, tailstock, and ball-screw wire guide system with precision guide slides",
+        "features": [
+          "Capable of delivering 1,000 Nm at low speed",
+          "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "cabezal-bobinador-erasan-e1500-b": {
+        "title": "WINDING HEAD ERASAN E1500B",
+        "excerpt": "CABEZAL BOBINADOR ERASAN E1500B",
+        "content": "",
+        "features": [],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "cabezal-bobinador-erasan-e1200-b": {
+        "title": "WINDING HEAD ERASAN E1200B",
+        "excerpt": "CABEZAL BOBINADOR ERASAN E1200B",
+        "content": "",
+        "features": [],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "bobinadora-erasan-e1200-c-sgb": {
+        "title": "BOBINADORA ERASAN E1200C SGB",
+        "excerpt": "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "content": "Cuerpo fabricado en acero mecano soldado de gran rigidez\n\nBancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión",
+        "features": [
+          "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+          "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+          "Electromecánica de alta eficiencia",
+          "Garantizando un ahorro de energía y reducción de mantenimiento",
+          "Dispone de conexión Ethernet",
+          "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+          "Sistema de control de última generación CNC",
+          "Con pantalla táctil de 7\" color"
+        ],
+        "section": "coilWinding"
+      },
+      "bobinadora-erasan-e1200-c": {
+        "title": "BOBINADORA ERASAN E1200C",
+        "excerpt": "Cuerpo fabricado en acero mecano soldado de gran rigidez",
+        "content": "Cuerpo fabricado en acero mecano soldado de gran rigidez\n\nBandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión",
+        "features": [
+          "Posibilidad de conseguir 1.000 Nm en baja velocidad",
+          "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
+          "Electromecánica de alta eficiencia",
+          "Garantizando un ahorro de energía y reducción de mantenimiento",
+          "Dispone de conexión Ethernet",
+          "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo",
+          "Sistema de control de última generación CNC",
+          "Con pantalla táctil de 7\" color"
+        ],
+        "section": "coilWinding"
+      },
+      "bobinadora-erasan-e1500-b": {
+        "title": "BOBINADORA ERASAN E1500B",
+        "excerpt": "BOBINADORA ERASAN E1500B",
+        "content": "",
+        "features": [],
+        "section": "coilWinding"
+      },
+      "bobinadora-erasan-e1200-b": {
+        "title": "BOBINADORA ERASAN E1200B",
+        "excerpt": "BOBINADORA ERASAN E1200B",
+        "content": "",
+        "features": [],
+        "section": "coilWinding"
+      },
+      "bobinadora-erasan-e1200-sgb": {
+        "title": "ERASAN E1200 SGB Winding Machine",
+        "excerpt": "Body manufactured from welded steel with high rigidity",
+        "content": "Body manufactured from welded steel with high rigidity\n\nMachined bed, tailstock, and ball-screw wire guide system with precision guide slides\n\nDe banco lineal Cabezal Bobinador",
+        "features": [
+          "Capable of delivering 1,000 Nm at low speed",
+          "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "bobinadora-erasan-e1200-servotech": {
+        "title": "ERASAN E1200 SERVOTECH Winding Machine",
+        "excerpt": "Body manufactured from welded steel with high rigidity",
+        "content": "Body manufactured from welded steel with high rigidity\n\nMachined bed, tailstock, and ball-screw wire guide system with precision guide slides",
+        "features": [
+          "Capable of delivering 1,000 Nm at low speed",
+          "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "bobinadora-erasan-e900-sgb": {
+        "title": "ERASAN E900 SGB Winding Machine",
+        "excerpt": "Body manufactured from welded steel with high rigidity",
+        "content": "Body manufactured from welded steel with high rigidity\n\nMachined bed, tailstock, and ball-screw wire guide system with precision guide slides",
+        "features": [
+          "Capable of delivering 1,000 Nm at low speed",
+          "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "bobinadora-erasan-e900-servotech": {
+        "title": "ERASAN E900 SERVOTECH Winding Machine",
+        "excerpt": "Body manufactured from welded steel with high rigidity",
+        "content": "Body manufactured from welded steel with high rigidity\n\nMachined bed, tailstock, and ball-screw wire guide system with precision guide slides",
+        "features": [
+          "Capable of delivering 1,000 Nm at low speed",
+          "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "bobinadora-erasan-e900": {
+        "title": "ERASAN E900 Winding Machine",
+        "excerpt": "Body manufactured from welded steel with high rigidity",
+        "content": "Body manufactured from welded steel with high rigidity\n\nMachined bed, tailstock, and ball-screw wire guide system with precision guide slides",
+        "features": [
+          "Capable of delivering 1,000 Nm at low speed",
+          "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "bobinadora-erasan-e600": {
+        "title": "ERASAN E600 Winding Machine",
+        "excerpt": "Compact high-rigidity aluminum body with electrowelded, machined guide bed",
+        "content": "Compact high-rigidity aluminum body with electrowelded, machined guide bed\n\nWire guide system mounted on precision slides, driven by a ball-screw and quick-closing tailstock",
+        "features": [
+          "Three kinematic versions: maximum speed of 9,000 rpm",
+          "allows manufacturing multiple coils in the same work cycle",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "bobinadora-erasan-e300": {
+        "title": "ERASAN E300 Winding Machine",
+        "excerpt": "Compact high-rigidity aluminum body with electrowelded, machined guide bed",
+        "content": "Compact high-rigidity aluminum body with electrowelded, machined guide bed\n\nWire guide system mounted on precision slides, driven by a ball-screw and quick-closing tailstock",
+        "features": [
+          "Three kinematic versions: maximum speed of 9,000 rpm",
+          "allows manufacturing multiple coils in the same work cycle",
+          "High-efficiency electromechanical drive",
+          "Ensuring energy savings and reduced maintenance",
+          "Equipped with Ethernet connectivity",
+          "Enables remote technical support from anywhere in the world",
+          "Latest-generation CNC control system",
+          "With 7\" color touchscreen"
+        ],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "bobinadora-erasan-e300w": {
+        "title": "ERASAN E300W Winding Machine",
+        "excerpt": "BOBINADORA ERASAN E300W",
+        "content": "",
+        "features": [],
+        "section": "coilWinding",
+        "specifications": []
+      },
+      "dispensador-de-papel-dp1-p": {
+        "title": "DP1-P Paper Dispenser",
+        "excerpt": "DP1 P – Dispensador de papel Permite varias medidas de forma simultánea Características Descubre las especificaciones del dispensador de papel DP1 P Características ERASAN TPE Tensionador de papel dotado de freno electromagnético y eje expandible. Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente. Regulación del ... Leer más",
+        "content": "",
+        "features": [
+          "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+          "Compatible con gran variedad de formatos de aislantes"
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "dispensador-de-papel-tpe": {
+        "title": "TPE Paper Dispenser",
+        "excerpt": "TPE – Dispensador de papel Bobina máxima de papel de 400 mm y 310 mm de longitud Características Descubre las especificaciones del dispensador de papel TPE Características ERASAN TPE Tensionador de papel dotado de freno electromagnético y eje expandible. Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades ... Leer más",
+        "content": "",
+        "features": [
+          "Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.",
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+          "Compatible con gran variedad de formatos de aislantes"
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "devanador-dp1r-ap1r": {
+        "title": "DP1R AP1R Dereeler",
+        "excerpt": "DP1R AP1R – Devanador Doble freno para mejor tensión constante Características Descubre las especificaciones del devanador DP1R AP1R Características ERASAN DP1R AP1R La principal diferencia de DP1R es el doble freno provisto que mejora la tensión, que junto al AP1R ayuda a mantener la tensión constante. En el caso en que el hilo del carrete ... Leer más",
+        "content": "",
+        "features": [
+          "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+          "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "devanador-dp4": {
+        "title": "DP4 Dereeler",
+        "excerpt": "DP4 – Devanador Permite el montaje de 4 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm. Características Descubre las especificaciones del devanador DP4 Características ERASAN DP4 Proporciona una tensión constante al hilo durante el bobinado El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y ... Leer más",
+        "content": "",
+        "features": [
+          "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+          "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "devanador-dp2": {
+        "title": "DP2 Dereeler",
+        "excerpt": "DP2 – Devanador Permite el montaje de 2 carretes con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm. Características Descubre las especificaciones del devanador DP2 Características ERASAN DP2 Proporciona una tensión constante al hilo durante el bobinado El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y ... Leer más",
+        "content": "",
+        "features": [
+          "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+          "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "devanador-dp1": {
+        "title": "DP1 Dereeler",
+        "excerpt": "DP1 – Devanador Permite el montaje de carrete con diámetro máximo de 750 mm y un diámetro de hilo de 99 mm. Características Descubre las especificaciones del devanador DP1 Características ERASAN DP1 Proporciona una tensión constante al hilo durante el bobinado El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la ... Leer más",
+        "content": "",
+        "features": [
+          "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.",
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\"",
+          "La gama de tensionadores para hilo y pletina DP están concebidos de manera modular."
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "mandril-expandible-rectangular": {
+        "title": "Rectangular Expandable Mandrel",
+        "excerpt": "Mandril expandible rectangular Completamente a medida Características Descubre las especificaciones del mandril expandible rectangular ERASAN expandable mandrel features El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo. Cada mandril tiene un orificio con ... Leer más",
+        "content": "",
+        "features": [
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "mandril-expandible-circular": {
+        "title": "Round Expandable Mandrel",
+        "excerpt": "Mandril expandible circular Completamente a medida Características Descubre las especificaciones del mandril expandible circular ERASAN expandable mandrel features El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo. Cada mandril tiene un orificio con ... Leer más",
+        "content": "",
+        "features": [
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "guiador-de-pletina-gp2": {
+        "title": "GP2 Strip Guide",
+        "excerpt": "GP2 – Guiador de pletina Dispone de un guiador devanador de cinta Características Descubre las especificaciones del guiador de pletina GP2 Características ERASAN GP2 Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada. Este tipo de guiador es de máxima robustez ya que se suele emplear para el uso de ... Leer más",
+        "content": "",
+        "features": [
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "guiador-de-pletina-gp1": {
+        "title": "GP1 Strip Guide",
+        "excerpt": "GP1 – Guiador de pletina Tensiones de hasta 2kg por mm de sección Características Descubre las especificaciones del guiador de pletina GP1 Características ERASAN GP1 Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada. Este tipo de guiador es de máxima robustez ya que las tensiones empleadas en estos conductores ... Leer más",
+        "content": "",
+        "features": [
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "guiador-de-hilo-gh3": {
+        "title": "GH3 Wire Guide",
+        "excerpt": "GH3 – Guiador de hilo Guiador de hilo con un diámetro de hasta 8.00mm Características Descubre las especificaciones del guiador de hilo GH3 Características ERASAN GH3 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 8mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+        "content": "",
+        "features": [
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "guiador-de-hilo-gh2": {
+        "title": "GH2 Wire Guide",
+        "excerpt": "GH2 – Guiador de hilo Guiador de hilo con un diámetro de hasta 3.00mm Características Descubre las especificaciones del guiador de hilo GH2 Características ERASAN GH2 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 3mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+        "content": "",
+        "features": [
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "guiador-de-hilo-gh1": {
+        "title": "GH1 Wire Guide",
+        "excerpt": "GH1 – Guiador de hilo Guiador de hilo con un diámetro de hasta 1.00mm Características Descubre las especificaciones del guiador de hilo GH1 Características ERASAN GH1 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 1mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+        "content": "",
+        "features": [
+          "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
+        ],
+        "section": "accessories",
+        "specifications": []
+      },
+      "tensionador-de-hilo-th3-d": {
+        "title": "TH3 D Wire Tensioner",
+        "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "TH3 D Wire Tensioner"
+          },
+          {
+            "caption": "TH3 D Wire Tensioner — side view"
+          }
+        ],
+        "characteristics": {
+          "title": "Features",
+          "body": "Discover the specifications of the TH3 D wire tensioner."
+        },
+        "brandFeatures": {
+          "title": "ERASAN TH3 D features",
+          "body": "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.\n\nWire enters the tensioner through a ceramic eyelet and an inlet pulley.\n\nThis inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.\n\nIn this version, the tensioner is mounted directly on the winding machine.\n\nBrake adjustment is performed via potentiometer or display screen.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accessories",
+          "items": [
+            {
+              "title": "Wire break detector",
+              "description": "Detector that stops the machine in the event of wire breakage.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "System that counts the revolutions of the main pulley. Allows wire consumption to be tracked.",
+              "imageKey": "encoder"
+            }
+          ]
+        },
+        "tagline": "The key to winding lies in applying the correct tension and wire guidance",
+        "content": "",
+        "features": [],
+        "section": "accessories",
+        "specifications": []
+      },
+      "tensionador-de-hilo-th3-is": {
+        "title": "TH3 IS Wire Tensioner",
+        "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "TH3 IS Wire Tensioner"
+          },
+          {
+            "caption": "TH3 IS Wire Tensioner — side view"
+          }
+        ],
+        "characteristics": {
+          "title": "Features",
+          "body": "Discover the specifications of the TH3 IS wire tensioner."
+        },
+        "brandFeatures": {
+          "title": "ERASAN TH3 IS features",
+          "body": "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.\n\nWire enters the tensioner through a ceramic eyelet and an inlet pulley.\n\nThis inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.\n\nBrake adjustment is performed via potentiometer or display screen.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accessories",
+          "items": [
+            {
+              "title": "Wire break detector",
+              "description": "Detector that stops the machine in the event of wire breakage.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "System that counts the revolutions of the main pulley. Allows wire consumption to be tracked.",
+              "imageKey": "encoder"
+            }
+          ]
+        },
+        "tagline": "The key to winding lies in applying the correct tension and wire guidance",
+        "content": "",
+        "features": [],
+        "section": "accessories",
+        "specifications": []
+      },
+      "tensionador-de-hilo-th3": {
+        "title": "TH3 Wire Tensioner",
+        "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "TH3 Wire Tensioner"
+          },
+          {
+            "caption": "TH3 Wire Tensioner — side view"
+          }
+        ],
+        "characteristics": {
+          "title": "Features",
+          "body": "Discover the specifications of the TH3 wire tensioner."
+        },
+        "brandFeatures": {
+          "title": "ERASAN TH3 features",
+          "body": "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.\n\nWire enters the tensioner through a ceramic eyelet and an inlet pulley.\n\nThis inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.\n\nBrake adjustment is performed via potentiometer or display screen.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accessories",
+          "items": [
+            {
+              "title": "Wire break detector",
+              "description": "Detector that stops the machine in the event of wire breakage.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "System that counts the revolutions of the main pulley. Allows wire consumption to be tracked.",
+              "imageKey": "encoder"
+            }
+          ]
+        },
+        "tagline": "The key to winding lies in applying the correct tension and wire guidance",
+        "content": "",
+        "features": [],
+        "section": "accessories",
+        "specifications": []
+      },
+      "tensionador-de-hilo-th3-standalone": {
+        "title": "TH3 StandAlone Wire Tensioner",
+        "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
+        "heroIntro": [],
+        "gallery": [
+          {
+            "caption": "TH3 StandAlone Wire Tensioner"
+          },
+          {
+            "caption": "TH3 StandAlone Wire Tensioner — side view"
+          }
+        ],
+        "characteristics": {
+          "title": "Features",
+          "body": "Discover the specifications of the TH3 StandAlone wire tensioner."
+        },
+        "brandFeatures": {
+          "title": "ERASAN TH3 StandAlone features",
+          "body": "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.\n\nWire enters the tensioner through a ceramic eyelet and an inlet pulley.\n\nThis inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.\n\nIn this version, the tensioner is mounted on a standalone bench.\n\nBrake adjustment is performed via potentiometer or display screen.",
+          "items": []
+        },
+        "productAccessories": {
+          "title": "Accessories",
+          "items": [
+            {
+              "title": "Wire break detector",
+              "description": "Detector that stops the machine in the event of wire breakage.",
+              "imageKey": "detector-de-hilo"
+            },
+            {
+              "title": "Encoder",
+              "description": "System that counts the revolutions of the main pulley. Allows wire consumption to be tracked.",
+              "imageKey": "encoder"
+            }
+          ]
+        },
+        "tagline": "The key to winding lies in applying the correct tension and wire guidance",
+        "content": "",
+        "features": [],
+        "section": "accessories",
+        "specifications": []
+      },
+      "retrofit": {
+        "title": "Retrofit",
+        "excerpt": "Retrofit de cualquier bobinadora. Regardless of the manufacturer or machine condition, we will study all possibilities.",
+        "content": "Regardless of the manufacturer or machine condition, we will study all possibilities.\n\nDiscover the features of our machinery retrofits.",
+        "features": [],
+        "section": "retrofit",
+        "specifications": []
+      }
+    }
+  }
+}

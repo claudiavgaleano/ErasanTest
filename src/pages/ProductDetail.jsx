@@ -673,9 +673,7 @@ export default function ProductDetail() {
               startIcon={<ArrowBackIcon />}
               sx={{ color: 'text.secondary' }}
             >
-              {product.section === 'retrofit'
-                ? t('products.backToProducts')
-                : t('products.backToSection', { section: t(sectionBackLink.labelKey) })}
+              {t('products.backToSection', { section: t(sectionBackLink.labelKey) })}
             </Button>
           </Box>
         </Container>

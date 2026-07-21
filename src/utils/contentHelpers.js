@@ -6,8 +6,9 @@ const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasa
 
 const SECTION_BACK_LINKS = {
   coilWinding: { labelKey: 'nav.coilWinding', path: '/coil-winding' },
+  specialProjects: { labelKey: 'nav.specialProjects', path: '/proyectos-especiales' },
   accessories: { labelKey: 'nav.accesories', path: '/accesories' },
-  retrofit: { labelKey: 'nav.retrofit', path: '/products/retrofit' },
+  retrofit: { labelKey: 'nav.retrofit', path: '/retrofit' },
 }
 
 export function getSectionBackLink(section) {

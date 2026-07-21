@@ -79,6 +79,7 @@ export const accessoriesCategories = [
 
 export const categoriesBySection = {
   coilWinding: coilWindingCategories,
+  specialProjects: [],
   accessories: accessoriesCategories,
   retrofit: [],
 }

@@ -2,6 +2,7 @@
 
 export const PRODUCT_SECTIONS = {
   coilWinding: 'coilWinding',
+  specialProjects: 'specialProjects',
   accessories: 'accessories',
   retrofit: 'retrofit',
 }
@@ -517,11 +518,60 @@ export const products = [
   },
   {
     "id": 32,
-    "slug": "retrofit",
+    "slug": "bobinadora-e600-long",
+    "section": "specialProjects",
+    "categorySlug": null,
+    "categoryId": null,
+    "i18nKey": "bobinadora-e600-long",
+    "acf": {
+      "features": []
+    }
+  },
+  {
+    "id": 33,
+    "slug": "maquina-flyer",
+    "section": "specialProjects",
+    "categorySlug": null,
+    "categoryId": null,
+    "i18nKey": "maquina-flyer",
+    "acf": {
+      "features": []
+    }
+  },
+  {
+    "id": 34,
+    "slug": "encintadora",
+    "section": "specialProjects",
+    "categorySlug": null,
+    "categoryId": null,
+    "i18nKey": "encintadora",
+    "acf": {
+      "features": []
+    }
+  },
+  {
+    "id": 35,
+    "slug": "bobifil",
     "section": "retrofit",
     "categorySlug": null,
     "categoryId": null,
-    "i18nKey": "retrofit",
+    "i18nKey": "bobifil",
+    "acf": {
+      "features": [],
+      "layout": "rich",
+      "gallery": [
+        { "alt": "Bobifil - Antes" },
+        { "alt": "Bobifil - Después" }
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "slug": "kits-retrofit",
+    "section": "retrofit",
+    "categorySlug": null,
+    "categoryId": null,
+    "i18nKey": "kits-retrofit",
     "acf": {
       "features": []
     }

@@ -1,3 +1,10 @@
+import { readFileSync } from 'fs'
+import { join, dirname } from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const OVERRIDES = JSON.parse(readFileSync(join(__dirname, 'es-en-overrides.json'), 'utf8'))
+
 const PHRASES = [
   ['Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.', 'Winding unit comprising a welded steel head, pneumatic press roller, and expandable mandrel.'],
   ['El eje devanador es un eje expandible con sistema hidráulico. Movimiento lateral en el devanador de folio gracias al con una fotocélula para controlar posibles desviaciones.', 'The dereeling mandrel is a hydraulic expandable shaft. Lateral foil dereeler movement is controlled by a photocell to correct possible deviations.'],
@@ -55,7 +62,70 @@ const PHRASES = [
   ['Tensionador de hilo TH3 D', 'TH3 D Wire Tensioner'],
   ['Tensionador de hilo TH3 IS', 'TH3 IS Wire Tensioner'],
   ['Tensionador de hilo TH3 StandAlone', 'TH3 StandAlone Wire Tensioner'],
+  ['Tensionador de hilo TH3 StandAlone', 'TH3 StandAlone Wire Tensioner'],
   ['Tensionador de hilo TH3', 'TH3 Wire Tensioner'],
+  ['Máquina de dos papeles y un folio para la fabricación de bobinas para grandes trasformadores de resina/secos para distibución y potencia.', 'Two-paper, one-foil machine for manufacturing coils for large resin-cast/dry-type distribution and power transformers.'],
+  ['BOBINADORA ERASAN STRIP FOIL', 'ERASAN STRIP FOIL WINDING MACHINE'],
+  ['BOBINADORA ERASAN STRIP FOIL LATERAL', 'ERASAN STRIP FOIL WINDING MACHINE — LATERAL VIEW'],
+  ['El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel.', 'The paper dereeler offers easy loading and unloading thanks to its pneumatic shafts. It maintains the constant tension required during winding, while a photocell monitors paper position at all times, shifting laterally when needed.\n\nIt includes electronic control for fast paper adjustment.'],
+  ['Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.', 'Surplus paper collection unit via a motorized roller installed next to the foil dereeler system.'],
+  ['Sistema de corte del folio mediante caladora o por cizalla.', 'Foil cutting system by nibbler or shear.'],
+  ['Unidad de soldadura, con mesa soldadura opcional.', 'Welding unit with optional welding table.'],
+  ['Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.', 'Burr eliminator to prevent damage to copper or aluminum strip ends: two sets of two rollers applying pressure on the band edges, one above the other.'],
+  ['Opción: Mesa soldadura TIG.', 'Option: TIG welding table.'],
+  ['Opción: Corte Folio por guillotina.', 'Option: Guillotine foil cutting.'],
+  ['Zona de bobinado máxima', 'Maximum winding zone'],
+  ['Diámetro máximo de bobina', 'Maximum coil diameter'],
+  ['Ancho máximo de folio', 'Maximum foil width'],
+  ['Espesor de folio', 'Foil thickness'],
+  ['Velocidad de bobinado', 'Winding speed'],
+  ['Hasta 120 rpm', 'Up to 120 rpm'],
+  ['CNC con pantalla táctil 7"', 'CNC with 7" touchscreen'],
+  ['Para la fabricación de bobinas para grandes transformadores de resina/secos de distribución y potencia', 'For manufacturing coils for large resin-cast/dry-type distribution and power transformers'],
+  ['Bobinadora Folio', 'Folio Winding Machine'],
+  ['El nuevo concepto modular de las máquina folio de ERASAN Technology presenta un sistema novedoso en el corte del folio y de tensión constante en los devanadores de papel como en el devanador de folio que hacen que sea una máquina precisa y segura en la creación de grandes bobinas. \n\n  Un sistema de frenado actúa sobre el devanador del folio como el del papel, manteniendo una tensión constante independientemente de la cantidad de folio.', "ERASAN Technology's modular foil machine concept introduces a novel foil cutting system and constant tension in both paper dereelers and the foil dereeler, making it a precise and safe machine for creating large coils.\n\nA braking system acts on both the foil and paper dereelers, maintaining constant tension regardless of the amount of foil."],
+  ['Características ERASAN E-FOIL', 'ERASAN E-FOIL Features'],
+  ['Módulo de bobinado', 'Winding module'],
+  ['Módulo portacerquillos', 'Spool holder module'],
+  ['Módulo de soldadura', 'Welding module'],
+  ['Módulo de corte', 'Cutting module'],
+  ['Módulo devanador de folio', 'Foil dereeler module'],
+  ['BOBINADORA ERASAN E1200C SGB', 'ERASAN E1200C SGB Winding Machine'],
+  ['BOBINADORA ERASAN E1200C', 'ERASAN E1200C Winding Machine'],
+  ['Características ERASAN E1200C SGB', 'ERASAN E1200C SGB Features'],
+  ['Características ERASAN E1200C', 'ERASAN E1200C Features'],
+  ['Dos versiones de cinemática: hasta 750 rpm de velocidad con un alto par', 'Two kinematic versions: up to 750 rpm with high torque'],
+  ['Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par', 'Two kinematic versions: up to 500 rpm with high torque'],
+  ['Permite fabricar bobinas de longitud máxima de 1.100mm', 'Allows manufacturing coils up to 1,100 mm in length'],
+  ['Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.', 'Allows manufacturing high and low voltage coils on the same machine.'],
+  ['Cuenta con servomotores en cabezal y guiador', 'Equipped with servomotors in winding head and wire guide'],
+  ['Cuatro rangos de velocidad con cambio por palancas', 'Four speed ranges with lever shifting'],
+  ['Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina', 'Two speed ranges with manual belt change, or direct reducer on the machine shaft'],
+  ['Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad.', 'Allows easy adaptation to winding needs in terms of torque and speed.'],
+  ['Máquinas bobinadoras Bobifil – de vuelta a la vida', 'Bobifil winding machines – back to life'],
+  ['Máquinas bobinadoras Bobifil – de vuelta a la vida. Retrofit completo para devolver al trabajo equipos de cualquier estado.', 'Bobifil winding machines – back to life. Complete retrofit to return equipment of any condition to production.'],
+  ['Antes', 'Before'],
+  ['Después', 'After'],
+  ['Retrofit completo: de vuelta a la vida', 'Complete retrofit: back to life'],
+  ['Renovamos bobinadoras Bobifil con cinemática modernizada, servomotores en cabezal y guiador, y control actualizado para maximizar la vida útil de su equipamiento.', 'We renew Bobifil winding machines with modernized kinematics, servomotors in winding head and wire guide, and updated control to maximize equipment lifespan.'],
+  ['Descubre las características de los retrofits de BOBIFIL.\n\nEstudiamos cada máquina para ofrecer la mejor solución de modernización, sin importar el fabricante ni el estado del equipamiento.', 'Discover the features of BOBIFIL retrofits.\n\nWe study each machine to offer the best modernization solution, regardless of manufacturer or equipment condition.'],
+  ['Características RETROFIT BOBIFIL', 'BOBIFIL RETROFIT Features'],
+  ['Hasta 500 rpm con alto par', 'Up to 500 rpm with high torque'],
+  ['Dos versiones de cinemática para adaptarse a cada necesidad de bobinado en relación par y velocidad', 'Two kinematic versions to adapt to each winding need in terms of torque and speed'],
+  ['Bobinas de hasta 800 mm', 'Coils up to 800 mm'],
+  ['Servomotores en cabezal y guiador', 'Servomotors in head and wire guide'],
+  ['Precisión y control en todo el proceso de bobinado', 'Precision and control throughout the winding process'],
+  ['Dos rangos de velocidad', 'Two speed ranges'],
+  ['Cambio de correas manual o reductor directo al eje de la máquina', 'Manual belt change or direct reducer on the machine shaft'],
+  ['Kit de Retrofit', 'Retrofit Kit'],
+  ['Armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado.', 'Fully wired and tested cabinet ready to install on virtually any winding machine on the market.'],
+  ['Características ERASAN KIT RETROFIT', 'ERASAN RETROFIT KIT Features'],
+  ['Bobinadora E600 Long', 'E600 Long Winding Machine'],
+  ['Máquina Flyer', 'Flyer Machine'],
+  ['Encintadora', 'Taping Machine'],
+  ['Compatible con gran variedad de formatos de aislantes Además de papel, puede ser utilizado con diferentes tipos de forros, cintas y telas.', 'Compatible with a wide variety of insulation formats. In addition to paper, it can be used with different types of liners, tapes, and fabrics.'],
+  ['La gama de tensionadores para hilo y pletina DP están concebidos de manera modular. Pueden acoger desde un único carrete hasta 32.', 'The DP wire and strip tensioner range is designed in a modular way. They can hold from a single spool up to 32.'],
+  ['Programa visual y sencillo para el operador', 'Visual, user-friendly operator program'],
 ]
 
 const TITLE_RULES = [
@@ -75,11 +145,22 @@ const TITLE_RULES = [
 
 export function translateText(text) {
   if (!text || typeof text !== 'string') return text
+  if (OVERRIDES[text]) return OVERRIDES[text]
 
   let translated = text
   for (const [es, en] of PHRASES) {
     translated = translated.split(es).join(en)
   }
+
+  translated = translated
+    .replace(/\s*Leer más/gi, '')
+    .replace(/Características Descubre las especificaciones del/gi, '')
+    .replace(/Features Descubre las especificaciones del/gi, '')
+    .replace(/Características ERASAN/gi, 'ERASAN Features')
+    .replace(/Features ERASAN/gi, 'ERASAN Features')
+    .replace(/\s\.\.\.\s*$/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
 
   return translated
 }

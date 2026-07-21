@@ -5,6 +5,7 @@
     "about": "Nosotros",
     "services": "Productos",
     "coilWinding": "Máquinas Bobinadoras",
+    "specialProjects": "Proyectos Especiales",
     "accesories": "Accesorios",
     "retrofit": "Retrofit",
     "blog": "Blog",
@@ -145,6 +146,26 @@
     "ctaTitle": "¿Necesita Asesoramiento Experto?",
     "ctaDescription": "Nuestro equipo de ingeniería puede ayudarle a elegir la máquina adecuada para sus requisitos de producción."
   },
+  "specialProjects": {
+    "title": "PROYECTOS ESPECIALES",
+    "heroTitle1": "Proyectos",
+    "heroTitle2": "Especiales",
+    "heroDescription": "Soluciones de bobinado a medida para aplicaciones especiales: máquinas flyer, encintadoras y configuraciones extendidas como la E600 LONG.",
+    "allCategories": "Todos los Productos",
+    "featured": "Destacado",
+    "viewDetails": "Ver Detalles",
+    "noProducts": "No se encontraron productos",
+    "errorLoading": "Error al cargar los productos. Inténtelo de nuevo más tarde.",
+    "notFound": "Producto No Encontrado",
+    "notFoundDesc": "El producto que busca no existe o ha sido eliminado.",
+    "backToProducts": "Volver a Productos",
+    "requestQuote": "Solicitar Presupuesto",
+    "askQuestion": "Hacer una Pregunta",
+    "keyFeatures": "Características Principales",
+    "specifications": "Especificaciones Técnicas",
+    "ctaTitle": "¿Necesita una solución a medida?",
+    "ctaDescription": "Somos especialistas en la fabricación de maquinaria a medida. Contacta con nosotros y desarrollaremos el proyecto según tus requerimientos."
+  },
   "accesories": {
     "title": "ACCESORIOS",
     "heroTitle1": "Accesorios",
@@ -166,10 +187,12 @@
     "ctaDescription": "Nuestro equipo de ingeniería puede ayudarle a elegir la máquina adecuada para sus requisitos de producción."
   },
   "retrofit": {
-    "title": "MÁQUINAS DE RETROFIT",
-    "heroTitle1": "Retrofit",
-    "heroTitle2": "Machines",
-    "heroDescription": "Descubre nuestra gama completa de máquinas de retrofit, desde máquinas manuales hasta líneas de producción totalmente automatizadas.",
+    "title": "RETROFIT",
+    "heroTitle1": "Retrofit de",
+    "heroTitle2": "Bobinadoras",
+    "heroDescription": "Modernizamos y devolvemos a la vida bobinadoras de cualquier fabricante. Estudiamos cada máquina para ofrecer la mejor solución de retrofit.",
+    "bannerTitle": "Retrofit de cualquier bobinadora",
+    "bannerSubtitle": "No importa el fabricante ni el estado de la máquina, estudiaremos todas las posibilidades",
     "allCategories": "Todos los Productos",
     "featured": "Destacado",
     "viewDetails": "Ver Detalles",
@@ -182,8 +205,8 @@
     "askQuestion": "Hacer una Pregunta",
     "keyFeatures": "Características Principales",
     "specifications": "Especificaciones Técnicas",
-    "ctaTitle": "¿Necesita Asesoramiento Experto?",
-    "ctaDescription": "Nuestro equipo de ingeniería puede ayudarle a elegir la máquina adecuada para sus requisitos de producción."
+    "ctaTitle": "¿Quiere modernizar su bobinadora?",
+    "ctaDescription": "Contacte con nuestro equipo y estudiaremos todas las posibilidades de retrofit para su máquina, sin importar el fabricante ni su estado."
   },
   "blog": {
     "title": "BLOG",
@@ -353,6 +376,10 @@
           "description": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución"
         }
       }
+    },
+    "specialProjects": {
+      "title": "Proyectos Especiales",
+      "description": "Somos especialistas en la fabricación de maquinaria a medida. Contacta con nosotros y desarrollaremos el proyecto según tus requerimientos y especificaciones."
     },
     "retrofit": {
       "title": "Retrofit",
@@ -1180,7 +1207,7 @@
       },
       "mandril-expandible-rectangular": {
         "title": "Mandril expandible rectangular",
-        "excerpt": "Mandril expandible rectangular Completamente a medida Características Descubre las especificaciones del mandril expandible rectangular Características ERASAN Mandril expandible El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo. Cada mandril tiene un orificio con ... Leer más",
+        "excerpt": "Mandril expandible rectangular Completamente a medida.",
         "content": "",
         "features": [
           "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
@@ -1197,145 +1224,106 @@
       },
       "mandril-expandible-circular": {
         "title": "Mandril expandible circular",
-        "excerpt": "Mandril expandible circular Completamente a medida Características Descubre las especificaciones del mandril expandible circular Características ERASAN Mandril expandible El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo. Cada mandril tiene un orificio con ... Leer más",
+        "excerpt": "Mandril expandible circular Completamente a medida.",
         "content": "",
         "features": [
           "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
         ],
         "section": "accessories",
-        "characteristics": {
-          "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
-        },
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN Mandril expandible circular",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            "El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo.",
+            "Cada mandril tiene un orificio con llave estándar para expandir.",
+            "Núcleos de hierro o láminas se pueden insertar más tarde en el proceso de fabricación de la bobina."
           ]
         }
       },
       "guiador-de-pletina-gp2": {
         "title": "Guiador de pletina GP2",
-        "excerpt": "GP2 – Guiador de pletina Dispone de un guiador devanador de cinta Características Descubre las especificaciones del guiador de pletina GP2 Características ERASAN GP2 Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada. Este tipo de guiador es de máxima robustez ya que se suele emplear para el uso de ... Leer más",
+        "excerpt": "Dispone de un guiador devanador de cinta.",
         "content": "",
         "features": [
           "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
         ],
         "section": "accessories",
-        "characteristics": {
-          "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
-        },
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN Guiador de pletina GP2",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            "Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada.",
+            "Este tipo de guiador es de máxima robustez ya que se suele emplear para el uso de pletinas múltiples y una gran tensión.",
+            "Guiador para secciones rectangulares mediante rodillos los cuales se pueden ajustar para la sección empleada. Dispone de un guiador devanador de cinta.",
+            "Este tipo de guiador se emplea para bobinar pletinas múltiples y encintar la última capa a mucha tensión."
           ]
         }
       },
       "guiador-de-pletina-gp1": {
         "title": "Guiador de pletina GP1",
-        "excerpt": "GP1 – Guiador de pletina Tensiones de hasta 2kg por mm de sección Características Descubre las especificaciones del guiador de pletina GP1 Características ERASAN GP1 Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada. Este tipo de guiador es de máxima robustez ya que las tensiones empleadas en estos conductores ... Leer más",
+        "excerpt": "Guiador de pletina Tensiones de hasta 2kg por mm de sección.",
         "content": "",
         "features": [
           "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
         ],
         "section": "accessories",
-        "characteristics": {
-          "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
-        },
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN Guiador de pletina GP1",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            "Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada.",
+            "Este tipo de guiador es de máxima robustez ya que las tensiones empleadas en estos conductores son de gran magnitud.",
+            "Guiador para secciones rectangulares mediante rodillos los cuales se pueden ajustar para la sección empleada. Dispone de un guiador devanador de cinta.",
+            "Este tipo de guiador se emplea para bobinar pletinas múltiples y encintar la última capa a mucha tensión."
           ]
         }
       },
       "guiador-de-hilo-gh3": {
         "title": "Guiador de hilo GH3",
-        "excerpt": "GH3 – Guiador de hilo Guiador de hilo con un diámetro de hasta 8.00mm Características Descubre las especificaciones del guiador de hilo GH3 Características ERASAN GH3 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 8mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+        "excerpt": "Guiador de hilo Guiador de hilo con un diámetro de hasta 8.00mm.",
         "content": "",
         "features": [
           "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
         ],
         "section": "accessories",
-        "characteristics": {
-          "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
-        },
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN Guiador de hilo GH3",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            "Guiador de hilo por un pequeño tubo guiahilos",
+            "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 8mm de diámetro.",
+            "Su ángulo suele ser de 45º."
           ]
         }
       },
       "guiador-de-hilo-gh2": {
         "title": "Guiador de hilo GH2",
-        "excerpt": "GH2 – Guiador de hilo Guiador de hilo con un diámetro de hasta 3.00mm Características Descubre las especificaciones del guiador de hilo GH2 Características ERASAN GH2 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 3mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+        "excerpt": "Guiador de hilo con un diámetro de hasta 3.00mm.",
         "content": "",
         "features": [
           "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
         ],
         "section": "accessories",
-        "characteristics": {
-          "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
-        },
+
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN Guiador de hilo GH2",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            "Guiador de hilo por un pequeño tubo guiahilos",
+            "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 3mm de diámetro.",
+            "Su ángulo suele ser de 45º."
           ]
         }
       },
       "guiador-de-hilo-gh1": {
         "title": "Guiador de hilo GH1",
-        "excerpt": "GH1 – Guiador de hilo Guiador de hilo con un diámetro de hasta 1.00mm Características Descubre las especificaciones del guiador de hilo GH1 Características ERASAN GH1 Guiador de hilo por un pequeño tubo guiahilos Guiador de hilo por poleas el cual permite trabajar con hilos hasta 1mm de diámetro. Su ángulo suele ser de 45º. ... Leer más",
+        "excerpt": "Guiador de hilo con un diámetro de hasta 1.00mm.",
         "content": "",
         "features": [
           "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
         ],
         "section": "accessories",
-        "characteristics": {
-          "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
-        },
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características ERASAN Guiador de hilo GH1",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            "Guiador de hilo por un pequeño tubo guiahilos",
+            "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 1mm de diámetro.",
+            "Su ángulo suele ser de 45º."
           ]
         }
       },
@@ -1352,10 +1340,6 @@
             "caption": "Tensionador de hilo TH3 D — lateral"
           }
         ],
-        "characteristics": {
-          "title": "Características",
-          "body": "Descubre las especificaciones del tensionador de hilo TH3 D."
-        },
         "brandFeatures": {
           "title": "Características ERASAN TH3 D",
           "body": "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.\n\nEl hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.\n\nEste diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.\n\nEn esta versión el tensionador se monta directamente sobre la bobinadora.\n\nLa regulación del freno se realiza por potenciómetro o por pantalla.",
@@ -1394,14 +1378,14 @@
             "caption": "Tensionador de hilo TH3 IS — lateral"
           }
         ],
-        "characteristics": {
-          "title": "Características",
-          "body": "Descubre las especificaciones del tensionador de hilo TH3 IS."
-        },
         "brandFeatures": {
           "title": "Características ERASAN TH3 IS",
-          "body": "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.\n\nEl hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.\n\nEste diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.\n\nLa regulación del freno se realiza por potenciómetro o por pantalla.",
-          "items": []
+          "items": [
+            "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.",
+            "El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.",
+            "Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.",
+            "La regulación del freno se realiza por potenciómetro o por pantalla"
+          ]
         },
         "productAccessories": {
           "title": "Accesorios",
@@ -1436,14 +1420,14 @@
             "caption": "Tensionador de hilo TH3 — lateral"
           }
         ],
-        "characteristics": {
-          "title": "Características",
-          "body": "Descubre las especificaciones del tensionador de hilo TH3."
-        },
         "brandFeatures": {
           "title": "Características ERASAN TH3",
-          "body": "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.\n\nEl hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.\n\nEste diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.\n\nLa regulación del freno se realiza por potenciómetro o por pantalla.",
-          "items": []
+          "items": [
+            "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.",
+            "El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.",
+            "Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.",
+            "La regulación del freno se realiza por potenciómetro o por pantalla"
+          ]
         },
         "productAccessories": {
           "title": "Accesorios",
@@ -1478,14 +1462,15 @@
             "caption": "Tensionador de hilo TH3 StandAlone — lateral"
           }
         ],
-        "characteristics": {
-          "title": "Características",
-          "body": "Descubre las especificaciones del tensionador de hilo TH3 StandAlone."
-        },
         "brandFeatures": {
           "title": "Características ERASAN TH3 StandAlone",
-          "body": "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.\n\nEl hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.\n\nEste diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.\n\nEn esta versión el tensionador se monta sobre una bancada.\n\nLa regulación del freno se realiza por potenciómetro o por pantalla.",
-          "items": []
+          "items": [
+            "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.",
+            "El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.",
+            "Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.",
+            "En esta versión el tensionador se monta sobre una bancada.",
+            "La regulación del freno se realiza por potenciómetro o por pantalla"
+          ]
         },
         "productAccessories": {
           "title": "Accesorios",
@@ -1507,25 +1492,110 @@
         "features": [],
         "section": "accessories"
       },
-      "retrofit": {
-        "title": "Retrofit",
-        "excerpt": "Retrofit de cualquier bobinadora. No importa el fabricante ni el estado de la máquina, estudiaremos todas las posibilidades.",
-        "content": "No importa el fabricante ni el estado de la máquina, estudiaremos todas las posibilidades.\n\nDescubre las características de los retrofits de maquinaria.",
+      "bobinadora-e600-long": {
+        "title": "E600 LONG",
+        "excerpt": "Bobinadora E600 con zona de bobinado ampliada para aplicaciones especiales que requieren mayor longitud de trabajo.",
+        "content": "Configuración especial de la bobinadora ERASAN E600 con bancada extendida para proyectos que exigen una mayor zona de bobinado.\n\nIdeal para bobinados personalizados en transformadores y aplicaciones industriales de alta exigencia.",
+        "features": [
+          "Zona de bobinado ampliada respecto al modelo E600 estándar",
+          "Misma base tecnológica ERASAN con guiado de precisión",
+          "Proyecto especial adaptable a requerimientos del cliente"
+        ],
+        "section": "specialProjects",
+        "specifications": []
+      },
+      "maquina-flyer": {
+        "title": "Máquina Flyer",
+        "excerpt": "Máquina bobinadora flyer para aplicaciones especiales de bobinado con movimiento rotativo del conductor.",
+        "content": "Solución ERASAN para bobinados tipo flyer, empleada en aplicaciones que requieren un guiado y tensado específicos durante el proceso de bobinado.\n\nDesarrollada como proyecto especial según las necesidades de producción del cliente.",
+        "features": [
+          "Diseñada para bobinados flyer y aplicaciones especiales",
+          "Control preciso del conductor durante el bobinado",
+          "Fabricación a medida según especificaciones del proyecto"
+        ],
+        "section": "specialProjects",
+        "specifications": []
+      },
+      "encintadora": {
+        "title": "Encintadora",
+        "excerpt": "Máquina encintadora para aplicación de cinta aislante en bobinas con control preciso de tensión y guiado.",
+        "content": "Equipo especializado para el proceso de encintado en bobinas eléctricas, integrando tensión constante y guiado preciso del material aislante.\n\nSolución a medida para líneas de producción que requieren acabado automatizado de bobinas.",
+        "features": [
+          "Aplicación uniforme de cinta aislante",
+          "Control de tensión durante el encintado",
+          "Configuración adaptable al tipo de bobina y material"
+        ],
+        "section": "specialProjects",
+        "specifications": []
+      },
+      "bobifil": {
+        "title": "Bobifil",
+        "heroSubtitle": "Máquinas bobinadoras Bobifil – de vuelta a la vida",
+        "excerpt": "Máquinas bobinadoras Bobifil – de vuelta a la vida. Retrofit completo para devolver al trabajo equipos de cualquier estado.",
+        "heroIntro": [
+          "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución."
+        ],
+        "gallery": [
+          { "caption": "Antes" },
+          { "caption": "Después" }
+        ],
+        "highlight": {
+          "title": "Retrofit completo: de vuelta a la vida",
+          "subtitle": "Renovamos bobinadoras Bobifil con cinemática modernizada, servomotores en cabezal y guiador, y control actualizado para maximizar la vida útil de su equipamiento.",
+          "imageIndex": 1
+        },
+        "benefitCards": [
+          {
+            "title": "Hasta 500 rpm con alto par",
+            "description": "Dos versiones de cinemática para adaptarse a cada necesidad de bobinado en relación par y velocidad"
+          },
+          {
+            "title": "Bobinas de hasta 800 mm",
+            "description": "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina"
+          },
+          {
+            "title": "Servomotores en cabezal y guiador",
+            "description": "Precisión y control en todo el proceso de bobinado"
+          },
+          {
+            "title": "Dos rangos de velocidad",
+            "description": "Cambio de correas manual o reductor directo al eje de la máquina"
+          }
+        ],
+        "content": "",
         "features": [],
         "section": "retrofit",
-        "characteristics": {
-          "title": "Características",
-          "body": "El devanador de papel cuenta con una fácil carga y descarga gracias a sus ejes neumáticos. Garantiza la constante tensión durante el bobinado que se necesita en el proceso de bobinado además de que, una fotocélula controla la ubicación del papel en todo momento, desplazándose lateralmente si es necesario.\n\nDispone de un control electrónico que proporciona rapidez en el ajuste del papel."
-        },
+        "specifications": [],
         "brandFeatures": {
-          "title": "Características ERASAN STRIP FOIL",
+          "title": "Características RETROFIT BOBIFIL",
           "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
+            "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
+            "Permite fabricar bobinas de longitud máxima de 800 mm",
+            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina",
+            "Cuenta con servomotores en cabezal y guiador",
+            "Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
+            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad"
+          ]
+        }
+      },
+      "kits-retrofit": {
+        "title": "Kit de Retrofit",
+        "excerpt": "Armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado.",
+        "content": "Ofrecemos un armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado.\n\nPermite devolver su máquina de vuelta al trabajo, equipada con la última tecnología de control ERASAN.",
+        "features": [
+          "Armario cableado y testeado, listo para instalar",
+          "Compatible con la mayoría de bobinadoras del mercado",
+          "Devuelve la máquina al trabajo con control moderno"
+        ],
+        "section": "retrofit",
+        "specifications": [],
+        "brandFeatures": {
+          "title": "Características ERASAN KIT RETROFIT",
+          "items": [
+            "Armario completamente cableado y testeado",
+            "Instalable en prácticamente cualquier máquina bobinadora del mercado",
+            "Permite devolver la máquina al trabajo equipada con electrónica y motores de última generación",
+            "El armario cuenta con un router para teleasistencia, de manera que podrá ser atendida a lo largo de toda su nueva vida útil"
           ]
         }
       }

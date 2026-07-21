@@ -11,6 +11,7 @@ import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import CoilWindingMachine from './pages/CoilWindingMachine'
 import Accesories from './pages/Accesories'
+import SpecialProjects from './pages/SpecialProjects'
 import Retrofit from './pages/Retrofit'
 import Contact from './pages/Contact'
 import Legal from './pages/Legal'
@@ -25,8 +26,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/retrofit" element={<Retrofit />} />
           <Route path="/products/:slug" element={<ProductDetail />} />
           <Route path="/coil-winding" element={<CoilWindingMachine />} />
+          <Route path="/proyectos-especiales" element={<SpecialProjects />} />
           <Route path="/accesories" element={<Accesories />} />
           <Route path="/retrofit" element={<Retrofit />} />
           <Route path="/blog" element={<Blog />} />

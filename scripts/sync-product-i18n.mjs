@@ -66,6 +66,13 @@ for (const section of ['coilWinding', 'accessories']) {
   en.productCatalog[section].categories = enCategories
 }
 
+if (es.productCatalog?.specialProjects) {
+  en.productCatalog.specialProjects = {
+    title: es.productCatalog.specialProjects.title,
+    description: translateText(es.productCatalog.specialProjects.description),
+  }
+}
+
 if (es.productCatalog?.retrofit) {
   en.productCatalog.retrofit = {
     title: es.productCatalog.retrofit.title,

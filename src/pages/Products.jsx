@@ -12,6 +12,7 @@ import {
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import ExtensionIcon from '@mui/icons-material/Extension'
+import EngineeringIcon from '@mui/icons-material/Engineering'
 import UpgradeIcon from '@mui/icons-material/Upgrade'
 import { useThemeMode } from '../context/ThemeContext'
 
@@ -42,7 +43,13 @@ export default function Products() {
       icon: <UpgradeIcon sx={{ fontSize: 56 }} />,
       title: t('nav.retrofit'),
       description: t('productCatalog.retrofit.description'),
-      path: '/products/retrofit',
+      path: '/retrofit',
+    },
+    {
+      icon: <EngineeringIcon sx={{ fontSize: 56 }} />,
+      title: t('nav.specialProjects'),
+      description: t('specialProjects.heroDescription'),
+      path: '/proyectos-especiales',
     },
   ]
 
@@ -118,7 +125,7 @@ export default function Products() {
           </Typography>
           <Grid container spacing={4}>
             {categories.map((category, index) => (
-              <Grid item xs={12} md={4} key={category.path}>
+              <Grid item xs={12} sm={6} md={6} lg={3} key={category.path}>
                 <Card
                   sx={{
                     height: '100%',
