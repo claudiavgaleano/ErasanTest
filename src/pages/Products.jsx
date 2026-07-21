@@ -5,8 +5,6 @@ import {
   Container,
   Typography,
   Grid,
-  Card,
-  CardContent,
   Button,
 } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
@@ -15,13 +13,13 @@ import ExtensionIcon from '@mui/icons-material/Extension'
 import EngineeringIcon from '@mui/icons-material/Engineering'
 import UpgradeIcon from '@mui/icons-material/Upgrade'
 import { useThemeMode } from '../context/ThemeContext'
+import CategoryListCard from '../components/CategoryListCard'
 
 export default function Products() {
   const { t } = useTranslation()
   const { mode } = useThemeMode()
 
   const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const secondaryColor = mode === 'dark' ? '#ef4444' : '#dc2626'
   const gradientColor = mode === 'dark'
     ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
     : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
@@ -126,60 +124,15 @@ export default function Products() {
           <Grid container spacing={4}>
             {categories.map((category, index) => (
               <Grid item xs={12} sm={6} md={6} lg={3} key={category.path}>
-                <Card
-                  sx={{
-                    height: '100%',
-                    p: 2,
-                    textAlign: 'center',
-                    transition: 'all 0.4s ease',
-                    animation: `fadeInUp 0.6s ease-out ${index * 0.1}s backwards`,
-                    '@keyframes fadeInUp': {
-                      from: { opacity: 0, transform: 'translateY(30px)' },
-                      to: { opacity: 1, transform: 'translateY(0)' },
-                    },
-                    '&:hover': {
-                      transform: 'translateY(-10px)',
-                      borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
-                      '& .category-icon': {
-                        color: secondaryColor,
-                        transform: 'scale(1.1)',
-                      },
-                    },
-                  }}
-                >
-                  <CardContent sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-                    <Box
-                      className="category-icon"
-                      aria-hidden="true"
-                      sx={{
-                        color: primaryColor,
-                        mb: 2,
-                        transition: 'all 0.5s ease',
-                      }}
-                    >
-                      {category.icon}
-                    </Box>
-                    <Typography variant="h4" sx={{ mb: 2, fontWeight: 600 }}>
-                      {category.title}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="text.secondary"
-                      sx={{ mb: 3, lineHeight: 1.7, flexGrow: 1 }}
-                    >
-                      {category.description}
-                    </Typography>
-                    <Button
-                      component={Link}
-                      to={category.path}
-                      variant="outlined"
-                      endIcon={<ArrowForwardIcon />}
-                      fullWidth
-                    >
-                      {t('products.exploreCategory')}
-                    </Button>
-                  </CardContent>
-                </Card>
+                <CategoryListCard
+                  icon={category.icon}
+                  title={category.title}
+                  description={category.description}
+                  path={category.path}
+                  index={index}
+                  mode={mode}
+                  actionLabel={t('products.exploreCategory')}
+                />
               </Grid>
             ))}
           </Grid>
