@@ -7,6 +7,7 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { useThemeMode } from '../context/ThemeContext'
 import Carousel from '../components/Carousel'
+import ClientLogosSection from '../components/ClientLogosSection'
 import tileErasanLogo from '../assets/Home/TileErasan.jpg'
 
 export default function Home() {
@@ -228,6 +229,9 @@ export default function Home() {
 
       {/* Carousel Section */}
       <Carousel />
+
+      {/* Client Logos Section */}
+      <ClientLogosSection />
 
       {/* Features Section */}
       <Box sx={{ py: 10 }}>
