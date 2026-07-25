@@ -9,6 +9,7 @@ import { useThemeMode } from '../context/ThemeContext'
 import Carousel from '../components/Carousel'
 import ClientLogosSection from '../components/ClientLogosSection'
 import tileErasanLogo from '../assets/Home/TileErasan.jpg'
+import tileErasanPNG from '../assets/Home/TileErasan.png'
 
 export default function Home() {
   const { t } = useTranslation()
@@ -210,7 +211,7 @@ export default function Home() {
                 >
                   <Box
                     component="img"
-                    src={tileErasanLogo}
+                    src={tileErasanPNG}
                     alt="Erasan"
                     sx={{
                       width: '72%',
