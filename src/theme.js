@@ -1,47 +1,76 @@
 import { createTheme } from '@mui/material/styles'
 
+const titleFontFamily = '"Rajdhani", sans-serif'
+const bodyFontFamily = '"Source Sans 3", "Roboto", "Helvetica", "Arial", sans-serif'
+
 // Industrial theme with Red primary and Steel Blue accents
 const sharedTypography = {
-  fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+  fontFamily: bodyFontFamily,
   h1: {
-    fontFamily: '"Rajdhani", "Inter", sans-serif',
+    fontFamily: titleFontFamily,
     fontWeight: 700,
     fontSize: '3.5rem',
     letterSpacing: '-0.02em',
     textTransform: 'uppercase',
   },
   h2: {
-    fontFamily: '"Rajdhani", "Inter", sans-serif',
+    fontFamily: titleFontFamily,
     fontWeight: 600,
     fontSize: '2.5rem',
     letterSpacing: '-0.01em',
   },
   h3: {
-    fontFamily: '"Rajdhani", "Inter", sans-serif',
+    fontFamily: titleFontFamily,
     fontWeight: 600,
     fontSize: '2rem',
   },
   h4: {
+    fontFamily: titleFontFamily,
     fontWeight: 600,
     fontSize: '1.5rem',
   },
   h5: {
+    fontFamily: titleFontFamily,
     fontWeight: 500,
     fontSize: '1.25rem',
   },
   h6: {
+    fontFamily: titleFontFamily,
     fontWeight: 500,
     fontSize: '1rem',
   },
+  subtitle1: {
+    fontFamily: bodyFontFamily,
+    fontSize: '1rem',
+    lineHeight: 1.6,
+  },
+  subtitle2: {
+    fontFamily: bodyFontFamily,
+    fontSize: '0.875rem',
+    lineHeight: 1.5,
+  },
   body1: {
+    fontFamily: bodyFontFamily,
     fontSize: '1rem',
     lineHeight: 1.7,
   },
   body2: {
+    fontFamily: bodyFontFamily,
     fontSize: '0.875rem',
     lineHeight: 1.6,
   },
+  caption: {
+    fontFamily: bodyFontFamily,
+    fontSize: '0.75rem',
+    lineHeight: 1.5,
+  },
+  overline: {
+    fontFamily: titleFontFamily,
+    fontWeight: 700,
+    letterSpacing: '0.08em',
+  },
   button: {
+    fontFamily: bodyFontFamily,
     textTransform: 'none',
     fontWeight: 600,
   },
@@ -96,6 +125,13 @@ export const darkTheme = createTheme({
   typography: sharedTypography,
   shape: sharedShape,
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          fontFamily: bodyFontFamily,
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
@@ -217,6 +253,13 @@ export const lightTheme = createTheme({
   typography: sharedTypography,
   shape: sharedShape,
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          fontFamily: bodyFontFamily,
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {

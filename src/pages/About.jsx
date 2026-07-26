@@ -114,7 +114,7 @@ export default function About() {
                 {t('about.heroTitle2')}
               </Box>
             </Typography>
-            <Box sx={{ maxWidth: 720 }}>
+            <Box sx={{ maxWidth: 720, mx: 'auto' }}>
               {t('about.heroDescription')
                 .split('\n\n')
                 .filter(Boolean)
