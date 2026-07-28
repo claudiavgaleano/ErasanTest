@@ -15,10 +15,12 @@ import SpecialProjects from './pages/SpecialProjects'
 import Retrofit from './pages/Retrofit'
 import Contact from './pages/Contact'
 import Legal from './pages/Legal'
+import RouteSeo from './components/RouteSeo'
 
 function App() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <RouteSeo />
       <Navbar />
       <Box component="main" id="main-content" tabIndex={-1} sx={{ flexGrow: 1 }}>
         <Routes>

@@ -21,6 +21,7 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer'
 import ArticleIcon from '@mui/icons-material/Article'
 import { useThemeMode } from '../context/ThemeContext'
 import { usePost, useRecentPosts, contentHelpers } from '../hooks/useContent'
+import PageSeo from '../components/PageSeo'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/1200x600/1e293b/dc2626?text=Erasan+Blog'
 
@@ -40,6 +41,11 @@ export default function BlogPost() {
   if (loading) {
     return (
       <Box sx={{ py: 8 }}>
+        <PageSeo
+          title={t('seo.blogFallback.title')}
+          description={t('seo.blogFallback.description')}
+          path={`/blog/${slug}`}
+        />
         <Container maxWidth="lg">
           <Skeleton variant="text" width={300} height={24} sx={{ mb: 4 }} />
           <Skeleton variant="rectangular" height={400} sx={{ borderRadius: 2, mb: 4 }} />
@@ -55,6 +61,12 @@ export default function BlogPost() {
   if (error || !post) {
     return (
       <Box sx={{ py: 16, textAlign: 'center' }}>
+        <PageSeo
+          title={t('blog.postNotFound')}
+          description={t('blog.postNotFoundDesc')}
+          path={`/blog/${slug}`}
+          noindex
+        />
         <Container maxWidth="md">
           <ArticleIcon sx={{ fontSize: 100, color: 'text.secondary', opacity: 0.3, mb: 3 }} />
           <Typography variant="h4" sx={{ mb: 2 }}>
@@ -83,6 +95,13 @@ export default function BlogPost() {
 
   return (
     <Box>
+      <PageSeo
+        title={contentHelpers.stripHtml(post.title.rendered)}
+        description={contentHelpers.getExcerpt(post.excerpt?.rendered || post.content.rendered, 160)}
+        path={`/blog/${post.slug}`}
+        image={featuredImage}
+        type="article"
+      />
       {/* Breadcrumbs */}
       <Box sx={{ py: 3, borderBottom: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.08)'}` }}>
         <Container maxWidth="lg">

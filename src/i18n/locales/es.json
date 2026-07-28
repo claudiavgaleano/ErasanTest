@@ -301,6 +301,64 @@
     "es": "Español",
     "changeLanguage": "Cambiar idioma"
   },
+  "seo": {
+    "default": {
+      "title": "Erasan - Máquinas Bobinadoras e Ingeniería de Precisión",
+      "description": "Máquinas bobinadoras, accesorios y soluciones retrofit líderes en la industria para transformadores, motores y componentes eléctricos."
+    },
+    "home": {
+      "title": "Máquinas Bobinadoras e Ingeniería de Precisión",
+      "description": "Soluciones de bobinado de precisión líderes en la industria para transformadores, motores y componentes eléctricos. Diseñadas para el rendimiento, construidas para la fiabilidad."
+    },
+    "about": {
+      "title": "Sobre Erasan",
+      "description": "Fabricantes especialistas de máquinas bobinadoras, accesorios y soluciones a medida. 18 años de experiencia y la confianza de más de 500 fabricantes en todo el mundo."
+    },
+    "services": {
+      "title": "Máquinas Bobinadoras y Productos",
+      "description": "Explore nuestra gama completa de máquinas bobinadoras para transformadores, motores, solenoides y aplicaciones especializadas."
+    },
+    "products": {
+      "title": "Nuestros Productos",
+      "description": "Descubra nuestra gama completa de equipos de bobinado de precisión, accesorios y soluciones retrofit para la fabricación industrial."
+    },
+    "coilWinding": {
+      "title": "Máquinas Bobinadoras",
+      "description": "Máquinas bobinadoras de precisión, desde sistemas manuales hasta líneas de producción totalmente automatizadas para transformadores y componentes eléctricos."
+    },
+    "specialProjects": {
+      "title": "Proyectos Especiales",
+      "description": "Soluciones de bobinado personalizadas y máquinas de propósito especial adaptadas a requisitos de producción únicos."
+    },
+    "accessories": {
+      "title": "Accesorios de Bobinado",
+      "description": "Guiadores de hilo, tensionadores, mandriles, dispensadores y accesorios para optimizar su producción de bobinado."
+    },
+    "retrofit": {
+      "title": "Retrofit de Máquinas",
+      "description": "Modernice equipos de bobinado existentes con controles CNC, automatización y mejoras de rendimiento."
+    },
+    "blog": {
+      "title": "Blog y Artículos Técnicos",
+      "description": "Últimas noticias, artículos técnicos y tendencias del sector en tecnología de bobinado y fabricación de precisión."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Póngase en contacto con Erasan para presupuestos, soporte técnico y asesoramiento experto en soluciones de bobinado."
+    },
+    "legal": {
+      "title": "Información Legal",
+      "description": "Avisos legales, política de privacidad y condiciones de uso del sitio web de Erasan."
+    },
+    "productFallback": {
+      "title": "Detalle de Producto",
+      "description": "Especificaciones técnicas y características de las máquinas bobinadoras y accesorios Erasan."
+    },
+    "blogFallback": {
+      "title": "Artículo del Blog",
+      "description": "Artículos técnicos y perspectivas del sector de los expertos en ingeniería de Erasan."
+    }
+  },
   "theme": {
     "switchToLight": "Cambiar a modo claro",
     "switchToDark": "Cambiar a modo oscuro"

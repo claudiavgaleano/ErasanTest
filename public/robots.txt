@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Google crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Sitemap (update VITE_SITE_URL in production if your domain differs)
+Sitemap: https://claudiavgaleano.github.io/ErasanTest/sitemap.xml

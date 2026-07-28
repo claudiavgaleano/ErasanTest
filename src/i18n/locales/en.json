@@ -301,6 +301,64 @@
     "es": "Español",
     "changeLanguage": "Change language"
   },
+  "seo": {
+    "default": {
+      "title": "Erasan - Coil Winding Machines & Precision Engineering",
+      "description": "Industry-leading coil winding machines, accessories, and retrofit solutions for transformers, motors, and electrical components."
+    },
+    "home": {
+      "title": "Coil Winding Machines & Precision Engineering",
+      "description": "Industry-leading precision winding solutions for transformers, motors, and electrical components. Engineered for performance, built for reliability."
+    },
+    "about": {
+      "title": "About Erasan",
+      "description": "Specialist manufacturers of winding machines, accessories, and custom solutions. 18 years of experience trusted by more than 500 manufacturers worldwide."
+    },
+    "services": {
+      "title": "Winding Machines & Products",
+      "description": "Explore our comprehensive range of coil winding machines for transformers, motors, solenoids, and specialized applications."
+    },
+    "products": {
+      "title": "Our Products",
+      "description": "Discover our complete range of precision winding equipment, accessories, and retrofit solutions for industrial manufacturing."
+    },
+    "coilWinding": {
+      "title": "Coil Winding Machines",
+      "description": "Precision coil winding machines from manual systems to fully automated production lines for transformers and electrical components."
+    },
+    "specialProjects": {
+      "title": "Special Projects",
+      "description": "Custom winding solutions and special-purpose machines tailored to unique production requirements."
+    },
+    "accessories": {
+      "title": "Winding Accessories",
+      "description": "Wire guides, tensioners, mandrels, dispensers, and accessories to optimize your coil winding production."
+    },
+    "retrofit": {
+      "title": "Machine Retrofit",
+      "description": "Upgrade existing winding equipment with modern CNC controls, automation, and performance enhancements."
+    },
+    "blog": {
+      "title": "Blog & Technical Articles",
+      "description": "Latest news, technical articles, and industry trends in coil winding technology and precision manufacturing."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with Erasan for quotes, technical support, and expert advice on coil winding solutions."
+    },
+    "legal": {
+      "title": "Legal Information",
+      "description": "Legal notices, privacy policy, and terms of use for the Erasan website."
+    },
+    "productFallback": {
+      "title": "Product Details",
+      "description": "Technical specifications and features for Erasan coil winding machines and accessories."
+    },
+    "blogFallback": {
+      "title": "Blog Article",
+      "description": "Technical articles and industry insights from Erasan engineering experts."
+    }
+  },
   "theme": {
     "switchToLight": "Switch to light mode",
     "switchToDark": "Switch to dark mode"

@@ -28,6 +28,7 @@ import { getProductSpecPdf } from '../data/productSpecPdfs'
 import ProductGallery from '../components/productDetail/ProductGallery'
 import BenefitCardsSection from '../components/productDetail/BenefitCardsSection'
 import SpecificationsSection from '../components/productDetail/SpecificationsSection'
+import PageSeo from '../components/PageSeo'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -616,6 +617,11 @@ export default function ProductDetail() {
   if (loading) {
     return (
       <Box sx={{ py: 8 }}>
+        <PageSeo
+          title={t('seo.productFallback.title')}
+          description={t('seo.productFallback.description')}
+          path={`/products/${slug}`}
+        />
         <Container maxWidth="lg">
           <Skeleton variant="text" width={300} height={24} sx={{ mb: 4 }} />
           <Skeleton variant="text" height={48} sx={{ mb: 2 }} />
@@ -630,6 +636,12 @@ export default function ProductDetail() {
   if (error || !product) {
     return (
       <Box sx={{ py: 16, textAlign: 'center' }}>
+        <PageSeo
+          title={t('products.notFound')}
+          description={t('products.notFoundDesc')}
+          path={`/products/${slug}`}
+          noindex
+        />
         <Container maxWidth="md">
           <PrecisionManufacturingIcon sx={{ fontSize: 100, color: 'text.secondary', opacity: 0.3, mb: 3 }} />
           <Typography variant="h4" sx={{ mb: 2 }}>
@@ -658,6 +670,16 @@ export default function ProductDetail() {
 
   return (
     <Box>
+      <PageSeo
+        title={contentHelpers.stripHtml(product.title.rendered)}
+        description={contentHelpers.getExcerpt(
+          product.excerpt?.rendered || product.content.rendered,
+          160
+        )}
+        path={`/products/${product.slug}`}
+        image={featuredImage}
+        type="product"
+      />
       <Box sx={{ py: 3, borderBottom: `1px solid ${primaryAlpha(0.1)}` }}>
         <Container maxWidth="lg">
           <Breadcrumbs aria-label="breadcrumb">
