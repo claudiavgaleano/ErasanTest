@@ -8,8 +8,8 @@ import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturi
 import { useThemeMode } from '../context/ThemeContext'
 import logo from '../assets/logo.png'
 const socialLinks = [
-  { icon: <LinkedInIcon aria-hidden="true" />, url: '#', label: 'LinkedIn' },
-  { icon: <YouTubeIcon aria-hidden="true" />, url: '#', label: 'YouTube' },
+  { icon: <LinkedInIcon aria-hidden="true" />, url: 'https://linkedin.com/company/erasan', label: 'LinkedIn' },
+  { icon: <YouTubeIcon aria-hidden="true" />, url: 'https://www.youtube.com/@erasantechnology9410', label: 'YouTube' },
   { icon: <EmailIcon aria-hidden="true" />, url: 'mailto:info@erasan.com', label: 'Email' },
 ]
 
@@ -106,7 +106,10 @@ export default function Footer() {
               {socialLinks.map((social) => (
                 <IconButton
                   key={social.label}
+                  component="a"
                   href={social.url}
+                  target={social.url.startsWith('http') ? '_blank' : undefined}
+                  rel={social.url.startsWith('http') ? 'noopener noreferrer' : undefined}
                   aria-label={social.label}
                   sx={{
                     color: 'text.secondary',
