@@ -1,4 +1,6 @@
-import { Box, Card, CardContent, Grid, Typography } from '@mui/material'
+import { Box, Button, Card, CardContent, Grid, Tooltip, Typography } from '@mui/material'
+import DownloadIcon from '@mui/icons-material/Download'
+import { useTranslation } from 'react-i18next'
 import AspectRatioIcon from '@mui/icons-material/AspectRatio'
 import BoltIcon from '@mui/icons-material/Bolt'
 import CableIcon from '@mui/icons-material/Cable'
@@ -56,6 +58,34 @@ export function getSpecificationIcon(spec) {
   return match?.icon || PrecisionManufacturingIcon
 }
 
+function SpecDownloadButton({ specPdfUrl, size = 'large', sx }) {
+  const { t } = useTranslation()
+
+  return (
+    <Tooltip
+      title={specPdfUrl ? '' : t('products.downloadSpecsComingSoon')}
+      disableHoverListener={Boolean(specPdfUrl)}
+    >
+      <span>
+        <Button
+          variant="outlined"
+          size={size}
+          component={specPdfUrl ? 'a' : 'button'}
+          href={specPdfUrl || undefined}
+          download={specPdfUrl ? true : undefined}
+          target={specPdfUrl ? '_blank' : undefined}
+          rel={specPdfUrl ? 'noopener noreferrer' : undefined}
+          disabled={!specPdfUrl}
+          startIcon={<DownloadIcon />}
+          sx={sx}
+        >
+          {t('products.downloadSpecs')}
+        </Button>
+      </span>
+    </Tooltip>
+  )
+}
+
 function SpecificationCard({ spec, primaryColor, primaryAlpha }) {
   const Icon = getSpecificationIcon(spec)
 
@@ -102,11 +132,12 @@ function SpecificationCard({ spec, primaryColor, primaryAlpha }) {
 export default function SpecificationsSection({
   specifications,
   title,
+  specPdfUrl,
   primaryColor,
   primaryAlpha,
   sx,
 }) {
-  if (!specifications?.length) return null
+  if (!specifications?.length && !specPdfUrl) return null
 
   return (
     <Box sx={sx}>
@@ -115,17 +146,20 @@ export default function SpecificationsSection({
       </Typography>
       <Card>
         <CardContent>
-          <Grid container spacing={2}>
-            {specifications.map((spec, index) => (
-              <Grid item xs={12} sm={6} md={4} key={index}>
-                <SpecificationCard
-                  spec={spec}
-                  primaryColor={primaryColor}
-                  primaryAlpha={primaryAlpha}
-                />
-              </Grid>
-            ))}
-          </Grid>
+          {specifications?.length > 0 && (
+            <Grid container spacing={2} sx={{ mb: specPdfUrl ? 3 : 0 }}>
+              {specifications.map((spec, index) => (
+                <Grid item xs={12} sm={6} md={4} key={index}>
+                  <SpecificationCard
+                    spec={spec}
+                    primaryColor={primaryColor}
+                    primaryAlpha={primaryAlpha}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          )}
+          <SpecDownloadButton specPdfUrl={specPdfUrl} sx={{ mt: 2 }} />
         </CardContent>
       </Card>
     </Box>

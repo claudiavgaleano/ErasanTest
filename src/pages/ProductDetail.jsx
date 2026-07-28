@@ -16,12 +16,10 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  Tooltip,
 } from '@mui/material'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
-import DownloadIcon from '@mui/icons-material/Download'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import { useThemeMode } from '../context/ThemeContext'
 import { useProduct, contentHelpers } from '../hooks/useContent'
@@ -32,32 +30,6 @@ import BenefitCardsSection from '../components/productDetail/BenefitCardsSection
 import SpecificationsSection from '../components/productDetail/SpecificationsSection'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
-
-function SpecDownloadButton({ specPdfUrl, t, size = 'large', sx }) {
-  return (
-    <Tooltip
-      title={specPdfUrl ? '' : t('products.downloadSpecsComingSoon')}
-      disableHoverListener={Boolean(specPdfUrl)}
-    >
-      <span>
-        <Button
-          variant="outlined"
-          size={size}
-          component={specPdfUrl ? 'a' : 'button'}
-          href={specPdfUrl || undefined}
-          download={specPdfUrl ? true : undefined}
-          target={specPdfUrl ? '_blank' : undefined}
-          rel={specPdfUrl ? 'noopener noreferrer' : undefined}
-          disabled={!specPdfUrl}
-          startIcon={<DownloadIcon />}
-          sx={sx}
-        >
-          {t('products.downloadSpecs')}
-        </Button>
-      </span>
-    </Tooltip>
-  )
-}
 
 function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor, subtitle, showExcerpt = true }) {
   const displaySubtitle =
@@ -119,7 +91,7 @@ function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor,
   )
 }
 
-function BrandFeaturesSection({ brandFeatures, specPdfUrl, primaryColor, t }) {
+function BrandFeaturesSection({ brandFeatures, primaryColor, t }) {
   if (!brandFeatures) return null
 
   return (
@@ -146,9 +118,6 @@ function BrandFeaturesSection({ brandFeatures, specPdfUrl, primaryColor, t }) {
             ))}
           </List>
         )}
-        <Box sx={{ mt: 4 }}>
-          <SpecDownloadButton specPdfUrl={specPdfUrl} t={t} />
-        </Box>
       </CardContent>
     </Card>
   )
@@ -234,8 +203,16 @@ function ClassicProductLayout({
             <Button variant="outlined" size="large" component={Link} to="/contact">
               {t('products.askQuestion')}
             </Button>
-            <SpecDownloadButton specPdfUrl={specPdfUrl} t={t} />
           </Box>
+
+          <SpecificationsSection
+            specifications={specifications}
+            specPdfUrl={specPdfUrl}
+            title={t('products.specifications')}
+            primaryColor={primaryColor}
+            primaryAlpha={primaryAlpha}
+            sx={{ mb: 8 }}
+          />
 
           {features.length > 0 && (
             <Card sx={{ mt: 4 }}>
@@ -258,14 +235,6 @@ function ClassicProductLayout({
           )}
         </Grid>
       </Grid>
-
-      <SpecificationsSection
-        specifications={specifications}
-        title={t('products.specifications')}
-        primaryColor={primaryColor}
-        primaryAlpha={primaryAlpha}
-        sx={{ mt: 8 }}
-      />
     </>
   )
 }
@@ -324,7 +293,16 @@ function RichProductLayout({
         showExcerpt={false}
       />
 
-      {characteristics && (
+      <SpecificationsSection
+        specifications={specifications}
+        specPdfUrl={specPdfUrl}
+        title={t('products.specifications')}
+        primaryColor={primaryColor}
+        primaryAlpha={primaryAlpha}
+        sx={{ mb: 8 }}
+      />
+
+{/*       {characteristics && (
         <Card sx={{ mb: 6 }}>
           <CardContent sx={{ p: { xs: 3, md: 4 } }}>
             <Typography variant="h4" sx={{ mb: 3, fontWeight: 600 }}>
@@ -337,11 +315,10 @@ function RichProductLayout({
             ))}
           </CardContent>
         </Card>
-      )}
+      )} */}
 
       <BrandFeaturesSection
         brandFeatures={brandFeatures}
-        specPdfUrl={specPdfUrl}
         primaryColor={primaryColor}
         t={t}
       />
@@ -454,14 +431,6 @@ function RichProductLayout({
         </Box>
       )}
 
-      <SpecificationsSection
-        specifications={specifications}
-        title={t('products.specifications')}
-        primaryColor={primaryColor}
-        primaryAlpha={primaryAlpha}
-        sx={{ mb: 8 }}
-      />
-
       <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
         <Button variant="contained" size="large" component={Link} to="/contact" endIcon={<ArrowForwardIcon />}>
           {t('products.requestQuote')}
@@ -525,7 +494,6 @@ function AccessoryProductLayout({
 
       <BrandFeaturesSection
         brandFeatures={brandFeatures}
-        specPdfUrl={specPdfUrl}
         primaryColor={primaryColor}
         t={t}
       />
@@ -616,6 +584,7 @@ function AccessoryProductLayout({
 
       <SpecificationsSection
         specifications={specifications}
+        specPdfUrl={specPdfUrl}
         title={t('products.specifications')}
         primaryColor={primaryColor}
         primaryAlpha={primaryAlpha}

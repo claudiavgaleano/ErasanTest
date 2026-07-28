@@ -1,6 +1,8 @@
 import { categoriesBySection } from '../data/categories'
 import { getProductGalleryImage } from '../data/productGalleryImages'
 import { getProductAccessoryImage } from '../data/productAccessoryImages'
+import { getProductSpecifications } from '../data/productSpecifications'
+import i18n from '../i18n'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -165,17 +167,20 @@ export function localizeProduct(product, t) {
       )
 
   const translatedSpecifications = t(`${itemKey}.specifications`, { returnObjects: true })
-  const localizedSpecifications = Array.isArray(translatedSpecifications)
-    ? translatedSpecifications.map((spec, index) => ({
-        label: spec?.label || t(`${itemKey}.specifications.${index}.label`),
-        value: spec?.value || t(`${itemKey}.specifications.${index}.value`),
-        icon: spec?.icon || t(`${itemKey}.specifications.${index}.icon`, { defaultValue: '' }),
-      }))
-    : (product.acf?.specifications || []).map((spec, index) => ({
-        label: t(`${itemKey}.specifications.${index}.label`, { defaultValue: spec.label }),
-        value: t(`${itemKey}.specifications.${index}.value`, { defaultValue: spec.value }),
-        icon: t(`${itemKey}.specifications.${index}.icon`, { defaultValue: spec.icon || '' }),
-      }))
+  const fileSpecs = getProductSpecifications(key, i18n.language)
+  const localizedSpecifications = fileSpecs?.length
+    ? fileSpecs
+    : Array.isArray(translatedSpecifications)
+      ? translatedSpecifications.map((spec, index) => ({
+          label: spec?.label || t(`${itemKey}.specifications.${index}.label`),
+          value: spec?.value || t(`${itemKey}.specifications.${index}.value`),
+          icon: spec?.icon || t(`${itemKey}.specifications.${index}.icon`, { defaultValue: '' }),
+        }))
+      : (product.acf?.specifications || []).map((spec, index) => ({
+          label: t(`${itemKey}.specifications.${index}.label`, { defaultValue: spec.label }),
+          value: t(`${itemKey}.specifications.${index}.value`, { defaultValue: spec.value }),
+          icon: t(`${itemKey}.specifications.${index}.icon`, { defaultValue: spec.icon || '' }),
+        }))
 
   const rawTitle = t(`${itemKey}.title`, { defaultValue: product.title?.rendered || key })
   const rawExcerpt = t(`${itemKey}.heroSubtitle`, {
