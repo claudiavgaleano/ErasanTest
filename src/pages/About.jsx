@@ -1,8 +1,8 @@
 import { Box, Container, Typography, Grid, Card, CardContent, Avatar } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import GroupsIcon from '@mui/icons-material/Groups'
-import FactoryIcon from '@mui/icons-material/Factory'
-import ThumbUpIcon from '@mui/icons-material/ThumbUp'
+import VerifiedIcon from '@mui/icons-material/Verified'
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
+import PublicIcon from '@mui/icons-material/Public'
 import { useThemeMode } from '../context/ThemeContext'
 import aboutMissionImage from '../assets/About/about-mission.jpg'
 
@@ -16,10 +16,25 @@ export default function About() {
     ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
     : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
-  const stats = [
-    { icon: <GroupsIcon />, value: '50+', label: t('about.teamMembers') },
-    { icon: <FactoryIcon />, value: '500+', label: t('about.projectsCompleted') },
-    { icon: <ThumbUpIcon />, value: '99%', label: t('about.clientSatisfaction') },
+  const trustPillars = [
+    {
+      icon: <VerifiedIcon sx={{ fontSize: 48 }} />,
+      headline: t('about.trustExperienceHeadline'),
+      label: t('about.trustExperienceLabel'),
+      description: null,
+    },
+    {
+      icon: <PrecisionManufacturingIcon sx={{ fontSize: 48 }} />,
+      headline: t('about.trustSpecialistHeadline'),
+      label: null,
+      description: t('about.trustSpecialistDesc'),
+    },
+    {
+      icon: <PublicIcon sx={{ fontSize: 48 }} />,
+      headline: t('about.trustWorldwideHeadline'),
+      label: null,
+      description: t('about.trustWorldwideDesc'),
+    },
   ]
 
   const team = [
@@ -137,46 +152,51 @@ export default function About() {
         </Container>
       </Box>
 
-      {/* Stats Section */}
-      <Box sx={{ py: 8 }}>
+      {/* Trust Section */}
+      <Box component="section" aria-label={t('about.trustSectionLabel')} sx={{ py: 8 }}>
         <Container maxWidth="lg">
           <Grid container spacing={4}>
-            {stats.map((stat, index) => (
-              <Grid item xs={12} md={4} key={index}>
+            {trustPillars.map((pillar, index) => (
+              <Grid item xs={12} md={4} key={pillar.headline}>
                 <Card
                   sx={{
+                    height: '100%',
                     textAlign: 'center',
                     py: 4,
                     animation: `fadeInUp 0.6s ease-out ${index * 0.15}s backwards`,
                     '@keyframes fadeInUp': {
-                      from: {
-                        opacity: 0,
-                        transform: 'translateY(20px)',
-                      },
-                      to: {
-                        opacity: 1,
-                        transform: 'translateY(0)',
-                      },
+                      from: { opacity: 0, transform: 'translateY(20px)' },
+                      to: { opacity: 1, transform: 'translateY(0)' },
                     },
                   }}
                 >
                   <CardContent>
-                    <Box sx={{ color: primaryColor, mb: 2 }}>{stat.icon}</Box>
+                    <Box sx={{ color: primaryColor, mb: 2 }}>{pillar.icon}</Box>
                     <Typography
                       variant="h2"
+                      component="p"
                       sx={{
                         background: gradientColor,
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
                         fontWeight: 700,
-                        mb: 1,
+                        mb: pillar.label || pillar.description ? 1 : 0,
+                        fontSize: pillar.label ? undefined : { xs: '1.75rem', md: '2rem' },
+                        lineHeight: 1.2,
                       }}
                     >
-                      {stat.value}
+                      {pillar.headline}
                     </Typography>
-                    <Typography variant="body1" color="text.secondary">
-                      {stat.label}
-                    </Typography>
+                    {pillar.label && (
+                      <Typography variant="body1" color="text.secondary" sx={{ fontWeight: 600 }}>
+                        {pillar.label}
+                      </Typography>
+                    )}
+                    {pillar.description && (
+                      <Typography variant="body2" color="text.secondary" sx={{ mt: 1, lineHeight: 1.7, px: 1 }}>
+                        {pillar.description}
+                      </Typography>
+                    )}
                   </CardContent>
                 </Card>
               </Grid>
