@@ -182,7 +182,7 @@ export default function Home() {
                     width: 380,
                     height: 380,
                     borderRadius: 4,
-                    background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.15)' : 'rgba(185, 28, 28, 0.1)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.15)' : 'rgba(2, 132, 199, 0.1)'} 100%)`,
+                    background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.35)' : 'rgba(185, 28, 28, 0.1)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.35)' : 'rgba(2, 132, 199, 0.1)'} 100%)`,
                     border: `2px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.25)'}`,
                     display: 'flex',
                     alignItems: 'center',

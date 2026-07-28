@@ -40,7 +40,7 @@ export default function ProductListCard({ product, index = 0, mode, viewDetailsL
         },
       }}
     >
-      <Box sx={{ overflow: 'hidden', position: 'relative' }}>
+      <Box sx={{ overflow: 'hidden', position: 'relative', backgroundColor: '#fff' }}>
         <CardMedia
           component="img"
           height="220"
