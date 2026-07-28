@@ -1102,13 +1102,58 @@
       },
       "bobinadora-erasan-e300w": {
         "title": "ERASAN E300W Winding Machine",
-        "excerpt": "BOBINADORA ERASAN E300W",
+        "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and small-power transformers",
+        "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and small-power transformers",
+        "heroIntro": [
+          "Compact high-rigidity aluminum body with electrowelded, machined guide bed",
+          "Wire guide system mounted on precision slides, driven by a ball-screw and quick-closing tailstock"
+        ],
+        "gallery": [
+          {
+            "caption": "ERASAN E300W Winding Machine"
+          }
+        ],
+        "highlight": {
+          "title": "Three kinematic versions: maximum speed of 9,000 rpm",
+          "subtitle": "allows manufacturing multiple coils in the same work cycle",
+          "imageIndex": 0
+        },
+        "benefitCards": [
+          {
+            "title": "High-efficiency electromechanical drive",
+            "description": "Ensuring energy savings and reduced maintenance"
+          },
+          {
+            "title": "Equipped with Ethernet connectivity",
+            "description": "Enables remote technical support from anywhere in the world"
+          },
+          {
+            "title": "Latest-generation CNC control system",
+            "description": "With 7\" color touchscreen"
+          },
+          {
+            "title": "Visual, operator-friendly program interface",
+            "description": "Allows creating any coil type and winding action required quickly and without errors"
+          }
+        ],
         "content": "",
-        "features": [],
+        "features": [
+          "Allows manufacturing coils up to 390 mm in length",
+          "Accepts wire up to 3 mm in diameter in both copper and aluminum.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Three speed ranges with manual belt change",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
+        ],
         "section": "coilWinding",
         "brandFeatures": {
-          "title": "ERASAN Features E300W",
-          "items": []
+          "title": "ERASAN Features E300",
+          "items": [
+            "Allows manufacturing coils up to 390 mm in length",
+            "Accepts wire up to 3 mm in diameter in both copper and aluminum.",
+            "Equipped with servomotors in winding head and wire guide",
+            "Three speed ranges with manual belt change",
+            "Allows easy adaptation to winding needs in terms of torque and speed."
+          ]
         }
       },
       "dispensador-de-papel-dp1-p": {
@@ -1519,39 +1564,147 @@
       },
       "bobinadora-e600-long": {
         "title": "E600 LONG",
+        "heroSubtitle": "E600 winding machine with extended winding zone for special applications requiring greater working length.",
         "excerpt": "E600 winding machine with extended winding zone for special applications requiring greater working length.",
-        "content": "Special ERASAN E600 winding machine configuration with extended bed for projects requiring a larger winding zone.\n\nIdeal for custom windings in transformers and demanding industrial applications.",
-        "features": [
-          "Extended winding zone compared to the standard E600 model",
-          "Same ERASAN technology base with precision guidance",
-          "Special project adaptable to customer requirements"
+        "heroIntro": [
+          "Special ERASAN E600 winding machine configuration with extended bed for projects requiring a larger winding zone.",
+          "Ideal for custom windings in transformers and demanding industrial applications."
         ],
+        "gallery": [
+          { "caption": "E600 LONG winding machine" },
+          { "caption": "E600 LONG winding machine — detail" }
+        ],
+        "highlight": {
+          "title": "Extended winding zone",
+          "subtitle": "Same ERASAN E600 technology base with extended bed, adaptable to each project's specific requirements.",
+          "imageIndex": 1
+        },
+        "benefitCards": [
+          {
+            "title": "Extended bed",
+            "description": "Enlarged winding zone compared to the standard E600 model"
+          },
+          {
+            "title": "Precision guidance",
+            "description": "Same ERASAN technology base with CNC control and high-precision wire guide"
+          },
+          {
+            "title": "Custom project",
+            "description": "Special configuration adaptable to customer requirements"
+          },
+          {
+            "title": "ERASAN support",
+            "description": "Engineering, commissioning, and technical assistance throughout the equipment lifecycle"
+          }
+        ],
+        "content": "",
+        "features": [],
         "section": "specialProjects",
-        "specifications": []
+        "brandFeatures": {
+          "title": "ERASAN E600 LONG Features",
+          "items": [
+            "Based on the ERASAN E600 winding machine with extended bed",
+            "Increased distance between centres for longer windings",
+            "CNC control with touchscreen and Ethernet connectivity",
+            "Special project designed according to customer production needs"
+          ]
+        }
       },
       "maquina-flyer": {
         "title": "Flyer Machine",
+        "heroSubtitle": "Flyer winding machine for special winding applications with rotating conductor movement.",
         "excerpt": "Flyer winding machine for special winding applications with rotating conductor movement.",
-        "content": "ERASAN solution for flyer windings, used in applications requiring specific guidance and tension during the winding process.\n\nDeveloped as a special project according to the customer's production needs.",
-        "features": [
-          "Designed for flyer windings and special applications",
-          "Precise conductor control during winding",
-          "Custom manufacturing according to project specifications"
+        "heroIntro": [
+          "ERASAN solution for flyer windings, used in applications requiring specific guidance and tension during the winding process.",
+          "Developed as a special project according to the customer's production needs."
         ],
+        "gallery": [
+          { "caption": "ERASAN Flyer Machine" },
+          { "caption": "ERASAN Flyer Machine — detail" }
+        ],
+        "highlight": {
+          "title": "High-precision flyer winding",
+          "subtitle": "Precise conductor control during winding with kinematics designed for special applications.",
+          "imageIndex": 0
+        },
+        "benefitCards": [
+          {
+            "title": "Flyer winding",
+            "description": "Designed for applications with rotating conductor movement"
+          },
+          {
+            "title": "Conductor control",
+            "description": "Specific guidance and tension throughout the winding process"
+          },
+          {
+            "title": "Custom manufacturing",
+            "description": "Development according to project specifications and requirements"
+          },
+          {
+            "title": "ERASAN integration",
+            "description": "CNC control, automation, and specialized technical support"
+          }
+        ],
+        "content": "",
+        "features": [],
         "section": "specialProjects",
-        "specifications": []
+        "brandFeatures": {
+          "title": "ERASAN Flyer Machine Features",
+          "items": [
+            "Specialized solution for flyer-type windings",
+            "Kinematics and wire guide adapted to the specific application",
+            "ERASAN electronic control with visual programming",
+            "Project designed and implemented by the ERASAN engineering team"
+          ]
+        }
       },
       "encintadora": {
         "title": "Taping Machine",
+        "heroSubtitle": "Taping machine for applying insulating tape to coils with precise tension and guidance control.",
         "excerpt": "Taping machine for applying insulating tape to coils with precise tension and guidance control.",
-        "content": "Specialized equipment for the taping process on electrical coils, integrating constant tension and precise guidance of insulating material.\n\nCustom solution for production lines requiring automated coil finishing.",
-        "features": [
-          "Uniform application of insulating tape",
-          "Tension control during taping",
-          "Configuration adaptable to coil type and material"
+        "heroIntro": [
+          "Specialized equipment for the taping process on electrical coils, integrating constant tension and precise guidance of insulating material.",
+          "Custom solution for production lines requiring automated coil finishing."
         ],
+        "gallery": [
+          { "caption": "ERASAN Taping Machine" },
+          { "caption": "ERASAN Taping Machine — detail" }
+        ],
+        "highlight": {
+          "title": "Uniform, controlled taping",
+          "subtitle": "Precise insulating tape application with constant tension control throughout the cycle.",
+          "imageIndex": 0
+        },
+        "benefitCards": [
+          {
+            "title": "Uniform application",
+            "description": "Homogeneous insulating tape application on the coil"
+          },
+          {
+            "title": "Tension control",
+            "description": "Constant insulating material tension during taping"
+          },
+          {
+            "title": "Flexible configuration",
+            "description": "Adaptable to coil type and insulating material used"
+          },
+          {
+            "title": "Special project",
+            "description": "Design and integration according to production line requirements"
+          }
+        ],
+        "content": "",
+        "features": [],
         "section": "specialProjects",
-        "specifications": []
+        "brandFeatures": {
+          "title": "ERASAN Taping Machine Features",
+          "items": [
+            "Specialized equipment for electrical coil taping",
+            "Precise insulating material guidance during application",
+            "Integrated tension control for consistent finishing",
+            "Custom solution to automate coil finishing in production"
+          ]
+        }
       },
       "bobifil": {
         "title": "Bobifil",

@@ -1102,13 +1102,58 @@
       },
       "bobinadora-erasan-e300w": {
         "title": "BOBINADORA ERASAN E300W",
-        "excerpt": "BOBINADORA ERASAN E300W",
+        "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia",
+        "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia",
+        "heroIntro": [
+          "Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada",
+          "Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas y contrapunto de cierre rápido"
+        ],
+        "gallery": [
+          {
+            "caption": "BOBINADORA ERASAN E300W"
+          }
+        ],
+        "highlight": {
+          "title": "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
+          "subtitle": "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
+          "imageIndex": 0
+        },
+        "benefitCards": [
+          {
+            "title": "Electromecánica de alta eficiencia",
+            "description": "Garantizando un ahorro de energía y reducción de mantenimiento"
+          },
+          {
+            "title": "Dispone de conexión Ethernet",
+            "description": "Permite realizar asistencias técnicas remotas desde cualquier parte del mundo"
+          },
+          {
+            "title": "Sistema de control de última generación CNC",
+            "description": "Con pantalla táctil de 7\" color"
+          },
+          {
+            "title": "Programa visual y sencillo para el operador",
+            "description": "Permite la creación de cualquier tipo de bobina y acción que se necesite en el proceso de bobinado, rápido y sin errores"
+          }
+        ],
         "content": "",
-        "features": [],
+        "features": [
+          "Permite fabricar bobinas de longitud máxima de 390mm",
+          "Adimite hilo de hasta 3mm de diámetro tanto en cobre como aluminio.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Tres rangos de velocidad con cambio de correas manual",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
+        ],
         "section": "coilWinding",
         "brandFeatures": {
-          "title": "Características ERASAN E300W",
-          "items": []
+          "title": "Características ERASAN E300",
+          "items": [
+            "Permite fabricar bobinas de longitud máxima de 390mm",
+            "Adimite hilo de hasta 3mm de diámetro tanto en cobre como aluminio.",
+            "Cuenta con servomotores en cabezal y guiador",
+            "Tres rangos de velocidad con cambio de correas manual",
+            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
+          ]
         }
       },
       "dispensador-de-papel-dp1-p": {
@@ -1520,39 +1565,147 @@
       },
       "bobinadora-e600-long": {
         "title": "E600 LONG",
+        "heroSubtitle": "Bobinadora E600 con zona de bobinado ampliada para aplicaciones especiales que requieren mayor longitud de trabajo.",
         "excerpt": "Bobinadora E600 con zona de bobinado ampliada para aplicaciones especiales que requieren mayor longitud de trabajo.",
-        "content": "Configuración especial de la bobinadora ERASAN E600 con bancada extendida para proyectos que exigen una mayor zona de bobinado.\n\nIdeal para bobinados personalizados en transformadores y aplicaciones industriales de alta exigencia.",
-        "features": [
-          "Zona de bobinado ampliada respecto al modelo E600 estándar",
-          "Misma base tecnológica ERASAN con guiado de precisión",
-          "Proyecto especial adaptable a requerimientos del cliente"
+        "heroIntro": [
+          "Configuración especial de la bobinadora ERASAN E600 con bancada extendida para proyectos que exigen una mayor zona de bobinado.",
+          "Ideal para bobinados personalizados en transformadores y aplicaciones industriales de alta exigencia."
         ],
+        "gallery": [
+          { "caption": "Bobinadora E600 LONG" },
+          { "caption": "Bobinadora E600 LONG — detalle" }
+        ],
+        "highlight": {
+          "title": "Zona de bobinado ampliada",
+          "subtitle": "Misma base tecnológica ERASAN E600 con bancada extendida, adaptable a los requerimientos específicos de cada proyecto.",
+          "imageIndex": 1
+        },
+        "benefitCards": [
+          {
+            "title": "Bancada extendida",
+            "description": "Zona de bobinado ampliada respecto al modelo E600 estándar"
+          },
+          {
+            "title": "Guiado de precisión",
+            "description": "Misma base tecnológica ERASAN con control CNC y guiado de alta precisión"
+          },
+          {
+            "title": "Proyecto a medida",
+            "description": "Configuración especial adaptable a los requerimientos del cliente"
+          },
+          {
+            "title": "Soporte ERASAN",
+            "description": "Ingeniería, puesta en marcha y asistencia técnica durante todo el ciclo de vida"
+          }
+        ],
+        "content": "",
+        "features": [],
         "section": "specialProjects",
-        "specifications": []
+        "brandFeatures": {
+          "title": "Características ERASAN E600 LONG",
+          "items": [
+            "Basada en la bobinadora ERASAN E600 con bancada extendida",
+            "Distancia entre puntos ampliada para bobinados de mayor longitud",
+            "Control CNC con pantalla táctil y conexión Ethernet",
+            "Proyecto especial diseñado según las necesidades de producción del cliente"
+          ]
+        }
       },
       "maquina-flyer": {
         "title": "Máquina Flyer",
+        "heroSubtitle": "Máquina bobinadora flyer para aplicaciones especiales de bobinado con movimiento rotativo del conductor.",
         "excerpt": "Máquina bobinadora flyer para aplicaciones especiales de bobinado con movimiento rotativo del conductor.",
-        "content": "Solución ERASAN para bobinados tipo flyer, empleada en aplicaciones que requieren un guiado y tensado específicos durante el proceso de bobinado.\n\nDesarrollada como proyecto especial según las necesidades de producción del cliente.",
-        "features": [
-          "Diseñada para bobinados flyer y aplicaciones especiales",
-          "Control preciso del conductor durante el bobinado",
-          "Fabricación a medida según especificaciones del proyecto"
+        "heroIntro": [
+          "Solución ERASAN para bobinados tipo flyer, empleada en aplicaciones que requieren un guiado y tensado específicos durante el proceso de bobinado.",
+          "Desarrollada como proyecto especial según las necesidades de producción del cliente."
         ],
+        "gallery": [
+          { "caption": "Máquina Flyer ERASAN" },
+          { "caption": "Máquina Flyer ERASAN — detalle" }
+        ],
+        "highlight": {
+          "title": "Bobinado flyer de alta precisión",
+          "subtitle": "Control preciso del conductor durante el bobinado con cinemática diseñada para aplicaciones especiales.",
+          "imageIndex": 0
+        },
+        "benefitCards": [
+          {
+            "title": "Bobinado flyer",
+            "description": "Diseñada para aplicaciones con movimiento rotativo del conductor"
+          },
+          {
+            "title": "Control del conductor",
+            "description": "Guiado y tensado específicos durante todo el proceso de bobinado"
+          },
+          {
+            "title": "Fabricación a medida",
+            "description": "Desarrollo según las especificaciones y necesidades del proyecto"
+          },
+          {
+            "title": "Integración ERASAN",
+            "description": "Control CNC, automatización y soporte técnico especializado"
+          }
+        ],
+        "content": "",
+        "features": [],
         "section": "specialProjects",
-        "specifications": []
+        "brandFeatures": {
+          "title": "Características ERASAN Máquina Flyer",
+          "items": [
+            "Solución especializada para bobinados tipo flyer",
+            "Cinemática y guiado adaptados a la aplicación concreta",
+            "Control electrónico ERASAN con programación visual",
+            "Proyecto diseñado e implementado por el equipo de ingeniería ERASAN"
+          ]
+        }
       },
       "encintadora": {
         "title": "Encintadora",
+        "heroSubtitle": "Máquina encintadora para aplicación de cinta aislante en bobinas con control preciso de tensión y guiado.",
         "excerpt": "Máquina encintadora para aplicación de cinta aislante en bobinas con control preciso de tensión y guiado.",
-        "content": "Equipo especializado para el proceso de encintado en bobinas eléctricas, integrando tensión constante y guiado preciso del material aislante.\n\nSolución a medida para líneas de producción que requieren acabado automatizado de bobinas.",
-        "features": [
-          "Aplicación uniforme de cinta aislante",
-          "Control de tensión durante el encintado",
-          "Configuración adaptable al tipo de bobina y material"
+        "heroIntro": [
+          "Equipo especializado para el proceso de encintado en bobinas eléctricas, integrando tensión constante y guiado preciso del material aislante.",
+          "Solución a medida para líneas de producción que requieren acabado automatizado de bobinas."
         ],
+        "gallery": [
+          { "caption": "Encintadora ERASAN" },
+          { "caption": "Encintadora ERASAN — detalle" }
+        ],
+        "highlight": {
+          "title": "Encintado uniforme y controlado",
+          "subtitle": "Aplicación precisa de cinta aislante con control de tensión constante durante todo el ciclo.",
+          "imageIndex": 0
+        },
+        "benefitCards": [
+          {
+            "title": "Aplicación uniforme",
+            "description": "Encintado homogéneo de cinta aislante sobre la bobina"
+          },
+          {
+            "title": "Control de tensión",
+            "description": "Tensión constante del material aislante durante el encintado"
+          },
+          {
+            "title": "Configuración flexible",
+            "description": "Adaptable al tipo de bobina y material aislante empleado"
+          },
+          {
+            "title": "Proyecto especial",
+            "description": "Diseño e integración según los requisitos de la línea de producción"
+          }
+        ],
+        "content": "",
+        "features": [],
         "section": "specialProjects",
-        "specifications": []
+        "brandFeatures": {
+          "title": "Características ERASAN Encintadora",
+          "items": [
+            "Equipo especializado para encintado de bobinas eléctricas",
+            "Guiado preciso del material aislante durante la aplicación",
+            "Control de tensión integrado para un acabado consistente",
+            "Solución a medida para automatizar el acabado de bobinas en producción"
+          ]
+        }
       },
       "bobifil": {
         "title": "Bobifil",

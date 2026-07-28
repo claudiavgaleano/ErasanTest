@@ -134,6 +134,7 @@ function localizeRichLayout(product, t, itemKey) {
   } else if (
     explicitLayout === 'rich' ||
     product.section === 'accessories' ||
+    product.section === 'specialProjects' ||
     benefitCards.length > 0 ||
     Boolean(characteristics)
   ) {

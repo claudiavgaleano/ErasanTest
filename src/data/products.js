@@ -524,7 +524,8 @@ export const products = [
     "categoryId": null,
     "i18nKey": "bobinadora-e600-long",
     "acf": {
-      "features": []
+      "features": [],
+      "layout": "rich"
     }
   },
   {
@@ -535,7 +536,8 @@ export const products = [
     "categoryId": null,
     "i18nKey": "maquina-flyer",
     "acf": {
-      "features": []
+      "features": [],
+      "layout": "rich"
     }
   },
   {
@@ -546,7 +548,8 @@ export const products = [
     "categoryId": null,
     "i18nKey": "encintadora",
     "acf": {
-      "features": []
+      "features": [],
+      "layout": "rich"
     }
   },
   {

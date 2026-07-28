@@ -47,7 +47,7 @@ export default function ProductListCard({ product, index = 0, mode, viewDetailsL
           image={contentHelpers.getFeaturedImage(product)}
           alt={product.title.rendered}
           className="product-image"
-          sx={{ transition: 'transform 0.4s ease', backgroundSize: 'contain', justifySelf: 'center', width: 'unset' }}
+          sx={{ transition: 'transform 0.4s ease', backgroundSize: 'contain', justifySelf: 'center', width: 'unset', padding: '16px 0' }}
         />
         {product.acf?.featured && (
           <Chip

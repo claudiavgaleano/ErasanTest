@@ -1,5 +1,7 @@
 // Technical specifications extracted from src/assets/FichaTecnica/*.pdf
 
+import { getDummyProductSpecifications } from './productSpecificationsDummy'
+
 const electronicSystem10 = {
   es: [
     { label: 'Control', value: 'CNC con pantalla táctil 10" color', icon: 'settings' },
@@ -327,5 +329,8 @@ export const productSpecificationsBySlug = {
 
 export function getProductSpecifications(slug, language = 'es') {
   const lang = language?.startsWith('es') ? 'es' : 'en'
-  return productSpecificationsBySlug[slug]?.[lang] ?? null
+  return (
+    productSpecificationsBySlug[slug]?.[lang] ??
+    getDummyProductSpecifications(slug, lang)
+  )
 }
