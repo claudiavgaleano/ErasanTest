@@ -1,5 +1,6 @@
-import { Box, Button, Card, CardContent, Grid, Tooltip, Typography } from '@mui/material'
+import { Box, Button, Card, CardContent, CircularProgress, Grid, Tooltip, Typography } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import AspectRatioIcon from '@mui/icons-material/AspectRatio'
 import BoltIcon from '@mui/icons-material/Bolt'
@@ -58,25 +59,46 @@ export function getSpecificationIcon(spec) {
   return match?.icon || PrecisionManufacturingIcon
 }
 
-function SpecDownloadButton({ specPdfUrl, size = 'large', sx }) {
+function SpecDownloadButton({ specPdf, size = 'large', sx }) {
   const { t } = useTranslation()
+  const [downloading, setDownloading] = useState(false)
+
+  const handleDownload = async () => {
+    if (!specPdf?.url || downloading) return
+
+    setDownloading(true)
+    try {
+      const response = await fetch(specPdf.url)
+      if (!response.ok) throw new Error('Failed to fetch PDF')
+
+      const blob = await response.blob()
+      const objectUrl = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+      link.href = objectUrl
+      link.download = specPdf.filename || 'ficha-tecnica.pdf'
+      document.body.appendChild(link)
+      link.click()
+      link.remove()
+      URL.revokeObjectURL(objectUrl)
+    } catch {
+      window.open(specPdf.url, '_blank', 'noopener,noreferrer')
+    } finally {
+      setDownloading(false)
+    }
+  }
 
   return (
     <Tooltip
-      title={specPdfUrl ? '' : t('products.downloadSpecsComingSoon')}
-      disableHoverListener={Boolean(specPdfUrl)}
+      title={specPdf?.url ? '' : t('products.downloadSpecsComingSoon')}
+      disableHoverListener={Boolean(specPdf?.url)}
     >
       <span>
         <Button
           variant="outlined"
           size={size}
-          component={specPdfUrl ? 'a' : 'button'}
-          href={specPdfUrl || undefined}
-          download={specPdfUrl ? true : undefined}
-          target={specPdfUrl ? '_blank' : undefined}
-          rel={specPdfUrl ? 'noopener noreferrer' : undefined}
-          disabled={!specPdfUrl}
-          startIcon={<DownloadIcon />}
+          onClick={handleDownload}
+          disabled={!specPdf?.url || downloading}
+          startIcon={downloading ? <CircularProgress size={18} color="inherit" /> : <DownloadIcon />}
           sx={sx}
         >
           {t('products.downloadSpecs')}
@@ -132,12 +154,12 @@ function SpecificationCard({ spec, primaryColor, primaryAlpha }) {
 export default function SpecificationsSection({
   specifications,
   title,
-  specPdfUrl,
+  specPdf,
   primaryColor,
   primaryAlpha,
   sx,
 }) {
-  if (!specifications?.length && !specPdfUrl) return null
+  if (!specifications?.length && !specPdf?.url) return null
 
   return (
     <Box sx={sx}>
@@ -147,7 +169,7 @@ export default function SpecificationsSection({
       <Card>
         <CardContent>
           {specifications?.length > 0 && (
-            <Grid container spacing={2} sx={{ mb: specPdfUrl ? 3 : 0 }}>
+            <Grid container spacing={2} sx={{ mb: specPdf?.url ? 3 : 0 }}>
               {specifications.map((spec, index) => (
                 <Grid item xs={12} sm={6} md={4} key={index}>
                   <SpecificationCard
@@ -159,7 +181,7 @@ export default function SpecificationsSection({
               ))}
             </Grid>
           )}
-          <SpecDownloadButton specPdfUrl={specPdfUrl} sx={{ mt: 2 }} />
+          <SpecDownloadButton specPdf={specPdf} sx={{ mt: 2 }} />
         </CardContent>
       </Card>
     </Box>

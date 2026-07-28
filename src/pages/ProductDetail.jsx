@@ -24,7 +24,7 @@ import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturi
 import { useThemeMode } from '../context/ThemeContext'
 import { useProduct, contentHelpers } from '../hooks/useContent'
 import { getSectionBackLink } from '../utils/contentHelpers'
-import { getProductSpecPdfUrl } from '../data/productSpecPdfs'
+import { getProductSpecPdf } from '../data/productSpecPdfs'
 import ProductGallery from '../components/productDetail/ProductGallery'
 import BenefitCardsSection from '../components/productDetail/BenefitCardsSection'
 import SpecificationsSection from '../components/productDetail/SpecificationsSection'
@@ -130,7 +130,7 @@ function ClassicProductLayout({
   featuredImage,
   features,
   specifications,
-  specPdfUrl,
+  specPdf,
   primaryColor,
   primaryAlpha,
   t,
@@ -207,7 +207,7 @@ function ClassicProductLayout({
 
           <SpecificationsSection
             specifications={specifications}
-            specPdfUrl={specPdfUrl}
+            specPdf={specPdf}
             title={t('products.specifications')}
             primaryColor={primaryColor}
             primaryAlpha={primaryAlpha}
@@ -262,7 +262,7 @@ function RichProductLayout({
   categories,
   featuredImage,
   specifications,
-  specPdfUrl,
+  specPdf,
   primaryColor,
   primaryAlpha,
   t,
@@ -295,7 +295,7 @@ function RichProductLayout({
 
       <SpecificationsSection
         specifications={specifications}
-        specPdfUrl={specPdfUrl}
+        specPdf={specPdf}
         title={t('products.specifications')}
         primaryColor={primaryColor}
         primaryAlpha={primaryAlpha}
@@ -448,7 +448,7 @@ function AccessoryProductLayout({
   acf,
   categories,
   specifications,
-  specPdfUrl,
+  specPdf,
   primaryColor,
   primaryAlpha,
   t,
@@ -584,7 +584,7 @@ function AccessoryProductLayout({
 
       <SpecificationsSection
         specifications={specifications}
-        specPdfUrl={specPdfUrl}
+        specPdf={specPdf}
         title={t('products.specifications')}
         primaryColor={primaryColor}
         primaryAlpha={primaryAlpha}
@@ -653,7 +653,7 @@ export default function ProductDetail() {
 
   const specifications = acf.specifications || []
   const features = acf.features || []
-  const specPdfUrl = getProductSpecPdfUrl(product.slug)
+  const specPdf = getProductSpecPdf(product.slug)
   const layout = acf.layout || 'classic'
 
   return (
@@ -683,7 +683,7 @@ export default function ProductDetail() {
               acf={acf}
               categories={categories}
               specifications={specifications}
-              specPdfUrl={specPdfUrl}
+              specPdf={specPdf}
               primaryColor={primaryColor}
               primaryAlpha={primaryAlpha}
               t={t}
@@ -695,7 +695,7 @@ export default function ProductDetail() {
               categories={categories}
               featuredImage={featuredImage}
               specifications={specifications}
-              specPdfUrl={specPdfUrl}
+              specPdf={specPdf}
               primaryColor={primaryColor}
               primaryAlpha={primaryAlpha}
               t={t}
@@ -708,7 +708,7 @@ export default function ProductDetail() {
               featuredImage={featuredImage}
               features={features}
               specifications={specifications}
-              specPdfUrl={specPdfUrl}
+              specPdf={specPdf}
               primaryColor={primaryColor}
               primaryAlpha={primaryAlpha}
               t={t}

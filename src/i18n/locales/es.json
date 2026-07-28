@@ -124,8 +124,8 @@
     "characteristics": "Características",
     "productAccessories": "Accesorios",
     "specifications": "Especificaciones Técnicas",
-    "downloadSpecs": "Descargar Especificaciones Técnicas",
-    "downloadSpecsComingSoon": "El PDF de especificaciones técnicas estará disponible próximamente",
+    "downloadSpecs": "Descargar Ficha Técnica",
+    "downloadSpecsComingSoon": "La ficha técnica estará disponible próximamente",
     "ctaTitle": "¿Necesita Asesoramiento Experto?",
     "ctaDescription": "Nuestro equipo de ingeniería puede ayudarle a elegir la máquina adecuada para sus requisitos de producción."
   },
@@ -239,13 +239,36 @@
     "email": "info@erasan.com",
     "phoneLabel": "Teléfono",
     "phone": "+34 744 74 52 07",
-    "addressLabel": "Dirección",
-    "address": "Polígono Industrial, Barcelona, España",
     "hoursLabel": "Horario Comercial",
     "hours": "Lun - Vie: 8:00 - 18:00",
-    "mapTitle": "NUESTRA UBICACIÓN",
-    "mapAriaLabel": "Mapa de Google que muestra la ubicación de Erasan en Barcelona",
-    "openInMaps": "Abrir en Google Maps",
+    "assistanceTitle": "¿CÓMO PODEMOS AYUDARLE?",
+    "assistanceIntro": "Escríbanos o llámenos directamente. Nuestro equipo de ingeniería le orientará según sus necesidades.",
+    "faq": {
+      "quote": {
+        "question": "¿Cómo solicito un presupuesto?",
+        "answer": "Solicite información sobre máquinas, accesorios o repuestos por email o teléfono. Le prepararemos una propuesta adaptada a su producción."
+      },
+      "support": {
+        "question": "¿Qué soporte técnico ofrecen?",
+        "answer": "Asistencia para puesta en marcha, mantenimiento preventivo y resolución de incidencias en sus equipos ERASAN, en planta o de forma remota."
+      },
+      "custom": {
+        "question": "¿Realizan proyectos a medida?",
+        "answer": "Sí. Desarrollamos máquinas y accesorios personalizados para aplicaciones de bobinado específicas y proyectos especiales."
+      },
+      "responseTime": {
+        "question": "¿En cuánto tiempo responden?",
+        "answer": "Respondemos a consultas comerciales y técnicas en un plazo máximo de 24 horas laborables."
+      },
+      "international": {
+        "question": "¿Atienden clientes fuera de España?",
+        "answer": "Sí. Damos servicio a fabricantes de todo el mundo, con soporte remoto y asistencia en planta cuando se requiere."
+      },
+      "training": {
+        "question": "¿Ofrecen formación para operadores?",
+        "answer": "Incluimos formación en la puesta en marcha y podemos programar sesiones adicionales para su equipo de producción."
+      }
+    },
     "form": {
       "title": "Envíenos un Mensaje",
       "name": "Nombre Completo",
