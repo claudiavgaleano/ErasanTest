@@ -8,7 +8,7 @@ export default function ProductGallery({ images }) {
   const image = images[0]
 
   return (
-    <Card sx={{ overflow: 'hidden', position: 'relative', backgroundColor: 'transparent', border: 'none', boxShadow: 'none' }}>
+    <Card sx={{ overflow: 'hidden', position: 'relative', backgroundColor: 'transparent', border: 'none', boxShadow: 'none',  padding: '16px 64px' }}>
       <Box
         component="img"
         src={image.src}

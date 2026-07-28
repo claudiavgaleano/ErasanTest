@@ -144,7 +144,7 @@ function ClassicProductLayout({
               component="img"
               src={featuredImage}
               alt={product.title.rendered}
-              sx={{ width: '100%', height: 'auto', display: 'block' }}
+              sx={{ width: '100%', height: 'auto', display: 'block', padding: '16px 64px' }}
             />
             {acf.featured && (
               <Chip
