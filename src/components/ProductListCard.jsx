@@ -67,7 +67,7 @@ export default function ProductListCard({ product, index = 0, mode, viewDetailsL
         <Typography
           variant="h5"
           component="h3"
-          sx={{ mb: 2, fontWeight: 600 }}
+          sx={{ mb: 2, fontWeight: 600, color: primaryColor }}
           dangerouslySetInnerHTML={{ __html: product.title.rendered }}
         />
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2, flexGrow: 1, lineHeight: 1.7 }}>
