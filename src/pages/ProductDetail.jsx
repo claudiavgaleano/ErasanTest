@@ -139,7 +139,7 @@ function ClassicProductLayout({
     <>
       <Grid container spacing={6}>
         <Grid item xs={12} md={6}>
-          <Card sx={{ overflow: 'hidden', position: 'relative' }}>
+          <Card sx={{ overflow: 'hidden', position: 'relative', backgroundColor: 'rgb(253, 253, 253)' }}>
             <Box
               component="img"
               src={featuredImage}

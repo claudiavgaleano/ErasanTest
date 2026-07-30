@@ -576,7 +576,11 @@ export const products = [
     "categoryId": null,
     "i18nKey": "kits-retrofit",
     "acf": {
-      "features": []
+      "features": [],
+      "layout": "rich",
+      "gallery": [
+        { "alt": "Retrofit Kit" }
+      ]
     }
   }
 ]

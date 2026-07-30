@@ -421,8 +421,12 @@
         "heroSubtitle": "Two-paper, one-foil machine for manufacturing coils for large resin-cast/dry-type distribution and power transformers.",
         "excerpt": "Two-paper, one-foil machine for manufacturing coils for large resin-cast/dry-type distribution and power transformers.",
         "heroIntro": [
-          "Winding unit comprising a welded steel head, pneumatic press roller, and expandable mandrel.",
-          "The dereeling mandrel is a hydraulic expandable shaft. Lateral foil dereeler movement is controlled by a photocell to correct possible deviations."
+          "Surplus paper collection unit via a motorized roller installed next to the foil dereeler system.",
+          "Foil cutting system by nibbler or shear.",
+          "Welding unit with optional welding table.",
+          "Burr eliminator to prevent damage to copper or aluminum strip ends: two sets of two rollers applying pressure on the band edges, one above the other.",
+          "Option: TIG welding table.",
+          "Option: Guillotine foil cutting."
         ],
         "gallery": [
           {
@@ -464,14 +468,7 @@
         },
         "brandFeatures": {
           "title": "ERASAN Features STRIP FOIL",
-          "items": [
-            "Surplus paper collection unit via a motorized roller installed next to the foil dereeler system.",
-            "Foil cutting system by nibbler or shear.",
-            "Welding unit with optional welding table.",
-            "Burr eliminator to prevent damage to copper or aluminum strip ends: two sets of two rollers applying pressure on the band edges, one above the other.",
-            "Option: TIG welding table.",
-            "Option: Guillotine foil cutting."
-          ]
+          "items": []
         },
         "specifications": [
           {
@@ -511,8 +508,11 @@
         "heroSubtitle": "For manufacturing coils for large resin-cast/dry-type distribution and power transformers",
         "excerpt": "For manufacturing coils for large resin-cast/dry-type distribution and power transformers",
         "heroIntro": [
-          "Winding unit comprising a welded steel head, pneumatic press roller, and expandable mandrel.",
-          "Mechanical structure: electrowelded steel body, heat-treated for stabilization, machined and milled components. High torsional rigidity with oven-baked paint finish."
+          "Winding module",
+          "Spool holder module",
+          "Welding module",
+          "Cutting module",
+          "Foil dereeler module"
         ],
         "gallery": [
           {
@@ -551,13 +551,7 @@
         },
         "brandFeatures": {
           "title": "ERASAN Features E-FOIL",
-          "items": [
-            "Winding module",
-            "Spool holder module",
-            "Welding module",
-            "Cutting module",
-            "Foil dereeler module"
-          ]
+          "items": []
         }
       },
       "cabezal-bobinador-erasan-e1200-c-sgb": {
@@ -565,8 +559,12 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "heroIntro": [
-          "Body manufactured from welded steel with high rigidity",
-          "Machined bed, tailstock, and ball-screw wire guide system with precision guide slides"
+          "Two kinematic versions: up to 750 rpm with high torque",
+          "Allows manufacturing coils up to 1,100 mm in length",
+          "Allows manufacturing high and low voltage coils on the same machine.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Four speed ranges with lever shifting",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -601,14 +599,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E1200C SGB",
-          "items": [
-            "Two kinematic versions: up to 750 rpm with high torque",
-            "Allows manufacturing coils up to 1,100 mm in length",
-            "Allows manufacturing high and low voltage coils on the same machine.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Four speed ranges with lever shifting",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "cabezal-bobinador-erasan-e1200-c": {
@@ -616,8 +607,12 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "heroIntro": [
-          "Body manufactured from welded steel with high rigidity",
-          "Machined bed, tailstock, and ball-screw wire guide system with precision guide slides"
+          "Two kinematic versions: up to 500 rpm with high torque",
+          "Allows manufacturing coils up to 1,100 mm in length",
+          "Allows manufacturing high and low voltage coils on the same machine.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Two speed ranges with manual belt change, or direct reducer on the machine shaft",
+          "Allows easy adaptation to winding needs in terms of torque and speed"
         ],
         "gallery": [
           {
@@ -652,14 +647,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E1200C",
-          "items": [
-            "Two kinematic versions: up to 500 rpm with high torque",
-            "Allows manufacturing coils up to 1,100 mm in length",
-            "Allows manufacturing high and low voltage coils on the same machine.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Two speed ranges with manual belt change, or direct reducer on the machine shaft",
-            "Allows easy adaptation to winding needs in terms of torque and speed"
-          ]
+          "items": []
         }
       },
       "cabezal-bobinador-erasan-e1500-b": {
@@ -697,8 +685,12 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "heroIntro": [
-          "Body manufactured from welded steel with high rigidity",
-          "Machined bed, tailstock, and ball-screw wire guide system with precision guide slides"
+          "Two kinematic versions: up to 750 rpm with high torque",
+          "Allows manufacturing coils up to 1,100 mm in length",
+          "Allows manufacturing high and low voltage coils on the same machine.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Four speed ranges with lever shifting",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -733,14 +725,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E1200 SGB",
-          "items": [
-            "Two kinematic versions: up to 750 rpm with high torque",
-            "Allows manufacturing coils up to 1,100 mm in length",
-            "Allows manufacturing high and low voltage coils on the same machine.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Four speed ranges with lever shifting",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e1200-servotech": {
@@ -748,8 +733,12 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "heroIntro": [
-          "Body manufactured from welded steel with high rigidity",
-          "Machined bed, tailstock, and ball-screw wire guide system with precision guide slides"
+          "Two kinematic versions: up to 500 rpm with high torque",
+          "Allows manufacturing coils up to 1,100 mm in length",
+          "Allows manufacturing high and low voltage coils on the same machine.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Two speed ranges with automatic belt change, or direct reducer on the machine shaft",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -784,14 +773,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E1200 SERVOTECH",
-          "items": [
-            "Two kinematic versions: up to 500 rpm with high torque",
-            "Allows manufacturing coils up to 1,100 mm in length",
-            "Allows manufacturing high and low voltage coils on the same machine.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Two speed ranges with automatic belt change, or direct reducer on the machine shaft",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e1200": {
@@ -799,8 +781,12 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "heroIntro": [
-          "Body manufactured from welded steel with high rigidity",
-          "Machined bed, tailstock, and ball-screw wire guide system with precision guide slides"
+          "Two kinematic versions: up to 500 rpm with high torque",
+          "Allows manufacturing coils up to 1,100 mm in length",
+          "Allows manufacturing high and low voltage coils on the same machine.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Two speed ranges with manual belt change, or direct reducer on the machine shaft",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -835,14 +821,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E1200",
-          "items": [
-            "Two kinematic versions: up to 500 rpm with high torque",
-            "Allows manufacturing coils up to 1,100 mm in length",
-            "Allows manufacturing high and low voltage coils on the same machine.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Two speed ranges with manual belt change, or direct reducer on the machine shaft",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e900-sgb": {
@@ -850,8 +829,12 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "heroIntro": [
-          "Body manufactured from welded steel with high rigidity",
-          "Machined bed, tailstock, and ball-screw wire guide system with precision guide slides"
+          "Two kinematic versions: up to 3,000 rpm with high torque",
+          "Allows manufacturing coils up to 800 mm in length",
+          "Allows manufacturing high and low voltage coils on the same machine.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Four speed ranges with lever shifting",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -886,14 +869,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E900 SGB",
-          "items": [
-            "Two kinematic versions: up to 3,000 rpm with high torque",
-            "Allows manufacturing coils up to 800 mm in length",
-            "Allows manufacturing high and low voltage coils on the same machine.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Four speed ranges with lever shifting",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e900-servotech": {
@@ -901,8 +877,12 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "heroIntro": [
-          "Body manufactured from welded steel with high rigidity",
-          "Machined bed, tailstock, and ball-screw wire guide system with precision guide slides"
+          "Two kinematic versions: up to 500 rpm with high torque",
+          "Allows manufacturing coils up to 800 mm in length",
+          "Allows manufacturing high and low voltage coils on the same machine.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Two speed ranges with automatic belt change, or direct reducer on the machine shaft",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -937,14 +917,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E900 SERVOTECH",
-          "items": [
-            "Two kinematic versions: up to 500 rpm with high torque",
-            "Allows manufacturing coils up to 800 mm in length",
-            "Allows manufacturing high and low voltage coils on the same machine.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Two speed ranges with automatic belt change, or direct reducer on the machine shaft",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e900": {
@@ -952,8 +925,12 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers",
         "heroIntro": [
-          "Body manufactured from welded steel with high rigidity",
-          "Machined bed, tailstock, and ball-screw wire guide system with precision guide slides"
+          "Two kinematic versions: up to 500 rpm with high torque",
+          "Allows manufacturing coils up to 800 mm in length",
+          "Allows manufacturing high and low voltage coils on the same machine.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Two speed ranges with manual belt change, or direct reducer on the machine shaft",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -988,14 +965,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E900",
-          "items": [
-            "Two kinematic versions: up to 500 rpm with high torque",
-            "Allows manufacturing coils up to 800 mm in length",
-            "Allows manufacturing high and low voltage coils on the same machine.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Two speed ranges with manual belt change, or direct reducer on the machine shaft",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e600": {
@@ -1003,8 +973,11 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and medium-power transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and medium-power transformers",
         "heroIntro": [
-          "Compact high-rigidity aluminum body with electrowelded, machined guide bed",
-          "Wire guide system mounted on precision slides, driven by a ball-screw and quick-closing tailstock"
+          "Allows manufacturing coils up to 520 mm in length",
+          "Accepts wire up to 3 mm in diameter in both copper and aluminum.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Three speed ranges with manual belt change, or direct reducer on the machine shaft",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -1039,13 +1012,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E600",
-          "items": [
-            "Allows manufacturing coils up to 520 mm in length",
-            "Accepts wire up to 3 mm in diameter in both copper and aluminum.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Three speed ranges with manual belt change, or direct reducer on the machine shaft",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e300": {
@@ -1053,8 +1020,11 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and small-power transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and small-power transformers",
         "heroIntro": [
-          "Compact high-rigidity aluminum body with electrowelded, machined guide bed",
-          "Wire guide system mounted on precision slides, driven by a ball-screw and quick-closing tailstock"
+          "Allows manufacturing coils up to 390 mm in length",
+          "Accepts wire up to 3 mm in diameter in both copper and aluminum.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Three speed ranges with manual belt change",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -1095,13 +1065,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E300",
-          "items": [
-            "Allows manufacturing coils up to 390 mm in length",
-            "Accepts wire up to 3 mm in diameter in both copper and aluminum.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Three speed ranges with manual belt change",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e300w": {
@@ -1109,8 +1073,11 @@
         "heroSubtitle": "For manufacturing electrical coils used in solenoids, reactors, inductors, and small-power transformers",
         "excerpt": "For manufacturing electrical coils used in solenoids, reactors, inductors, and small-power transformers",
         "heroIntro": [
-          "Compact high-rigidity aluminum body with electrowelded, machined guide bed",
-          "Wire guide system mounted on precision slides, driven by a ball-screw and quick-closing tailstock"
+          "Allows manufacturing coils up to 390 mm in length",
+          "Accepts wire up to 3 mm in diameter in both copper and aluminum.",
+          "Equipped with servomotors in winding head and wire guide",
+          "Three speed ranges with manual belt change",
+          "Allows easy adaptation to winding needs in terms of torque and speed."
         ],
         "gallery": [
           {
@@ -1151,13 +1118,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "ERASAN Features E300",
-          "items": [
-            "Allows manufacturing coils up to 390 mm in length",
-            "Accepts wire up to 3 mm in diameter in both copper and aluminum.",
-            "Equipped with servomotors in winding head and wire guide",
-            "Three speed ranges with manual belt change",
-            "Allows easy adaptation to winding needs in terms of torque and speed."
-          ]
+          "items": []
         }
       },
       "dispensador-de-papel-dp1-p": {
@@ -1172,13 +1133,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN Features DP1-P",
-          "items": [
-            "Paper tensioner with electromagnetic brake and expandable shaft.",
-            "Allows integrated mounting on the machine or separate placement according to customer requirements.",
-            "Brake adjustment via software (when the tensioner is integrated into the machine) or via potentiometer.",
-            "Equipped with two adjustable roller sets to guide the paper."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Paper tensioner with electromagnetic brake and expandable shaft.",
+          "Allows integrated mounting on the machine or separate placement according to customer requirements.",
+          "Brake adjustment via software (when the tensioner is integrated into the machine) or via potentiometer.",
+          "Equipped with two adjustable roller sets to guide the paper."
+        ]
       },
       "dispensador-de-papel-tpe": {
         "title": "TPE Paper Dispenser",
@@ -1192,13 +1154,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN Features TPE",
-          "items": [
-            "Paper tensioner with electromagnetic brake and expandable shaft.",
-            "Allows integrated mounting on the machine or separate placement according to customer requirements.",
-            "Brake adjustment via software (when the tensioner is integrated into the machine) or via potentiometer.",
-            "Equipped with two adjustable roller sets to guide the paper."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Paper tensioner with electromagnetic brake and expandable shaft.",
+          "Allows integrated mounting on the machine or separate placement according to customer requirements.",
+          "Brake adjustment via software (when the tensioner is integrated into the machine) or via potentiometer.",
+          "Equipped with two adjustable roller sets to guide the paper."
+        ]
       },
       "devanador-dp1r-ap1r": {
         "title": "DP1R AP1R Dereeler",
@@ -1212,13 +1175,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN Features DP1R AP1R",
-          "items": [
-            "The main difference of DP1R is the dual brake provided, which improves tension and, together with AP1R, helps maintain constant tension.",
-            "If the spool wire exceeds the limit, AP1R removes slack by increasing tension through a downward-moving pulley.",
-            "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
-            "Available on request with electromagnetic brake."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "The main difference of DP1R is the dual brake provided, which improves tension and, together with AP1R, helps maintain constant tension.",
+          "If the spool wire exceeds the limit, AP1R removes slack by increasing tension through a downward-moving pulley.",
+          "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
+          "Available on request with electromagnetic brake."
+        ]
       },
       "devanador-dp4": {
         "title": "DP4 Dereeler",
@@ -1232,13 +1196,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN Features DP4",
-          "items": [
-            "Provides constant wire tension during winding",
-            "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
-            "The DP4 is placed behind the machine to facilitate wire guidance from the spool to the machine. The control box can be positioned wherever convenient, such as on the winding machine.",
-            "Available on request with electromagnetic brake."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Provides constant wire tension during winding",
+          "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
+          "The DP4 is placed behind the machine to facilitate wire guidance from the spool to the machine. The control box can be positioned wherever convenient, such as on the winding machine.",
+          "Available on request with electromagnetic brake."
+        ]
       },
       "devanador-dp2": {
         "title": "DP2 Dereeler",
@@ -1252,13 +1217,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN Features DP2",
-          "items": [
-            "Provides constant wire tension during winding",
-            "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
-            "The DP2 is placed behind the machine to facilitate wire guidance from the spool to the machine. The control box can be positioned wherever convenient, such as on the winding machine.",
-            "Available on request with electromagnetic brake."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Provides constant wire tension during winding",
+          "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
+          "The DP2 is placed behind the machine to facilitate wire guidance from the spool to the machine. The control box can be positioned wherever convenient, such as on the winding machine.",
+          "Available on request with electromagnetic brake."
+        ]
       },
       "devanador-dp1": {
         "title": "DP1 Dereeler",
@@ -1272,13 +1238,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN Features DP1",
-          "items": [
-            "Provides constant wire tension during winding",
-            "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
-            "The DP1 is placed behind the machine to facilitate wire guidance from the spool to the machine. The control box can be positioned wherever convenient, such as on the winding machine.",
-            "Available on request with electromagnetic brake."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Provides constant wire tension during winding",
+          "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
+          "The DP1 is placed behind the machine to facilitate wire guidance from the spool to the machine. The control box can be positioned wherever convenient, such as on the winding machine.",
+          "Available on request with electromagnetic brake."
+        ]
       },
       "mandril-expandible-rectangular": {
         "title": "Rectangular Expandable Mandrel",
@@ -1290,12 +1257,13 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN expandable mandrel features rectangular",
-          "items": [
-            "The expandable mandrel is finished with aluminum bars and built with very precise mechanics to support the weight of the finished coil, using mechanical cams and support rings.",
-            "Each mandrel has a standard key hole for expansion.",
-            "Iron cores or laminations can be inserted later in the coil manufacturing process."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "The expandable mandrel is finished with aluminum bars and built with very precise mechanics to support the weight of the finished coil, using mechanical cams and support rings.",
+          "Each mandrel has a standard key hole for expansion.",
+          "Iron cores or laminations can be inserted later in the coil manufacturing process."
+        ]
       },
       "mandril-expandible-circular": {
         "title": "Round Expandable Mandrel",
@@ -1307,12 +1275,13 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN expandable mandrel features circular",
-          "items": [
-            "The expandable mandrel is finished with aluminum bars and built with very precise mechanics to support the weight of the finished coil, using mechanical cams and support rings.",
-            "Each mandrel has a standard key hole for expansion.",
-            "Iron cores or laminations can be inserted later in the coil manufacturing process."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "The expandable mandrel is finished with aluminum bars and built with very precise mechanics to support the weight of the finished coil, using mechanical cams and support rings.",
+          "Each mandrel has a standard key hole for expansion.",
+          "Iron cores or laminations can be inserted later in the coil manufacturing process."
+        ]
       },
       "guiador-de-pletina-gp2": {
         "title": "GP2 Strip Guide",
@@ -1324,13 +1293,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN GP2 Strip Guide Features",
-          "items": [
-            "Guide for rectangular sections using pulleys that can be adjusted to the section used.",
-            "This guide type is extremely robust because it is typically used with multiple strips and high tension.",
-            "Guide for rectangular sections using rollers that can be adjusted to the section used. Includes a tape dereeler guide.",
-            "This guide type is used to wind multiple strips and tape the final layer under high tension."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Guide for rectangular sections using pulleys that can be adjusted to the section used.",
+          "This guide type is extremely robust because it is typically used with multiple strips and high tension.",
+          "Guide for rectangular sections using rollers that can be adjusted to the section used. Includes a tape dereeler guide.",
+          "This guide type is used to wind multiple strips and tape the final layer under high tension."
+        ]
       },
       "guiador-de-pletina-gp1": {
         "title": "GP1 Strip Guide",
@@ -1342,13 +1312,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN GP1 Strip Guide Features",
-          "items": [
-            "Guide for rectangular sections using pulleys that can be adjusted to the section used.",
-            "This guide type is extremely robust because the tensions used with these conductors are very high.",
-            "Guide for rectangular sections using rollers that can be adjusted to the section used. Includes a tape dereeler guide.",
-            "This guide type is used to wind multiple strips and tape the final layer under high tension."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Guide for rectangular sections using pulleys that can be adjusted to the section used.",
+          "This guide type is extremely robust because the tensions used with these conductors are very high.",
+          "Guide for rectangular sections using rollers that can be adjusted to the section used. Includes a tape dereeler guide.",
+          "This guide type is used to wind multiple strips and tape the final layer under high tension."
+        ]
       },
       "guiador-de-hilo-gh3": {
         "title": "GH3 Wire Guide",
@@ -1360,12 +1331,13 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN GH3 Wire Guide Features",
-          "items": [
-            "Wire guide through a small wire guide tube",
-            "Wire guide using pulleys that allows working with wire up to 8 mm in diameter.",
-            "Its angle is usually 45°."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Wire guide through a small wire guide tube",
+          "Wire guide using pulleys that allows working with wire up to 8 mm in diameter.",
+          "Its angle is usually 45°."
+        ]
       },
       "guiador-de-hilo-gh2": {
         "title": "GH2 Wire Guide",
@@ -1377,12 +1349,13 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN GH2 Wire Guide Features",
-          "items": [
-            "Wire guide through a small wire guide tube",
-            "Wire guide using pulleys that allows working with wire up to 3 mm in diameter.",
-            "Its angle is usually 45°."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Wire guide through a small wire guide tube",
+          "Wire guide using pulleys that allows working with wire up to 3 mm in diameter.",
+          "Its angle is usually 45°."
+        ]
       },
       "guiador-de-hilo-gh1": {
         "title": "GH1 Wire Guide",
@@ -1394,12 +1367,13 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "ERASAN GH1 Wire Guide Features",
-          "items": [
-            "Wire guide through a small wire guide tube",
-            "Wire guide using pulleys that allows working with wire up to 1 mm in diameter.",
-            "Its angle is usually 45°."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Wire guide through a small wire guide tube",
+          "Wire guide using pulleys that allows working with wire up to 1 mm in diameter.",
+          "Its angle is usually 45°."
+        ]
       },
       "tensionador-de-hilo-th3-d": {
         "title": "TH3 D Wire Tensioner",
@@ -1443,7 +1417,12 @@
         "title": "TH3 IS Wire Tensioner",
         "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
         "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
-        "heroIntro": [],
+        "heroIntro": [
+          "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.",
+          "Wire enters the tensioner through a ceramic eyelet and an inlet pulley.",
+          "This inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.",
+          "Brake adjustment is performed via potentiometer or display screen"
+        ],
         "gallery": [
           {
             "caption": "TH3 IS Wire Tensioner"
@@ -1454,12 +1433,7 @@
         ],
         "brandFeatures": {
           "title": "ERASAN TH3 IS features",
-          "items": [
-            "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.",
-            "Wire enters the tensioner through a ceramic eyelet and an inlet pulley.",
-            "This inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.",
-            "Brake adjustment is performed via potentiometer or display screen"
-          ]
+          "items": []
         },
         "productAccessories": {
           "title": "Accessories",
@@ -1485,7 +1459,12 @@
         "title": "TH3 Wire Tensioner",
         "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
         "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
-        "heroIntro": [],
+        "heroIntro": [
+          "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.",
+          "Wire enters the tensioner through a ceramic eyelet and an inlet pulley.",
+          "This inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.",
+          "Brake adjustment is performed via potentiometer or display screen"
+        ],
         "gallery": [
           {
             "caption": "TH3 Wire Tensioner"
@@ -1496,12 +1475,7 @@
         ],
         "brandFeatures": {
           "title": "ERASAN TH3 features",
-          "items": [
-            "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.",
-            "Wire enters the tensioner through a ceramic eyelet and an inlet pulley.",
-            "This inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.",
-            "Brake adjustment is performed via potentiometer or display screen"
-          ]
+          "items": []
         },
         "productAccessories": {
           "title": "Accessories",
@@ -1527,7 +1501,13 @@
         "title": "TH3 StandAlone Wire Tensioner",
         "heroSubtitle": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
         "excerpt": "Magnetic brake wire tensioner for wire diameters from 0.50 mm to 3.00 mm.",
-        "heroIntro": [],
+        "heroIntro": [
+          "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.",
+          "Wire enters the tensioner through a ceramic eyelet and an inlet pulley.",
+          "This inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.",
+          "In this version, the tensioner is mounted on a standalone bench.",
+          "Brake adjustment is performed via potentiometer or display screen"
+        ],
         "gallery": [
           {
             "caption": "TH3 StandAlone Wire Tensioner"
@@ -1538,13 +1518,7 @@
         ],
         "brandFeatures": {
           "title": "ERASAN TH3 StandAlone features",
-          "items": [
-            "Wire tension is adjusted by the magnetic brake, which provides constant tension throughout the winding process.",
-            "Wire enters the tensioner through a ceramic eyelet and an inlet pulley.",
-            "This inlet design allows wire spools mounted on creels or dereelers to be used, because the ceramic eyelet is mounted on a pivoting piece that adapts to the natural wire path as it leaves the spool.",
-            "In this version, the tensioner is mounted on a standalone bench.",
-            "Brake adjustment is performed via potentiometer or display screen"
-          ]
+          "items": []
         },
         "productAccessories": {
           "title": "Accessories",
@@ -1571,12 +1545,18 @@
         "heroSubtitle": "E600 winding machine with extended winding zone for special applications requiring greater working length.",
         "excerpt": "E600 winding machine with extended winding zone for special applications requiring greater working length.",
         "heroIntro": [
-          "Special ERASAN E600 winding machine configuration with extended bed for projects requiring a larger winding zone.",
-          "Ideal for custom windings in transformers and demanding industrial applications."
+          "Based on the ERASAN E600 winding machine with extended bed",
+          "Increased distance between centres for longer windings",
+          "CNC control with touchscreen and Ethernet connectivity",
+          "Special project designed according to customer production needs"
         ],
         "gallery": [
-          { "caption": "E600 LONG winding machine" },
-          { "caption": "E600 LONG winding machine — detail" }
+          {
+            "caption": "E600 LONG winding machine"
+          },
+          {
+            "caption": "E600 LONG winding machine — detail"
+          }
         ],
         "highlight": {
           "title": "Extended winding zone",
@@ -1606,12 +1586,7 @@
         "section": "specialProjects",
         "brandFeatures": {
           "title": "ERASAN E600 LONG Features",
-          "items": [
-            "Based on the ERASAN E600 winding machine with extended bed",
-            "Increased distance between centres for longer windings",
-            "CNC control with touchscreen and Ethernet connectivity",
-            "Special project designed according to customer production needs"
-          ]
+          "items": []
         }
       },
       "maquina-flyer": {
@@ -1619,12 +1594,18 @@
         "heroSubtitle": "Flyer winding machine for special winding applications with rotating conductor movement.",
         "excerpt": "Flyer winding machine for special winding applications with rotating conductor movement.",
         "heroIntro": [
-          "ERASAN solution for flyer windings, used in applications requiring specific guidance and tension during the winding process.",
-          "Developed as a special project according to the customer's production needs."
+          "Specialized solution for flyer-type windings",
+          "Kinematics and wire guide adapted to the specific application",
+          "ERASAN electronic control with visual programming",
+          "Project designed and implemented by the ERASAN engineering team"
         ],
         "gallery": [
-          { "caption": "ERASAN Flyer Machine" },
-          { "caption": "ERASAN Flyer Machine — detail" }
+          {
+            "caption": "ERASAN Flyer Machine"
+          },
+          {
+            "caption": "ERASAN Flyer Machine — detail"
+          }
         ],
         "highlight": {
           "title": "High-precision flyer winding",
@@ -1654,12 +1635,7 @@
         "section": "specialProjects",
         "brandFeatures": {
           "title": "ERASAN Flyer Machine Features",
-          "items": [
-            "Specialized solution for flyer-type windings",
-            "Kinematics and wire guide adapted to the specific application",
-            "ERASAN electronic control with visual programming",
-            "Project designed and implemented by the ERASAN engineering team"
-          ]
+          "items": []
         }
       },
       "encintadora": {
@@ -1667,12 +1643,18 @@
         "heroSubtitle": "Taping machine for applying insulating tape to coils with precise tension and guidance control.",
         "excerpt": "Taping machine for applying insulating tape to coils with precise tension and guidance control.",
         "heroIntro": [
-          "Specialized equipment for the taping process on electrical coils, integrating constant tension and precise guidance of insulating material.",
-          "Custom solution for production lines requiring automated coil finishing."
+          "Specialized equipment for electrical coil taping",
+          "Precise insulating material guidance during application",
+          "Integrated tension control for consistent finishing",
+          "Custom solution to automate coil finishing in production"
         ],
         "gallery": [
-          { "caption": "ERASAN Taping Machine" },
-          { "caption": "ERASAN Taping Machine — detail" }
+          {
+            "caption": "ERASAN Taping Machine"
+          },
+          {
+            "caption": "ERASAN Taping Machine — detail"
+          }
         ],
         "highlight": {
           "title": "Uniform, controlled taping",
@@ -1702,12 +1684,7 @@
         "section": "specialProjects",
         "brandFeatures": {
           "title": "ERASAN Taping Machine Features",
-          "items": [
-            "Specialized equipment for electrical coil taping",
-            "Precise insulating material guidance during application",
-            "Integrated tension control for consistent finishing",
-            "Custom solution to automate coil finishing in production"
-          ]
+          "items": []
         }
       },
       "bobifil": {
@@ -1715,7 +1692,12 @@
         "heroSubtitle": "Bobifil winding machines – back to life",
         "excerpt": "Bobifil winding machines – back to life. Complete retrofit to return equipment of any condition to production.",
         "heroIntro": [
-          "For manufacturing electrical coils used in solenoids, reactors, inductors, and power and distribution transformers."
+          "Two kinematic versions: up to 500 rpm with high torque",
+          "Allows manufacturing coils up to 800 mm in length",
+          "Allows manufacturing high and low voltage coils on the same machine",
+          "Equipped with servomotors in winding head and wire guide",
+          "Two speed ranges with manual belt change, or direct reducer on the machine shaft",
+          "Allows easy adaptation to winding needs in terms of torque and speed"
         ],
         "gallery": [
           {
@@ -1754,19 +1736,47 @@
         "specifications": [],
         "brandFeatures": {
           "title": "Features RETROFIT BOBIFIL",
-          "items": [
-            "Two kinematic versions: up to 500 rpm with high torque",
-            "Allows manufacturing coils up to 800 mm in length",
-            "Allows manufacturing high and low voltage coils on the same machine",
-            "Equipped with servomotors in winding head and wire guide",
-            "Two speed ranges with manual belt change, or direct reducer on the machine shaft",
-            "Allows easy adaptation to winding needs in terms of torque and speed"
-          ]
+          "items": []
         }
       },
       "kits-retrofit": {
         "title": "Retrofit Kit",
+        "heroSubtitle": "Fully wired and tested cabinet ready to install on virtually any winding machine on the market.",
         "excerpt": "Fully wired and tested cabinet ready to install on virtually any winding machine on the market.",
+        "heroIntro": [
+          "Fully wired and tested cabinet",
+          "Installable on virtually any winding machine on the market",
+          "Returns the machine to production equipped with latest-generation electronics and motors",
+          "The cabinet includes a router for remote assistance, so it can be supported throughout its new service life"
+        ],
+        "gallery": [
+          {
+            "caption": "ERASAN Retrofit Kit"
+          }
+        ],
+        "highlight": {
+          "title": "Return your machine to production",
+          "subtitle": "We offer a fully wired and tested cabinet to install on virtually any winding machine on the market, equipped with the latest ERASAN control technology.",
+          "imageIndex": 0
+        },
+        "benefitCards": [
+          {
+            "title": "Wired and tested cabinet",
+            "description": "Ready to install on your existing winding machine"
+          },
+          {
+            "title": "Universal compatibility",
+            "description": "Compatible with most winding machines on the market"
+          },
+          {
+            "title": "Latest-generation control",
+            "description": "Returns the machine to production with modern ERASAN electronics and motors"
+          },
+          {
+            "title": "Remote assistance",
+            "description": "Integrated router for technical support throughout the machine's new service life"
+          }
+        ],
         "content": "We offer a fully wired and tested cabinet to install on virtually any winding machine on the market.\n\nReturn your machine to production equipped with the latest ERASAN control technology.",
         "features": [
           "Wired and tested cabinet, ready to install",
@@ -1777,12 +1787,7 @@
         "specifications": [],
         "brandFeatures": {
           "title": "ERASAN Features KIT RETROFIT",
-          "items": [
-            "Fully wired and tested cabinet",
-            "Installable on virtually any winding machine on the market",
-            "Returns the machine to production equipped with latest-generation electronics and motors",
-            "The cabinet includes a router for remote assistance, so it can be supported throughout its new service life"
-          ]
+          "items": []
         }
       }
     }

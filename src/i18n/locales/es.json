@@ -421,8 +421,12 @@
         "heroSubtitle": "Máquina de dos papeles y un folio para la fabricación de bobinas para grandes trasformadores de resina/secos para distibución y potencia.",
         "excerpt": "Máquina de dos papeles y un folio para la fabricación de bobinas para grandes trasformadores de resina/secos para distibución y potencia.",
         "heroIntro": [
-          "Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.",
-          "El eje devanador es un eje expandible con sistema hidráulico. Movimiento lateral en el devanador de folio gracias al con una fotocélula para controlar posibles desviaciones."
+          "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
+          "Sistema de corte del folio mediante caladora o por cizalla.",
+          "Unidad de soldadura, con mesa soldadura opcional.",
+          "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
+          "Opción: Mesa soldadura TIG.",
+          "Opción: Corte Folio por guillotina."
         ],
         "gallery": [
           {
@@ -464,14 +468,7 @@
         },
         "brandFeatures": {
           "title": "Características ERASAN STRIP FOIL",
-          "items": [
-            "Unidad de recogida de papel sobrante mediante un rodillo motorizado instalado junto al sistema devanador de folio.",
-            "Sistema de corte del folio mediante caladora o por cizalla.",
-            "Unidad de soldadura, con mesa soldadura opcional.",
-            "Eliminador de rebabas, para evitar daños en los extremos de la lámina de cobre o aluminio: dos conjuntos de dos rodillos que ejercen presión sobre los extremos de la banda, uno sobre otro.",
-            "Opción: Mesa soldadura TIG.",
-            "Opción: Corte Folio por guillotina."
-          ]
+          "items": []
         },
         "specifications": [
           {
@@ -511,8 +508,11 @@
         "heroSubtitle": "Para la fabricación de bobinas para grandes transformadores de resina/secos de distribución y potencia",
         "excerpt": "Para la fabricación de bobinas para grandes transformadores de resina/secos de distribución y potencia",
         "heroIntro": [
-          "Unidad de bobinado compuesto por un cabezal fabricado en hierro mecano soldado, rodillo presor con ajuste neumático y un eje expandible.",
-          "Estructura mecánica: construcción de cuerpo mecánico en acero electrosoldado, tratado térmicamente para su estabilización, mecanizado y partes fresadas. Alta rigidez torsional, pintura al horno."
+          "Módulo de bobinado",
+          "Módulo portacerquillos",
+          "Módulo de soldadura",
+          "Módulo de corte",
+          "Módulo devanador de folio"
         ],
         "gallery": [
           {
@@ -551,13 +551,7 @@
         },
         "brandFeatures": {
           "title": "Características ERASAN E-FOIL",
-          "items": [
-            "Módulo de bobinado",
-            "Módulo portacerquillos",
-            "Módulo de soldadura",
-            "Módulo de corte",
-            "Módulo devanador de folio"
-          ]
+          "items": []
         }
       },
       "cabezal-bobinador-erasan-e1200-c-sgb": {
@@ -565,8 +559,12 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "heroIntro": [
-          "Cuerpo fabricado en acero mecano soldado de gran rigidez",
-          "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          "Dos versiones de cinemática: hasta 750 rpm de velocidad con un alto par",
+          "Permite fabricar bobinas de longitud máxima de 1.100mm",
+          "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Cuatro rangos de velocidad con cambio por palancas",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -601,14 +599,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E1200C SGB",
-          "items": [
-            "Dos versiones de cinemática: hasta 750 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 1.100mm",
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Cuatro rangos de velocidad con cambio por palancas",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "cabezal-bobinador-erasan-e1200-c": {
@@ -616,8 +607,12 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "heroIntro": [
-          "Cuerpo fabricado en acero mecano soldado de gran rigidez",
-          "Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
+          "Permite fabricar bobinas de longitud máxima de 1.100mm",
+          "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad"
         ],
         "gallery": [
           {
@@ -652,14 +647,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E1200C",
-          "items": [
-            "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 1.100mm",
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad"
-          ]
+          "items": []
         }
       },
       "cabezal-bobinador-erasan-e1500-b": {
@@ -697,8 +685,12 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "heroIntro": [
-          "Cuerpo fabricado en acero mecano soldado de gran rigidez",
-          "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          "Dos versiones de cinemática: hasta 750 rpm de velocidad con un alto par",
+          "Permite fabricar bobinas de longitud máxima de 1.100mm",
+          "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Cuatro rangos de velocidad con cambio por palancas",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -733,14 +725,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E1200 SGB",
-          "items": [
-            "Dos versiones de cinemática: hasta 750 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 1.100mm",
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Cuatro rangos de velocidad con cambio por palancas",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e1200-servotech": {
@@ -748,8 +733,12 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "heroIntro": [
-          "Cuerpo fabricado en acero mecano soldado de gran rigidez",
-          "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
+          "Permite fabricar bobinas de longitud máxima de 1.100mm",
+          "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Dos rangos de velocidad con cambio de correas automático, o posibilidad de reductor directo al eje de la máquina",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -784,14 +773,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E1200 SERVOTECH",
-          "items": [
-            "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 1.100mm",
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Dos rangos de velocidad con cambio de correas automático, o posibilidad de reductor directo al eje de la máquina",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e1200": {
@@ -799,8 +781,12 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "heroIntro": [
-          "Cuerpo fabricado en acero mecano soldado de gran rigidez",
-          "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
+          "Permite fabricar bobinas de longitud máxima de 1.100mm",
+          "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -835,14 +821,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E1200",
-          "items": [
-            "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 1.100mm",
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e900-sgb": {
@@ -850,8 +829,12 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "heroIntro": [
-          "Cuerpo fabricado en acero mecano soldado de gran rigidez",
-          "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          "Dos versiones de cinemática: hasta 3000 rpm de velocidad con un alto par",
+          "Permite fabricar bobinas de longitud máxima de 800mm",
+          "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Cuatro rangos de velocidad con cambio por palancas",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -886,14 +869,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E900 SGB",
-          "items": [
-            "Dos versiones de cinemática: hasta 3000 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 800mm",
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Cuatro rangos de velocidad con cambio por palancas",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e900-servotech": {
@@ -901,8 +877,12 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "heroIntro": [
-          "Cuerpo fabricado en acero mecano soldado de gran rigidez",
-          "Bancada mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
+          "Permite fabricar bobinas de longitud máxima de 800mm",
+          "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Dos rangos de velocidad con cambio de correas automático, o posibilidad de reductor directo al eje de la máquina",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -937,14 +917,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E900 SERVOTECH",
-          "items": [
-            "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 800mm",
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Dos rangos de velocidad con cambio de correas automático, o posibilidad de reductor directo al eje de la máquina",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e900": {
@@ -952,8 +925,12 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución",
         "heroIntro": [
-          "Cuerpo fabricado en acero mecano soldado de gran rigidez",
-          "Bandaca mecanizada, contrapunto y sistema guiador de husillo de recirculación de bolas con patines de guiado de precisión"
+          "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
+          "Permite fabricar bobinas de longitud máxima de 800mm",
+          "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -988,14 +965,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E900",
-          "items": [
-            "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 800mm",
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e600": {
@@ -1003,8 +973,11 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de mediana potencia",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de mediana potencia",
         "heroIntro": [
-          "Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada",
-          "Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas y contrapunto de cierre rápido"
+          "Permite fabricar bobinas de longitud máxima de 520mm",
+          "Adimite hilo de hasta 3mm de diámetro tanto en cobre como aluminio.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Tres rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -1039,13 +1012,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E600",
-          "items": [
-            "Permite fabricar bobinas de longitud máxima de 520mm",
-            "Adimite hilo de hasta 3mm de diámetro tanto en cobre como aluminio.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Tres rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e300": {
@@ -1053,8 +1020,11 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia",
         "heroIntro": [
-          "Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada",
-          "Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas y contrapunto de cierre rápido"
+          "Permite fabricar bobinas de longitud máxima de 390mm",
+          "Adimite hilo de hasta 3mm de diámetro tanto en cobre como aluminio.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Tres rangos de velocidad con cambio de correas manual",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -1095,13 +1065,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E300",
-          "items": [
-            "Permite fabricar bobinas de longitud máxima de 390mm",
-            "Adimite hilo de hasta 3mm de diámetro tanto en cobre como aluminio.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Tres rangos de velocidad con cambio de correas manual",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "bobinadora-erasan-e300w": {
@@ -1109,8 +1073,11 @@
         "heroSubtitle": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia",
         "excerpt": "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias y transformadores de pequeña potencia",
         "heroIntro": [
-          "Cuerpo compacto en aluminio de gran rigidez, bancada de guiador electrosoldada y mecanizada",
-          "Sistema guiador montada sobre patines de precisión y accionado mediante husillo de recirculación de bolas y contrapunto de cierre rápido"
+          "Permite fabricar bobinas de longitud máxima de 390mm",
+          "Adimite hilo de hasta 3mm de diámetro tanto en cobre como aluminio.",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Tres rangos de velocidad con cambio de correas manual",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
         ],
         "gallery": [
           {
@@ -1151,13 +1118,7 @@
         "section": "coilWinding",
         "brandFeatures": {
           "title": "Características ERASAN E300",
-          "items": [
-            "Permite fabricar bobinas de longitud máxima de 390mm",
-            "Adimite hilo de hasta 3mm de diámetro tanto en cobre como aluminio.",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Tres rangos de velocidad con cambio de correas manual",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad."
-          ]
+          "items": []
         }
       },
       "dispensador-de-papel-dp1-p": {
@@ -1172,13 +1133,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN DP1-P",
-          "items": [
-            "Tensionador de papel dotado de freno electromagnético y eje expandible.",
-            "Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente.",
-            "Regulación del freno mediante software (en el caso de que el tensionador quede integrado en máquina) o mediante potenciómetro.",
-            "Está dotado de dos juegos de rodillos regulables a fin de guiar el papel."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Tensionador de papel dotado de freno electromagnético y eje expandible.",
+          "Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente.",
+          "Regulación del freno mediante software (en el caso de que el tensionador quede integrado en máquina) o mediante potenciómetro.",
+          "Está dotado de dos juegos de rodillos regulables a fin de guiar el papel."
+        ]
       },
       "dispensador-de-papel-tpe": {
         "title": "Dispensador de papel TPE",
@@ -1192,13 +1154,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN TPE",
-          "items": [
-            "Tensionador de papel dotado de freno electromagnético y eje expandible.",
-            "Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente.",
-            "Regulación del freno mediante software (en el caso de que el tensionador quede integrado en máquina) o mediante potenciómetro.",
-            "Está dotado de dos juegos de rodillos regulables a fin de guiar el papel."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Tensionador de papel dotado de freno electromagnético y eje expandible.",
+          "Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente.",
+          "Regulación del freno mediante software (en el caso de que el tensionador quede integrado en máquina) o mediante potenciómetro.",
+          "Está dotado de dos juegos de rodillos regulables a fin de guiar el papel."
+        ]
       },
       "devanador-dp1r-ap1r": {
         "title": "Devanador DP1R AP1R",
@@ -1212,13 +1175,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN DP1R AP1R",
-          "items": [
-            "La principal diferencia de DP1R es el doble freno provisto que mejora la tensión, que junto al AP1R ayuda a mantener la tensión constante.",
-            "En el caso en que el hilo del carrete se exceda, AP1R elimina la holgura, tensando mucho más, gracias a la polea que se mueve hacia abajo.",
-            "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
-            "Bajo demanda se puede servir con freno electromagnético."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "La principal diferencia de DP1R es el doble freno provisto que mejora la tensión, que junto al AP1R ayuda a mantener la tensión constante.",
+          "En el caso en que el hilo del carrete se exceda, AP1R elimina la holgura, tensando mucho más, gracias a la polea que se mueve hacia abajo.",
+          "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
+          "Bajo demanda se puede servir con freno electromagnético."
+        ]
       },
       "devanador-dp4": {
         "title": "Devanador DP4",
@@ -1232,13 +1196,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN DP4",
-          "items": [
-            "Proporciona una tensión constante al hilo durante el bobinado",
-            "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
-            "El DP4 se sitúa detrás de la máquina con el fin de facilitar el guiado del hilo desde el carrete hasta la máquina. La caja de control puede ser posicionada en cualquier lugar que sea conveniente, como por ejemplo, en la máquina de bobinado.",
-            "Bajo demanda se puede servir con freno electromagnético."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Proporciona una tensión constante al hilo durante el bobinado",
+          "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
+          "El DP4 se sitúa detrás de la máquina con el fin de facilitar el guiado del hilo desde el carrete hasta la máquina. La caja de control puede ser posicionada en cualquier lugar que sea conveniente, como por ejemplo, en la máquina de bobinado.",
+          "Bajo demanda se puede servir con freno electromagnético."
+        ]
       },
       "devanador-dp2": {
         "title": "Devanador DP2",
@@ -1252,13 +1217,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN DP2",
-          "items": [
-            "Proporciona una tensión constante al hilo durante el bobinado",
-            "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
-            "El DP2 se sitúa detrás de la máquina con el fin de facilitar el guiado del hilo desde el carrete hasta la máquina. La caja de control puede ser posicionada en cualquier lugar que sea conveniente, como por ejemplo, en la máquina de bobinado.",
-            "Bajo demanda se puede servir con freno electromagnético."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Proporciona una tensión constante al hilo durante el bobinado",
+          "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
+          "El DP2 se sitúa detrás de la máquina con el fin de facilitar el guiado del hilo desde el carrete hasta la máquina. La caja de control puede ser posicionada en cualquier lugar que sea conveniente, como por ejemplo, en la máquina de bobinado.",
+          "Bajo demanda se puede servir con freno electromagnético."
+        ]
       },
       "devanador-dp1": {
         "title": "Devanador DP1",
@@ -1272,13 +1238,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN DP1",
-          "items": [
-            "Proporciona una tensión constante al hilo durante el bobinado",
-            "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
-            "El DP1 se sitúa detrás de la máquina con el fin de facilitar el guiado del hilo desde el carrete hasta la máquina. La caja de control puede ser posicionada en cualquier lugar que sea conveniente, como por ejemplo, en la máquina de bobinado.",
-            "Bajo demanda se puede servir con freno electromagnético."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Proporciona una tensión constante al hilo durante el bobinado",
+          "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
+          "El DP1 se sitúa detrás de la máquina con el fin de facilitar el guiado del hilo desde el carrete hasta la máquina. La caja de control puede ser posicionada en cualquier lugar que sea conveniente, como por ejemplo, en la máquina de bobinado.",
+          "Bajo demanda se puede servir con freno electromagnético."
+        ]
       },
       "mandril-expandible-rectangular": {
         "title": "Mandril expandible rectangular",
@@ -1290,12 +1257,13 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN Mandril expandible rectangular",
-          "items": [
-            "El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo.",
-            "Cada mandril tiene un orificio con llave estándar para expandir.",
-            "Núcleos de hierro o láminas se pueden insertar más tarde en el proceso de fabricación de la bobina."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo.",
+          "Cada mandril tiene un orificio con llave estándar para expandir.",
+          "Núcleos de hierro o láminas se pueden insertar más tarde en el proceso de fabricación de la bobina."
+        ]
       },
       "mandril-expandible-circular": {
         "title": "Mandril expandible circular",
@@ -1307,12 +1275,13 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN Mandril expandible circular",
-          "items": [
-            "El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo.",
-            "Cada mandril tiene un orificio con llave estándar para expandir.",
-            "Núcleos de hierro o láminas se pueden insertar más tarde en el proceso de fabricación de la bobina."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo.",
+          "Cada mandril tiene un orificio con llave estándar para expandir.",
+          "Núcleos de hierro o láminas se pueden insertar más tarde en el proceso de fabricación de la bobina."
+        ]
       },
       "guiador-de-pletina-gp2": {
         "title": "Guiador de pletina GP2",
@@ -1324,13 +1293,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN Guiador de pletina GP2",
-          "items": [
-            "Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada.",
-            "Este tipo de guiador es de máxima robustez ya que se suele emplear para el uso de pletinas múltiples y una gran tensión.",
-            "Guiador para secciones rectangulares mediante rodillos los cuales se pueden ajustar para la sección empleada. Dispone de un guiador devanador de cinta.",
-            "Este tipo de guiador se emplea para bobinar pletinas múltiples y encintar la última capa a mucha tensión."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada.",
+          "Este tipo de guiador es de máxima robustez ya que se suele emplear para el uso de pletinas múltiples y una gran tensión.",
+          "Guiador para secciones rectangulares mediante rodillos los cuales se pueden ajustar para la sección empleada. Dispone de un guiador devanador de cinta.",
+          "Este tipo de guiador se emplea para bobinar pletinas múltiples y encintar la última capa a mucha tensión."
+        ]
       },
       "guiador-de-pletina-gp1": {
         "title": "Guiador de pletina GP1",
@@ -1342,13 +1312,14 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN Guiador de pletina GP1",
-          "items": [
-            "Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada.",
-            "Este tipo de guiador es de máxima robustez ya que las tensiones empleadas en estos conductores son de gran magnitud.",
-            "Guiador para secciones rectangulares mediante rodillos los cuales se pueden ajustar para la sección empleada. Dispone de un guiador devanador de cinta.",
-            "Este tipo de guiador se emplea para bobinar pletinas múltiples y encintar la última capa a mucha tensión."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Guiador para secciones rectangulares mediante poleas, que se pueden ajustar para la sección empleada.",
+          "Este tipo de guiador es de máxima robustez ya que las tensiones empleadas en estos conductores son de gran magnitud.",
+          "Guiador para secciones rectangulares mediante rodillos los cuales se pueden ajustar para la sección empleada. Dispone de un guiador devanador de cinta.",
+          "Este tipo de guiador se emplea para bobinar pletinas múltiples y encintar la última capa a mucha tensión."
+        ]
       },
       "guiador-de-hilo-gh3": {
         "title": "Guiador de hilo GH3",
@@ -1360,12 +1331,13 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN Guiador de hilo GH3",
-          "items": [
-            "Guiador de hilo por un pequeño tubo guiahilos",
-            "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 8mm de diámetro.",
-            "Su ángulo suele ser de 45º."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Guiador de hilo por un pequeño tubo guiahilos",
+          "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 8mm de diámetro.",
+          "Su ángulo suele ser de 45º."
+        ]
       },
       "guiador-de-hilo-gh2": {
         "title": "Guiador de hilo GH2",
@@ -1375,15 +1347,15 @@
           "\"La clave del bobinado se encuentra en aplicar la correcta tensión y guiado\""
         ],
         "section": "accessories",
-
         "brandFeatures": {
           "title": "Características ERASAN Guiador de hilo GH2",
-          "items": [
-            "Guiador de hilo por un pequeño tubo guiahilos",
-            "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 3mm de diámetro.",
-            "Su ángulo suele ser de 45º."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Guiador de hilo por un pequeño tubo guiahilos",
+          "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 3mm de diámetro.",
+          "Su ángulo suele ser de 45º."
+        ]
       },
       "guiador-de-hilo-gh1": {
         "title": "Guiador de hilo GH1",
@@ -1395,12 +1367,13 @@
         "section": "accessories",
         "brandFeatures": {
           "title": "Características ERASAN Guiador de hilo GH1",
-          "items": [
-            "Guiador de hilo por un pequeño tubo guiahilos",
-            "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 1mm de diámetro.",
-            "Su ángulo suele ser de 45º."
-          ]
-        }
+          "items": []
+        },
+        "heroIntro": [
+          "Guiador de hilo por un pequeño tubo guiahilos",
+          "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 1mm de diámetro.",
+          "Su ángulo suele ser de 45º."
+        ]
       },
       "tensionador-de-hilo-th3-d": {
         "title": "Tensionador de hilo TH3 D",
@@ -1444,7 +1417,12 @@
         "title": "Tensionador de hilo TH3 IS",
         "heroSubtitle": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
         "excerpt": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
-        "heroIntro": [],
+        "heroIntro": [
+          "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.",
+          "El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.",
+          "Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.",
+          "La regulación del freno se realiza por potenciómetro o por pantalla"
+        ],
         "gallery": [
           {
             "caption": "Tensionador de hilo TH3 IS"
@@ -1455,12 +1433,7 @@
         ],
         "brandFeatures": {
           "title": "Características ERASAN TH3 IS",
-          "items": [
-            "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.",
-            "El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.",
-            "Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.",
-            "La regulación del freno se realiza por potenciómetro o por pantalla"
-          ]
+          "items": []
         },
         "productAccessories": {
           "title": "Accesorios",
@@ -1486,7 +1459,12 @@
         "title": "Tensionador de hilo TH3",
         "heroSubtitle": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
         "excerpt": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
-        "heroIntro": [],
+        "heroIntro": [
+          "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.",
+          "El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.",
+          "Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.",
+          "La regulación del freno se realiza por potenciómetro o por pantalla"
+        ],
         "gallery": [
           {
             "caption": "Tensionador de hilo TH3"
@@ -1497,12 +1475,7 @@
         ],
         "brandFeatures": {
           "title": "Características ERASAN TH3",
-          "items": [
-            "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.",
-            "El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.",
-            "Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.",
-            "La regulación del freno se realiza por potenciómetro o por pantalla"
-          ]
+          "items": []
         },
         "productAccessories": {
           "title": "Accesorios",
@@ -1528,7 +1501,13 @@
         "title": "Tensionador de hilo TH3 StandAlone",
         "heroSubtitle": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
         "excerpt": "Tensionador con freno magnético para hilos con un diámetro de 0.50 mm a 3.00mm.",
-        "heroIntro": [],
+        "heroIntro": [
+          "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.",
+          "El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.",
+          "Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.",
+          "En esta versión el tensionador se monta sobre una bancada.",
+          "La regulación del freno se realiza por potenciómetro o por pantalla"
+        ],
         "gallery": [
           {
             "caption": "Tensionador de hilo TH3 StandAlone"
@@ -1539,13 +1518,7 @@
         ],
         "brandFeatures": {
           "title": "Características ERASAN TH3 StandAlone",
-          "items": [
-            "La tensión del hilo se ajusta gracias al freno magnético que proporciona una tensión constante durante el proceso de bobinado.",
-            "El hilo entra en el tensionador a través de un ojal cerámico y una polea de entrada.",
-            "Este diseño de entrada permite emplear los carretes de hilo montados en lecheras o devanadores, porque el ojal cerámico se monta sobre una pieza basculante adaptándose al camino natural del hilo cuando sale del carrete.",
-            "En esta versión el tensionador se monta sobre una bancada.",
-            "La regulación del freno se realiza por potenciómetro o por pantalla"
-          ]
+          "items": []
         },
         "productAccessories": {
           "title": "Accesorios",
@@ -1572,12 +1545,18 @@
         "heroSubtitle": "Bobinadora E600 con zona de bobinado ampliada para aplicaciones especiales que requieren mayor longitud de trabajo.",
         "excerpt": "Bobinadora E600 con zona de bobinado ampliada para aplicaciones especiales que requieren mayor longitud de trabajo.",
         "heroIntro": [
-          "Configuración especial de la bobinadora ERASAN E600 con bancada extendida para proyectos que exigen una mayor zona de bobinado.",
-          "Ideal para bobinados personalizados en transformadores y aplicaciones industriales de alta exigencia."
+          "Basada en la bobinadora ERASAN E600 con bancada extendida",
+          "Distancia entre puntos ampliada para bobinados de mayor longitud",
+          "Control CNC con pantalla táctil y conexión Ethernet",
+          "Proyecto especial diseñado según las necesidades de producción del cliente"
         ],
         "gallery": [
-          { "caption": "Bobinadora E600 LONG" },
-          { "caption": "Bobinadora E600 LONG — detalle" }
+          {
+            "caption": "Bobinadora E600 LONG"
+          },
+          {
+            "caption": "Bobinadora E600 LONG — detalle"
+          }
         ],
         "highlight": {
           "title": "Zona de bobinado ampliada",
@@ -1607,12 +1586,7 @@
         "section": "specialProjects",
         "brandFeatures": {
           "title": "Características ERASAN E600 LONG",
-          "items": [
-            "Basada en la bobinadora ERASAN E600 con bancada extendida",
-            "Distancia entre puntos ampliada para bobinados de mayor longitud",
-            "Control CNC con pantalla táctil y conexión Ethernet",
-            "Proyecto especial diseñado según las necesidades de producción del cliente"
-          ]
+          "items": []
         }
       },
       "maquina-flyer": {
@@ -1620,12 +1594,18 @@
         "heroSubtitle": "Máquina bobinadora flyer para aplicaciones especiales de bobinado con movimiento rotativo del conductor.",
         "excerpt": "Máquina bobinadora flyer para aplicaciones especiales de bobinado con movimiento rotativo del conductor.",
         "heroIntro": [
-          "Solución ERASAN para bobinados tipo flyer, empleada en aplicaciones que requieren un guiado y tensado específicos durante el proceso de bobinado.",
-          "Desarrollada como proyecto especial según las necesidades de producción del cliente."
+          "Solución especializada para bobinados tipo flyer",
+          "Cinemática y guiado adaptados a la aplicación concreta",
+          "Control electrónico ERASAN con programación visual",
+          "Proyecto diseñado e implementado por el equipo de ingeniería ERASAN"
         ],
         "gallery": [
-          { "caption": "Máquina Flyer ERASAN" },
-          { "caption": "Máquina Flyer ERASAN — detalle" }
+          {
+            "caption": "Máquina Flyer ERASAN"
+          },
+          {
+            "caption": "Máquina Flyer ERASAN — detalle"
+          }
         ],
         "highlight": {
           "title": "Bobinado flyer de alta precisión",
@@ -1655,12 +1635,7 @@
         "section": "specialProjects",
         "brandFeatures": {
           "title": "Características ERASAN Máquina Flyer",
-          "items": [
-            "Solución especializada para bobinados tipo flyer",
-            "Cinemática y guiado adaptados a la aplicación concreta",
-            "Control electrónico ERASAN con programación visual",
-            "Proyecto diseñado e implementado por el equipo de ingeniería ERASAN"
-          ]
+          "items": []
         }
       },
       "encintadora": {
@@ -1668,12 +1643,18 @@
         "heroSubtitle": "Máquina encintadora para aplicación de cinta aislante en bobinas con control preciso de tensión y guiado.",
         "excerpt": "Máquina encintadora para aplicación de cinta aislante en bobinas con control preciso de tensión y guiado.",
         "heroIntro": [
-          "Equipo especializado para el proceso de encintado en bobinas eléctricas, integrando tensión constante y guiado preciso del material aislante.",
-          "Solución a medida para líneas de producción que requieren acabado automatizado de bobinas."
+          "Equipo especializado para encintado de bobinas eléctricas",
+          "Guiado preciso del material aislante durante la aplicación",
+          "Control de tensión integrado para un acabado consistente",
+          "Solución a medida para automatizar el acabado de bobinas en producción"
         ],
         "gallery": [
-          { "caption": "Encintadora ERASAN" },
-          { "caption": "Encintadora ERASAN — detalle" }
+          {
+            "caption": "Encintadora ERASAN"
+          },
+          {
+            "caption": "Encintadora ERASAN — detalle"
+          }
         ],
         "highlight": {
           "title": "Encintado uniforme y controlado",
@@ -1703,12 +1684,7 @@
         "section": "specialProjects",
         "brandFeatures": {
           "title": "Características ERASAN Encintadora",
-          "items": [
-            "Equipo especializado para encintado de bobinas eléctricas",
-            "Guiado preciso del material aislante durante la aplicación",
-            "Control de tensión integrado para un acabado consistente",
-            "Solución a medida para automatizar el acabado de bobinas en producción"
-          ]
+          "items": []
         }
       },
       "bobifil": {
@@ -1716,11 +1692,20 @@
         "heroSubtitle": "Máquinas bobinadoras Bobifil – de vuelta a la vida",
         "excerpt": "Máquinas bobinadoras Bobifil – de vuelta a la vida. Retrofit completo para devolver al trabajo equipos de cualquier estado.",
         "heroIntro": [
-          "Para la fabricación de bobinas eléctricas empleadas para la construcción de solenoides, reactancias, inductancias, transformadores de potencia y distribución."
+          "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
+          "Permite fabricar bobinas de longitud máxima de 800 mm",
+          "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina",
+          "Cuenta con servomotores en cabezal y guiador",
+          "Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
+          "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad"
         ],
         "gallery": [
-          { "caption": "Antes" },
-          { "caption": "Después" }
+          {
+            "caption": "Antes"
+          },
+          {
+            "caption": "Después"
+          }
         ],
         "highlight": {
           "title": "Retrofit completo: de vuelta a la vida",
@@ -1751,19 +1736,47 @@
         "specifications": [],
         "brandFeatures": {
           "title": "Características RETROFIT BOBIFIL",
-          "items": [
-            "Dos versiones de cinemática: hasta 500 rpm de velocidad con un alto par",
-            "Permite fabricar bobinas de longitud máxima de 800 mm",
-            "Permite la fabricación de bobinas de alta y baja tensión en la misma máquina",
-            "Cuenta con servomotores en cabezal y guiador",
-            "Dos rangos de velocidad con cambio de correas manual, o posibilidad de reductor directo al eje de la máquina",
-            "Permite una fácil adaptación a las necesidades de bobinado en relación par y velocidad"
-          ]
+          "items": []
         }
       },
       "kits-retrofit": {
         "title": "Kit de Retrofit",
+        "heroSubtitle": "Armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado.",
         "excerpt": "Armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado.",
+        "heroIntro": [
+          "Armario completamente cableado y testeado",
+          "Instalable en prácticamente cualquier máquina bobinadora del mercado",
+          "Permite devolver la máquina al trabajo equipada con electrónica y motores de última generación",
+          "El armario cuenta con un router para teleasistencia, de manera que podrá ser atendida a lo largo de toda su nueva vida útil"
+        ],
+        "gallery": [
+          {
+            "caption": "Kit de Retrofit ERASAN"
+          }
+        ],
+        "highlight": {
+          "title": "Devuelva su máquina al trabajo",
+          "subtitle": "Ofrecemos un armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado, equipado con la última tecnología de control ERASAN.",
+          "imageIndex": 0
+        },
+        "benefitCards": [
+          {
+            "title": "Armario cableado y testeado",
+            "description": "Listo para instalar en su bobinadora existente"
+          },
+          {
+            "title": "Compatibilidad universal",
+            "description": "Compatible con la mayoría de bobinadoras del mercado"
+          },
+          {
+            "title": "Control de última generación",
+            "description": "Devuelve la máquina al trabajo con electrónica y motores ERASAN modernos"
+          },
+          {
+            "title": "Teleasistencia",
+            "description": "Router integrado para soporte técnico a lo largo de la nueva vida útil de la máquina"
+          }
+        ],
         "content": "Ofrecemos un armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado.\n\nPermite devolver su máquina de vuelta al trabajo, equipada con la última tecnología de control ERASAN.",
         "features": [
           "Armario cableado y testeado, listo para instalar",
@@ -1774,12 +1787,7 @@
         "specifications": [],
         "brandFeatures": {
           "title": "Características ERASAN KIT RETROFIT",
-          "items": [
-            "Armario completamente cableado y testeado",
-            "Instalable en prácticamente cualquier máquina bobinadora del mercado",
-            "Permite devolver la máquina al trabajo equipada con electrónica y motores de última generación",
-            "El armario cuenta con un router para teleasistencia, de manera que podrá ser atendida a lo largo de toda su nueva vida útil"
-          ]
+          "items": []
         }
       }
     }
