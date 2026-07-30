@@ -240,11 +240,11 @@ function ClassicProductLayout({
 }
 
 function resolveHighlightImage(gallery, highlight, featuredImage, productTitle) {
-  const preferredIndex = Number.isInteger(highlight?.imageIndex) ? highlight.imageIndex : 0
   const candidates = [
-    gallery[preferredIndex],
-    gallery[0],
+    gallery[1],
     gallery[gallery.length - 1],
+    Number.isInteger(highlight?.imageIndex) ? gallery[highlight.imageIndex] : null,
+    gallery[0],
   ].filter(Boolean)
 
   for (const item of candidates) {
@@ -280,6 +280,7 @@ function RichProductLayout({
   } = acf
 
   const highlightImage = resolveHighlightImage(gallery, highlight, featuredImage, product.title.rendered)
+  const showHighlightSection = Boolean(highlight) || gallery.length >= 2
 
   return (
     <>
@@ -323,7 +324,7 @@ function RichProductLayout({
         t={t}
       />
 
-      {highlight && (
+      {showHighlightSection && (
         <Box
           sx={{
             mb: 8,
@@ -340,19 +341,27 @@ function RichProductLayout({
                 component="img"
                 src={highlightImage.src}
                 alt={highlightImage.alt}
-                sx={{ width: '100%', height: 'auto', borderRadius: 2, display: 'block' }}
+                sx={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: 2,
+                  display: 'block',
+                  backgroundColor: 'rgb(253, 253, 253)',
+                }}
               />
             </Grid>
-            <Grid item xs={12} md={7}>
-              <Typography variant="h3" sx={{ mb: 2, fontWeight: 700, lineHeight: 1.3 }}>
-                {highlight.title}
-              </Typography>
-              {highlight.subtitle && (
-                <Typography variant="h6" color="text.secondary" sx={{ fontWeight: 400, lineHeight: 1.6 }}>
-                  {highlight.subtitle}
+            {highlight && (
+              <Grid item xs={12} md={7}>
+                <Typography variant="h3" sx={{ mb: 2, fontWeight: 700, lineHeight: 1.3 }}>
+                  {highlight.title}
                 </Typography>
-              )}
-            </Grid>
+                {highlight.subtitle && (
+                  <Typography variant="h6" color="text.secondary" sx={{ fontWeight: 400, lineHeight: 1.6 }}>
+                    {highlight.subtitle}
+                  </Typography>
+                )}
+              </Grid>
+            )}
           </Grid>
         </Box>
       )}

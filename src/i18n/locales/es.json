@@ -517,12 +517,15 @@
         "gallery": [
           {
             "caption": "Bobinadora Folio"
+          },
+          {
+            "caption": "Bobinadora Folio — detalle"
           }
         ],
         "highlight": {
           "title": "Varias configuraciones posibles de hasta 1.500 mm de anchura",
           "subtitle": "Permite bobinado de primarias fácilmente y con tiempos de ciclo de producción muy cortos.",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -569,12 +572,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E1200C SGB"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E1200C SGB — detalle"
           }
         ],
         "highlight": {
           "title": "Posibilidad de conseguir 1.000 Nm en baja velocidad",
           "subtitle": "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -617,12 +623,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E1200C"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E1200C — detalle"
           }
         ],
         "highlight": {
           "title": "Posibilidad de conseguir 1.000 Nm en baja velocidad",
           "subtitle": "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -663,7 +672,15 @@
         "brandFeatures": {
           "title": "Características ERASAN E1500B",
           "items": []
-        }
+        },
+        "gallery": [
+          {
+            "caption": "BOBINADORA ERASAN E1500B"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E1500B — detalle"
+          }
+        ]
       },
       "cabezal-bobinador-erasan-e1200-b": {
         "title": "BOBINADORA ERASAN E1200B",
@@ -678,7 +695,15 @@
         "brandFeatures": {
           "title": "Características ERASAN E1200B",
           "items": []
-        }
+        },
+        "gallery": [
+          {
+            "caption": "BOBINADORA ERASAN E1200B"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E1200B — detalle"
+          }
+        ]
       },
       "bobinadora-erasan-e1200-sgb": {
         "title": "BOBINADORA ERASAN E1200 SGB",
@@ -695,12 +720,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E1200 SGB"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E1200 SGB — detalle"
           }
         ],
         "highlight": {
           "title": "Posibilidad de conseguir 1.000 Nm en baja velocidad",
           "subtitle": "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -743,12 +771,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E1200 SERVOTECH"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E1200 SERVOTECH — detalle"
           }
         ],
         "highlight": {
           "title": "Posibilidad de conseguir 1.000 Nm en baja velocidad",
           "subtitle": "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -791,12 +822,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E1200"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E1200 — detalle"
           }
         ],
         "highlight": {
           "title": "Posibilidad de conseguir 1.000 Nm en baja velocidad",
           "subtitle": "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -839,12 +873,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E900 SGB"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E900 SGB — detalle"
           }
         ],
         "highlight": {
           "title": "Posibilidad de conseguir 1.000 Nm en baja velocidad",
           "subtitle": "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -887,12 +924,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E900 SERVOTECH"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E900 SERVOTECH — detalle"
           }
         ],
         "highlight": {
           "title": "Posibilidad de conseguir 1.000 Nm en baja velocidad",
           "subtitle": "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -935,12 +975,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E900"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E900 — detalle"
           }
         ],
         "highlight": {
           "title": "Posibilidad de conseguir 1.000 Nm en baja velocidad",
           "subtitle": "permitiendo la utilización de hilos redondos, pletinas e incluso folios (dependiendo de las dimensiones), tanto en cobre como en aluminio",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -982,12 +1025,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E600"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E600 — detalle"
           }
         ],
         "highlight": {
           "title": "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
           "subtitle": "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1029,12 +1075,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E300"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E300 — detalle"
           }
         ],
         "highlight": {
           "title": "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
           "subtitle": "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1082,12 +1131,15 @@
         "gallery": [
           {
             "caption": "BOBINADORA ERASAN E300W"
+          },
+          {
+            "caption": "BOBINADORA ERASAN E300W — detalle"
           }
         ],
         "highlight": {
           "title": "Tres versiones de cinématica: Velocidad máxima de 9.000 rpm",
           "subtitle": "permite la fabricación de varias bobinas en el mismo ciclo de trabajo",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1140,6 +1192,14 @@
           "Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente.",
           "Regulación del freno mediante software (en el caso de que el tensionador quede integrado en máquina) o mediante potenciómetro.",
           "Está dotado de dos juegos de rodillos regulables a fin de guiar el papel."
+        ],
+        "gallery": [
+          {
+            "caption": "Dispensador de papel DP1-P"
+          },
+          {
+            "caption": "Dispensador de papel DP1-P — detalle"
+          }
         ]
       },
       "dispensador-de-papel-tpe": {
@@ -1161,6 +1221,14 @@
           "Permite su montaje integrado en máquina o separado de la misma y ubicado según las necesidades del cliente.",
           "Regulación del freno mediante software (en el caso de que el tensionador quede integrado en máquina) o mediante potenciómetro.",
           "Está dotado de dos juegos de rodillos regulables a fin de guiar el papel."
+        ],
+        "gallery": [
+          {
+            "caption": "Dispensador de papel TPE"
+          },
+          {
+            "caption": "Dispensador de papel TPE — detalle"
+          }
         ]
       },
       "devanador-dp1r-ap1r": {
@@ -1182,6 +1250,14 @@
           "En el caso en que el hilo del carrete se exceda, AP1R elimina la holgura, tensando mucho más, gracias a la polea que se mueve hacia abajo.",
           "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
           "Bajo demanda se puede servir con freno electromagnético."
+        ],
+        "gallery": [
+          {
+            "caption": "Devanador DP1R AP1R"
+          },
+          {
+            "caption": "Devanador DP1R AP1R — detalle"
+          }
         ]
       },
       "devanador-dp4": {
@@ -1203,6 +1279,14 @@
           "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
           "El DP4 se sitúa detrás de la máquina con el fin de facilitar el guiado del hilo desde el carrete hasta la máquina. La caja de control puede ser posicionada en cualquier lugar que sea conveniente, como por ejemplo, en la máquina de bobinado.",
           "Bajo demanda se puede servir con freno electromagnético."
+        ],
+        "gallery": [
+          {
+            "caption": "Devanador DP4"
+          },
+          {
+            "caption": "Devanador DP4 — detalle"
+          }
         ]
       },
       "devanador-dp2": {
@@ -1224,6 +1308,14 @@
           "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
           "El DP2 se sitúa detrás de la máquina con el fin de facilitar el guiado del hilo desde el carrete hasta la máquina. La caja de control puede ser posicionada en cualquier lugar que sea conveniente, como por ejemplo, en la máquina de bobinado.",
           "Bajo demanda se puede servir con freno electromagnético."
+        ],
+        "gallery": [
+          {
+            "caption": "Devanador DP2"
+          },
+          {
+            "caption": "Devanador DP2 — detalle"
+          }
         ]
       },
       "devanador-dp1": {
@@ -1245,6 +1337,14 @@
           "El carrete tiene un sistema de freno de disco hidráulico controlado neumáticamente, y la caja de control está provisto de indicador de presión y un interruptor de corte de tensión del hilo, que permite que el cable gire libremente.",
           "El DP1 se sitúa detrás de la máquina con el fin de facilitar el guiado del hilo desde el carrete hasta la máquina. La caja de control puede ser posicionada en cualquier lugar que sea conveniente, como por ejemplo, en la máquina de bobinado.",
           "Bajo demanda se puede servir con freno electromagnético."
+        ],
+        "gallery": [
+          {
+            "caption": "Devanador DP1"
+          },
+          {
+            "caption": "Devanador DP1 — detalle"
+          }
         ]
       },
       "mandril-expandible-rectangular": {
@@ -1263,6 +1363,14 @@
           "El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo.",
           "Cada mandril tiene un orificio con llave estándar para expandir.",
           "Núcleos de hierro o láminas se pueden insertar más tarde en el proceso de fabricación de la bobina."
+        ],
+        "gallery": [
+          {
+            "caption": "Mandril expandible rectangular"
+          },
+          {
+            "caption": "Mandril expandible rectangular — detalle"
+          }
         ]
       },
       "mandril-expandible-circular": {
@@ -1281,6 +1389,14 @@
           "El mandril expandible está acabado con barras de aluminio y fabricado con una mecánica muy precisa para soportar el peso de la bobina final, mediante levas mecánica y anillos de apoyo.",
           "Cada mandril tiene un orificio con llave estándar para expandir.",
           "Núcleos de hierro o láminas se pueden insertar más tarde en el proceso de fabricación de la bobina."
+        ],
+        "gallery": [
+          {
+            "caption": "Mandril expandible circular"
+          },
+          {
+            "caption": "Mandril expandible circular — detalle"
+          }
         ]
       },
       "guiador-de-pletina-gp2": {
@@ -1300,6 +1416,14 @@
           "Este tipo de guiador es de máxima robustez ya que se suele emplear para el uso de pletinas múltiples y una gran tensión.",
           "Guiador para secciones rectangulares mediante rodillos los cuales se pueden ajustar para la sección empleada. Dispone de un guiador devanador de cinta.",
           "Este tipo de guiador se emplea para bobinar pletinas múltiples y encintar la última capa a mucha tensión."
+        ],
+        "gallery": [
+          {
+            "caption": "Guiador de pletina GP2"
+          },
+          {
+            "caption": "Guiador de pletina GP2 — detalle"
+          }
         ]
       },
       "guiador-de-pletina-gp1": {
@@ -1319,6 +1443,14 @@
           "Este tipo de guiador es de máxima robustez ya que las tensiones empleadas en estos conductores son de gran magnitud.",
           "Guiador para secciones rectangulares mediante rodillos los cuales se pueden ajustar para la sección empleada. Dispone de un guiador devanador de cinta.",
           "Este tipo de guiador se emplea para bobinar pletinas múltiples y encintar la última capa a mucha tensión."
+        ],
+        "gallery": [
+          {
+            "caption": "Guiador de pletina GP1"
+          },
+          {
+            "caption": "Guiador de pletina GP1 — detalle"
+          }
         ]
       },
       "guiador-de-hilo-gh3": {
@@ -1337,6 +1469,14 @@
           "Guiador de hilo por un pequeño tubo guiahilos",
           "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 8mm de diámetro.",
           "Su ángulo suele ser de 45º."
+        ],
+        "gallery": [
+          {
+            "caption": "Guiador de hilo GH3"
+          },
+          {
+            "caption": "Guiador de hilo GH3 — detalle"
+          }
         ]
       },
       "guiador-de-hilo-gh2": {
@@ -1355,6 +1495,14 @@
           "Guiador de hilo por un pequeño tubo guiahilos",
           "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 3mm de diámetro.",
           "Su ángulo suele ser de 45º."
+        ],
+        "gallery": [
+          {
+            "caption": "Guiador de hilo GH2"
+          },
+          {
+            "caption": "Guiador de hilo GH2 — detalle"
+          }
         ]
       },
       "guiador-de-hilo-gh1": {
@@ -1373,6 +1521,14 @@
           "Guiador de hilo por un pequeño tubo guiahilos",
           "Guiador de hilo por poleas el cual permite trabajar con hilos hasta 1mm de diámetro.",
           "Su ángulo suele ser de 45º."
+        ],
+        "gallery": [
+          {
+            "caption": "Guiador de hilo GH1"
+          },
+          {
+            "caption": "Guiador de hilo GH1 — detalle"
+          }
         ]
       },
       "tensionador-de-hilo-th3-d": {
@@ -1610,7 +1766,7 @@
         "highlight": {
           "title": "Bobinado flyer de alta precisión",
           "subtitle": "Control preciso del conductor durante el bobinado con cinemática diseñada para aplicaciones especiales.",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1659,7 +1815,7 @@
         "highlight": {
           "title": "Encintado uniforme y controlado",
           "subtitle": "Aplicación precisa de cinta aislante con control de tensión constante durante todo el ciclo.",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1752,12 +1908,15 @@
         "gallery": [
           {
             "caption": "Kit de Retrofit ERASAN"
+          },
+          {
+            "caption": "Kit de Retrofit ERASAN — detalle"
           }
         ],
         "highlight": {
           "title": "Devuelva su máquina al trabajo",
           "subtitle": "Ofrecemos un armario completamente cableado y testeado para instalar en prácticamente cualquier máquina bobinadora del mercado, equipado con la última tecnología de control ERASAN.",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {

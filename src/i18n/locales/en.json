@@ -517,12 +517,15 @@
         "gallery": [
           {
             "caption": "Folio Winding Machine"
+          },
+          {
+            "caption": "Folio Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Multiple configurations available up to 1,500 mm width",
           "subtitle": "Enables easy primary winding with very short production cycle times.",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -569,12 +572,15 @@
         "gallery": [
           {
             "caption": "ERASAN E1200C SGB Winding Machine"
+          },
+          {
+            "caption": "ERASAN E1200C SGB Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Capable of delivering 1,000 Nm at low speed",
           "subtitle": "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -617,12 +623,15 @@
         "gallery": [
           {
             "caption": "ERASAN E1200C Winding Machine"
+          },
+          {
+            "caption": "ERASAN E1200C Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Capable of delivering 1,000 Nm at low speed",
           "subtitle": "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -663,7 +672,15 @@
         "brandFeatures": {
           "title": "ERASAN Features E1500B",
           "items": []
-        }
+        },
+        "gallery": [
+          {
+            "caption": "ERASAN E1500B Winding Machine"
+          },
+          {
+            "caption": "ERASAN E1500B Winding Machine — detail"
+          }
+        ]
       },
       "cabezal-bobinador-erasan-e1200-b": {
         "title": "ERASAN E1200B Winding Machine",
@@ -678,7 +695,15 @@
         "brandFeatures": {
           "title": "ERASAN Features E1200B",
           "items": []
-        }
+        },
+        "gallery": [
+          {
+            "caption": "ERASAN E1200B Winding Machine"
+          },
+          {
+            "caption": "ERASAN E1200B Winding Machine — detail"
+          }
+        ]
       },
       "bobinadora-erasan-e1200-sgb": {
         "title": "ERASAN E1200 SGB Winding Machine",
@@ -695,12 +720,15 @@
         "gallery": [
           {
             "caption": "ERASAN E1200 SGB Winding Machine"
+          },
+          {
+            "caption": "ERASAN E1200 SGB Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Capable of delivering 1,000 Nm at low speed",
           "subtitle": "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -743,12 +771,15 @@
         "gallery": [
           {
             "caption": "ERASAN E1200 SERVOTECH Winding Machine"
+          },
+          {
+            "caption": "ERASAN E1200 SERVOTECH Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Capable of delivering 1,000 Nm at low speed",
           "subtitle": "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -791,12 +822,15 @@
         "gallery": [
           {
             "caption": "ERASAN E1200 Winding Machine"
+          },
+          {
+            "caption": "ERASAN E1200 Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Capable of delivering 1,000 Nm at low speed",
           "subtitle": "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -839,12 +873,15 @@
         "gallery": [
           {
             "caption": "ERASAN E900 SGB Winding Machine"
+          },
+          {
+            "caption": "ERASAN E900 SGB Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Capable of delivering 1,000 Nm at low speed",
           "subtitle": "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -887,12 +924,15 @@
         "gallery": [
           {
             "caption": "ERASAN E900 SERVOTECH Winding Machine"
+          },
+          {
+            "caption": "ERASAN E900 SERVOTECH Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Capable of delivering 1,000 Nm at low speed",
           "subtitle": "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -935,12 +975,15 @@
         "gallery": [
           {
             "caption": "ERASAN E900 Winding Machine"
+          },
+          {
+            "caption": "ERASAN E900 Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Capable of delivering 1,000 Nm at low speed",
           "subtitle": "allowing round wire, strip conductors, and even foil (depending on dimensions), in both copper and aluminum",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -982,12 +1025,15 @@
         "gallery": [
           {
             "caption": "ERASAN E600 Winding Machine"
+          },
+          {
+            "caption": "ERASAN E600 Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Three kinematic versions: maximum speed of 9,000 rpm",
           "subtitle": "allows manufacturing multiple coils in the same work cycle",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1029,12 +1075,15 @@
         "gallery": [
           {
             "caption": "ERASAN E300 Winding Machine"
+          },
+          {
+            "caption": "ERASAN E300 Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Three kinematic versions: maximum speed of 9,000 rpm",
           "subtitle": "allows manufacturing multiple coils in the same work cycle",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1082,12 +1131,15 @@
         "gallery": [
           {
             "caption": "ERASAN E300W Winding Machine"
+          },
+          {
+            "caption": "ERASAN E300W Winding Machine — detail"
           }
         ],
         "highlight": {
           "title": "Three kinematic versions: maximum speed of 9,000 rpm",
           "subtitle": "allows manufacturing multiple coils in the same work cycle",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1140,6 +1192,14 @@
           "Allows integrated mounting on the machine or separate placement according to customer requirements.",
           "Brake adjustment via software (when the tensioner is integrated into the machine) or via potentiometer.",
           "Equipped with two adjustable roller sets to guide the paper."
+        ],
+        "gallery": [
+          {
+            "caption": "DP1-P Paper Dispenser"
+          },
+          {
+            "caption": "DP1-P Paper Dispenser — detail"
+          }
         ]
       },
       "dispensador-de-papel-tpe": {
@@ -1161,6 +1221,14 @@
           "Allows integrated mounting on the machine or separate placement according to customer requirements.",
           "Brake adjustment via software (when the tensioner is integrated into the machine) or via potentiometer.",
           "Equipped with two adjustable roller sets to guide the paper."
+        ],
+        "gallery": [
+          {
+            "caption": "TPE Paper Dispenser"
+          },
+          {
+            "caption": "TPE Paper Dispenser — detail"
+          }
         ]
       },
       "devanador-dp1r-ap1r": {
@@ -1182,6 +1250,14 @@
           "If the spool wire exceeds the limit, AP1R removes slack by increasing tension through a downward-moving pulley.",
           "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
           "Available on request with electromagnetic brake."
+        ],
+        "gallery": [
+          {
+            "caption": "DP1R AP1R Dereeler"
+          },
+          {
+            "caption": "DP1R AP1R Dereeler — detail"
+          }
         ]
       },
       "devanador-dp4": {
@@ -1203,6 +1279,14 @@
           "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
           "The DP4 is placed behind the machine to facilitate wire guidance from the spool to the machine. The control box can be positioned wherever convenient, such as on the winding machine.",
           "Available on request with electromagnetic brake."
+        ],
+        "gallery": [
+          {
+            "caption": "DP4 Dereeler"
+          },
+          {
+            "caption": "DP4 Dereeler — detail"
+          }
         ]
       },
       "devanador-dp2": {
@@ -1224,6 +1308,14 @@
           "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
           "The DP2 is placed behind the machine to facilitate wire guidance from the spool to the machine. The control box can be positioned wherever convenient, such as on the winding machine.",
           "Available on request with electromagnetic brake."
+        ],
+        "gallery": [
+          {
+            "caption": "DP2 Dereeler"
+          },
+          {
+            "caption": "DP2 Dereeler — detail"
+          }
         ]
       },
       "devanador-dp1": {
@@ -1245,6 +1337,14 @@
           "The spool has a pneumatically controlled hydraulic disc brake system, and the control box includes a pressure gauge and wire tension cut-off switch that allows the wire to rotate freely.",
           "The DP1 is placed behind the machine to facilitate wire guidance from the spool to the machine. The control box can be positioned wherever convenient, such as on the winding machine.",
           "Available on request with electromagnetic brake."
+        ],
+        "gallery": [
+          {
+            "caption": "DP1 Dereeler"
+          },
+          {
+            "caption": "DP1 Dereeler — detail"
+          }
         ]
       },
       "mandril-expandible-rectangular": {
@@ -1263,6 +1363,14 @@
           "The expandable mandrel is finished with aluminum bars and built with very precise mechanics to support the weight of the finished coil, using mechanical cams and support rings.",
           "Each mandrel has a standard key hole for expansion.",
           "Iron cores or laminations can be inserted later in the coil manufacturing process."
+        ],
+        "gallery": [
+          {
+            "caption": "Rectangular Expandable Mandrel"
+          },
+          {
+            "caption": "Rectangular Expandable Mandrel — detail"
+          }
         ]
       },
       "mandril-expandible-circular": {
@@ -1281,6 +1389,14 @@
           "The expandable mandrel is finished with aluminum bars and built with very precise mechanics to support the weight of the finished coil, using mechanical cams and support rings.",
           "Each mandrel has a standard key hole for expansion.",
           "Iron cores or laminations can be inserted later in the coil manufacturing process."
+        ],
+        "gallery": [
+          {
+            "caption": "Round Expandable Mandrel"
+          },
+          {
+            "caption": "Round Expandable Mandrel — detail"
+          }
         ]
       },
       "guiador-de-pletina-gp2": {
@@ -1300,6 +1416,14 @@
           "This guide type is extremely robust because it is typically used with multiple strips and high tension.",
           "Guide for rectangular sections using rollers that can be adjusted to the section used. Includes a tape dereeler guide.",
           "This guide type is used to wind multiple strips and tape the final layer under high tension."
+        ],
+        "gallery": [
+          {
+            "caption": "GP2 Strip Guide"
+          },
+          {
+            "caption": "GP2 Strip Guide — detail"
+          }
         ]
       },
       "guiador-de-pletina-gp1": {
@@ -1319,6 +1443,14 @@
           "This guide type is extremely robust because the tensions used with these conductors are very high.",
           "Guide for rectangular sections using rollers that can be adjusted to the section used. Includes a tape dereeler guide.",
           "This guide type is used to wind multiple strips and tape the final layer under high tension."
+        ],
+        "gallery": [
+          {
+            "caption": "GP1 Strip Guide"
+          },
+          {
+            "caption": "GP1 Strip Guide — detail"
+          }
         ]
       },
       "guiador-de-hilo-gh3": {
@@ -1337,6 +1469,14 @@
           "Wire guide through a small wire guide tube",
           "Wire guide using pulleys that allows working with wire up to 8 mm in diameter.",
           "Its angle is usually 45°."
+        ],
+        "gallery": [
+          {
+            "caption": "GH3 Wire Guide"
+          },
+          {
+            "caption": "GH3 Wire Guide — detail"
+          }
         ]
       },
       "guiador-de-hilo-gh2": {
@@ -1355,6 +1495,14 @@
           "Wire guide through a small wire guide tube",
           "Wire guide using pulleys that allows working with wire up to 3 mm in diameter.",
           "Its angle is usually 45°."
+        ],
+        "gallery": [
+          {
+            "caption": "GH2 Wire Guide"
+          },
+          {
+            "caption": "GH2 Wire Guide — detail"
+          }
         ]
       },
       "guiador-de-hilo-gh1": {
@@ -1373,6 +1521,14 @@
           "Wire guide through a small wire guide tube",
           "Wire guide using pulleys that allows working with wire up to 1 mm in diameter.",
           "Its angle is usually 45°."
+        ],
+        "gallery": [
+          {
+            "caption": "GH1 Wire Guide"
+          },
+          {
+            "caption": "GH1 Wire Guide — detail"
+          }
         ]
       },
       "tensionador-de-hilo-th3-d": {
@@ -1610,7 +1766,7 @@
         "highlight": {
           "title": "High-precision flyer winding",
           "subtitle": "Precise conductor control during winding with kinematics designed for special applications.",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1659,7 +1815,7 @@
         "highlight": {
           "title": "Uniform, controlled taping",
           "subtitle": "Precise insulating tape application with constant tension control throughout the cycle.",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {
@@ -1752,12 +1908,15 @@
         "gallery": [
           {
             "caption": "ERASAN Retrofit Kit"
+          },
+          {
+            "caption": "ERASAN Retrofit Kit — detail"
           }
         ],
         "highlight": {
           "title": "Return your machine to production",
           "subtitle": "We offer a fully wired and tested cabinet to install on virtually any winding machine on the market, equipped with the latest ERASAN control technology.",
-          "imageIndex": 0
+          "imageIndex": 1
         },
         "benefitCards": [
           {

@@ -1,5 +1,5 @@
 import { categoriesBySection } from '../data/categories'
-import { getProductGalleryImage } from '../data/productGalleryImages'
+import { getProductGalleryImage, getProductGalleryImageCount } from '../data/productGalleryImages'
 import { getProductAccessoryImage } from '../data/productAccessoryImages'
 import { getProductSpecifications } from '../data/productSpecifications'
 import i18n from '../i18n'
@@ -65,9 +65,13 @@ function localizeRichLayout(product, t, itemKey) {
     ? galleryRaw.map((item) => (typeof item === 'string' ? item : item?.caption || ''))
     : []
 
+  const registryImageCount = getProductGalleryImageCount(product.slug)
+  const imageCount = Math.max(galleryCaptions.length, registryImageCount)
+
   const gallery =
-    galleryCaptions.length > 0
-      ? galleryCaptions.map((caption, index) => {
+    imageCount > 0
+      ? Array.from({ length: imageCount }, (_, index) => {
+          const caption = galleryCaptions[index] || ''
           const base = baseGallery[index] || {}
           const resolvedSrc =
             getProductGalleryImage(product.slug, index) ||

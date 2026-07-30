@@ -71,6 +71,7 @@ import encintadora_1 from '../assets/CoilWinding/Especiales/encintadora-2.png'
 import bobifil_0 from '../assets/Retrofit/bobifil-main.png'
 import bobifil_1 from '../assets/Retrofit/bobifil-2.png'
 import kits_retrofit_0 from '../assets/Retrofit/kits-retrofit-main.png'
+import kits_retrofit_1 from '../assets/Retrofit/kits-retrofit-2.png'
 
 export const PRODUCT_GALLERY_IMAGES = {
   'bobinadora-strip-foil': [bobinadora_strip_foil_0, bobinadora_strip_foil_1],
@@ -109,9 +110,13 @@ export const PRODUCT_GALLERY_IMAGES = {
   'maquina-flyer': [maquina_flyer_0, maquina_flyer_1],
   'encintadora': [encintadora_0, encintadora_1],
   'bobifil': [bobifil_0, bobifil_1],
-  'kits-retrofit': [kits_retrofit_0],
+  'kits-retrofit': [kits_retrofit_0, kits_retrofit_1],
 }
 
 export function getProductGalleryImage(slug, index = 0) {
   return PRODUCT_GALLERY_IMAGES[slug]?.[index] || null
+}
+
+export function getProductGalleryImageCount(slug) {
+  return PRODUCT_GALLERY_IMAGES[slug]?.length || 0
 }
