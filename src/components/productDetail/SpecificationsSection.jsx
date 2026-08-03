@@ -2,61 +2,81 @@ import { Box, Button, Card, CardContent, CircularProgress, Grid, Tooltip, Typogr
 import DownloadIcon from '@mui/icons-material/Download'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import AspectRatioIcon from '@mui/icons-material/AspectRatio'
-import BoltIcon from '@mui/icons-material/Bolt'
-import CableIcon from '@mui/icons-material/Cable'
-import CompressIcon from '@mui/icons-material/Compress'
-import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices'
-import HeightIcon from '@mui/icons-material/Height'
-import Inventory2Icon from '@mui/icons-material/Inventory2'
+import BoltRoundedIcon from '@mui/icons-material/BoltRounded'
+import CableRoundedIcon from '@mui/icons-material/CableRounded'
+import FilterTiltShiftRoundedIcon from '@mui/icons-material/FilterTiltShiftRounded'
+import GpsFixedRoundedIcon from '@mui/icons-material/GpsFixedRounded'
+import GroupWorkRoundedIcon from '@mui/icons-material/GroupWorkRounded'
+import HeightRoundedIcon from '@mui/icons-material/HeightRounded'
+import HighlightOffRoundedIcon from '@mui/icons-material/HighlightOffRounded'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
-import ScaleIcon from '@mui/icons-material/Scale'
-import SettingsIcon from '@mui/icons-material/Settings'
-import SpeedIcon from '@mui/icons-material/Speed'
-import StraightenIcon from '@mui/icons-material/Straighten'
-import ThermostatIcon from '@mui/icons-material/Thermostat'
-import WidthFullIcon from '@mui/icons-material/WidthFull'
+import ScaleRoundedIcon from '@mui/icons-material/ScaleRounded'
+import SdRoundedIcon from '@mui/icons-material/SdRounded'
+import SdStorageRoundedIcon from '@mui/icons-material/SdStorageRounded'
+import SettingsEthernetRoundedIcon from '@mui/icons-material/SettingsEthernetRounded'
+import SpeedRoundedIcon from '@mui/icons-material/SpeedRounded'
+import TouchAppRoundedIcon from '@mui/icons-material/TouchAppRounded'
+import TvRoundedIcon from '@mui/icons-material/TvRounded'
+import WindowRoundedIcon from '@mui/icons-material/WindowRounded'
 
+const HORIZONTAL_HEIGHT_SX = { transform: 'rotate(90deg)' }
+
+/** Strict client documentation icon keys → MUI Rounded icons */
 const ICON_BY_KEY = {
-  speed: SpeedIcon,
-  power: BoltIcon,
-  voltage: ElectricalServicesIcon,
-  temperature: ThermostatIcon,
-  weight: ScaleIcon,
-  dimension: StraightenIcon,
-  width: WidthFullIcon,
-  height: HeightIcon,
-  diameter: AspectRatioIcon,
-  tension: CompressIcon,
-  wire: CableIcon,
-  capacity: Inventory2Icon,
-  settings: SettingsIcon,
-  manufacturing: PrecisionManufacturingIcon,
+  cableRounded: { Icon: CableRoundedIcon },
+  heightRounded: { Icon: HeightRoundedIcon, sx: HORIZONTAL_HEIGHT_SX },
+  speedRounded: { Icon: SpeedRoundedIcon },
+  windowsRounded: { Icon: WindowRoundedIcon },
+  highlightOffRounded: { Icon: HighlightOffRoundedIcon },
+  filterTiltShiftRounded: { Icon: FilterTiltShiftRoundedIcon },
+  touchAppRounded: { Icon: TouchAppRoundedIcon },
+  sdStorageRounded: { Icon: SdStorageRoundedIcon },
+  gpsFixedRounded: { Icon: GpsFixedRoundedIcon },
+  groupWorkRounded: { Icon: GroupWorkRoundedIcon },
+  tvRounded: { Icon: TvRoundedIcon },
+  sdRounded: { Icon: SdRoundedIcon },
+  boltRounded: { Icon: BoltRoundedIcon },
+  scaleRounded: { Icon: ScaleRoundedIcon },
+  settingsEthernetRounded: { Icon: SettingsEthernetRoundedIcon },
 }
 
 const LABEL_ICON_RULES = [
-  { pattern: /velocidad|rpm|speed/i, icon: SpeedIcon },
-  { pattern: /potencia|power|kw|nm/i, icon: BoltIcon },
-  { pattern: /voltaje|voltage|tension electric|corriente/i, icon: ElectricalServicesIcon },
-  { pattern: /temperatura|temperature|°c/i, icon: ThermostatIcon },
-  { pattern: /peso|weight|kg/i, icon: ScaleIcon },
-  { pattern: /ancho|width|anchura/i, icon: WidthFullIcon },
-  { pattern: /alto|height|altura|longitud|length/i, icon: HeightIcon },
-  { pattern: /di[aá]metro|diameter|mm|cm|metro|dimension|tama[nñ]o|medida/i, icon: StraightenIcon },
-  { pattern: /tensi[oó]n|tension|freno/i, icon: CompressIcon },
-  { pattern: /hilo|wire|pleta|strip|folio/i, icon: CableIcon },
-  { pattern: /capacidad|capacity|carrete|bobina/i, icon: Inventory2Icon },
-  { pattern: /control|configuraci[oó]n|setting/i, icon: SettingsIcon },
+  { pattern: /di[aá]metro del hilo|wire diameter/i, key: 'cableRounded' },
+  {
+    pattern: /longitud m[aá]xima de bobinado|maximum winding length|maximum winding zone/i,
+    key: 'heightRounded',
+  },
+  { pattern: /velocidad m[aá]xima|maximum speed|winding speed/i, key: 'speedRounded' },
+  { pattern: /^software$/i, key: 'windowsRounded' },
+  { pattern: /di[aá]metro entre puntos|distance between points|point diameter/i, key: 'highlightOffRounded' },
+  {
+    pattern: /di[aá]metro m[aá]x\.?\s*(de|del)\s*bobinado|maximum coil diameter|maximum winding diameter/i,
+    key: 'filterTiltShiftRounded',
+  },
+  { pattern: /^control$/i, key: 'touchAppRounded' },
+  { pattern: /capacidad de memoria|memory capacity/i, key: 'sdStorageRounded' },
+  { pattern: /precisi[oó]n del guiador|guide precision|wire guide precision/i, key: 'gpsFixedRounded' },
+  { pattern: /tensi[oó]n el[eé]ctrica|electrical voltage/i, key: 'groupWorkRounded' },
+  { pattern: /^pantalla$|^screen$|display/i, key: 'tvRounded' },
+  { pattern: /ampliaci[oó]n de memoria|memory expansion/i, key: 'sdRounded' },
+  { pattern: /potencia m[aá]xima|maximum power/i, key: 'boltRounded' },
+  { pattern: /peso neto|net weight/i, key: 'scaleRounded' },
+  { pattern: /comunicaci[oó]n|communication|ethernet/i, key: 'settingsEthernetRounded' },
 ]
 
 export function getSpecificationIcon(spec) {
-  if (spec?.icon && ICON_BY_KEY[spec.icon]) {
-    return ICON_BY_KEY[spec.icon]
+  const key = spec?.icon
+  if (key && ICON_BY_KEY[key]) {
+    return ICON_BY_KEY[key]
   }
 
   const label = spec?.label || ''
   const match = LABEL_ICON_RULES.find((rule) => rule.pattern.test(label))
-  return match?.icon || PrecisionManufacturingIcon
+  if (match?.key && ICON_BY_KEY[match.key]) {
+    return ICON_BY_KEY[match.key]
+  }
+
+  return { Icon: PrecisionManufacturingIcon }
 }
 
 function SpecDownloadButton({ specPdf, size = 'large', sx }) {
@@ -109,7 +129,7 @@ function SpecDownloadButton({ specPdf, size = 'large', sx }) {
 }
 
 function SpecificationCard({ spec, primaryColor, primaryAlpha }) {
-  const Icon = getSpecificationIcon(spec)
+  const { Icon, sx: iconSx } = getSpecificationIcon(spec)
 
   return (
     <Box
@@ -137,7 +157,7 @@ function SpecificationCard({ spec, primaryColor, primaryAlpha }) {
           color: primaryColor,
         }}
       >
-        <Icon sx={{ fontSize: 24 }} />
+        <Icon sx={{ fontSize: 24, ...iconSx }} />
       </Box>
       <Box sx={{ minWidth: 0 }}>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 0.5, lineHeight: 1.4 }}>
@@ -171,7 +191,7 @@ export default function SpecificationsSection({
           {specifications?.length > 0 && (
             <Grid container spacing={2} sx={{ mb: specPdf?.url ? 3 : 0 }}>
               {specifications.map((spec, index) => (
-                <Grid item xs={12} sm={6} md={4} key={index}>
+                <Grid item xs={12} sm={6} md={3} key={index}>
                   <SpecificationCard
                     spec={spec}
                     primaryColor={primaryColor}

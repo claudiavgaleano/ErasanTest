@@ -474,32 +474,32 @@
           {
             "label": "Maximum winding zone",
             "value": "1,800 mm",
-            "icon": "dimension"
+            "icon": "heightRounded"
           },
           {
             "label": "Maximum coil diameter",
             "value": "2,300 mm",
-            "icon": "diameter"
+            "icon": "filterTiltShiftRounded"
           },
           {
             "label": "Maximum foil width",
             "value": "400 mm",
-            "icon": "width"
+            "icon": "heightRounded"
           },
           {
             "label": "Foil thickness",
             "value": "0.5 – 3.0 mm",
-            "icon": "dimension"
+            "icon": "heightRounded"
           },
           {
             "label": "Winding speed",
             "value": "Up to 120 rpm",
-            "icon": "speed"
+            "icon": "speedRounded"
           },
           {
             "label": "Control",
             "value": "CNC with 7\" touchscreen",
-            "icon": "settings"
+            "icon": "touchAppRounded"
           }
         ]
       },
@@ -754,7 +754,89 @@
         "brandFeatures": {
           "title": "ERASAN Features E1200 SGB",
           "items": []
-        }
+        },
+        "specifications": [
+          {
+            "label": "Diámetro de hilo",
+            "value": "0,01 a 3 mm",
+            "icon": "cableRounded"
+          },
+          {
+            "label": "Diámetro entre puntos",
+            "value": "1250 mm",
+            "icon": "highlightOffRounded"
+          },
+          {
+            "label": "Precisión del guiador",
+            "value": "0,01 mm",
+            "icon": "gpsFixedRounded"
+          },
+          {
+            "label": "Potencia máxima",
+            "value": "5,5 kW",
+            "icon": "boltRounded"
+          },
+          {
+            "label": "Longitud máxima de bobinado",
+            "value": "1100 mm",
+            "icon": "heightRounded"
+          },
+          {
+            "label": "Diámetro máx. de bobinado",
+            "value": "800 mm",
+            "icon": "filterTiltShiftRounded"
+          },
+          {
+            "label": "Tensión eléctrica",
+            "value": "3x400+N+GND",
+            "icon": "groupWorkRounded"
+          },
+          {
+            "label": "Peso neto",
+            "value": "1200 kg",
+            "icon": "scaleRounded"
+          },
+          {
+            "label": "Velocidad máxima",
+            "value": "750 rpm",
+            "icon": "speedRounded"
+          },
+          {
+            "label": "Control",
+            "value": "CNC última generación",
+            "icon": "touchAppRounded"
+          },
+          {
+            "label": "Pantalla",
+            "value": "7\" Color",
+            "icon": "tvRounded"
+          },
+          {
+            "label": "Comunicación",
+            "value": "Ethernet Incluida",
+            "icon": "settingsEthernetRounded"
+          },
+          {
+            "label": "Software",
+            "value": "Winbobbin (Windows)",
+            "icon": "windowsRounded"
+          },
+          {
+            "label": "Capacidad de memoria",
+            "value": "10000 programas (200 bobinados/programa)",
+            "icon": "sdStorageRounded"
+          },
+          {
+            "label": "Ampliación de memoria",
+            "value": "SD Card (Opcional)",
+            "icon": "sdRounded"
+          },
+          {
+            "label": "Rangos de velocidad",
+            "value": "500 rpm / 168 Nm; 750 rpm / 112 Nm; 250 rpm / 336 Nm; 333 rpm / 265 Nm; 111 rpm / 796 Nm; 166 rpm / 504 Nm; 333 rpm / 252 Nm; 500 rpm / 168 Nm; 166 rpm / 504 Nm; 222 rpm / 394 Nm; 74 rpm / 1194 Nm; 111 rpm / 756 Nm",
+            "icon": "speedRounded"
+          }
+        ]
       },
       "bobinadora-erasan-e1200-servotech": {
         "title": "ERASAN E1200 SERVOTECH Winding Machine",
@@ -805,7 +887,89 @@
         "brandFeatures": {
           "title": "ERASAN Features E1200 SERVOTECH",
           "items": []
-        }
+        },
+        "specifications": [
+          {
+            "label": "Diámetro de hilo",
+            "value": "0,01 a 3 mm",
+            "icon": "cableRounded"
+          },
+          {
+            "label": "Diámetro entre puntos",
+            "value": "1250 mm",
+            "icon": "highlightOffRounded"
+          },
+          {
+            "label": "Precisión del guiador",
+            "value": "0,01 mm",
+            "icon": "gpsFixedRounded"
+          },
+          {
+            "label": "Potencia máxima",
+            "value": "5,5 kW",
+            "icon": "boltRounded"
+          },
+          {
+            "label": "Longitud máxima de bobinado",
+            "value": "1100 mm",
+            "icon": "heightRounded"
+          },
+          {
+            "label": "Diámetro máx. de bobinado",
+            "value": "800 mm",
+            "icon": "filterTiltShiftRounded"
+          },
+          {
+            "label": "Tensión eléctrica",
+            "value": "380vngndvca50hz",
+            "icon": "groupWorkRounded"
+          },
+          {
+            "label": "Peso neto",
+            "value": "1200 kg",
+            "icon": "scaleRounded"
+          },
+          {
+            "label": "Velocidad máxima",
+            "value": "500 rpm",
+            "icon": "speedRounded"
+          },
+          {
+            "label": "Control",
+            "value": "CNC última generación",
+            "icon": "touchAppRounded"
+          },
+          {
+            "label": "Pantalla",
+            "value": "7\" Color",
+            "icon": "tvRounded"
+          },
+          {
+            "label": "Comunicación",
+            "value": "Ethernet Incluida",
+            "icon": "settingsEthernetRounded"
+          },
+          {
+            "label": "Software",
+            "value": "Winbobbin (Windows)",
+            "icon": "windowsRounded"
+          },
+          {
+            "label": "Capacidad de memoria",
+            "value": "10000 programas (200 bobinados/programa)",
+            "icon": "sdStorageRounded"
+          },
+          {
+            "label": "Ampliación de memoria",
+            "value": "SD Card (Opcional)",
+            "icon": "sdRounded"
+          },
+          {
+            "label": "Rangos de velocidad",
+            "value": "485 rpm / 205 Nm; 81 rpm / 1232 Nm; 244 rpm / 410 Nm; 81 rpm / 1232 Nm",
+            "icon": "speedRounded"
+          }
+        ]
       },
       "bobinadora-erasan-e1200": {
         "title": "ERASAN E1200 Winding Machine",
@@ -856,7 +1020,89 @@
         "brandFeatures": {
           "title": "ERASAN Features E1200",
           "items": []
-        }
+        },
+        "specifications": [
+          {
+            "label": "Diámetro de hilo",
+            "value": "0,01 a 3 mm",
+            "icon": "cableRounded"
+          },
+          {
+            "label": "Diámetro entre puntos",
+            "value": "1250 mm",
+            "icon": "highlightOffRounded"
+          },
+          {
+            "label": "Precisión del guiador",
+            "value": "0,01 mm",
+            "icon": "gpsFixedRounded"
+          },
+          {
+            "label": "Potencia máxima",
+            "value": "5,5 kW",
+            "icon": "boltRounded"
+          },
+          {
+            "label": "Longitud máxima de bobinado",
+            "value": "1100 mm",
+            "icon": "heightRounded"
+          },
+          {
+            "label": "Diámetro máx. de bobinado",
+            "value": "800 mm",
+            "icon": "filterTiltShiftRounded"
+          },
+          {
+            "label": "Tensión eléctrica",
+            "value": "380vngndvca50hz",
+            "icon": "groupWorkRounded"
+          },
+          {
+            "label": "Peso neto",
+            "value": "1200 kg",
+            "icon": "scaleRounded"
+          },
+          {
+            "label": "Velocidad máxima",
+            "value": "500 rpm",
+            "icon": "speedRounded"
+          },
+          {
+            "label": "Control",
+            "value": "CNC última generación",
+            "icon": "touchAppRounded"
+          },
+          {
+            "label": "Pantalla",
+            "value": "7\" Color",
+            "icon": "tvRounded"
+          },
+          {
+            "label": "Comunicación",
+            "value": "Ethernet Incluida",
+            "icon": "settingsEthernetRounded"
+          },
+          {
+            "label": "Software",
+            "value": "Winbobbin (Windows)",
+            "icon": "windowsRounded"
+          },
+          {
+            "label": "Capacidad de memoria",
+            "value": "10000 programas (200 bobinados/programa)",
+            "icon": "sdStorageRounded"
+          },
+          {
+            "label": "Ampliación de memoria",
+            "value": "SD Card (Opcional)",
+            "icon": "sdRounded"
+          },
+          {
+            "label": "Rangos de velocidad",
+            "value": "500 rpm / 172 Nm; 96 rpm / 1033 Nm; 250 rpm / 413 Nm; 69 rpm / 1447 Nm",
+            "icon": "speedRounded"
+          }
+        ]
       },
       "bobinadora-erasan-e900-sgb": {
         "title": "ERASAN E900 SGB Winding Machine",
@@ -907,7 +1153,94 @@
         "brandFeatures": {
           "title": "ERASAN Features E900 SGB",
           "items": []
-        }
+        },
+        "specifications": [
+          {
+            "label": "Diámetro de hilo",
+            "value": "30 mm",
+            "icon": "cableRounded"
+          },
+          {
+            "label": "Diámetro entre puntos",
+            "value": "900 mm",
+            "icon": "highlightOffRounded"
+          },
+          {
+            "label": "Precisión del guiador",
+            "value": "0,01 mm",
+            "icon": "gpsFixedRounded"
+          },
+          {
+            "label": "Potencia máxima",
+            "value": "1000 kg",
+            "icon": "boltRounded"
+          },
+          {
+            "label": "Longitud máxima de bobinado",
+            "value": "800 mm",
+            "icon": "heightRounded"
+          },
+          {
+            "label": "Diámetro máx. de bobinado",
+            "value": "500 mm",
+            "icon": "filterTiltShiftRounded"
+          },
+          {
+            "label": "Tensión eléctrica",
+            "value": "3x400+N+GND",
+            "icon": "groupWorkRounded"
+          },
+          {
+            "label": "Peso neto",
+            "value": "1100 kg",
+            "icon": "scaleRounded"
+          },
+          {
+            "label": "Velocidad máxima",
+            "value": "3000 rpm",
+            "icon": "speedRounded"
+          },
+          {
+            "label": "Control",
+            "value": "CNC última generación",
+            "icon": "touchAppRounded"
+          },
+          {
+            "label": "Pantalla",
+            "value": "7\" Color",
+            "icon": "tvRounded"
+          },
+          {
+            "label": "Comunicación",
+            "value": "Ethernet Incluida",
+            "icon": "settingsEthernetRounded"
+          },
+          {
+            "label": "Software",
+            "value": "Winbobbin (Windows)",
+            "icon": "windowsRounded"
+          },
+          {
+            "label": "Capacidad de memoria",
+            "value": "10000 programas (200 bobinados/programa)",
+            "icon": "sdStorageRounded"
+          },
+          {
+            "label": "Ampliación de memoria",
+            "value": "SD Card (Opcional)",
+            "icon": "sdRounded"
+          },
+          {
+            "label": "Rangos de velocidad",
+            "value": "1500 rpm / 26 Nm; 3000 rpm / 15 Nm; 500 rpm / 78 Nm; 250 rpm / 156 Nm; 1000 rpm / 39 Nm; 2000 rpm / 19 Nm; 330 rpm / 117 Nm; 166 rpm / 234 Nm",
+            "icon": "speedRounded"
+          },
+          {
+            "label": "Peso máximo entre puntos",
+            "value": "1100 kg",
+            "icon": "scaleRounded"
+          }
+        ]
       },
       "bobinadora-erasan-e900-servotech": {
         "title": "ERASAN E900 SERVOTECH Winding Machine",
@@ -958,7 +1291,89 @@
         "brandFeatures": {
           "title": "ERASAN Features E900 SERVOTECH",
           "items": []
-        }
+        },
+        "specifications": [
+          {
+            "label": "Diámetro de hilo",
+            "value": "0,01 a 3 mm",
+            "icon": "cableRounded"
+          },
+          {
+            "label": "Diámetro entre puntos",
+            "value": "910 mm",
+            "icon": "highlightOffRounded"
+          },
+          {
+            "label": "Precisión del guiador",
+            "value": "0,01 mm",
+            "icon": "gpsFixedRounded"
+          },
+          {
+            "label": "Potencia máxima",
+            "value": "5,5 kW",
+            "icon": "boltRounded"
+          },
+          {
+            "label": "Longitud máxima de bobinado",
+            "value": "800 mm",
+            "icon": "heightRounded"
+          },
+          {
+            "label": "Diámetro máx. de bobinado",
+            "value": "500 mm",
+            "icon": "filterTiltShiftRounded"
+          },
+          {
+            "label": "Tensión eléctrica",
+            "value": "380vngndvca50hz",
+            "icon": "groupWorkRounded"
+          },
+          {
+            "label": "Peso neto",
+            "value": "1150 kg",
+            "icon": "scaleRounded"
+          },
+          {
+            "label": "Velocidad máxima",
+            "value": "500 rpm",
+            "icon": "speedRounded"
+          },
+          {
+            "label": "Control",
+            "value": "CNC última generación",
+            "icon": "touchAppRounded"
+          },
+          {
+            "label": "Pantalla",
+            "value": "7\" Color",
+            "icon": "tvRounded"
+          },
+          {
+            "label": "Comunicación",
+            "value": "Ethernet Incluida",
+            "icon": "settingsEthernetRounded"
+          },
+          {
+            "label": "Software",
+            "value": "Winbobbin (Windows)",
+            "icon": "windowsRounded"
+          },
+          {
+            "label": "Capacidad de memoria",
+            "value": "10000 programas (200 bobinados/programa)",
+            "icon": "sdStorageRounded"
+          },
+          {
+            "label": "Ampliación de memoria",
+            "value": "SD Card (Opcional)",
+            "icon": "sdRounded"
+          },
+          {
+            "label": "Rangos de velocidad",
+            "value": "485 rpm / 205 Nm; 81 rpm / 1232 Nm; 244 rpm / 410 Nm; 81 rpm / 1232 Nm",
+            "icon": "speedRounded"
+          }
+        ]
       },
       "bobinadora-erasan-e900": {
         "title": "ERASAN E900 Winding Machine",
@@ -1009,7 +1424,89 @@
         "brandFeatures": {
           "title": "ERASAN Features E900",
           "items": []
-        }
+        },
+        "specifications": [
+          {
+            "label": "Diámetro de hilo",
+            "value": "0,01 a 3 mm",
+            "icon": "cableRounded"
+          },
+          {
+            "label": "Diámetro entre puntos",
+            "value": "910 mm",
+            "icon": "highlightOffRounded"
+          },
+          {
+            "label": "Precisión del guiador",
+            "value": "0,01 mm",
+            "icon": "gpsFixedRounded"
+          },
+          {
+            "label": "Potencia máxima",
+            "value": "5,5 kW",
+            "icon": "boltRounded"
+          },
+          {
+            "label": "Longitud máxima de bobinado",
+            "value": "800 mm",
+            "icon": "heightRounded"
+          },
+          {
+            "label": "Diámetro máx. de bobinado",
+            "value": "500 mm",
+            "icon": "filterTiltShiftRounded"
+          },
+          {
+            "label": "Tensión eléctrica",
+            "value": "380vngndvca50hz",
+            "icon": "groupWorkRounded"
+          },
+          {
+            "label": "Peso neto",
+            "value": "1150 kg",
+            "icon": "scaleRounded"
+          },
+          {
+            "label": "Velocidad máxima",
+            "value": "500 rpm",
+            "icon": "speedRounded"
+          },
+          {
+            "label": "Control",
+            "value": "CNC última generación",
+            "icon": "touchAppRounded"
+          },
+          {
+            "label": "Pantalla",
+            "value": "7\" Color",
+            "icon": "tvRounded"
+          },
+          {
+            "label": "Comunicación",
+            "value": "Ethernet Incluida",
+            "icon": "settingsEthernetRounded"
+          },
+          {
+            "label": "Software",
+            "value": "Winbobbin (Windows)",
+            "icon": "windowsRounded"
+          },
+          {
+            "label": "Capacidad de memoria",
+            "value": "10000 programas (200 bobinados/programa)",
+            "icon": "sdStorageRounded"
+          },
+          {
+            "label": "Ampliación de memoria",
+            "value": "SD Card (Opcional)",
+            "icon": "sdRounded"
+          },
+          {
+            "label": "Rangos de velocidad",
+            "value": "500 rpm / 172 Nm; 96 rpm / 1033 Nm; 250 rpm / 413 Nm; 69 rpm / 1447 Nm",
+            "icon": "speedRounded"
+          }
+        ]
       },
       "bobinadora-erasan-e600": {
         "title": "ERASAN E600 Winding Machine",
@@ -1059,7 +1556,89 @@
         "brandFeatures": {
           "title": "ERASAN Features E600",
           "items": []
-        }
+        },
+        "specifications": [
+          {
+            "label": "Diámetro de hilo",
+            "value": "0,01 a 3 mm",
+            "icon": "cableRounded"
+          },
+          {
+            "label": "Diámetro entre puntos",
+            "value": "720 mm",
+            "icon": "highlightOffRounded"
+          },
+          {
+            "label": "Precisión del guiador",
+            "value": "0,01 mm",
+            "icon": "gpsFixedRounded"
+          },
+          {
+            "label": "Potencia máxima",
+            "value": "2,2 kW",
+            "icon": "boltRounded"
+          },
+          {
+            "label": "Longitud máxima de bobinado",
+            "value": "520 mm",
+            "icon": "heightRounded"
+          },
+          {
+            "label": "Diámetro máx. de bobinado",
+            "value": "300 mm",
+            "icon": "filterTiltShiftRounded"
+          },
+          {
+            "label": "Tensión eléctrica",
+            "value": "380vngndvca50hz",
+            "icon": "groupWorkRounded"
+          },
+          {
+            "label": "Peso neto",
+            "value": "600 kg",
+            "icon": "scaleRounded"
+          },
+          {
+            "label": "Velocidad máxima",
+            "value": "9000 rpm",
+            "icon": "speedRounded"
+          },
+          {
+            "label": "Control",
+            "value": "CNC última generación",
+            "icon": "touchAppRounded"
+          },
+          {
+            "label": "Pantalla",
+            "value": "7\" Color",
+            "icon": "tvRounded"
+          },
+          {
+            "label": "Comunicación",
+            "value": "Ethernet Incluida",
+            "icon": "settingsEthernetRounded"
+          },
+          {
+            "label": "Software",
+            "value": "Winbobbin (Windows)",
+            "icon": "windowsRounded"
+          },
+          {
+            "label": "Capacidad de memoria",
+            "value": "10000 programas (200 bobinados/programa)",
+            "icon": "sdStorageRounded"
+          },
+          {
+            "label": "Ampliación de memoria",
+            "value": "SD Card (Opcional)",
+            "icon": "sdRounded"
+          },
+          {
+            "label": "Rangos de velocidad",
+            "value": "Posición correa 1: 3000 rpm / 6 Nm; 1500 rpm / 12 Nm; 750 rpm / 24 Nm | Posición correa 2: 6000 rpm / 3 Nm; 3000 rpm / 6 Nm; 1500 rpm / 12 Nm | Posición correa 3: 9000 rpm / 2 Nm; 6000 rpm / 3 Nm; 3000 rpm / 6 Nm",
+            "icon": "speedRounded"
+          }
+        ]
       },
       "bobinadora-erasan-e300": {
         "title": "ERASAN E300 Winding Machine",
@@ -1115,7 +1694,89 @@
         "brandFeatures": {
           "title": "ERASAN Features E300",
           "items": []
-        }
+        },
+        "specifications": [
+          {
+            "label": "Diámetro de hilo",
+            "value": "0,01 a 3 mm",
+            "icon": "cableRounded"
+          },
+          {
+            "label": "Diámetro entre puntos",
+            "value": "550 mm",
+            "icon": "highlightOffRounded"
+          },
+          {
+            "label": "Precisión del guiador",
+            "value": "0,01 mm",
+            "icon": "gpsFixedRounded"
+          },
+          {
+            "label": "Potencia máxima",
+            "value": "2,2 kW",
+            "icon": "boltRounded"
+          },
+          {
+            "label": "Longitud máxima de bobinado",
+            "value": "390 mm",
+            "icon": "heightRounded"
+          },
+          {
+            "label": "Diámetro máx. de bobinado",
+            "value": "350 mm",
+            "icon": "filterTiltShiftRounded"
+          },
+          {
+            "label": "Tensión eléctrica",
+            "value": "Monofásica 220V / 50 Hz",
+            "icon": "groupWorkRounded"
+          },
+          {
+            "label": "Peso neto",
+            "value": "205 kg",
+            "icon": "scaleRounded"
+          },
+          {
+            "label": "Velocidad máxima",
+            "value": "9000 rpm",
+            "icon": "speedRounded"
+          },
+          {
+            "label": "Control",
+            "value": "CNC última generación",
+            "icon": "touchAppRounded"
+          },
+          {
+            "label": "Pantalla",
+            "value": "7\" Color",
+            "icon": "tvRounded"
+          },
+          {
+            "label": "Comunicación",
+            "value": "Ethernet Incluida",
+            "icon": "settingsEthernetRounded"
+          },
+          {
+            "label": "Software",
+            "value": "Winbobbin (Windows)",
+            "icon": "windowsRounded"
+          },
+          {
+            "label": "Capacidad de memoria",
+            "value": "10000 programas (200 bobinados/programa)",
+            "icon": "sdStorageRounded"
+          },
+          {
+            "label": "Ampliación de memoria",
+            "value": "SD Card (Opcional)",
+            "icon": "sdRounded"
+          },
+          {
+            "label": "Rangos de velocidad",
+            "value": "Posición correa 1: 3000 rpm / 6 Nm; 1500 rpm / 12 Nm; 750 rpm / 24 Nm | Posición correa 2: 6000 rpm / 3 Nm; 3000 rpm / 6 Nm; 1500 rpm / 12 Nm | Posición correa 3: 9000 rpm / 2 Nm; 6000 rpm / 3 Nm; 3000 rpm / 6 Nm",
+            "icon": "speedRounded"
+          }
+        ]
       },
       "bobinadora-erasan-e300w": {
         "title": "ERASAN E300W Winding Machine",
