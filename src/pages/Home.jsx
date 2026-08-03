@@ -8,6 +8,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { useThemeMode } from '../context/ThemeContext'
 import Carousel from '../components/Carousel'
 import ClientLogosSection from '../components/ClientLogosSection'
+import FeaturedProductsSection from '../components/FeaturedProductsSection'
 import tileErasanLogo from '../assets/Home/TileErasan.jpg'
 import tileErasanPNG from '../assets/Home/TileErasan.png'
 
@@ -297,6 +298,9 @@ export default function Home() {
           </Grid>
         </Container>
       </Box>
+
+      {/* Featured Products — one from each main category */}
+      <FeaturedProductsSection />
 
       {/* CTA Section */}
       <Box

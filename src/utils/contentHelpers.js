@@ -41,6 +41,28 @@ export function pickRelatedProducts(allProducts, currentProduct, limit = 3) {
   return [...sameCategory, ...otherInSection].slice(0, limit)
 }
 
+/** Preferred featured product slug per main site section (home page). */
+export const FEATURED_PRODUCT_SLUGS_BY_SECTION = {
+  coilWinding: 'bobinadora-erasan-e300',
+  accessories: 'tensionador-de-hilo-th3',
+  specialProjects: 'bobinadora-e600-long',
+  retrofit: 'kits-retrofit',
+}
+
+export function pickFeaturedProductsBySection(allProducts, preferredSlugs = FEATURED_PRODUCT_SLUGS_BY_SECTION) {
+  if (!Array.isArray(allProducts) || allProducts.length === 0) return []
+
+  const sections = ['coilWinding', 'accessories', 'specialProjects', 'retrofit']
+
+  return sections
+    .map((section) => {
+      const preferredSlug = preferredSlugs[section]
+      const inSection = allProducts.filter((product) => product.section === section)
+      return inSection.find((product) => product.slug === preferredSlug) || inSection[0] || null
+    })
+    .filter(Boolean)
+}
+
 export function toTitleCase(text) {
   if (!text || typeof text !== 'string') return text
   return text
