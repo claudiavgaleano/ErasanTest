@@ -28,6 +28,7 @@ import { getProductSpecPdf } from '../data/productSpecPdfs'
 import ProductGallery from '../components/productDetail/ProductGallery'
 import BenefitCardsSection from '../components/productDetail/BenefitCardsSection'
 import SpecificationsSection from '../components/productDetail/SpecificationsSection'
+import RelatedProductsSection from '../components/productDetail/RelatedProductsSection'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -723,6 +724,8 @@ export default function ProductDetail() {
               t={t}
             />
           )}
+
+          <RelatedProductsSection currentProduct={product} mode={mode} />
 
           <Box sx={{ mt: 6 }}>
             <Divider sx={{ mb: 4 }} />

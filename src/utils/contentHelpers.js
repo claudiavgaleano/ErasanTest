@@ -17,6 +17,30 @@ export function getSectionBackLink(section) {
   return SECTION_BACK_LINKS[section] || { labelKey: 'nav.services', path: '/products' }
 }
 
+const SECTION_I18N_PREFIX = {
+  coilWinding: 'coilWinding',
+  specialProjects: 'specialProjects',
+  accessories: 'accesories',
+  retrofit: 'retrofit',
+}
+
+export function getSectionI18nPrefix(section) {
+  return SECTION_I18N_PREFIX[section] || 'products'
+}
+
+export function pickRelatedProducts(allProducts, currentProduct, limit = 3) {
+  if (!currentProduct?.section || !Array.isArray(allProducts)) return []
+
+  const pool = allProducts.filter(
+    (product) => product.section === currentProduct.section && product.slug !== currentProduct.slug
+  )
+
+  const sameCategory = pool.filter((product) => product.categorySlug === currentProduct.categorySlug)
+  const otherInSection = pool.filter((product) => product.categorySlug !== currentProduct.categorySlug)
+
+  return [...sameCategory, ...otherInSection].slice(0, limit)
+}
+
 export function toTitleCase(text) {
   if (!text || typeof text !== 'string') return text
   return text
