@@ -5,7 +5,7 @@ import PhoneIcon from '@mui/icons-material/Phone'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import { useThemeMode } from '../context/ThemeContext'
-
+import contactInfoImage from '../assets/contact/contact-info.png'
 export default function Contact() {
   const { t } = useTranslation()
   const { mode } = useThemeMode()
@@ -22,14 +22,17 @@ export default function Contact() {
     height: '100%',
     position: 'relative',
     overflow: 'hidden',
-    background: mode === 'dark'
+   /*  background: mode === 'dark'
       ? 'linear-gradient(145deg, rgba(220, 38, 38, 0.18) 0%, rgba(30, 41, 59, 0.92) 45%, rgba(15, 23, 42, 0.96) 100%)'
-      : 'linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(254, 242, 242, 0.88) 55%, rgba(254, 226, 226, 0.65) 100%)',
+      : 'linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(254, 242, 242, 0.88) 55%, rgba(254, 226, 226, 0.65) 100%)', */
     backdropFilter: 'blur(16px)',
     border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.14)'}`,
-    boxShadow: mode === 'dark'
+   /*  boxShadow: mode === 'dark'
       ? '0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
-      : '0 12px 40px rgba(185, 28, 28, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.95)',
+      : '0 12px 40px rgba(185, 28, 28, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.95)', */
+      boxShadow: mode === 'dark'
+      ? '0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
+      : '0 12px 40px rgba(0,0,0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.95)',
     '&::before': {
       content: '""',
       position: 'absolute',
@@ -222,98 +225,101 @@ export default function Contact() {
           <Box
             sx={{
               display: 'flex',
-              flexDirection: { xs: 'column', md: 'row' },
+              flexDirection:'column',
               gap: { xs: 4, md: 4 },
               alignItems: { md: 'flex-start' },
             }}
           >
             {/* Contact info — ~30% */}
-            <Box
-              sx={{
-                width: { xs: '100%', md: '30%' },
-                flexShrink: 0,
-                position: 'relative',
-                zIndex: 1,
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: 4, ...glossyPanelSx, }}>
+              <img src={contactInfoImage} alt="Contact Info"
+              style={{
+                width: '30%',
+                height: 'auto',
+                objectFit: 'cover',
+                objectPosition: 'center',
               }}
-            >
-              <Box sx={glossyPanelSx}>
-                <Typography
-                  variant="overline"
-                  sx={{
-                    color: primaryColor,
-                    fontWeight: 700,
-                    letterSpacing: 3,
-                    fontSize: '0.78rem',
-                    mb: 3,
-                    display: 'block',
-                    position: 'relative',
-                  }}
-                >
-                  {t('contact.infoTitle')}
-                </Typography>
+            />
+              
+                <Box sx={{ width: '70%'}}>
+                  <Typography
+                    variant="overline"
+                    sx={{
+                      color: primaryColor,
+                      fontWeight: 700,
+                      letterSpacing: 3,
+                      fontSize: '0.78rem',
+                      mb: 3,
+                      display: 'block',
+                      position: 'relative',
+                    }}
+                  >
+                    {t('contact.infoTitle')}
+                  </Typography>
 
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, position: 'relative' }}>
-                  {contactInfoItems.map((info, index) => (
-                    <Card
-                      key={index}
-                      component={info.href ? 'a' : 'div'}
-                      href={info.href}
-                      sx={{
-                        ...getContactCardSx(Boolean(info.href)),
-                        animation: `fadeInLeft 0.6s ease-out ${index * 0.1}s backwards`,
-                        '@keyframes fadeInLeft': {
-                          from: { opacity: 0, transform: 'translateX(-16px)' },
-                          to: { opacity: 1, transform: 'translateX(0)' },
-                        },
-                      }}
-                    >
-                      <CardContent
+                  <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, position: 'relative' }}>
+                    {contactInfoItems.map((info, index) => (
+                      <Card
+                        key={index}
+                        component={info.href ? 'a' : 'div'}
+                        href={info.href}
                         sx={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 2,
-                          py: 2,
-                          '&:last-child': { pb: 2 },
+                          ...getContactCardSx(Boolean(info.href)),
+                          animation: `fadeInLeft 0.6s ease-out ${index * 0.1}s backwards`,
+                          '@keyframes fadeInLeft': {
+                            from: { opacity: 0, transform: 'translateX(-16px)' },
+                            to: { opacity: 1, transform: 'translateX(0)' },
+                          },
                         }}
                       >
-                        <Box sx={contactIconBoxSx} aria-hidden="true">
-                          {info.icon}
-                        </Box>
-                        <Box sx={{ minWidth: 0 }}>
-                          <Typography
-                            variant="overline"
-                            sx={{
-                              color: primaryColor,
-                              fontWeight: 700,
-                              letterSpacing: 1.5,
-                              fontSize: '0.62rem',
-                              mb: 0.25,
-                              display: 'block',
-                            }}
-                          >
-                            {info.label}
-                          </Typography>
-                          <Typography
-                            variant="body1"
-                            sx={{
-                              fontWeight: 700,
-                              fontSize: { xs: '0.95rem', md: '1rem' },
-                              lineHeight: 1.35,
-                              wordBreak: 'break-word',
-                            }}
-                          >
-                            {info.value}
-                          </Typography>
-                        </Box>
-                      </CardContent>
-                    </Card>
-                  ))}
+                        <CardContent
+                          sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 2,
+                            py: 2,
+                            '&:last-child': { pb: 2 },
+                          }}
+                        >
+                          <Box sx={contactIconBoxSx} aria-hidden="true">
+                            {info.icon}
+                          </Box>
+                          <Box sx={{ minWidth: 0 }}>
+                            <Typography
+                              variant="overline"
+                              sx={{
+                                color: primaryColor,
+                                fontWeight: 700,
+                                letterSpacing: 1.5,
+                                fontSize: '0.62rem',
+                                mb: 0.25,
+                                display: 'block',
+                              }}
+                            >
+                              {info.label}
+                            </Typography>
+                            <Typography
+                              variant="body1"
+                              sx={{
+                                fontWeight: 700,
+                                fontSize: { xs: '0.95rem', md: '1rem' },
+                                lineHeight: 1.35,
+                                wordBreak: 'break-word',
+                              }}
+                            >
+                              {info.value}
+                            </Typography>
+                          </Box>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </Box>
                 </Box>
-              </Box>
+              
             </Box>
 
             {/* FAQ / Assistance — ~70% */}
-            <Box sx={{ width: { xs: '100%', md: '70%' }, flex: 1 }}>
+            <Box sx={{ width:'100%', flex: 1 }}>
               <Typography
                 variant="overline"
                 sx={{

@@ -19,7 +19,8 @@ import {
 } from '@mui/material'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import CheckCircleIcon from '@mui/icons-material/CheckCircle'
+import CircleIcon from '@mui/icons-material/Circle'
+import CheckIcon from '@mui/icons-material/Check'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import { useThemeMode } from '../context/ThemeContext'
 import { useProduct, contentHelpers } from '../hooks/useContent'
@@ -31,6 +32,20 @@ import SpecificationsSection from '../components/productDetail/SpecificationsSec
 import RelatedProductsSection from '../components/productDetail/RelatedProductsSection'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
+
+function renderHeroIntroText(text) {
+  if (typeof text !== 'string' || !text.includes('**')) return text
+
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) => {
+    const bold = part.match(/^\*\*([^*]+)\*\*$/)
+    if (!bold) return part
+    return (
+      <Box key={index} component="strong" sx={{ fontWeight: 700 }}>
+        {bold[1]}
+      </Box>
+    )
+  })
+}
 
 function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor, subtitle, showExcerpt = true }) {
   const displaySubtitle =
@@ -47,6 +62,7 @@ function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor,
         flexDirection: { xs: 'column', lg: 'row' },
         gap: { xs: 4, lg: 6 },
         alignItems: { lg: 'flex-start' },
+        mb: 8,
       }}
     >
       {gallery.length > 0 && (
@@ -54,7 +70,7 @@ function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor,
           <ProductGallery images={gallery} />
         </Box>
       )}
-      <Box sx={{ mb: 6, width: { xs: '100%', lg: '52%' }, flex: 1 }}>
+      <Box sx={{ width: { xs: '100%', lg: '52%' }, flex: 1 }}>
         {categories.length > 0 && (
           <Box sx={{ mb: 2, display: 'flex', gap: 1, flexWrap: 'wrap' }}>
             {categories.map((cat) => (
@@ -82,11 +98,19 @@ function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor,
           </Typography>
         )}
 
-        {heroIntro.map((paragraph, index) => (
-          <Typography key={index} variant="body1" color="text.secondary" sx={{ mb: 2, lineHeight: 1.8 }}>
-            {paragraph}
-          </Typography>
+      <List dense>
+        {heroIntro.map((item, index) => (
+          <ListItem key={index} disablePadding sx={{ py: 0.5, alignItems: 'flex-start', gap: 1 }}>
+            <ListItemIcon sx={{ minWidth: 12, mt: 1 }}>
+              <CircleIcon sx={{ color: primaryColor, fontSize: 12, paddingTop: '2px' }} />
+            </ListItemIcon>
+            <ListItemText
+              primary={renderHeroIntroText(item)}
+              primaryTypographyProps={{ lineHeight: 1.5 }}
+            />
+          </ListItem>
         ))}
+        </List>
       </Box>
     </Container>
   )
@@ -303,21 +327,6 @@ function RichProductLayout({
         primaryAlpha={primaryAlpha}
         sx={{ mb: 8 }}
       />
-
-{/*       {characteristics && (
-        <Card sx={{ mb: 6 }}>
-          <CardContent sx={{ p: { xs: 3, md: 4 } }}>
-            <Typography variant="h4" sx={{ mb: 3, fontWeight: 600 }}>
-              {characteristics.title}
-            </Typography>
-            {characteristics.body.split('\n\n').map((paragraph, index) => (
-              <Typography key={index} variant="body1" color="text.secondary" sx={{ mb: 2, lineHeight: 1.8 }}>
-                {paragraph}
-              </Typography>
-            ))}
-          </CardContent>
-        </Card>
-      )} */}
 
       <BrandFeaturesSection
         brandFeatures={brandFeatures}
