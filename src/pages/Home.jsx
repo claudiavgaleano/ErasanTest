@@ -5,6 +5,9 @@ import EngineeringIcon from '@mui/icons-material/Engineering'
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest'
 import SupportAgentIcon from '@mui/icons-material/SupportAgent'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+import GppGoodOutlinedIcon from '@mui/icons-material/GppGood'
+import SignalCellularAltOutlinedIcon from '@mui/icons-material/SignalCellularAlt'
+import GpsNotFixedOutlinedIcon from '@mui/icons-material/GpsNotFixed'
 import { useThemeMode } from '../context/ThemeContext'
 import Carousel from '../components/Carousel'
 import ClientLogosSection from '../components/ClientLogosSection'
@@ -37,6 +40,20 @@ export default function Home() {
       icon: <SupportAgentIcon sx={{ fontSize: 48 }} />,
       title: t('home.support'),
       description: t('home.supportDesc'),
+    },
+  ]
+  const Characteristics = [
+    {
+      icon: <GpsNotFixedOutlinedIcon sx={{ fontSize: 36 }} />,
+      title: t('home.heroCharacteristic1'),
+    },
+    {
+      icon: <SignalCellularAltOutlinedIcon sx={{ fontSize: 36 }} />,
+      title: t('home.heroCharacteristic2'),
+    },
+    {
+      icon: <GppGoodOutlinedIcon sx={{ fontSize: 36 }} />,
+      title: t('home.heroCharacteristic3'),
     },
   ]
 
@@ -101,16 +118,15 @@ export default function Home() {
                     mb: 2,
                     display: 'flex',
                     alignItems: 'center',
-                    gap: 1,
+                    gap: 2,
                     fontSize: '0.85rem',
                   }}
                 >
                   <Box
-                    component="img"
-                    src={tileErasanLogo}
+                    component="span"
                     alt=""
                     aria-hidden="true"
-                    sx={{ width: 22, height: 22, objectFit: 'contain', display: 'block' }}
+                    sx={{ width: 24, height: 2, display: 'block', borderTop:`2px solid ${primaryColor}` }}
                   />{' '}
                   {t('home.welcome')}
                 </Typography>
@@ -163,6 +179,42 @@ export default function Home() {
                     {t('home.ourServices')}
                   </Button>
                 </Box>
+                <Container  sx={{ display: 'flex', gap: 2, flexWrap: 'nowrap', pt: 12 }}>
+                  <Grid container spacing={4}>
+                      {Characteristics.map((characteristic, index) => (
+                        <Grid item xs={4} key={index} sx={{
+                          display: 'flex',
+                          flexDirection: 'row',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: 2,
+                          borderLeftWidth:'1px',
+                          borderLeftStyle:'solid',
+                          borderLeftColor: mode ==='dark'? '#fff': '#999',
+                          '&&.MuiGrid-item':{
+                            paddingTop:'16px',
+                            paddingLeft:'16px',
+                          },
+                          '&:first-of-type':{borderLeft:'unset',}
+                         }}>
+                            <Box
+                              className="feature-icon"
+                              aria-hidden="true"
+                              sx={{
+                                color: primaryColor,
+                                mb:1.5,
+                                transition: 'all 0.3s ease',
+                              }}
+                            >
+                              {characteristic.icon}
+                            </Box>
+                            <Typography variant="h5" sx={{ mb: 2, fontWeight: 600, textTransform:'uppercase', fontSize:'14px' }}>
+                              {characteristic.title}
+                            </Typography>
+                        </Grid>
+                      ))}
+                    </Grid>
+                </Container>
               </Box>
             </Grid>
             <Grid item xs={12} md={5}>

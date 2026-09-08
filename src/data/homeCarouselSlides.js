@@ -1,6 +1,6 @@
-import slide1Image from '../assets/Home/home-1.jpg'
-import slide2Image from '../assets/Home/home-2.jpg'
-import slide3Image from '../assets/Home/home-3.jpg'
+import slide1Image from '../assets/Home/home-1.png'
+import slide2Image from '../assets/Home/home-2.png'
+import slide3Image from '../assets/Home/home-3.png'
 import slide4Image from '../assets/Home/TileErasan.jpg'
 
 /**
@@ -11,7 +11,7 @@ export const HOME_CAROUSEL_SLIDES = [
   { id: 'slide1', image: slide1Image },
   { id: 'slide2', image: slide2Image },
   { id: 'slide3', image: slide3Image },
-  { id: 'slide4', image: slide4Image },
+  { id: 'slide4', image: slide1Image },
 ]
 
 export function getHomeCarouselSlide(index) {
