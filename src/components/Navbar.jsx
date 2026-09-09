@@ -296,7 +296,6 @@ export default function Navbar() {
                   alignItems: 'center',
                   textDecoration: 'none',
                   gap: 1.5,
-                  //flexGrow: 1,
                 }}
               >
                 <img src={logo} alt="logo" style={{ width: '120px', height: 'auto' }} />
