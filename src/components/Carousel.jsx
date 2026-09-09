@@ -5,6 +5,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import TransformIcon from '@mui/icons-material/Transform'
 import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices'
+import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded';
 import MemoryIcon from '@mui/icons-material/Memory'
 import BuildIcon from '@mui/icons-material/Build'
 import { HOME_CAROUSEL_SLIDES } from '../data/homeCarouselSlides'
@@ -15,12 +16,9 @@ export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
 
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const secondaryColor = mode === 'dark' ? '#ef4444' : '#dc2626'
-  const imageOverlay =
-    mode === 'dark'
-      ? 'linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 23, 42, 0.68) 100%)'
-      : 'linear-gradient(135deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.58) 100%)'
+  const primaryColor = '#b91c1c'
+  const secondaryColor = '#dc2626'
+  const imageOverlay = 'linear-gradient(135deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.58) 100%)'
 
   const slides = useMemo(
     () => [
@@ -29,43 +27,31 @@ export default function Carousel() {
         title: t('carousel.slide1.title'),
         description: t('carousel.slide1.description'),
         image: HOME_CAROUSEL_SLIDES[0]?.image,
-        gradient:
-          mode === 'dark'
-            ? 'linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(14, 165, 233, 0.1) 100%)'
-            : 'linear-gradient(135deg, rgba(185, 28, 28, 0.1) 0%, rgba(2, 132, 199, 0.08) 100%)',
+        gradient: 'linear-gradient(135deg, rgba(185, 28, 28, 0.1) 0%, rgba(2, 132, 199, 0.08) 100%)',
       },
       {
-        icon: <ElectricalServicesIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
+        icon: <PhoneRoundedIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
         title: t('carousel.slide2.title'),
         description: t('carousel.slide2.description'),
         image: HOME_CAROUSEL_SLIDES[1]?.image,
-        gradient:
-          mode === 'dark'
-            ? 'linear-gradient(135deg, rgba(14, 165, 233, 0.12) 0%, rgba(220, 38, 38, 0.1) 100%)'
-            : 'linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(185, 28, 28, 0.08) 100%)',
+        gradient: 'linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(185, 28, 28, 0.08) 100%)',
       },
       {
         icon: <MemoryIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
         title: t('carousel.slide3.title'),
         description: t('carousel.slide3.description'),
         image: HOME_CAROUSEL_SLIDES[2]?.image,
-        gradient:
-          mode === 'dark'
-            ? 'linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, rgba(14, 165, 233, 0.1) 100%)'
-            : 'linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(2, 132, 199, 0.08) 100%)',
+        gradient: 'linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(2, 132, 199, 0.08) 100%)',
       },
-      {
+/*       {
         icon: <BuildIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
         title: t('carousel.slide4.title'),
         description: t('carousel.slide4.description'),
         image: HOME_CAROUSEL_SLIDES[3]?.image,
-        gradient:
-          mode === 'dark'
-            ? 'linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(239, 68, 68, 0.12) 100%)'
-            : 'linear-gradient(135deg, rgba(185, 28, 28, 0.08) 0%, rgba(220, 38, 38, 0.1) 100%)',
-      },
+        gradient: 'linear-gradient(135deg, rgba(185, 28, 28, 0.08) 0%, rgba(220, 38, 38, 0.1) 100%)',
+      }, */
     ],
-    [mode, t]
+    [t]
   )
 
   const nextSlide = useCallback(() => {
@@ -183,7 +169,7 @@ export default function Carousel() {
                     ? `/* ${imageOverlay}, */ url(${slide.image}) center / cover no-repeat`
                     : slide.gradient,
                   backdropFilter: slide.image ? 'none' : 'blur(20px)',
-                  border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+                  border: `1px solid rgba(185, 28, 28, 0.15)`,
                   borderRadius: 2,
                   display: 'flex',
                   flexDirection: 'column',
@@ -201,7 +187,7 @@ export default function Carousel() {
                         right: -100,
                         width: 300,
                         height: 300,
-                        background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+                        background: `radial-gradient(circle, rgba(185, 28, 28, 0.05) 0%, transparent 70%)`,
                         borderRadius: '50%',
                       },
                   '&::after': slide.image
@@ -213,7 +199,7 @@ export default function Carousel() {
                         left: -80,
                         width: 250,
                         height: 250,
-                        background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.1)' : 'rgba(2, 132, 199, 0.06)'} 0%, transparent 70%)`,
+                        background: `radial-gradient(circle, rgba(2, 132, 199, 0.06) 0%, transparent 70%)`,
                         borderRadius: '50%',
                       },
                 }}
@@ -282,20 +268,20 @@ export default function Carousel() {
               left: { xs: 8, md: 16 },
               top: '50%',
               transform: 'translateY(-50%)',
-              bgcolor: mode === 'dark' ? 'rgba(30, 41, 59, 0.9)' : 'rgba(255, 255, 255, 0.9)',
+              bgcolor: 'rgba(255, 255, 255, 0.9)',
               backdropFilter: 'blur(10px)',
-              border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.2)'}`,
+              border: `1px solid rgba(185, 28, 28, 0.2)`,
               color: primaryColor,
               zIndex: 2,
               transition: 'all 0.3s ease',
               '&:hover': {
                 bgcolor: primaryColor,
-                color: mode === 'dark' ? '#0f172a' : '#fff',
+                color: '#fff',
                 transform: 'translateY(-50%) scale(1.1)',
               },
               '&:focus-visible': {
                 bgcolor: primaryColor,
-                color: mode === 'dark' ? '#0f172a' : '#fff',
+                color: '#fff',
               },
             }}
           >
@@ -309,20 +295,20 @@ export default function Carousel() {
               right: { xs: 8, md: 16 },
               top: '50%',
               transform: 'translateY(-50%)',
-              bgcolor: mode === 'dark' ? 'rgba(30, 41, 59, 0.9)' : 'rgba(255, 255, 255, 0.9)',
+              bgcolor: 'rgba(255, 255, 255, 0.9)',
               backdropFilter: 'blur(10px)',
-              border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.2)'}`,
+              border: `1px solid rgba(185, 28, 28, 0.2)`,
               color: primaryColor,
               zIndex: 2,
               transition: 'all 0.3s ease',
               '&:hover': {
                 bgcolor: primaryColor,
-                color: mode === 'dark' ? '#0f172a' : '#fff',
+                color: '#fff',
                 transform: 'translateY(-50%) scale(1.1)',
               },
               '&:focus-visible': {
                 bgcolor: primaryColor,
-                color: mode === 'dark' ? '#0f172a' : '#fff',
+                color: '#fff',
               },
             }}
           >
@@ -361,13 +347,13 @@ export default function Carousel() {
                 borderRadius: 1,
                 background: currentSlide === index
                   ? `linear-gradient(90deg, ${primaryColor} 0%, ${secondaryColor} 100%)`
-                  : mode === 'dark' ? 'rgba(241, 245, 249, 0.2)' : 'rgba(15, 23, 42, 0.2)',
+                  : 'rgba(15, 23, 42, 0.2)',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
                 '&:hover': {
                   background: currentSlide === index
                     ? `linear-gradient(90deg, ${primaryColor} 0%, ${secondaryColor} 100%)`
-                    : mode === 'dark' ? 'rgba(220, 38, 38, 0.5)' : 'rgba(185, 28, 28, 0.4)',
+                    : 'rgba(185, 28, 28, 0.4)',
                 },
                 '&:focus-visible': {
                   outline: `3px solid ${primaryColor}`,
