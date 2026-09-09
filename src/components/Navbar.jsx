@@ -286,7 +286,7 @@ export default function Navbar() {
       <HideOnScroll>
         <AppBar position="fixed" elevation={0}>
           <Container maxWidth="lg">
-            <Toolbar sx={{ py: 1 }}>
+            <Toolbar sx={{ py: 1, justifyContent: 'space-between' }}>
               <Box
                 component={Link}
                 to="/"
@@ -296,7 +296,7 @@ export default function Navbar() {
                   alignItems: 'center',
                   textDecoration: 'none',
                   gap: 1.5,
-                  flexGrow: 1,
+                  //flexGrow: 1,
                 }}
               >
                 <img src={logo} alt="logo" style={{ width: '120px', height: 'auto' }} />
@@ -372,9 +372,9 @@ export default function Navbar() {
                     {item.label}
                   </Button>
                 ))}
-                <Box sx={{ ml: 2, display: 'flex', gap: 1 }}>
-                  <LanguageSwitcher />
-                </Box>
+              </Box>
+              <Box sx={{ ml: 2, display: { xs: 'none', md: 'flex' }, gap: 1 }}>
+                <LanguageSwitcher />
               </Box>
 
               {/* Mobile Menu Button */}
