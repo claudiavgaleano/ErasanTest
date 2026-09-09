@@ -5,7 +5,7 @@ import ProductListCard from '../ProductListCard'
 import { useProducts } from '../../hooks/useContent'
 import { getSectionI18nPrefix, pickRelatedProducts } from '../../utils/contentHelpers'
 
-export default function RelatedProductsSection({ currentProduct, mode }) {
+export default function RelatedProductsSection({ currentProduct }) {
   const { t } = useTranslation()
   const section = currentProduct?.section
 
@@ -37,7 +37,6 @@ export default function RelatedProductsSection({ currentProduct, mode }) {
             <ProductListCard
               product={product}
               index={index}
-              mode={mode}
               viewDetailsLabel={t(`${sectionPrefix}.viewDetails`)}
               featuredLabel={t(`${sectionPrefix}.featured`)}
             />

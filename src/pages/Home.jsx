@@ -8,22 +8,17 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGood'
 import SignalCellularAltOutlinedIcon from '@mui/icons-material/SignalCellularAlt'
 import GpsNotFixedOutlinedIcon from '@mui/icons-material/GpsNotFixed'
-import { useThemeMode } from '../context/ThemeContext'
 import Carousel from '../components/Carousel'
-import ClientLogosSection from '../components/ClientLogosSection'
 import FeaturedProductsSection from '../components/FeaturedProductsSection'
 import tileErasanLogo from '../assets/Home/TileErasan.jpg'
 import tileErasanPNG from '../assets/Home/TileErasan.png'
 
 export default function Home() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
 
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const secondaryColor = mode === 'dark' ? '#ef4444' : '#dc2626'
-  const gradientColor = mode === 'dark' 
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const primaryColor = '#b91c1c'
+  const secondaryColor = '#dc2626'
+  const gradientColor = 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
   const features = [
     {
@@ -74,7 +69,7 @@ export default function Home() {
             right: '-10%',
             width: 500,
             height: 500,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.12)' : 'rgba(185, 28, 28, 0.08)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, rgba(185, 28, 28, 0.08) 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -85,7 +80,7 @@ export default function Home() {
             left: '-5%',
             width: 400,
             height: 400,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.15)' : 'rgba(2, 132, 199, 0.1)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, rgba(2, 132, 199, 0.1) 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -190,7 +185,7 @@ export default function Home() {
                           gap: 2,
                           borderLeftWidth:'1px',
                           borderLeftStyle:'solid',
-                          borderLeftColor: mode ==='dark'? '#fff': '#999',
+                          borderLeftColor: '#999',
                           '&&.MuiGrid-item':{
                             paddingTop:'16px',
                             paddingLeft:'16px',
@@ -235,8 +230,8 @@ export default function Home() {
                     width: 380,
                     height: 380,
                     borderRadius: 4,
-                    background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.35)' : 'rgba(185, 28, 28, 0.1)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.35)' : 'rgba(2, 132, 199, 0.1)'} 100%)`,
-                    border: `2px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.25)'}`,
+                    background: `linear-gradient(135deg,rgba(185, 28, 28, 0.1) 0%, rgba(2, 132, 199, 0.1) 100%)`,
+                    border: `2px solid rgba(185, 28, 28, 0.25)`,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -246,7 +241,7 @@ export default function Home() {
                       position: 'absolute',
                       inset: -20,
                       borderRadius: 6,
-                      border: `1px dashed ${mode === 'dark' ? 'rgba(14, 165, 233, 0.4)' : 'rgba(2, 132, 199, 0.3)'}`,
+                      border: `1px dashed rgba(2, 132, 199, 0.3)`,
                       animation: 'rotate 30s linear infinite',
                     },
                     '&::after': {
@@ -254,7 +249,7 @@ export default function Home() {
                       position: 'absolute',
                       inset: -40,
                       borderRadius: 8,
-                      border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+                      border: `1px solid rgba(185, 28, 28, 0.15)`,
                     },
                     '@keyframes rotate': {
                       from: { transform: 'rotate(0deg)' },
@@ -271,7 +266,7 @@ export default function Home() {
                       maxWidth: 280,
                       height: 'auto',
                       objectFit: 'contain',
-                      filter: `drop-shadow(0 0 40px ${mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)'})`,
+                      filter: `drop-shadow(0 0 40px rgba(185, 28, 28, 0.3))`,
                     }}
                   />
                 </Box>
@@ -283,9 +278,6 @@ export default function Home() {
 
       {/* Carousel Section */}
       <Carousel />
-
-      {/* Client Logos Section */}
-      <ClientLogosSection />
 
       {/* Features Section */}
       <Box sx={{ py: 10 }}>
@@ -317,7 +309,7 @@ export default function Home() {
                     animation: `fadeInUp 0.6s ease-out ${index * 0.2}s backwards`,
                     '&:hover': {
                       transform: 'translateY(-10px)',
-                      borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
+                      borderColor: 'rgba(185, 28, 28, 0.3)',
                       '& .feature-icon': {
                         color: secondaryColor,
                         transform: 'scale(1.1)',
@@ -358,9 +350,9 @@ export default function Home() {
       <Box
         sx={{
           py: 10,
-          background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.1)' : 'rgba(2, 132, 199, 0.05)'} 100%)`,
-          borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
-          borderBottom: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+          background: `linear-gradient(135deg, rgba(185, 28, 28, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%)`,
+          borderTop: `1px solid rgba(185, 28, 28, 0.15)`,
+          borderBottom: `1px solid rgba(185, 28, 28, 0.15)`,
         }}
       >
         <Container maxWidth="md" sx={{ textAlign: 'center' }}>

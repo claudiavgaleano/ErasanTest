@@ -8,11 +8,10 @@ export default function CategoryListCard({
   description,
   path,
   index = 0,
-  mode,
   actionLabel,
 }) {
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const secondaryColor = mode === 'dark' ? '#ef4444' : '#dc2626'
+  const primaryColor = '#b91c1c'
+  const secondaryColor = '#dc2626'
 
   return (
     <Card
@@ -36,7 +35,7 @@ export default function CategoryListCard({
         },
         '&:hover': {
           transform: 'translateY(-10px)',
-          borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
+          borderColor: 'rgba(185, 28, 28, 0.3)',
           '& .category-icon': {
             color: secondaryColor,
             transform: 'scale(1.1)',

@@ -15,22 +15,18 @@ import {
 } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
-import { useThemeMode } from '../context/ThemeContext'
 import { useProducts, useCategories } from '../hooks/useContent'
 import ProductListCard from '../components/ProductListCard'
 
 export default function SpecialProjects() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
   const [searchParams, setSearchParams] = useSearchParams()
 
   const currentPage = parseInt(searchParams.get('page') || '1', 10)
   const currentCategory = searchParams.get('category') || null
 
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark'
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const primaryColor = '#b91c1c'
+  const gradientColor = 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
   const { products, loading, error, totalPages } = useProducts({
     page: currentPage,
@@ -68,7 +64,7 @@ export default function SpecialProjects() {
             right: '-10%',
             width: 500,
             height: 500,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, rgba(185, 28, 28, 0.05) 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -161,7 +157,6 @@ export default function SpecialProjects() {
                     <ProductListCard
                       product={product}
                       index={index}
-                      mode={mode}
                       viewDetailsLabel={t('specialProjects.viewDetails')}
                       featuredLabel={t('specialProjects.featured')}
                     />
@@ -203,8 +198,8 @@ export default function SpecialProjects() {
       <Box
         sx={{
           py: 10,
-          background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.1)' : 'rgba(2, 132, 199, 0.05)'} 100%)`,
-          borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+          background: `linear-gradient(135deg, rgba(185, 28, 28, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%)`,
+          borderTop: `1px solid rgba(185, 28, 28, 0.15)`,
         }}
       >
         <Container maxWidth="md" sx={{ textAlign: 'center' }}>

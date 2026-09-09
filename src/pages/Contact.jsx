@@ -4,35 +4,22 @@ import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
-import { useThemeMode } from '../context/ThemeContext'
 import contactInfoImage from '../assets/contact/contact-info.png'
 export default function Contact() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
 
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const steelBlue = mode === 'dark' ? '#0ea5e9' : '#0284c7'
-  const gradientColor = mode === 'dark'
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
-
+  const primaryColor = '#b91c1c'
+  const steelBlue = '#0284c7'
+  const gradientColor = 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
   const glossyPanelSx = {
     p: { xs: 3, md: 3.5 },
     borderRadius: 3,
     height: '100%',
     position: 'relative',
     overflow: 'hidden',
-   /*  background: mode === 'dark'
-      ? 'linear-gradient(145deg, rgba(220, 38, 38, 0.18) 0%, rgba(30, 41, 59, 0.92) 45%, rgba(15, 23, 42, 0.96) 100%)'
-      : 'linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(254, 242, 242, 0.88) 55%, rgba(254, 226, 226, 0.65) 100%)', */
     backdropFilter: 'blur(16px)',
-    border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.3)' : 'rgba(185, 28, 28, 0.14)'}`,
-   /*  boxShadow: mode === 'dark'
-      ? '0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
-      : '0 12px 40px rgba(185, 28, 28, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.95)', */
-      boxShadow: mode === 'dark'
-      ? '0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
-      : '0 12px 40px rgba(0,0,0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.95)',
+    border: `1px solid rgba(185, 28, 28, 0.14)'}`,
+    boxShadow: '0 12px 40px rgba(0,0,0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.95)',
     '&::before': {
       content: '""',
       position: 'absolute',
@@ -40,9 +27,7 @@ export default function Contact() {
       left: 0,
       right: 0,
       height: '45%',
-      background: mode === 'dark'
-        ? 'linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%)'
-        : 'linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, transparent 100%)',
+      background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, transparent 100%)',
       pointerEvents: 'none',
     },
   }
@@ -57,9 +42,7 @@ export default function Contact() {
     borderRadius: 1.5,
     color: '#fff',
     background: gradientColor,
-    boxShadow: mode === 'dark'
-      ? '0 4px 14px rgba(220, 38, 38, 0.35)'
-      : '0 4px 14px rgba(185, 28, 28, 0.25)',
+    boxShadow: '0 4px 14px rgba(185, 28, 28, 0.25)',
   }
 
   const getContactCardSx = (hasLink) => ({
@@ -67,19 +50,15 @@ export default function Contact() {
     display: 'flex',
     textDecoration: 'none',
     color: 'inherit',
-    background: mode === 'dark'
-      ? 'rgba(15, 23, 42, 0.55)'
-      : 'rgba(255, 255, 255, 0.75)',
-    border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.22)' : 'rgba(185, 28, 28, 0.1)'}`,
+    background: 'rgba(255, 255, 255, 0.75)',
+    border: `1px solid rgba(185, 28, 28, 0.1)`,
     borderLeft: `3px solid ${primaryColor}`,
     transition: 'transform 0.2s ease, box-shadow 0.2s ease',
     ...(hasLink && {
       cursor: 'pointer',
       '&:hover': {
         transform: 'translateY(-2px)',
-        boxShadow: mode === 'dark'
-          ? '0 6px 20px rgba(220, 38, 38, 0.18)'
-          : '0 6px 20px rgba(185, 28, 28, 0.1)',
+        boxShadow: '0 6px 20px rgba(185, 28, 28, 0.1)',
       },
     }),
   })
@@ -87,8 +66,8 @@ export default function Contact() {
   const faqCardSx = {
     width: '100%',
     display: 'flex',
-    background: mode === 'dark' ? 'rgba(30, 41, 59, 0.55)' : 'rgba(255, 255, 255, 0.85)',
-    border: `1px solid ${mode === 'dark' ? 'rgba(148, 163, 184, 0.14)' : 'rgba(148, 163, 184, 0.22)'}`,
+    background: 'rgba(255, 255, 255, 0.85)',
+    border: `1px solid'rgba(148, 163, 184, 0.22)`,
     boxShadow: 'none',
   }
 
@@ -101,9 +80,7 @@ export default function Contact() {
     height: 40,
     flexShrink: 0,
     borderRadius: '50%',
-    background: mode === 'dark'
-      ? 'rgba(14, 165, 233, 0.12)'
-      : 'rgba(2, 132, 199, 0.08)',
+    background: 'rgba(2, 132, 199, 0.08)',
   }
 
   const contactInfoItems = [
@@ -148,7 +125,7 @@ export default function Contact() {
             left: '-10%',
             width: 500,
             height: 500,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, rgba(185, 28, 28, 0.05) 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -159,7 +136,7 @@ export default function Contact() {
             right: '-5%',
             width: 400,
             height: 400,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.1)' : 'rgba(2, 132, 199, 0.06)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, rgba(2, 132, 199, 0.06) 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },

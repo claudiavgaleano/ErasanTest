@@ -12,17 +12,13 @@ import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturi
 import ExtensionIcon from '@mui/icons-material/Extension'
 import EngineeringIcon from '@mui/icons-material/Engineering'
 import UpgradeIcon from '@mui/icons-material/Upgrade'
-import { useThemeMode } from '../context/ThemeContext'
 import CategoryListCard from '../components/CategoryListCard'
 
 export default function Products() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
 
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark'
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const primaryColor = '#b91c1c'
+  const gradientColor = 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
   const categories = [
     {
@@ -66,7 +62,7 @@ export default function Products() {
             right: '-10%',
             width: 500,
             height: 500,
-            background: `radial-gradient(circle, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, transparent 70%)`,
+            background: `radial-gradient(circle, rgba(185, 28, 28, 0.05) 0%, transparent 70%)`,
             borderRadius: '50%',
             filter: 'blur(60px)',
           },
@@ -130,7 +126,6 @@ export default function Products() {
                   description={category.description}
                   path={category.path}
                   index={index}
-                  mode={mode}
                   actionLabel={t('products.exploreCategory')}
                 />
               </Grid>
@@ -143,8 +138,8 @@ export default function Products() {
       <Box
         sx={{
           py: 10,
-          background: `linear-gradient(135deg, ${mode === 'dark' ? 'rgba(220, 38, 38, 0.08)' : 'rgba(185, 28, 28, 0.05)'} 0%, ${mode === 'dark' ? 'rgba(14, 165, 233, 0.1)' : 'rgba(2, 132, 199, 0.05)'} 100%)`,
-          borderTop: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
+          background: `linear-gradient(135deg, rgba(185, 28, 28, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%)`,
+          borderTop: `1px solid rgba(185, 28, 28, 0.15)`,
         }}
       >
         <Container maxWidth="md" sx={{ textAlign: 'center' }}>

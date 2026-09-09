@@ -22,7 +22,6 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import CircleIcon from '@mui/icons-material/Circle'
 import CheckIcon from '@mui/icons-material/Check'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
-import { useThemeMode } from '../context/ThemeContext'
 import { useProduct, contentHelpers } from '../hooks/useContent'
 import { getSectionBackLink } from '../utils/contentHelpers'
 import { getProductSpecPdf } from '../data/productSpecPdfs'
@@ -625,10 +624,8 @@ function AccessoryProductLayout({
 export default function ProductDetail() {
   const { slug } = useParams()
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const primaryAlpha = (opacity) =>
-    mode === 'dark' ? `rgba(220, 38, 38, ${opacity})` : `rgba(185, 28, 28, ${opacity})`
+  const primaryColor = '#b91c1c'
+  const primaryAlpha = (opacity) => `rgba(185, 28, 28, ${opacity})`
 
   const { product, loading, error } = useProduct(slug)
 
@@ -734,7 +731,7 @@ export default function ProductDetail() {
             />
           )}
 
-          <RelatedProductsSection currentProduct={product} mode={mode} />
+          <RelatedProductsSection currentProduct={product} />
 
           <Box sx={{ mt: 6 }}>
             <Divider sx={{ mb: 4 }} />

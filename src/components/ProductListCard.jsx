@@ -3,8 +3,8 @@ import { Box, Card, CardContent, CardMedia, Chip, Typography } from '@mui/materi
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { contentHelpers } from '../hooks/useContent'
 
-export default function ProductListCard({ product, index = 0, mode, viewDetailsLabel, featuredLabel }) {
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
+export default function ProductListCard({ product, index = 0, viewDetailsLabel, featuredLabel }) {
+  const primaryColor = '#b91c1c'
 
   return (
     <Card
@@ -26,7 +26,7 @@ export default function ProductListCard({ product, index = 0, mode, viewDetailsL
         },
         '&:hover': {
           transform: 'translateY(-8px)',
-          borderColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.4)' : 'rgba(185, 28, 28, 0.3)',
+          borderColor: 'rgba(185, 28, 28, 0.3)',
           '& .product-image': {
             transform: 'scale(1.05)',
           },

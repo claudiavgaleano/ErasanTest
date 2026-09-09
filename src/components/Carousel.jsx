@@ -7,12 +7,11 @@ import TransformIcon from '@mui/icons-material/Transform'
 import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices'
 import MemoryIcon from '@mui/icons-material/Memory'
 import BuildIcon from '@mui/icons-material/Build'
-import { useThemeMode } from '../context/ThemeContext'
 import { HOME_CAROUSEL_SLIDES } from '../data/homeCarouselSlides'
 
 export default function Carousel() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
+  const { mode } = 'light'
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
 
@@ -181,7 +180,7 @@ export default function Carousel() {
                   minHeight: 400,
                   p: { xs: 4, md: 6 },
                   background: slide.image
-                    ? `${imageOverlay}, url(${slide.image}) center / cover no-repeat`
+                    ? `/* ${imageOverlay}, */ url(${slide.image}) center / cover no-repeat`
                     : slide.gradient,
                   backdropFilter: slide.image ? 'none' : 'blur(20px)',
                   border: `1px solid ${mode === 'dark' ? 'rgba(220, 38, 38, 0.2)' : 'rgba(185, 28, 28, 0.15)'}`,
@@ -219,53 +218,57 @@ export default function Carousel() {
                       },
                 }}
               >
-                <Box
-                  sx={{
-                    color: slide.image ? '#fff' : primaryColor,
-                    mb: 3,
-                    position: 'relative',
-                    zIndex: 1,
-                    animation: currentSlide === index ? 'bounceIn 0.6s ease-out' : 'none',
-                    '@keyframes bounceIn': {
-                      '0%': { transform: 'scale(0.8)', opacity: 0 },
-                      '50%': { transform: 'scale(1.05)' },
-                      '100%': { transform: 'scale(1)', opacity: 1 },
-                    },
-                  }}
-                >
-                  {slide.icon}
+                <Box sx={{ 
+                  position: 'relative',
+                  zIndex: 1,
+                  left: '-200px',
+                  paddingLeft: '48px',
+                  display: 'flex',
+                  flexDirection:'column',
+                  width:'50%',
+                  }}>
+                  <Box
+                    sx={{
+                      color: slide.image ? '#fff' : primaryColor,
+                      mb: 3,
+                      animation: currentSlide === index ? 'bounceIn 0.6s ease-out' : 'none',
+                      '@keyframes bounceIn': {
+                        '0%': { transform: 'scale(0.8)', opacity: 0 },
+                        '50%': { transform: 'scale(1.05)' },
+                        '100%': { transform: 'scale(1)', opacity: 1 },
+                      },
+                    }}
+                  >
+                    {slide.icon}
+                  </Box>
+                  <Typography
+                    variant="h3"
+                    component="h3"
+                    sx={{
+                      mb: 2,
+                      fontWeight: 600,
+                      color: slide.image ? '#fff' : 'text.primary',
+                      animation: currentSlide === index ? 'fadeInUp 0.6s ease-out 0.1s backwards' : 'none',
+                      '@keyframes fadeInUp': {
+                        from: { opacity: 0, transform: 'translateY(20px)' },
+                        to: { opacity: 1, transform: 'translateY(0)' },
+                      },
+                    }}
+                  >
+                    {slide.title}
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      maxWidth: 600,
+                      lineHeight: 1.8,
+                      color: slide.image ? 'rgba(255, 255, 255, 0.88)' : 'text.secondary',
+                      animation: currentSlide === index ? 'fadeInUp 0.6s ease-out 0.2s backwards' : 'none',
+                    }}
+                  >
+                    {slide.description}
+                  </Typography>
                 </Box>
-                <Typography
-                  variant="h3"
-                  component="h3"
-                  sx={{
-                    mb: 2,
-                    position: 'relative',
-                    zIndex: 1,
-                    fontWeight: 600,
-                    color: slide.image ? '#fff' : 'text.primary',
-                    animation: currentSlide === index ? 'fadeInUp 0.6s ease-out 0.1s backwards' : 'none',
-                    '@keyframes fadeInUp': {
-                      from: { opacity: 0, transform: 'translateY(20px)' },
-                      to: { opacity: 1, transform: 'translateY(0)' },
-                    },
-                  }}
-                >
-                  {slide.title}
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{
-                    maxWidth: 600,
-                    position: 'relative',
-                    zIndex: 1,
-                    lineHeight: 1.8,
-                    color: slide.image ? 'rgba(255, 255, 255, 0.88)' : 'text.secondary',
-                    animation: currentSlide === index ? 'fadeInUp 0.6s ease-out 0.2s backwards' : 'none',
-                  }}
-                >
-                  {slide.description}
-                </Typography>
               </Box>
             ))}
           </Box>

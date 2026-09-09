@@ -27,8 +27,6 @@ import ExpandLess from '@mui/icons-material/ExpandLess'
 import ExpandMore from '@mui/icons-material/ExpandMore'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import LanguageSwitcher from './LanguageSwitcher'
-import ThemeToggle from './ThemeToggle'
-import { useThemeMode } from '../context/ThemeContext'
 import logo from '../assets/logo.png'
 const PRODUCT_PATHS = ['/products', '/coil-winding', '/proyectos-especiales', '/accesories', '/retrofit', '/products/retrofit']
 
@@ -43,7 +41,6 @@ function HideOnScroll({ children }) {
 
 export default function Navbar() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [productsMenuAnchor, setProductsMenuAnchor] = useState(null)
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false)
@@ -84,13 +81,11 @@ export default function Navbar() {
     return location.pathname === path
   }
 
-  const primaryColor = mode === 'dark' ? '#dc2626' : '#b91c1c'
-  const gradientColor = mode === 'dark'
-    ? 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
-    : 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
+  const primaryColor =  '#b91c1c'
+  const gradientColor =  'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)'
 
   const navButtonSx = (active) => ({
-    color: active ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+    color: active ? primaryColor : '#0f172a',
     fontWeight: active ? 600 : 500,
     position: 'relative',
     px: 2,
@@ -119,15 +114,12 @@ export default function Navbar() {
     <Box
       sx={{
         height: '100%',
-        background: mode === 'dark'
-          ? 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)'
-          : 'linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%)',
+        background: 'linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%)',
         pt: 2,
       }}
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', px: 2, mb: 4 }}>
         <Box sx={{ display: 'flex', gap: 1 }}>
-          <ThemeToggle />
           <LanguageSwitcher />
         </Box>
         <IconButton
@@ -148,7 +140,7 @@ export default function Navbar() {
               py: 2,
               px: 4,
               '&:hover': {
-                backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                backgroundColor: 'rgba(185, 28, 28, 0.1)',
               },
             }}
           >
@@ -158,7 +150,7 @@ export default function Navbar() {
                 '& .MuiListItemText-primary': {
                   fontSize: '1.2rem',
                   fontWeight: isActive('/') ? 600 : 400,
-                  color: isActive('/') ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+                  color: isActive('/') ? primaryColor : '#0f172a',
                 },
               }}
             />
@@ -174,7 +166,7 @@ export default function Navbar() {
               py: 2,
               px: 4,
               '&:hover': {
-                backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                backgroundColor: 'rgba(185, 28, 28, 0.1)',
               },
             }}
           >
@@ -184,7 +176,7 @@ export default function Navbar() {
                 '& .MuiListItemText-primary': {
                   fontSize: '1.2rem',
                   fontWeight: isActive('/about') ? 600 : 400,
-                  color: isActive('/about') ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+                  color: isActive('/about') ? primaryColor : '#0f172a',
                 },
               }}
             />
@@ -199,7 +191,7 @@ export default function Navbar() {
               py: 2,
               px: 4,
               '&:hover': {
-                backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                backgroundColor: 'rgba(185, 28, 28, 0.1)',
               },
             }}
           >
@@ -209,7 +201,7 @@ export default function Navbar() {
                 '& .MuiListItemText-primary': {
                   fontSize: '1.2rem',
                   fontWeight: isProductsActive() ? 600 : 400,
-                  color: isProductsActive() ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+                  color: isProductsActive() ? primaryColor : '#0f172a',
                 },
               }}
             />
@@ -268,7 +260,7 @@ export default function Navbar() {
                 py: 2,
                 px: 4,
                 '&:hover': {
-                  backgroundColor: mode === 'dark' ? 'rgba(220, 38, 38, 0.1)' : 'rgba(185, 28, 28, 0.1)',
+                  backgroundColor: 'rgba(185, 28, 28, 0.1)',
                 },
               }}
             >
@@ -278,7 +270,7 @@ export default function Navbar() {
                   '& .MuiListItemText-primary': {
                     fontSize: '1.2rem',
                     fontWeight: isActive(item.path) ? 600 : 400,
-                    color: isActive(item.path) ? primaryColor : mode === 'dark' ? '#f1f5f9' : '#0f172a',
+                    color: isActive(item.path) ? primaryColor : '#0f172a',
                   },
                 }}
               />
@@ -307,27 +299,6 @@ export default function Navbar() {
                   flexGrow: 1,
                 }}
               >
-{/*                 <PrecisionManufacturingIcon
-                  aria-hidden="true"
-                  sx={{
-                    color: primaryColor,
-                    fontSize: 36,
-                  }}
-                />
-                <Typography
-                  variant="h5"
-                  sx={{
-                    fontFamily: '"Rajdhani", sans-serif',
-                    fontWeight: 700,
-                    background: gradientColor,
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    letterSpacing: '0.1em',
-                    fontSize: '1.5rem',
-                  }}
-                >
-                  {t('brand')}
-                </Typography> */}
                 <img src={logo} alt="logo" style={{ width: '120px', height: 'auto' }} />
               </Box>
 
@@ -402,7 +373,6 @@ export default function Navbar() {
                   </Button>
                 ))}
                 <Box sx={{ ml: 2, display: 'flex', gap: 1 }}>
-                  <ThemeToggle />
                   <LanguageSwitcher />
                 </Box>
               </Box>
@@ -446,7 +416,6 @@ export default function Navbar() {
       >
         {drawer}
       </Drawer>
-
       {/* Toolbar spacer */}
       <Toolbar sx={{ mb: 2 }} />
     </>

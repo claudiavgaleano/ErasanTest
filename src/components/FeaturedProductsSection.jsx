@@ -3,12 +3,10 @@ import { useTranslation } from 'react-i18next'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import ProductListCard from './ProductListCard'
 import { useProducts } from '../hooks/useContent'
-import { useThemeMode } from '../context/ThemeContext'
 import { getSectionI18nPrefix, pickFeaturedProductsBySection } from '../utils/contentHelpers'
 
 export default function FeaturedProductsSection() {
   const { t } = useTranslation()
-  const { mode } = useThemeMode()
   const { products, loading } = useProducts({ perPage: 100 })
 
   const featuredProducts = useMemo(() => pickFeaturedProductsBySection(products), [products])
@@ -37,7 +35,6 @@ export default function FeaturedProductsSection() {
                 <ProductListCard
                   product={product}
                   index={index}
-                  mode={mode}
                   viewDetailsLabel={t(`${sectionPrefix}.viewDetails`)}
                   featuredLabel={t(`${sectionPrefix}.featured`)}
                 />

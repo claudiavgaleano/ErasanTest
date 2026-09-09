@@ -481,7 +481,7 @@ export const products = [
     }
   },
   {
-    "id": 29,
+    "id": 30,
     "slug": "tensionador-de-hilo-th3-is",
     "section": "accessories",
     "categorySlug": "tensionadores",
@@ -493,7 +493,7 @@ export const products = [
     }
   },
   {
-    "id": 30,
+    "id": 31,
     "slug": "tensionador-de-hilo-th3",
     "section": "accessories",
     "categorySlug": "tensionadores",
@@ -505,7 +505,7 @@ export const products = [
     }
   },
   {
-    "id": 31,
+    "id": 32,
     "slug": "tensionador-de-hilo-th3-standalone",
     "section": "accessories",
     "categorySlug": "tensionadores",
@@ -517,7 +517,7 @@ export const products = [
     }
   },
   {
-    "id": 32,
+    "id": 33,
     "slug": "bobinadora-e600-long",
     "section": "specialProjects",
     "categorySlug": null,
@@ -529,7 +529,7 @@ export const products = [
     }
   },
   {
-    "id": 33,
+    "id": 34,
     "slug": "maquina-flyer",
     "section": "specialProjects",
     "categorySlug": null,
@@ -541,7 +541,7 @@ export const products = [
     }
   },
   {
-    "id": 34,
+    "id": 35,
     "slug": "encintadora",
     "section": "specialProjects",
     "categorySlug": null,
@@ -553,7 +553,7 @@ export const products = [
     }
   },
   {
-    "id": 35,
+    "id": 36,
     "slug": "bobifil",
     "section": "retrofit",
     "categorySlug": null,
@@ -569,7 +569,7 @@ export const products = [
     }
   },
   {
-    "id": 36,
+    "id": 37,
     "slug": "kits-retrofit",
     "section": "retrofit",
     "categorySlug": null,
