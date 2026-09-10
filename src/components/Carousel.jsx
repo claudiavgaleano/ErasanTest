@@ -165,15 +165,10 @@ export default function Carousel() {
                   position: 'relative',
                   overflow: 'hidden',
                   display: 'flex',
-                  alignItems: 'center',
-                  // Same height on every slide. Shorter on small screens so cover
-                  // stays close to the photo ratio (~2.8:1) instead of a tall crop.
-                  aspectRatio: {
-                    xs: '16 / 10',
-                    sm: '2 / 1',
-                    md: '2.4 / 1',
-                    lg: SLIDE_IMAGE_ASPECT,
-                  },
+                  alignItems: { xs: 'stretch', md: 'center' },
+                  height: { xs: 400, sm: 400, md: 'auto' },
+                  minHeight: { xs: 400, sm: 400, md: 0 },
+                  aspectRatio: { xs: 'unset', sm: 'unset', md: '2.4 / 1', lg: SLIDE_IMAGE_ASPECT },
                   background: slide.image ? '#0f172a' : slide.gradient,
                   border: `1px solid rgba(185, 28, 28, 0.15)`,
                   borderRadius: 2,
@@ -211,11 +206,16 @@ export default function Carousel() {
                     alt=""
                     sx={{
                       position: 'absolute',
-                      inset: 0,
-                      width: '100%',
+                      top: 0,
+                      right: 0,
+                      bottom: 0,
+                      left: { xs: 'auto', md: 0 },
                       height: '100%',
+                      width: { xs: 'auto', md: '100%' },
+                      minWidth: '100%',
+                      maxWidth: 'none',
                       objectFit: 'cover',
-                      objectPosition: 'center',
+                      objectPosition: { xs: 'right center', md: 'center' },
                       display: 'block',
                       zIndex: 0,
                     }}
@@ -225,38 +225,46 @@ export default function Carousel() {
                   <Box
                     aria-hidden="true"
                     sx={{
+                      display: { xs: 'none', md: 'block' },
                       position: 'absolute',
                       inset: 0,
                       zIndex: 1,
-                      background: {
-                        xs: 'linear-gradient(90deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.72) 55%, rgba(15, 23, 42, 0.35) 100%)',
-                        md: 'linear-gradient(90deg, rgba(15, 23, 42, 0.86) 0%, rgba(15, 23, 42, 0.5) 46%, rgba(15, 23, 42, 0) 72%)',
-                      },
+                      background:
+                        'linear-gradient(90deg, rgba(15, 23, 42, 0.86) 0%, rgba(15, 23, 42, 0.5) 46%, rgba(15, 23, 42, 0) 72%)',
                     }}
                   />
                 ) : null}
                 <Box
                   sx={{
-                    position: 'relative',
+                    position: { xs: 'absolute', md: 'relative' },
                     zIndex: 2,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
                     width: { xs: '100%', md: '55%' },
-                    maxWidth: 560,
+                    maxWidth: { xs: 'none', md: 560 },
+                    height: { xs: '35%', md: 'auto' },
                     boxSizing: 'border-box',
-                    pl: { xs: 7, sm: 8, md: 6 },
-                    pr: { xs: 7, sm: 8, md: 4 },
-                    py: { xs: 1.5, sm: 2, md: 3 },
+                    pl: { xs: 2, sm: 2.5, md: 10, lg: 11 },
+                    pr: { xs: 2, sm: 2.5, md: 4, lg: 5 },
+                    py: { xs: 1.25, sm: 1.5, md: 3 },
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
                     textAlign: 'left',
+                    bgcolor: {
+                      xs: 'rgba(8, 15, 30, 0.92)',
+                      md: 'transparent',
+                    },
                   }}
                 >
                   <Box
                     sx={{
+                      display: { xs: 'none', md: 'block' },
                       color: slide.image ? '#fff' : primaryColor,
-                      mb: { xs: 0.75, md: 2 },
+                      mb: 2,
                       '& .MuiSvgIcon-root': {
-                        fontSize: { xs: 28, sm: 36, md: 56 },
+                        fontSize: 56,
                       },
                       animation: currentSlide === index ? 'bounceIn 0.6s ease-out' : 'none',
                       '@keyframes bounceIn': {
@@ -272,10 +280,10 @@ export default function Carousel() {
                     variant="h3"
                     component="h3"
                     sx={{
-                      mb: { xs: 0.75, md: 1.5 },
+                      mb: { xs: 0.5, md: 1.5 },
                       fontWeight: 600,
-                      fontSize: { xs: '1rem', sm: '1.35rem', md: '1.75rem', lg: '1.85rem' },
-                      lineHeight: 1.2,
+                      fontSize: { xs: '0.95rem', sm: '1.1rem', md: '1.75rem', lg: '1.85rem' },
+                      lineHeight: 1.25,
                       overflowWrap: 'break-word',
                       color: slide.image ? '#fff' : 'text.primary',
                       animation: currentSlide === index ? 'fadeInUp 0.6s ease-out 0.1s backwards' : 'none',
@@ -290,12 +298,12 @@ export default function Carousel() {
                   <Typography
                     variant="body1"
                     sx={{
-                      maxWidth: 600,
+                      maxWidth: { xs: '100%', md: 600 },
                       width: '100%',
-                      lineHeight: { xs: 1.35, md: 1.7 },
-                      fontSize: { xs: '0.72rem', sm: '0.85rem', md: '1rem' },
+                      lineHeight: { xs: 1.4, md: 1.7 },
+                      fontSize: { xs: '0.8125rem', sm: '0.875rem', md: '1rem' },
                       overflowWrap: 'break-word',
-                      color: slide.image ? 'rgba(255, 255, 255, 0.88)' : 'text.secondary',
+                      color: slide.image ? 'rgba(255, 255, 255, 0.9)' : 'text.secondary',
                       animation: currentSlide === index ? 'fadeInUp 0.6s ease-out 0.2s backwards' : 'none',
                     }}
                   >
@@ -313,7 +321,7 @@ export default function Carousel() {
             sx={{
               position: 'absolute',
               left: { xs: 4, md: 16 },
-              top: '50%',
+              top: { xs: '32.5%', md: '50%' },
               transform: 'translateY(-50%)',
               width: { xs: 32, md: 40 },
               height: { xs: 32, md: 40 },
@@ -342,7 +350,7 @@ export default function Carousel() {
             sx={{
               position: 'absolute',
               right: { xs: 4, md: 16 },
-              top: '50%',
+              top: { xs: '32.5%', md: '50%' },
               transform: 'translateY(-50%)',
               width: { xs: 32, md: 40 },
               height: { xs: 32, md: 40 },
