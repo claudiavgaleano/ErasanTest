@@ -209,9 +209,10 @@ export default function Contact() {
             }}
           >
             {/* Contact info — ~30% */}
-            <Box sx={{ display: 'flex', flexDirection: 'row', width: '100%', gap: 4 }}>
+            <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, width: '100%', gap: 4 }}>
               <Box sx={{ 
-                width: '50%',
+                width: { xs: '100%', md: '50%' },
+                height: { xs: '300px', md: 'auto' },
                 display: 'flex',
                 flexDirection: 'column',
                 gap: 2,
@@ -239,7 +240,7 @@ export default function Contact() {
                 sx={{ width: '8%', height: '2px',display: 'block', borderBottom: `3px solid ${primaryColor}` }} ></Box>
               </Box>
               
-                <Box sx={{ width: '50%',  ...glossyPanelSx}}>
+                <Box sx={{ width: { xs: '100%', md: '50%' },  ...glossyPanelSx}}>
                   <Typography
                     variant="overline"
                     sx={{

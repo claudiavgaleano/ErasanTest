@@ -6,7 +6,7 @@ import App from './App'
 import './i18n'
 import './index.css'
 
-// Match Vite's `base` config so routes work under /ErasanTest/ on GitHub Pages
+// Match Vite `base` (`/` on IONOS; `/ErasanTest` when building for GitHub Pages)
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || undefined
 
 ReactDOM.createRoot(document.getElementById('root')).render(
