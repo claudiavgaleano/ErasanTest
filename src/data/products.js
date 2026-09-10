@@ -160,7 +160,7 @@ export const products = [
     "slug": "bobinadora-erasan-e1200",
     "section": "coilWinding",
     "categorySlug": "banco-lineal",
-    "categoryId": 2,
+    "categoryId": 1,
     "i18nKey": "bobinadora-erasan-e1200",
     "acf": {
       "features": [

@@ -40,6 +40,42 @@ function filterPosts({ search = '', category = null } = {}) {
   return filtered.sort((a, b) => new Date(b.date) - new Date(a.date))
 }
 
+const LINEAR_BENCH_CATEGORY = 'banco-lineal'
+
+function linearBenchModelParts(slug) {
+  const match = String(slug).match(/-e(\d+)([a-z0-9-]*)$/i)
+  if (!match) {
+    return { size: Number.POSITIVE_INFINITY, variant: slug }
+  }
+  return { size: Number(match[1]), variant: (match[2] || '').toLowerCase() }
+}
+
+function linearBenchVariantRank(variant) {
+  if (variant === '') return 0
+  if (variant === 'w') return 1
+  if (variant === '-servotech' || variant === 'servotech') return 2
+  if (variant === '-sgb' || variant === 'sgb') return 3
+  return 50
+}
+
+function compareLinearBenchModels(a, b) {
+  const left = linearBenchModelParts(a.slug)
+  const right = linearBenchModelParts(b.slug)
+  if (left.size !== right.size) return left.size - right.size
+  const rankDiff = linearBenchVariantRank(left.variant) - linearBenchVariantRank(right.variant)
+  if (rankDiff !== 0) return rankDiff
+  return left.variant.localeCompare(right.variant)
+}
+
+/** Banco lineal first (E300 → E1200), then remaining coil-winding products in catalog order. */
+function sortCoilWindingProducts(items) {
+  const linearBench = items
+    .filter((product) => product.categorySlug === LINEAR_BENCH_CATEGORY)
+    .sort(compareLinearBenchModels)
+  const rest = items.filter((product) => product.categorySlug !== LINEAR_BENCH_CATEGORY)
+  return [...linearBench, ...rest]
+}
+
 function filterProducts({ section = null, category = null } = {}) {
   let filtered = [...products]
 
@@ -49,6 +85,10 @@ function filterProducts({ section = null, category = null } = {}) {
 
   if (category) {
     filtered = filtered.filter((product) => product.categorySlug === category)
+  }
+
+  if (section === 'coilWinding' || category === LINEAR_BENCH_CATEGORY) {
+    return sortCoilWindingProducts(filtered)
   }
 
   return filtered

@@ -26,6 +26,9 @@ export default function LanguageSwitcher() {
   }
 
   const handleClose = () => {
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur()
+    }
     setAnchorEl(null)
   }
 

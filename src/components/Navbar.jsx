@@ -47,6 +47,13 @@ export default function Navbar() {
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false)
   const location = useLocation()
 
+  const closeProductsMenu = () => {
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur()
+    }
+    setProductsMenuAnchor(null)
+  }
+
   const productSubItems = [
     { label: t('nav.coilWinding'), path: '/coil-winding' },
     { label: t('nav.accesories'), path: '/accesories' },
@@ -330,7 +337,7 @@ export default function Navbar() {
                 {/* Products Dropdown */}
                 <Box
                   onMouseEnter={(e) => setProductsMenuAnchor(e.currentTarget)}
-                  onMouseLeave={() => setProductsMenuAnchor(null)}
+                  onMouseLeave={closeProductsMenu}
                 >
                   <Button
                     component={Link}
@@ -345,10 +352,15 @@ export default function Navbar() {
                   <Menu
                     anchorEl={productsMenuAnchor}
                     open={Boolean(productsMenuAnchor)}
-                    onClose={() => setProductsMenuAnchor(null)}
+                    onClose={closeProductsMenu}
+                    autoFocus={false}
+                    disableAutoFocus
+                    disableEnforceFocus
+                    disableRestoreFocus
                     MenuListProps={{
+                      autoFocusItem: false,
                       onMouseEnter: () => setProductsMenuAnchor(productsMenuAnchor),
-                      onMouseLeave: () => setProductsMenuAnchor(null),
+                      onMouseLeave: closeProductsMenu,
                       'aria-label': t('nav.productsMenu'),
                     }}
                     anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
@@ -360,7 +372,7 @@ export default function Navbar() {
                         key={item.path}
                         component={Link}
                         to={item.path}
-                        onClick={() => setProductsMenuAnchor(null)}
+                        onClick={closeProductsMenu}
                         selected={isProductSubActive(item.path)}
                         sx={{
                           minWidth: 220,
