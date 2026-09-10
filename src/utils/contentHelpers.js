@@ -3,6 +3,7 @@ import { getProductGalleryImage, getProductGalleryImageCount } from '../data/pro
 import { getProductAccessoryImage } from '../data/productAccessoryImages'
 import { getProductSpecifications } from '../data/productSpecifications'
 import i18n from '../i18n'
+import { escapeHtml } from './sanitizeHtml'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/1e293b/dc2626?text=Erasan+Product'
 
@@ -248,7 +249,7 @@ export function localizeProduct(product, t) {
       rendered: rawContent
         .split('\n\n')
         .filter(Boolean)
-        .map((paragraph) => `<p>${paragraph}</p>`)
+        .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
         .join(''),
     },
     acf: {
@@ -326,9 +327,9 @@ export const contentHelpers = {
   },
 
   stripHtml(html) {
-    const tmp = document.createElement('div')
-    tmp.innerHTML = html
-    return tmp.textContent || tmp.innerText || ''
+    if (html == null || html === '') return ''
+    const doc = new DOMParser().parseFromString(String(html), 'text/html')
+    return doc.body.textContent || ''
   },
 
   getExcerpt(content, length = 150) {

@@ -25,6 +25,7 @@ import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturi
 import { useProduct, contentHelpers } from '../hooks/useContent'
 import { getSectionBackLink } from '../utils/contentHelpers'
 import { getProductSpecPdf } from '../data/productSpecPdfs'
+import { htmlToPlainText, sanitizeHtml } from '../utils/sanitizeHtml'
 import ProductGallery from '../components/productDetail/ProductGallery'
 import BenefitCardsSection from '../components/productDetail/BenefitCardsSection'
 import SpecificationsSection from '../components/productDetail/SpecificationsSection'
@@ -84,12 +85,9 @@ function ProductHeroRow({ product, gallery, categories, heroIntro, primaryColor,
           </Box>
         )}
 
-        <Typography
-          variant="h2"
-          component="h1"
-          sx={{ mb: 2, fontWeight: 700 }}
-          dangerouslySetInnerHTML={{ __html: product.title.rendered }}
-        />
+        <Typography variant="h2" component="h1" sx={{ mb: 2, fontWeight: 700 }}>
+          {htmlToPlainText(product.title.rendered)}
+        </Typography>
 
         {displaySubtitle && (
           <Typography variant="h5" component="p" color="text.secondary" sx={{ mb: 3, fontWeight: 500, lineHeight: 1.5 }}>
@@ -167,7 +165,7 @@ function ClassicProductLayout({
             <Box
               component="img"
               src={featuredImage}
-              alt={product.title.rendered}
+              alt={htmlToPlainText(product.title.rendered)}
               sx={{ width: '100%', height: 'auto', display: 'block', padding: '16px 64px' }}
             />
             {acf.featured && (
@@ -195,12 +193,9 @@ function ClassicProductLayout({
             </Box>
           )}
 
-          <Typography
-            variant="h2"
-            component="h1"
-            sx={{ mb: 3, fontWeight: 700 }}
-            dangerouslySetInnerHTML={{ __html: product.title.rendered }}
-          />
+          <Typography variant="h2" component="h1" sx={{ mb: 3, fontWeight: 700 }}>
+            {htmlToPlainText(product.title.rendered)}
+          </Typography>
 
           <Typography
             variant="body1"
@@ -211,7 +206,7 @@ function ClassicProductLayout({
               '& p': { mb: 2 },
               '& ul, & ol': { pl: 3, mb: 2 },
             }}
-            dangerouslySetInnerHTML={{ __html: product.content.rendered }}
+            dangerouslySetInnerHTML={{ __html: sanitizeHtml(product.content.rendered) }}
           />
 
           <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', mb: 4 }}>
@@ -686,7 +681,7 @@ export default function ProductDetail() {
             <Link to={sectionBackLink.path} style={{ color: 'inherit', textDecoration: 'none' }}>
               {t(sectionBackLink.labelKey)}
             </Link>
-            <Typography color="text.primary" dangerouslySetInnerHTML={{ __html: product.title.rendered }} />
+            <Typography color="text.primary">{htmlToPlainText(product.title.rendered)}</Typography>
           </Breadcrumbs>
         </Container>
       </Box>

@@ -20,6 +20,7 @@ import PersonIcon from '@mui/icons-material/Person'
 import LocalOfferIcon from '@mui/icons-material/LocalOffer'
 import ArticleIcon from '@mui/icons-material/Article'
 import { usePost, useRecentPosts, contentHelpers } from '../hooks/useContent'
+import { htmlToPlainText, sanitizeHtml } from '../utils/sanitizeHtml'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/1200x600/1e293b/dc2626?text=Erasan+Blog'
 
@@ -90,7 +91,7 @@ export default function BlogPost() {
               {t('blog.title')}
             </Link>
             <Typography color="text.primary" sx={{ maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-              <span dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+              {htmlToPlainText(post.title.rendered)}
             </Typography>
           </Breadcrumbs>
         </Container>
@@ -113,7 +114,7 @@ export default function BlogPost() {
                 <Box
                   component="img"
                   src={featuredImage}
-                  alt={post.title.rendered}
+                  alt={htmlToPlainText(post.title.rendered)}
                   sx={{
                     width: '100%',
                     height: 'auto',
@@ -150,8 +151,9 @@ export default function BlogPost() {
                 variant="h1"
                 component="h1"
                 sx={{ mb: 3, fontSize: { xs: '2rem', md: '2.5rem' }, fontWeight: 700, lineHeight: 1.2 }}
-                dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-              />
+              >
+                {htmlToPlainText(post.title.rendered)}
+              </Typography>
 
               {/* Meta */}
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, mb: 4, flexWrap: 'wrap' }}>
@@ -226,7 +228,7 @@ export default function BlogPost() {
                     borderRadius: 0.5,
                   },
                 }}
-                dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+                dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.content.rendered) }}
               />
 
               {/* Tags */}
@@ -313,8 +315,9 @@ export default function BlogPost() {
                                 WebkitBoxOrient: 'vertical',
                                 overflow: 'hidden',
                               }}
-                              dangerouslySetInnerHTML={{ __html: recentPost.title.rendered }}
-                            />
+                            >
+                              {htmlToPlainText(recentPost.title.rendered)}
+                            </Typography>
                             <Typography variant="caption" color="text.secondary">
                               {contentHelpers.formatDate(recentPost.date, i18n.language === 'es' ? 'es-ES' : 'en-US')}
                             </Typography>

@@ -5,6 +5,7 @@ import PhoneIcon from '@mui/icons-material/Phone'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import contactInfoImage from '../assets/contact/contact-info.png'
+import { safeMailtoHref, safeTelHref } from '../utils/sanitizeHtml'
 export default function Contact() {
   const { t } = useTranslation()
 
@@ -88,13 +89,13 @@ export default function Contact() {
       icon: <EmailIcon sx={{ fontSize: 24 }} />,
       label: t('contact.emailLabel'),
       value: t('contact.email'),
-      href: `mailto:${t('contact.email')}`,
+      href: safeMailtoHref(t('contact.email')),
     },
     {
       icon: <PhoneIcon sx={{ fontSize: 24 }} />,
       label: t('contact.phoneLabel'),
       value: t('contact.phone'),
-      href: `tel:${t('contact.phone').replace(/\s/g, '')}`,
+      href: safeTelHref(t('contact.phone')),
     },
     {
       icon: <AccessTimeIcon sx={{ fontSize: 24 }} />,
@@ -316,7 +317,7 @@ export default function Contact() {
             </Box>
 
             {/* FAQ / Assistance — ~70% */}
-            <Box sx={{ width:'100%', flex: 1 }}>
+            <Box sx={{ width:'100%', flex: 1, mb: 4 }}>
               <Typography
                 variant="overline"
                 sx={{

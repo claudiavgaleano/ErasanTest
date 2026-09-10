@@ -7,16 +7,20 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  
-  # Redirect HTTP to HTTPS (uncomment if you have SSL)
-  # RewriteCond %{HTTPS} off
-  # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-  
+
+  RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK|DEBUG)
+  RewriteRule .* - [F]
+
+  # Force HTTPS on IONOS / Apache
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
   # Handle React Router - SPA Routing
   # Don't rewrite files or directories
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  
+
   # Rewrite everything else to index.html
   RewriteRule ^ index.html [QSA,L]
 </IfModule>
@@ -100,33 +104,44 @@
 # SECURITY HEADERS
 # ============================================
 <IfModule mod_headers.c>
-  # Prevent clickjacking
   Header always set X-Frame-Options "SAMEORIGIN"
-  
-  # Prevent MIME type sniffing
   Header always set X-Content-Type-Options "nosniff"
-  
-  # Enable XSS protection
-  Header always set X-XSS-Protection "1; mode=block"
-  
-  # Referrer Policy
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  
-  # Permissions Policy (optional - uncomment if needed)
-  # Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://placehold.co; connect-src 'self'; upgrade-insecure-requests"
+  Header always unset X-Powered-By
+  Header unset Server
 </IfModule>
 
 # ============================================
 # PREVENT DIRECTORY LISTING
 # ============================================
-Options -Indexes
+Options -Indexes -Includes +FollowSymLinks
 
 # ============================================
 # BLOCK ACCESS TO SENSITIVE FILES
 # ============================================
-<FilesMatch "(^\.htaccess|\.env|\.git|\.gitignore|package\.json|package-lock\.json|vite\.config\.js)$">
-  Order allow,deny
-  Deny from all
+<FilesMatch "(^\.htaccess|^\.htpasswd|^\.env|\.git|\.gitignore|package\.json|package-lock\.json|vite\.config)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist|php|phtml|phar)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
 </FilesMatch>
 
 # ============================================

@@ -8,9 +8,13 @@
   RewriteEngine On
   RewriteBase /
   
-  # Force HTTPS (uncomment after SSL certificate is active)
-  # RewriteCond %{HTTPS} !=on
-  # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK|DEBUG)
+  RewriteRule .* - [F]
+
+  # Force HTTPS (IONOS Apache / proxies)
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   
   # IONOS specific: Handle both www and non-www
   # Redirect www to non-www (uncomment if preferred)
@@ -125,21 +129,16 @@
 # SECURITY HEADERS
 # ============================================
 <IfModule mod_headers.c>
-  # Clickjacking protection
   Header always set X-Frame-Options "SAMEORIGIN"
-  
-  # MIME sniffing protection
   Header always set X-Content-Type-Options "nosniff"
-  
-  # XSS Protection
-  Header always set X-XSS-Protection "1; mode=block"
-  
-  # Referrer Policy
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  
-  # Remove server signature
-  Header unset Server
+  Header always set Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://placehold.co; connect-src 'self'; upgrade-insecure-requests"
   Header always unset X-Powered-By
+  Header unset Server
 </IfModule>
 
 # Hide server signature
@@ -161,14 +160,24 @@ Options +FollowSymLinks
 # BLOCK ACCESS TO SENSITIVE FILES
 # ============================================
 <FilesMatch "(^\.htaccess|^\.htpasswd|^\.env|\.git|\.gitignore|package\.json|package-lock\.json|node_modules|vite\.config)">
-  Order allow,deny
-  Deny from all
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
 </FilesMatch>
 
-# Block access to backup files
-<FilesMatch "\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)$">
-  Order allow,deny
-  Deny from all
+# Block access to backup files and server-side scripts in the static site root
+<FilesMatch "\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist|php|phtml|phar)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
 </FilesMatch>
 
 # ============================================

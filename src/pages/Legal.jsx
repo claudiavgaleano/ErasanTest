@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Box, Container, Typography } from '@mui/material'
+import { safeHttpsUrl } from '../utils/sanitizeHtml'
 
 export default function Legal() {
   const { t } = useTranslation()
@@ -26,6 +27,8 @@ export default function Legal() {
     ['description17', 'description18'],
     ['description19', 'description20'],
   ]
+
+  const privacyPolicyUrl = safeHttpsUrl(t('legal.link2'))
 
   return (
     <Box sx={{ py: { xs: 8, md: 10 } }}>
@@ -89,15 +92,21 @@ export default function Legal() {
         </Box>
         <Typography variant="body1" color="text.secondary">
           {t('legal.description21')}{' '}
-          <Box
-            component="a"
-            href={t('legal.link2')}
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ color: primaryColor, fontWeight: 600, textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}
-          >
-            {t('legal.link')}
-          </Box>
+          {privacyPolicyUrl ? (
+            <Box
+              component="a"
+              href={privacyPolicyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: primaryColor, fontWeight: 600, textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}
+            >
+              {t('legal.link')}
+            </Box>
+          ) : (
+            <Box component="span" sx={{ color: primaryColor, fontWeight: 600 }}>
+              {t('legal.link')}
+            </Box>
+          )}
           .
         </Typography>
       </Container>

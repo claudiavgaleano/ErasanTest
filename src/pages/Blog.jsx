@@ -23,6 +23,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import ArticleIcon from '@mui/icons-material/Article'
 import { usePosts, useCategories, contentHelpers } from '../hooks/useContent'
+import { htmlToPlainText } from '../utils/sanitizeHtml'
 
 const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400/1e293b/dc2626?text=Erasan+Blog'
 
@@ -273,12 +274,9 @@ export default function Blog() {
                             </Box>
                           )}
 
-                          <Typography
-                            variant="h5"
-                            component="h3"
-                            sx={{ mb: 1, fontWeight: 600, lineHeight: 1.3 }}
-                            dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                          />
+                          <Typography variant="h5" component="h3" sx={{ mb: 1, fontWeight: 600, lineHeight: 1.3 }}>
+                            {htmlToPlainText(post.title.rendered)}
+                          </Typography>
 
                           {/* Meta info */}
                           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2, color: 'text.secondary' }}>

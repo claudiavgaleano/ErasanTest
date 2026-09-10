@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Box, Card, CardContent, CardMedia, Chip, Typography } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { contentHelpers } from '../hooks/useContent'
+import { htmlToPlainText } from '../utils/sanitizeHtml'
 
 export default function ProductListCard({ product, index = 0, viewDetailsLabel, featuredLabel }) {
   const primaryColor = '#b91c1c'
@@ -10,7 +11,7 @@ export default function ProductListCard({ product, index = 0, viewDetailsLabel, 
     <Card
       component={Link}
       to={`/products/${product.slug}`}
-      aria-label={`${viewDetailsLabel}: ${String(product.title.rendered).replace(/<[^>]*>/g, '')}`}
+      aria-label={`${viewDetailsLabel}: ${htmlToPlainText(product.title.rendered)}`}
       sx={{
         height: '100%',
         display: 'flex',
@@ -45,7 +46,7 @@ export default function ProductListCard({ product, index = 0, viewDetailsLabel, 
           component="img"
           height="220"
           image={contentHelpers.getFeaturedImage(product)}
-          alt={product.title.rendered}
+          alt={htmlToPlainText(product.title.rendered)}
           className="product-image"
           sx={{ transition: 'transform 0.4s ease', backgroundSize: 'contain', justifySelf: 'center', width: '100%', padding: '16px 0', objectFit: 'contain' }}
         />
@@ -64,12 +65,9 @@ export default function ProductListCard({ product, index = 0, viewDetailsLabel, 
         )}
       </Box>
       <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-        <Typography
-          variant="h5"
-          component="h3"
-          sx={{ mb: 2, fontWeight: 600, color: primaryColor }}
-          dangerouslySetInnerHTML={{ __html: product.title.rendered }}
-        />
+        <Typography variant="h5" component="h3" sx={{ mb: 2, fontWeight: 600, color: primaryColor }}>
+          {htmlToPlainText(product.title.rendered)}
+        </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2, flexGrow: 1, lineHeight: 1.7 }}>
           {contentHelpers.getExcerpt(product.excerpt?.rendered || product.content.rendered, 120)}
         </Typography>

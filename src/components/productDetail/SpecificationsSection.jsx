@@ -135,12 +135,26 @@ export function getSpecificationIcon(spec) {
   return { Icon: PrecisionManufacturingIcon }
 }
 
+function isSameOriginUrl(url) {
+  try {
+    const parsed = new URL(url, window.location.origin)
+    return parsed.origin === window.location.origin
+  } catch {
+    return false
+  }
+}
+
+function safeDownloadName(filename) {
+  const base = String(filename || 'ficha-tecnica.pdf').replace(/^.*[/\\]/, '')
+  return base.replace(/[^\w.\-() ]+/g, '_') || 'ficha-tecnica.pdf'
+}
+
 function SpecDownloadButton({ specPdf, size = 'large', sx }) {
   const { t } = useTranslation()
   const [downloading, setDownloading] = useState(false)
 
   const handleDownload = async () => {
-    if (!specPdf?.url || downloading) return
+    if (!specPdf?.url || downloading || !isSameOriginUrl(specPdf.url)) return
 
     setDownloading(true)
     try {
@@ -151,13 +165,15 @@ function SpecDownloadButton({ specPdf, size = 'large', sx }) {
       const objectUrl = URL.createObjectURL(blob)
       const link = document.createElement('a')
       link.href = objectUrl
-      link.download = specPdf.filename || 'ficha-tecnica.pdf'
+      link.download = safeDownloadName(specPdf.filename)
       document.body.appendChild(link)
       link.click()
       link.remove()
       URL.revokeObjectURL(objectUrl)
     } catch {
-      window.open(specPdf.url, '_blank', 'noopener,noreferrer')
+      if (isSameOriginUrl(specPdf.url)) {
+        window.open(specPdf.url, '_blank', 'noopener,noreferrer')
+      }
     } finally {
       setDownloading(false)
     }
