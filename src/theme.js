@@ -2,6 +2,7 @@ import { createTheme } from '@mui/material/styles'
 
 const titleFontFamily = '"Rajdhani", sans-serif'
 const bodyFontFamily = '"Source Sans 3", "Roboto", "Helvetica", "Arial", sans-serif'
+export const logoFontFamily = '"Outfit", sans-serif'
 
 // Industrial theme with Red primary and Steel Blue accents
 const sharedTypography = {

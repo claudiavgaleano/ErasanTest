@@ -10,11 +10,13 @@ import SignalCellularAltOutlinedIcon from '@mui/icons-material/SignalCellularAlt
 import GpsNotFixedOutlinedIcon from '@mui/icons-material/GpsNotFixed'
 import Carousel from '../components/Carousel'
 import FeaturedProductsSection from '../components/FeaturedProductsSection'
+import HomeBackground from '../assets/Home/Home_Background.png'
 import tileErasanLogo from '../assets/Home/TileErasan.jpg'
 import tileErasanPNG from '../assets/Home/TileErasan.png'
 
 export default function Home() {
   const { t } = useTranslation()
+
 
   const primaryColor = '#b91c1c'
   const secondaryColor = '#dc2626'
@@ -62,6 +64,10 @@ export default function Home() {
           alignItems: 'center',
           position: 'relative',
           overflow: 'hidden',
+          background: `url(${HomeBackground}) no-repeat center center`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
           '&::before': {
             content: '""',
             position: 'absolute',
@@ -230,8 +236,6 @@ export default function Home() {
                     width: 380,
                     height: 380,
                     borderRadius: 4,
-                    background: `linear-gradient(135deg,rgba(185, 28, 28, 0.1) 0%, rgba(2, 132, 199, 0.1) 100%)`,
-                    border: `2px solid rgba(185, 28, 28, 0.25)`,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -258,15 +262,12 @@ export default function Home() {
                   }}
                 >
                   <Box
-                    component="img"
-                    src={tileErasanPNG}
-                    alt="Erasan"
+                    component="span"                    
                     sx={{
                       width: '72%',
                       maxWidth: 280,
                       height: 'auto',
                       objectFit: 'contain',
-                      filter: `drop-shadow(0 0 40px rgba(185, 28, 28, 0.3))`,
                     }}
                   />
                 </Box>

@@ -27,7 +27,8 @@ import ExpandLess from '@mui/icons-material/ExpandLess'
 import ExpandMore from '@mui/icons-material/ExpandMore'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
 import LanguageSwitcher from './LanguageSwitcher'
-import logo from '../assets/logo.png'
+import logo from '../assets/Home/CompanyLogo/isologo.svg'
+import { logoFontFamily } from '../theme'
 const PRODUCT_PATHS = ['/products', '/coil-winding', '/proyectos-especiales', '/accesories', '/retrofit', '/products/retrofit']
 
 function HideOnScroll({ children }) {
@@ -295,10 +296,22 @@ export default function Navbar() {
                   display: 'flex',
                   alignItems: 'center',
                   textDecoration: 'none',
-                  gap: 1.5,
+                  gap: '0.12em',
+                  fontSize: { xs: '1.75rem', md: '2rem' },
+                  lineHeight: 1,
                 }}
               >
-                <img src={logo} alt="logo" style={{ width: '120px', height: 'auto' }} />
+                <Box
+                  component="img"
+                  src={logo}
+                  alt=""
+                  sx={{
+                    height: '0.82em',
+                    width: 'auto',
+                    display: 'block',
+                    flexShrink: 0,
+                  }}
+                />
               </Box>
 
               {/* Desktop Navigation */}

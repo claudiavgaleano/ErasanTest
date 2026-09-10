@@ -197,7 +197,7 @@ export default function Contact() {
       </Box>
 
       {/* Contact Section */}
-      <Box sx={{ py: 8 }}>
+      <Box>
         <Container maxWidth="lg">
           <Box
             sx={{
@@ -208,17 +208,37 @@ export default function Contact() {
             }}
           >
             {/* Contact info — ~30% */}
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: 4, ...glossyPanelSx, }}>
-              <img src={contactInfoImage} alt="Contact Info"
-              style={{
-                width: '30%',
-                height: 'auto',
-                objectFit: 'cover',
-                objectPosition: 'center',
-              }}
-            />
+            <Box sx={{ display: 'flex', flexDirection: 'row', width: '100%', gap: 4 }}>
+              <Box sx={{ 
+                width: '50%',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 2,
+                background: `url(${contactInfoImage}) no-repeat center center`,
+                backgroundBlendMode: 'multiply',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                alignItems: 'flex-start',
+                justifyContent: 'flex-end',
+                padding: 2,
+                 }} >
+                <Typography variant="caption" sx={{ 
+                  color: 'white', 
+                  fontWeight: 400, 
+                  letterSpacing: 3, 
+                  fontSize: '0.8rem', 
+                  textAlign: 'left',
+                  width: '30%',
+                  textTransform: 'uppercase',
+                }}>{t('contact.heroDescriptionTitle')}</Typography>
+                <Box
+                component="span"
+                sx={{ width: '8%', height: '2px',display: 'block', borderBottom: `3px solid ${primaryColor}` }} ></Box>
+              </Box>
               
-                <Box sx={{ width: '70%'}}>
+                <Box sx={{ width: '50%',  ...glossyPanelSx}}>
                   <Typography
                     variant="overline"
                     sx={{

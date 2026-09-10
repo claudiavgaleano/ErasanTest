@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import EmailIcon from '@mui/icons-material/Email'
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing'
-import logo from '../assets/logo.png'
+import logo from '../assets/Home/CompanyLogo/isologo.svg'
 const socialLinks = [
   { icon: <LinkedInIcon aria-hidden="true" />, url: 'https://linkedin.com/company/erasan', label: 'LinkedIn' },
   { icon: <YouTubeIcon aria-hidden="true" />, url: 'https://www.youtube.com/@erasantechnology9410', label: 'YouTube' },
