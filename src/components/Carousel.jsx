@@ -4,40 +4,39 @@ import { useTranslation } from 'react-i18next'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import TransformIcon from '@mui/icons-material/Transform'
-import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices'
-import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded';
+import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded'
 import MemoryIcon from '@mui/icons-material/Memory'
-import BuildIcon from '@mui/icons-material/Build'
 import { HOME_CAROUSEL_SLIDES } from '../data/homeCarouselSlides'
+
+// Source photos are ~1600×567. Locking this ratio keeps object-fit cover under ~20% crop.
+const SLIDE_IMAGE_ASPECT = '1600 / 567'
 
 export default function Carousel() {
   const { t } = useTranslation()
-  const { mode } = 'light'
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
 
   const primaryColor = '#b91c1c'
   const secondaryColor = '#dc2626'
-  const imageOverlay = 'linear-gradient(135deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.58) 100%)'
 
   const slides = useMemo(
     () => [
       {
-        icon: <TransformIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
+        icon: <TransformIcon aria-hidden="true" />,
         title: t('carousel.slide1.title'),
         description: t('carousel.slide1.description'),
         image: HOME_CAROUSEL_SLIDES[0]?.image,
         gradient: 'linear-gradient(135deg, rgba(185, 28, 28, 0.1) 0%, rgba(2, 132, 199, 0.08) 100%)',
       },
       {
-        icon: <PhoneRoundedIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
+        icon: <PhoneRoundedIcon aria-hidden="true" />,
         title: t('carousel.slide2.title'),
         description: t('carousel.slide2.description'),
         image: HOME_CAROUSEL_SLIDES[1]?.image,
         gradient: 'linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(185, 28, 28, 0.08) 100%)',
       },
       {
-        icon: <MemoryIcon sx={{ fontSize: 80 }} aria-hidden="true" />,
+        icon: <MemoryIcon aria-hidden="true" />,
         title: t('carousel.slide3.title'),
         description: t('carousel.slide3.description'),
         image: HOME_CAROUSEL_SLIDES[2]?.image,
@@ -95,7 +94,7 @@ export default function Carousel() {
       component="section"
       aria-label={t('carousel.heading')}
       sx={{
-        py: 10,
+        py: { xs: 6, md: 10 },
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -104,7 +103,7 @@ export default function Carousel() {
       onKeyDown={handleKeyDown}
     >
       <Container maxWidth="lg">
-        <Box sx={{ textAlign: 'center', mb: 6 }}>
+        <Box sx={{ textAlign: 'center', mb: { xs: 3, md: 6 } }}>
           <Typography
             variant="overline"
             component="span"
@@ -133,7 +132,6 @@ export default function Carousel() {
             position: 'relative',
             borderRadius: 2,
             overflow: 'hidden',
-            minHeight: 400,
           }}
         >
           {/* Live region for screen readers */}
@@ -149,6 +147,7 @@ export default function Carousel() {
           <Box
             sx={{
               display: 'flex',
+              alignItems: 'stretch',
               transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
               transform: `translateX(-${currentSlide * 100}%)`,
             }}
@@ -163,21 +162,22 @@ export default function Carousel() {
                 tabIndex={currentSlide === index ? 0 : -1}
                 sx={{
                   minWidth: '100%',
-                  minHeight: 400,
-                  p: { xs: 4, md: 6 },
-                  background: slide.image
-                    ? `/* ${imageOverlay}, */ url(${slide.image}) center / cover no-repeat`
-                    : slide.gradient,
-                  backdropFilter: slide.image ? 'none' : 'blur(20px)',
-                  border: `1px solid rgba(185, 28, 28, 0.15)`,
-                  borderRadius: 2,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
                   position: 'relative',
                   overflow: 'hidden',
+                  display: 'flex',
+                  alignItems: 'center',
+                  // Same height on every slide. Shorter on small screens so cover
+                  // stays close to the photo ratio (~2.8:1) instead of a tall crop.
+                  aspectRatio: {
+                    xs: '16 / 10',
+                    sm: '2 / 1',
+                    md: '2.4 / 1',
+                    lg: SLIDE_IMAGE_ASPECT,
+                  },
+                  background: slide.image ? '#0f172a' : slide.gradient,
+                  border: `1px solid rgba(185, 28, 28, 0.15)`,
+                  borderRadius: 2,
+                  boxSizing: 'border-box',
                   '&::before': slide.image
                     ? undefined
                     : {
@@ -204,19 +204,60 @@ export default function Carousel() {
                       },
                 }}
               >
-                <Box sx={{ 
-                  position: 'relative',
-                  zIndex: 1,
-                  left: '-200px',
-                  paddingLeft: '48px',
-                  display: 'flex',
-                  flexDirection:'column',
-                  width:'50%',
-                  }}>
+                {slide.image ? (
+                  <Box
+                    component="img"
+                    src={slide.image}
+                    alt=""
+                    sx={{
+                      position: 'absolute',
+                      inset: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                      display: 'block',
+                      zIndex: 0,
+                    }}
+                  />
+                ) : null}
+                {slide.image ? (
+                  <Box
+                    aria-hidden="true"
+                    sx={{
+                      position: 'absolute',
+                      inset: 0,
+                      zIndex: 1,
+                      background: {
+                        xs: 'linear-gradient(90deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.72) 55%, rgba(15, 23, 42, 0.35) 100%)',
+                        md: 'linear-gradient(90deg, rgba(15, 23, 42, 0.86) 0%, rgba(15, 23, 42, 0.5) 46%, rgba(15, 23, 42, 0) 72%)',
+                      },
+                    }}
+                  />
+                ) : null}
+                <Box
+                  sx={{
+                    position: 'relative',
+                    zIndex: 2,
+                    width: { xs: '100%', md: '55%' },
+                    maxWidth: 560,
+                    boxSizing: 'border-box',
+                    pl: { xs: 7, sm: 8, md: 6 },
+                    pr: { xs: 7, sm: 8, md: 4 },
+                    py: { xs: 1.5, sm: 2, md: 3 },
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    textAlign: 'left',
+                  }}
+                >
                   <Box
                     sx={{
                       color: slide.image ? '#fff' : primaryColor,
-                      mb: 3,
+                      mb: { xs: 0.75, md: 2 },
+                      '& .MuiSvgIcon-root': {
+                        fontSize: { xs: 28, sm: 36, md: 56 },
+                      },
                       animation: currentSlide === index ? 'bounceIn 0.6s ease-out' : 'none',
                       '@keyframes bounceIn': {
                         '0%': { transform: 'scale(0.8)', opacity: 0 },
@@ -231,8 +272,11 @@ export default function Carousel() {
                     variant="h3"
                     component="h3"
                     sx={{
-                      mb: 2,
+                      mb: { xs: 0.75, md: 1.5 },
                       fontWeight: 600,
+                      fontSize: { xs: '1rem', sm: '1.35rem', md: '1.75rem', lg: '1.85rem' },
+                      lineHeight: 1.2,
+                      overflowWrap: 'break-word',
                       color: slide.image ? '#fff' : 'text.primary',
                       animation: currentSlide === index ? 'fadeInUp 0.6s ease-out 0.1s backwards' : 'none',
                       '@keyframes fadeInUp': {
@@ -247,7 +291,10 @@ export default function Carousel() {
                     variant="body1"
                     sx={{
                       maxWidth: 600,
-                      lineHeight: 1.8,
+                      width: '100%',
+                      lineHeight: { xs: 1.35, md: 1.7 },
+                      fontSize: { xs: '0.72rem', sm: '0.85rem', md: '1rem' },
+                      overflowWrap: 'break-word',
                       color: slide.image ? 'rgba(255, 255, 255, 0.88)' : 'text.secondary',
                       animation: currentSlide === index ? 'fadeInUp 0.6s ease-out 0.2s backwards' : 'none',
                     }}
@@ -265,14 +312,16 @@ export default function Carousel() {
             aria-label={t('carousel.previousSlide')}
             sx={{
               position: 'absolute',
-              left: { xs: 8, md: 16 },
+              left: { xs: 4, md: 16 },
               top: '50%',
               transform: 'translateY(-50%)',
+              width: { xs: 32, md: 40 },
+              height: { xs: 32, md: 40 },
               bgcolor: 'rgba(255, 255, 255, 0.9)',
               backdropFilter: 'blur(10px)',
               border: `1px solid rgba(185, 28, 28, 0.2)`,
               color: primaryColor,
-              zIndex: 2,
+              zIndex: 3,
               transition: 'all 0.3s ease',
               '&:hover': {
                 bgcolor: primaryColor,
@@ -292,14 +341,16 @@ export default function Carousel() {
             aria-label={t('carousel.nextSlide')}
             sx={{
               position: 'absolute',
-              right: { xs: 8, md: 16 },
+              right: { xs: 4, md: 16 },
               top: '50%',
               transform: 'translateY(-50%)',
+              width: { xs: 32, md: 40 },
+              height: { xs: 32, md: 40 },
               bgcolor: 'rgba(255, 255, 255, 0.9)',
               backdropFilter: 'blur(10px)',
               border: `1px solid rgba(185, 28, 28, 0.2)`,
               color: primaryColor,
-              zIndex: 2,
+              zIndex: 3,
               transition: 'all 0.3s ease',
               '&:hover': {
                 bgcolor: primaryColor,
